@@ -3,5 +3,5 @@ set -ueo pipefail
 
 for AMR in "${TRAIN_FILE}" "${DEV_FILE}" "${TEST_FILE}"
 do
-    python ltp_ner.py -file ${AMR}
+    python ltp_ner.py -file ${AMR} -jamr_home ${JAMR_HOME}
 done

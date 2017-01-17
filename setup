@@ -1,7 +1,7 @@
 #!/bin/bash
 set -e
 
-./compile
+#./compile
 pip install pyltp
 mkdir -p tools
 cd tools
@@ -13,8 +13,7 @@ tar -xzf cdec-2014-06-15.tar.gz
 ln -s cdec-2014-06-15 cdec
 tar -xzf WordNet-3.0.tar.gz
 tar -xzf scala-2.11.2.tgz
-cd ..
-mkdir -p target
+
 wget -c http://nlp.stanford.edu/software/stanford-parser-full-2016-10-31.zip
 tar -xzf stanford-parser-full-2016-10-31.zip
 cd stanford-parser-full-2016-10-31/model
