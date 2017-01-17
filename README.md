@@ -8,23 +8,11 @@ To make it available for Chinese, we replaced the tools for segmentation([pyltp]
 #Quick Start
 Here we give a quick start to use JAMR-Chinese to perform  amr paring on a given Chinese sentence.
 
-Download stanford parser and its model, and then put them in specific position:
-
-1. Stanford Parser: http://nlp.stanford.edu/software/stanford-parser-full-2016-10-31.zip
-	
-	(Unzip it and move it into target/ folder)
-2. Model for Chinese: http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar
-
-	(Move this jar into target/stanford-parser-full-2016-10-31/model, then extract it's content using his command: $jar -xvf stanford-chinese-corenlp-2016-10-31-models.jar)
-
-
 Run the following commands in your terminal:
 
-	$pip install pyltp
 	$git clone https://github.com/tanglrHello/nlpnju
 	$cd nlpnju
 	$./setup
-	$./compile
 	$. script/config_my_chinese_little_princess.sh
 	(prepare a chn_test.txt file in the root path for JAMR-Chinese)
 	$./script/PARSE.sh < chn_test.txt > chn_test.out 2> chn_test.err
@@ -68,7 +56,7 @@ More detailed information can be found below.
 
 5. Setup Stage
 
-	Tools for English segmentation and NER is not needed anymore, so you don't need to download them during setup stage.
+	Tools for English segmentation and NER is not needed anymore, so you don't need to download them during setup stage. But pyltp and stanford parser will be downloaded by setup.
 
 JAMR is a semantic parser, generator, and aligner for the [Abstract Meaning Representation](http://amr.isi.edu/).
 For more information about JAMR, please refer to [JAMR](https://github.com/jflanigan/jamr).
@@ -80,37 +68,23 @@ First checkout the github repository (or download the latest release):
 
     git clone https://github.com/tanglrHello/nlpnju
 
-JAMR depends on [Scala](http://www.scala-lang.org), and [WordNet](http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz) for the
-aligner. To download these dependencies into the subdirectory `tools`, cd to the `jamr` repository and run (requires
-wget to be installed):
+JAMR-chinese depends on [Scala](http://www.scala-lang.org),  [WordNet](http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz), [pyltp](https://github.com/HIT-SCIR/pyltp/) and [stanford parser](http://nlp.stanford.edu/software/lex-parser.shtml). To download these dependencies, cd to the `jamr` repository and run (requires wget to be installed):
 
     ./setup
 
-You should agree to the terms and conditions of the software dependencies before running this script.  If you download
-them yourself, you will need to change the relevant environment variables in `scripts/config.sh`.  You may need to edit
-the Java memory options in the script `sbt` and `build.sbt` if you get out of memory errors.
+This bash will install python package pyltp for you, so you may need to use sudo to execute it.
 
-Besides, you need to install [pyltp](https://github.com/HIT-SCIR/pyltp/):
-	
-	$pip install pyltp
+Besides, you need to download models for ltp (ltp-data-v3.3.1.zip) from this [url](https://pan.baidu.com/share/link?shareid=1988562907&uk=2738088569#list/path=%2Fltp-models%2F3.3.1). Move the model into target/, unzip it, and rename the resulting fold to 'ltp_data'. There should  several .model files in target/ltp_data/.
 
-And you should download Stanford Parser and it's model for Chinese:
 
-1. Stanford Parser: http://nlp.stanford.edu/software/stanford-parser-full-2016-10-31.zip
-	
-	(Unzip it and move it into target/ folder)
-2. Model for Chinese: http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar
-
-	(Move this jar into target/stanford-parser-full-2016-10-31/model, then extract it's content using his command: $jar -xvf stanford-chinese-corenlp-2016-10-31-models.jar)
-
-Source the config script - you will need to do this before running any of the scripts below(config_my_chinese_little_princess.sh is prepared for Chinese parsing/training etc. There are also other config files in scripts/, which is from original JAMR. You can use them by downloading JAMR independently and use them there):
+You will need to source the config script before running any of the scripts below (config_my_chinese_little_princess.sh is prepared for Chinese parsing/training):
 
     . scripts/config_my_chinese_little_princess.sh
     or
     source script/config_my_chinese_little_princess.sh
 
-Run `./compile` to build an uberjar, which will be output to
-`target/scala-{scala_version}/jamr-assembly-{jamr_version}.jar` (the setup script does this for you).
+There are also other config files in scripts/, which is from original JAMR. You can use them by downloading JAMR independently and use them there)
+
 
 #Running the Parser
 
