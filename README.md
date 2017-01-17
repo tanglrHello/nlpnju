@@ -19,6 +19,7 @@ Download stanford parser and its model, and then put them in specific position:
 
 
 Run the following commands in your terminal:
+
 	$pip install pyltp
 	$git clone https://github.com/tanglrHello/nlpnju
 	$cd nlpnju
