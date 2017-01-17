@@ -1,0 +1,11 @@
+#!/bin/bash
+set -ueo pipefail
+
+STANFORD_HOME="${JAMR_HOME}/target/stanford-parser-full-2016-10-31/"
+INPUT="$1"".snt"
+TOK_FILE="${INPUT}"".tok"
+
+java -server -mx2000m edu.stanford.nlp.parser.lexparser.LexicalizedParser -encoding utf-8 -sentences newline "${STANFORD_HOME}""xinhuaFactored.ser.gz" "${TOK_FILE}" > "${INPUT}.penn"
+java -server -mx2000m edu.stanford.nlp.parser.lexparser.LexicalizedParser -encoding utf-8 -outputFormat typedDependencies -outputFormatOptions includePunctuationDependencies -sentences newline "${STANFORD_HOME}""xinhuaFactored.ser.gz" "${TOK_FILE}" > "${INPUT}.dep"
+echo $INPUT
+python preprocessing/transform_dep_format.py -file $1 -outfile "${INPUT}.deps"

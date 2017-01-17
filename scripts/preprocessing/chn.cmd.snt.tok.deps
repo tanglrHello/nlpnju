@@ -1,0 +1,11 @@
+#!/bin/bash
+set -ueo pipefail
+
+STANFORD_HOME="${JAMR_HOME}/target/stanford-parser-full-2016-10-31/"
+
+for AMR in "${TRAIN_FILE}" "${DEV_FILE}" "${TEST_FILE}"
+do
+    java -server -mx2000m edu.stanford.nlp.parser.lexparser.LexicalizedParser -encoding utf-8 -sentences newline "${STANFORD_HOME}""xinhuaFactored.ser.gz" "${AMR}.snt" > "${AMR}.snt.penn"
+    java -server -mx2000m edu.stanford.nlp.parser.lexparser.LexicalizedParser -encoding utf-8 -outputFormat typedDependencies -outputFormatOptions includePunctuationDependencies -sentences newline "${STANFORD_HOME}""xinhuaFactored.ser.gz" "${AMR}.snt" > "${AMR}.snt.dep" 
+    python transform_dep_format.py -file ${AMR}
+done

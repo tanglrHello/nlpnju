@@ -1,0 +1,727 @@
+Sentence: Chapter 1 .
+Missing span: 1 => 1
+
+Sentence: Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
+Extra span: called => call-07
+Extra span: I => i
+Extra span: old => old
+Missing span: True Stories from Nature => (name :op "Nature" :op "from" :op "Stories" :op "True")
+Missing span: Once => once
+Missing span: picture => picture
+Missing span: forest => forest
+Missing span: primeval => primeval
+Missing span: magnificent => magnificent
+
+Sentence: It was a picture of a boa constrictor in the act of swallowing an animal .
+Extra span: act => act-02
+Missing span: picture => picture
+Missing span: swallowing => swallow-01
+Missing span: constrictor => constrictor
+
+Sentence: Here is a copy of the drawing .
+Missing span: copy => (thing :ARG2-of copy-01)
+Missing span: drawing => draw-01
+
+Sentence: In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
+Missing span: chewing => chew-01
+Missing span: prey => prey
+Missing span: Boa => boa
+
+Sentence: After that they are not able to move , and they sleep through the six months that they need for digestion . "
+Extra span: they => they
+Extra span: through => through
+Extra span: they => they
+Missing span: months => (temporal-quantity :unit month)
+Missing span: that => that
+Missing span: digestion => digest-01
+
+Sentence: I pondered deeply , then , over the adventures of the jungle .
+Missing span: pondered => ponder-01
+Missing span: adventures => adventure
+Missing span: jungle => jungle
+
+Sentence: And after some work with a colored pencil I succeeded in making my first drawing .
+Incorrect span: making => make-02
+Missing span: colored => color
+Missing span: making => make-01
+Missing span: drawing => draw-01
+
+Sentence: My Drawing Number One .
+Extra span: One => one
+Missing span: Drawing Number One => (picture :name (name :op "One" :op "Number" :op "Drawing"))
+
+Sentence: It looked like this : I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
+Incorrect span: looked => look-01
+Missing span: drawing => draw-01
+Missing span: masterpiece => masterpiece
+Missing span: looked => look-02
+
+Sentence: But they answered : " Frighten ?
+Missing span: Frighten => frighten-01
+
+Sentence: Why should any one be frightened by a hat ? "
+Missing span: one => one
+Missing span: any => any
+
+Sentence: My drawing was not a picture of a hat .
+Missing span: picture => picture-01
+Missing span: drawing => draw-01
+
+Sentence: It was a picture of a boa constrictor digesting an elephant .
+Missing span: picture => picture-01
+Missing span: digesting => digest-01
+Missing span: elephant => elephant
+Missing span: constrictor => constrictor
+
+Sentence: But since the grown - ups were not able to understand it , I made another drawing : I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
+Extra span: grown => grown-up
+Extra span: so => so
+Extra span: I => i
+Extra span: since => since
+Missing span: drawing => draw-01
+Missing span: it => it
+Missing span: it => it
+Missing span: constrictor => constrictor
+
+Sentence: They always need to have things explained .
+Extra span: things => thing
+Missing span: explained => explain-01
+
+Sentence: My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
+Incorrect span: lay => lie-07
+Incorrect span: looked => look-01
+Extra span: Two => 2
+Missing span: Drawing Number Two => (picture :name (name :op "Two" :op "Number" :op "Drawing"))
+Missing span: devote => devote-01
+Missing span: geography => geography
+Missing span: history => history
+Missing span: arithmetic => arithmetic
+Missing span: grammar => grammar
+Missing span: lay => lay-01
+Missing span: aside => aside
+Missing span: time => time
+Missing span: looked => look-02
+Missing span: response => respond-01
+
+Sentence: That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
+Extra span: up => up
+Incorrect span: gave => give-01
+Missing span: career => career
+Missing span: painter => (person :ARG0-of paint-02)
+Missing span: magnificent => magnificent
+Missing span: age => age-01
+Missing span: gave => give-up-07
+
+Sentence: I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
+Extra span: Two => 2
+Extra span: One => one
+Missing span: Drawing Number One => (picture :name (name :op "One" :op "Number" :op "Drawing"))
+Missing span: Drawing Number Two => (picture :name (name :op "Two" :op "Number" :op "Drawing"))
+Missing span: disheartened => dishearten-01
+Missing span: failure => fail-01
+
+Sentence: Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
+Extra span: and => and
+Incorrect span: understand => understand-01
+Missing span: tiresome => tiresome
+Missing span: explaining => explain-01
+Missing span: understand => (understand-01 :polarity -)
+Missing span: Grown => grown-up
+
+Sentence: So then I chose another profession , and learned to pilot airplanes .
+Extra span: then => then
+Missing span: pilot => pilot-01
+Missing span: airplanes => airplane
+
+Sentence: I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
+Extra span: true => true-01
+Extra span: and => and
+Extra span: all => all
+Extra span: little => little
+Missing span: ; => and
+Missing span: geography => geography
+Missing span: flown => fly-01
+Missing span: over => over
+Missing span: parts => part
+
+Sentence: At a glance I can distinguish China from Arizona .
+Missing span: Arizona => (state :name (name :op "Arizona"))
+Missing span: distinguish => distinguish-01
+
+Sentence: If one gets lost in the night , such knowledge is valuable .
+Incorrect span: lost => lose-02
+Missing span: gets => get-03
+Missing span: lost => lost
+Missing span: one => one
+Missing span: valuable => value-02
+
+Sentence: In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
+Incorrect span: concerned => concern-01
+Missing span: encounters => encounter-01
+Missing span: course => course
+Missing span: life => life
+Missing span: concerned => (person :ARG1-of concern-01)
+
+Sentence: I have lived a great deal among grown - ups .
+Missing span: deal => deal
+
+Sentence: I have seen them intimately , close at hand .
+Missing span: intimately => intimate-02
+
+Sentence: And that has n't much improved my opinion of them .
+Missing span: improved => improve-01
+Missing span: that => that
+Missing span: opinion => (thing :ARG1-of opine-01)
+
+Sentence: Whenever I met one of them who seemed to me at all clear - sighted , I tried the experiment of showing him my Drawing Number One , which I have always kept .
+Extra span: I => i
+Extra span: One => one
+Extra span: I => i
+Incorrect span: clear => clear-06
+Extra span: all => all
+Incorrect span: met => meet-03
+Missing span: Drawing Number One => (picture :name (name :op "One" :op "Number" :op "Drawing"))
+Missing span: tried => try-01
+Missing span: met => meet-02
+Missing span: of => (person :ARG1-of include-91)
+Missing span: clear => clear-08
+Missing span: experiment => experiment-01
+Missing span: showing => show-01
+Missing span: kept => keep-01
+
+Sentence: I would try to find out , so , if this was a person of true understanding .
+Extra span: so => so
+Incorrect span: find => find-01
+Missing span: understanding => understand-01
+Missing span: find => find-out-03
+
+Sentence: But , whoever it was , he , or she , would always say : " That is a hat . "
+
+Sentence: Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
+Extra span: or => or
+Extra span: Then => then
+Missing span: that => that
+Missing span: forests => forest
+Missing span: primeval => primeval
+
+Sentence: I would bring myself down to his level .
+Missing span: level => level
+
+Sentence: I would talk to him about bridge , and golf , and politics , and neckties .
+Extra span: and => and
+Extra span: and => and
+Missing span: neckties => necktie
+Missing span: politics => politics
+Missing span: golf => golf
+Missing span: bridge => bridge
+
+Sentence: And the grown - up would be greatly pleased to have met such a sensible man .
+Incorrect span: met => meet-03
+Extra span: up => up
+Missing span: pleased => please-01
+Missing span: met => meet-02
+Missing span: greatly => great
+Missing span: sensible => sense-02
+
+Sentence: Chapter 2 .
+Missing span: 2 => 2
+
+Sentence: So I lived my life alone , without anyone that I could really talk to , until I had an accident with my plane in the Desert of Sahara , six years ago .
+Extra span: Sahara => (desert :name (name :op "Sahara"))
+Extra span: I => i
+Extra span: could => possible-01
+Extra span: I => i
+Missing span: Desert of Sahara => (desert :name (name :op "Sahara" :op "of" :op "Desert"))
+Missing span: had => have-06
+Missing span: life => life
+
+Sentence: Something was broken in my engine .
+Missing span: broken => break-01
+Missing span: Something => something
+
+Sentence: And as I had with me neither a mechanic nor any passengers , I set myself to attempt the difficult repairs all alone .
+Extra span: I => i
+Missing span: had => have-03
+Missing span: mechanic => mechanic
+Missing span: passengers => passenger
+Missing span: attempt => attempt-01
+Missing span: repairs => repair-01
+
+Sentence: It was a question of life or death for me : I had scarcely enough drinking water to last a week .
+Extra span: It => it
+Missing span: question => question-01
+Missing span: had => have-03
+Missing span: last => last-03
+
+Sentence: The first night , then , I went to sleep on the sand , a thousand miles from any human habitation .
+Extra span: then => then
+Missing span: human => human
+Missing span: any => any
+
+Sentence: I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean .
+Missing span: isolated => isolate-01
+Missing span: shipwrecked => shipwreck-01
+Missing span: raft => raft
+Missing span: middle => middle
+Missing span: sailor => (person :ARG0-of sail-01)
+
+Sentence: Thus you can imagine my amazement , at sunrise , when I was awakened by an odd little voice .
+Missing span: amazement => amaze-01
+
+Sentence: It said : " If you please -- draw me a sheep ! "
+Extra span: please => please-01
+
+Sentence: " What ! "
+Extra span:  => amr-empty
+Missing span: What => "what"
+
+Sentence: " Draw me a sheep ! "
+Missing span: Draw => draw-01
+
+Sentence: I jumped to my feet , completely thunderstruck .
+Missing span: jumped => jump-03
+
+Sentence: I blinked my eyes hard .
+Missing span: blinked => blink-01
+Missing span: hard => hard-04
+
+Sentence: I looked carefully all around me .
+
+Sentence: And I saw a most extraordinary small person , who stood there examining me with great seriousness .
+Missing span: examining => examine-01
+Missing span: seriousness => serious-01
+
+Sentence: Here you may see the best portrait that , later , I was able to make of him .
+Incorrect span: may => (date-entity :month 5)
+Missing span: may => possible-01
+Missing span: portrait => portrait
+Missing span: make => make-01
+Missing span: best => (good-02 :degree most)
+
+Sentence: But my drawing is certainly very much less charming than its model .
+Extra span: its => it
+Missing span: model => model
+Missing span: less => less
+Missing span: drawing => draw-01
+
+Sentence: That , however , is not my fault .
+
+Sentence: The grown - ups discouraged me in my painter 's career when I was six years old , and I never learned to draw anything , except boas from the outside and boas from the inside .
+Extra span: and => and
+Extra span: I => i
+Extra span: old => old
+Missing span: boas => boa
+Missing span: from => from
+Missing span: boas => boa
+Missing span: from => from
+Missing span: career => career
+Missing span: painter => (person :ARG0-of paint-02)
+
+Sentence: Now I stared at this sudden apparition with my eyes fairly starting out of my head in astonishment .
+Missing span: starting => start-03
+Missing span: out => out-06
+Missing span: fairly => fair
+Missing span: astonishment => astonish-01
+
+Sentence: Remember , I had crashed in the desert a thousand miles from any inhabited region .
+Missing span: Remember => remember-01
+Missing span: crashed => crash-01
+Missing span: any => any
+
+Sentence: And yet my little man seemed neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear .
+Extra span: or => or
+Extra span: or => or
+Extra span: yet => yet
+Missing span: fainting => faint-01
+Missing span: hunger => hunger-01
+Missing span: fatigue => fatigue-01
+Missing span: straying => stray-01
+Missing span: uncertainly => (certain :polarity -)
+
+Sentence: Nothing about him gave any suggestion of a child lost in the middle of the desert , a thousand miles from any human habitation .
+Extra span: gave => give-01
+Missing span: human => human
+Missing span: any => any
+Missing span: middle => middle
+Missing span: suggestion => suggest-01
+
+Sentence: When at last I was able to speak , I said to him : " But -- what are you doing here ? "
+Extra span: doing => do-02
+Extra span: I => i
+
+Sentence: And in answer he repeated , very slowly , as if he were speaking of a matter of great consequence : " If you please -- draw me a sheep ... "
+Extra span: please => please-01
+Extra span: he => he
+Missing span: matter => matter
+
+Sentence: When a mystery is too overpowering , one dare not disobey .
+Missing span: overpowering => overpower-01
+Missing span: disobey => disobey-01
+Missing span: one => one
+
+Sentence: Absurd as it might seem to me , a thousand miles from any human habitation and in danger of death , I took out of my pocket a sheet of paper and my fountain - pen .
+Extra span: and => and
+Missing span: took => take-01
+Missing span: Absurd => absurd
+Missing span: pen => pen
+Missing span: sheet => sheet
+Missing span: any => any
+Missing span: human => human
+
+Sentence: But then I remembered how my studies had been concentrated on geography , history , arithmetic , and grammar , and I told the little chap ( a little crossly , too ) that I did not know how to draw .
+Extra span: I => i
+Extra span: too => too
+Extra span: I => i
+Missing span: chap => chap
+Missing span: know => know-03
+Missing span: concentrated => concentrate-01
+Missing span: studies => study-01
+Missing span: grammar => grammar
+Missing span: arithmetic => arithmetic
+Missing span: history => history
+Missing span: geography => geography
+Missing span: crossly => cross
+
+Sentence: He answered me : " That does n't matter .
+Missing span: matter => matter-01
+
+Sentence: Draw me a sheep ... "
+Missing span: Draw => draw-01
+
+Sentence: But I had never drawn a sheep .
+
+Sentence: So I drew for him one of the two pictures I had drawn so often .
+Extra span: so => so
+Extra span: I => i
+Missing span: pictures => picture
+Missing span: of => include-91
+Missing span: two => 2
+Missing span: So => so
+Missing span: one => 1
+
+Sentence: It was that of the boa constrictor from the outside .
+Extra span: It => it
+Missing span: from => from
+Missing span: constrictor => constrictor
+
+Sentence: And I was astounded to hear the little fellow greet it with , " No , no , no !
+Incorrect span: no => -
+Incorrect span: no => -
+Missing span: astounded => astound-01
+Missing span: fellow => fellow
+Missing span: no => no
+Missing span: no => no
+Missing span: it => it
+
+Sentence: I do not want an elephant inside a boa constrictor .
+Missing span: elephant => elephant
+Missing span: constrictor => constrictor
+
+Sentence: A boa constrictor is a very dangerous creature , and an elephant is very cumbersome .
+Extra span: very => very
+Missing span: cumbersome => cumbersome
+Missing span: elephant => elephant
+Missing span: constrictor => constrictor
+Missing span: dangerous => dangerous
+
+Sentence: Where I live , everything is very small .
+
+Sentence: What I need is a sheep .
+
+Sentence: Draw me a sheep . "
+Missing span: Draw => draw-01
+
+Sentence: So then I made a drawing .
+Missing span: drawing => draw-01
+
+Sentence: He looked at it carefully , then he said : " No .
+Extra span: he => he
+Missing span: it => it
+
+Sentence: This sheep is already very sickly .
+Missing span: sickly => sick-05
+
+Sentence: Make me another . "
+Missing span: Make => make-01
+
+Sentence: So I made another drawing .
+Missing span: made => make-01
+Missing span: drawing => draw-01
+
+Sentence: My friend smiled gently and indulgently .
+Extra span: and => and
+Missing span: friend => (have-rel-role-91 :ARG2 friend)
+Missing span: indulgently => indulgent
+
+Sentence: " You see yourself , " he said , " that this is not a sheep .
+
+Sentence: This is a ram .
+Missing span: ram => ram
+
+Sentence: It has horns . "
+Missing span: has => have-03
+
+Sentence: So then I did my drawing over once more .
+Extra span: more => more
+Missing span: did => do-02
+Missing span: over => over
+Missing span: drawing => draw-01
+
+Sentence: But it was rejected too , just like the others .
+Extra span: just => just
+Missing span: rejected => reject-01
+Missing span: others => other
+Missing span: it => it
+
+Sentence: " This one is too old .
+Missing span: one => one
+
+Sentence: I want a sheep that will live a long time . "
+
+Sentence: By this time my patience was exhausted , because I was in a hurry to start taking my engine apart .
+Missing span: exhausted => exhaust-01
+Missing span: By => by
+Missing span: time => time
+Missing span: start => start-01
+Missing span: patience => patient-01
+
+Sentence: So I tossed off this drawing .
+Incorrect span: tossed => toss-01
+Missing span: drawing => draw-01
+Missing span: off => off
+Missing span: tossed => toss-out-02
+
+Sentence: And I threw out an explanation with it .
+Missing span: it => it
+
+Sentence: " This is only his box .
+
+Sentence: The sheep you asked for is inside . "
+
+Sentence: I was very surprised to see a light break over the face of my young judge : " That is exactly the way I wanted it !
+Extra span: I => i
+Extra span: That => that
+Incorrect span: judge => judge-01
+Incorrect span: light => light-04
+Missing span: break => break-13
+Missing span: over => over
+Missing span: judge => (person :ARG0-of judge-01)
+Missing span: light => light
+Missing span: it => it
+
+Sentence: Do you think that this sheep will have to have a great deal of grass ? "
+Missing span: have => have-03
+Missing span: deal => deal
+
+Sentence: " Why ? "
+Extra span:  => amr-empty
+
+Sentence: " Because where I live everything is very small ... "
+
+Sentence: " There will surely be enough grass for him , "
+Missing span: surely => sure-02
+
+Sentence: I said .
+
+Sentence: " It is a very small sheep that I have given you . "
+Extra span: It => it
+
+Sentence: He bent his head over the drawing : " Not so small that -- Look !
+Missing span: bent => bend-01
+Missing span: over => over
+Missing span: drawing => draw-01
+Missing span: that => that
+
+Sentence: He has gone to sleep ... "
+Extra span: gone => go-02
+
+Sentence: And that is how I made the acquaintance of the little prince .
+Missing span: that => that
+Missing span: acquaintance => acquaint-01
+
+Sentence: Chapter 3 .
+Missing span: 3 => 3
+
+Sentence: It took me a long time to learn where he came from .
+Extra span: It => it
+Missing span: took => take-10
+Missing span: learn => learn-01
+Missing span: came => come-01
+
+Sentence: The little prince , who asked me so many questions , never seemed to hear the ones I asked him .
+Extra span: asked => ask-01
+
+Sentence: It was from words dropped by chance that , little by little , everything was revealed to me .
+Extra span: little => little
+Incorrect span: little => little
+Extra span: It => it
+Missing span: words => word
+Missing span: dropped => drop-06
+Missing span: little => little-by-little
+
+Sentence: The first time he saw my airplane , for instance ( I shall not draw my airplane ; that would be much too complicated for me ) , he asked me : " What is that object ? "
+Extra span: he => he
+Missing span: airplane => airplane
+Missing span: that => that
+
+Sentence: " That is not an object .
+
+Sentence: It flies .
+Missing span: flies => fly-01
+
+Sentence: It is an airplane .
+Missing span: airplane => airplane
+
+Sentence: It is my airplane . "
+Missing span: airplane => airplane
+
+Sentence: And I was proud to have him learn that I could fly .
+Extra span: I => i
+Missing span: learn => learn-01
+
+Sentence: He cried out , then : " What !
+Missing span: What => "what"
+
+Sentence: You dropped down from the sky ? "
+Missing span: dropped => drop-01
+
+Sentence: " Yes , "
+
+Sentence: I answered , modestly .
+Missing span: modestly => modest
+
+Sentence: " Oh !
+
+Sentence: That is funny ! "
+
+Sentence: And the little prince broke into a lovely peal of laughter , which irritated me very much .
+Missing span: peal => peal
+Missing span: lovely => lovely
+Missing span: irritated => irritate-01
+Missing span: broke => break-in-17
+
+Sentence: I like my misfortunes to be taken seriously .
+Missing span: like => like-02
+Missing span: taken => take-04
+Missing span: misfortunes => misfortune
+
+Sentence: Then he added : " So you , too , come from the sky !
+Missing span: come => come-01
+
+Sentence: Which is your planet ? "
+
+Sentence: At that moment I caught a gleam of light in the impenetrable mystery of his presence ; and I demanded , abruptly : " Do you come from another planet ? "
+Extra span: I => i
+Extra span: and => and
+Incorrect span: light => light-04
+Missing span: ; => and
+Missing span: come => come-01
+Missing span: that => that
+Missing span: gleam => gleam
+Missing span: light => light
+Missing span: abruptly => abrupt
+
+Sentence: But he did not reply .
+
+Sentence: He tossed his head gently , without taking his eyes from my plane : " It is true that on that you can n't have come from very far away ... "
+Extra span: true => true-01
+Extra span: It => it
+Missing span: come => come-01
+Missing span: taking => take-away-05
+
+Sentence: And he sank into a reverie , which lasted a long time .
+Extra span: lasted => last-01
+Missing span: sank => sink-01
+Missing span: reverie => reverie
+
+Sentence: Then , taking my sheep out of his pocket , he buried himself in the contemplation of his treasure .
+Missing span: taking => take-out-11
+Missing span: contemplation => contemplate-01
+
+Sentence: You can imagine how my curiosity was aroused by this half - confidence about the " other planets . "
+Extra span: this => this
+Missing span: aroused => arouse-01
+Missing span: confidence => confidence
+
+Sentence: I made a great effort , therefore , to find out more on this subject .
+Incorrect span: find => find-01
+Extra span: therefore => therefore
+Missing span: find => find-out-03
+
+Sentence: " My little man , where do you come from ?
+Missing span: come => come-01
+
+Sentence: What is this ' where I live , ' of which you speak ?
+Extra span: I => i
+Extra span: this => this
+
+Sentence: Where do you want to take your sheep ? "
+Missing span: take => take-01
+
+Sentence: After a reflective silence he answered : " The thing that is so good about the box you have given me is that at night he can use it as his house . "
+Missing span: good => good-02
+Missing span: reflective => reflect-02
+
+Sentence: " That is so .
+
+Sentence: And if you are good I will give you a string , too , so that you can tie him during the day , and a post to tie him to . "
+Extra span: can => possible-01
+Extra span: you => you
+Extra span: so => so
+Extra span: too => too
+Extra span: you => you
+Missing span: good => good-02
+Missing span: post => post
+Missing span: tie => tie-01
+Missing span: string => string
+Missing span: tie => tie-01
+
+Sentence: But the little prince seemed shocked by this offer : " Tie him !
+Missing span: shocked => shock-01
+Missing span: Tie => tie-01
+Missing span: offer => offer
+
+Sentence: What a queer idea ! "
+
+Sentence: " But if you do n't tie him , "
+Missing span: tie => tie-01
+
+Sentence: I said , " he will wander off somewhere , and get lost . "
+Incorrect span: lost => lose-02
+Missing span: get => get-03
+Missing span: lost => lost
+Missing span: wander => wander-01
+
+Sentence: My friend broke into another peal of laughter : " But where do you think he would go ? "
+Missing span: friend => (have-rel-role-91 :ARG2 friend)
+Missing span: go => go-02
+Missing span: peal => peal
+Missing span: broke => break-in-17
+
+Sentence: " Anywhere .
+Extra span:  => amr-empty
+Missing span: Anywhere => anywhere
+
+Sentence: Straight ahead of him . "
+Incorrect span:  => amr-empty
+Missing span: ahead => ahead
+Missing span: Straight => straight-04
+
+Sentence: Then the little prince said , earnestly : " That does n't matter .
+Missing span: matter => matter-01
+Missing span: earnestly => earnest-01
+
+Sentence: Where I live , everything is so small ! "
+
+Sentence: And , with perhaps a hint of sadness , he added : " Straight ahead of him , nobody can go very far ... "
+Extra span: nobody => nobody
+Extra span: perhaps => perhaps
+Missing span: hint => hint
+Missing span: go => go-02
+Missing span: ahead => ahead
+Missing span: Straight => straight-04
+
+--- Performance on Dev ---
+Precision: 0.8416779431664412
+Recall: 0.6631130063965884
+F1: 0.7418008348240906

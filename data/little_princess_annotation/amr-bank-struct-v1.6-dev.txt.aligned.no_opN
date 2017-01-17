@@ -1,0 +1,4882 @@
+# AMR release; corpus: lpp; section: dev; number of AMRs: 145 (generated on Fri Mar 4, 2016 at 21:03:52)
+
+# ::id lpp_1943.1 ::date 2012-06-07T17:06:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 1 .
+# ::zh I
+# ::save-date Thu Jun 7, 2012 ::file lpp_1943_1.txt
+# ::tok Chapter 1 .
+# ::alignments 0-1|0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.443
+# ::node	0	chapter	0-1
+# ::node	0.0	1	1-2
+# ::root	0	chapter
+# ::edge	chapter	mod	1	0	0.0	
+(c / chapter
+  :mod 1)
+
+# ::id lpp_1943.2 ::date 2012-06-07T17:06:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
+# ::zh 当我还只有六岁的时候，在一本描写原始森林的名叫《真实的故事》的书中，看到了一副精彩的插画，
+# ::save-date Mon May 13, 2013 ::file lpp_1943_2.txt
+# ::tok Once when I was six years old I saw a magnificent picture in a book , called True Stories from Nature , about the primeval forest .
+# ::alignments 17-21|0.1.1.1+0.1.1.1.0+0.1.1.1.1+0.1.1.1.2+0.1.1.1.3 8-9|0 4-5|0.3.0.0 5-6|0.3.0+0.3.0.1 0-1|0.2 11-12|0.1 14-15|0.1.1 25-26|0.1.1.2 24-25|0.1.1.2.0 10-11|0.1.0 2-3|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.573
+# ::node	0	see-01	8-9
+# ::node	0.0	i	2-3
+# ::node	0.1	picture	11-12
+# ::node	0.1.0	magnificent	10-11
+# ::node	0.1.1	book	14-15
+# ::node	0.1.1.0	-	
+# ::node	0.1.1.1	name	17-21
+# ::node	0.1.1.1.0	"True"	17-21
+# ::node	0.1.1.1.1	"Stories"	17-21
+# ::node	0.1.1.1.2	"from"	17-21
+# ::node	0.1.1.1.3	"Nature"	17-21
+# ::node	0.1.1.2	forest	25-26
+# ::node	0.1.1.2.0	primeval	24-25
+# ::node	0.2	once	0-1
+# ::node	0.3	age-01	
+# ::node	0.3.0	temporal-quantity	5-6
+# ::node	0.3.0.0	6	4-5
+# ::node	0.3.0.1	year	5-6
+# ::root	0	see-01
+# ::edge	age-01	ARG1	i	0.3	0.0	
+# ::edge	age-01	ARG2	temporal-quantity	0.3	0.3.0	
+# ::edge	book	name	name	0.1.1	0.1.1.1	
+# ::edge	book	topic	forest	0.1.1	0.1.1.2	
+# ::edge	book	wiki	-	0.1.1	0.1.1.0	
+# ::edge	forest	mod	primeval	0.1.1.2	0.1.1.2.0	
+# ::edge	name	op1	"True"	0.1.1.1	0.1.1.1.0	
+# ::edge	name	op2	"Stories"	0.1.1.1	0.1.1.1.1	
+# ::edge	name	op3	"from"	0.1.1.1	0.1.1.1.2	
+# ::edge	name	op4	"Nature"	0.1.1.1	0.1.1.1.3	
+# ::edge	picture	location	book	0.1	0.1.1	
+# ::edge	picture	mod	magnificent	0.1	0.1.0	
+# ::edge	see-01	ARG0	i	0	0.0	
+# ::edge	see-01	ARG1	picture	0	0.1	
+# ::edge	see-01	mod	once	0	0.2	
+# ::edge	see-01	time	age-01	0	0.3	
+# ::edge	temporal-quantity	quant	6	0.3.0	0.3.0.0	
+# ::edge	temporal-quantity	unit	year	0.3.0	0.3.0.1	
+(s / see-01
+      :ARG0 (i / i)
+      :ARG1 (p / picture
+            :mod (m / magnificent)
+            :location (b2 / book :wiki -
+                  :name (n / name :op "True" :op "Stories" :op "from" :op "Nature")
+                  :topic (f / forest
+                        :mod (p2 / primeval))))
+      :mod (o / once)
+      :time (a / age-01
+            :ARG1 i
+            :ARG2 (t / temporal-quantity :quant 6
+                  :unit (y / year))))
+
+# ::id lpp_1943.3 ::date 2012-06-07T17:06:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a picture of a boa constrictor in the act of swallowing an animal .
+# ::zh 画的是一条蟒蛇正在吞食一只大野兽。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_3.txt
+# ::tok It was a picture of a boa constrictor in the act of swallowing an animal .
+# ::alignments 3-4|0 6-7|0.1 12-13|0.1.1 14-15|0.1.1.0 7-8|0.1.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.612
+# ::node	0	picture	3-4
+# ::node	0.0	it	0-1
+# ::node	0.1	boa	6-7
+# ::node	0.1.0	constrictor	7-8
+# ::node	0.1.1	swallow-01	12-13
+# ::node	0.1.1.0	animal	14-15
+# ::root	0	picture
+# ::edge	boa	ARG0-of	swallow-01	0.1	0.1.1	
+# ::edge	boa	mod	constrictor	0.1	0.1.0	
+# ::edge	picture	domain	it	0	0.0	
+# ::edge	picture	topic	boa	0	0.1	
+# ::edge	swallow-01	ARG1	animal	0.1.1	0.1.1.0	
+(p / picture
+  :domain (i / it)
+  :topic (b2 / boa
+           :mod (c2 / constrictor)
+           :ARG0-of (s / swallow-01
+                      :ARG1 (a / animal))))
+
+# ::id lpp_1943.4 ::date 2012-06-07T17:06:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Here is a copy of the drawing .
+# ::zh 页头上就是那副画的摹本。
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_4.txt
+# ::tok Here is a copy of the drawing .
+# ::alignments 3-4|0.0+0.0.0 6-7|0.0.0.0.0 0-1|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.631
+# ::node	0	be-located-at-91	
+# ::node	0.0	thing	3-4
+# ::node	0.0.0	copy-01	3-4
+# ::node	0.0.0.0	picture	
+# ::node	0.0.0.0.0	draw-01	6-7
+# ::node	0.1	here	0-1
+# ::root	0	be-located-at-91
+# ::edge	be-located-at-91	ARG1	thing	0	0.0	
+# ::edge	be-located-at-91	ARG2	here	0	0.1	
+# ::edge	copy-01	ARG1	picture	0.0.0	0.0.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.0.0	0.0.0.0.0	
+# ::edge	thing	ARG2-of	copy-01	0.0	0.0.0	
+(b / be-located-at-91
+      :ARG1 (t2 / thing
+            :ARG2-of (c / copy-01
+                  :ARG1 (p / picture
+                        :ARG1-of (d / draw-01))))
+      :ARG2 (h / here))
+
+# ::id lpp_1943.5 ::date 2012-06-07T17:06:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
+# ::zh 这本书中写道：“这些蟒蛇把它们的猎获物不加咀嚼地囫囵吞下
+# ::save-date Fri Sep 6, 2013 ::file lpp_1943_5.txt
+# ::tok In the book it said : " Boa constrictors swallow their prey whole , without chewing it .
+# ::alignments 4-5|0 9-10|0.1 15-16|0.1.2 11-12|0.1.1 12-13|0.1.1.0 7-8|0.1.0 8-9|0.1.0.0 2-3|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.658
+# ::node	0	say-01	4-5
+# ::node	0.0	book	2-3
+# ::node	0.1	swallow-01	9-10
+# ::node	0.1.0	boa	7-8
+# ::node	0.1.0.0	constrictor	8-9
+# ::node	0.1.1	prey	11-12
+# ::node	0.1.1.0	whole	12-13
+# ::node	0.1.2	chew-01	15-16
+# ::node	0.1.2.0	-	
+# ::root	0	say-01
+# ::edge	boa	mod	constrictor	0.1.0	0.1.0.0	
+# ::edge	chew-01	ARG0	boa	0.1.2	0.1.0	
+# ::edge	chew-01	ARG1	prey	0.1.2	0.1.1	
+# ::edge	chew-01	polarity	-	0.1.2	0.1.2.0	
+# ::edge	prey	mod	whole	0.1.1	0.1.1.0	
+# ::edge	prey	poss	boa	0.1.1	0.1.0	
+# ::edge	say-01	ARG0	book	0	0.0	
+# ::edge	say-01	ARG1	swallow-01	0	0.1	
+# ::edge	swallow-01	ARG0	boa	0.1	0.1.0	
+# ::edge	swallow-01	ARG1	prey	0.1	0.1.1	
+# ::edge	swallow-01	manner	chew-01	0.1	0.1.2	
+(s2 / say-01
+      :ARG0 (b2 / book)
+      :ARG1 (s / swallow-01
+            :ARG0 (b / boa
+                  :mod (c / constrictor))
+            :ARG1 (p / prey
+                  :mod (w / whole)
+                  :poss b)
+            :manner (c2 / chew-01 :polarity -
+                  :ARG0 b
+                  :ARG1 p)))
+
+# ::id lpp_1943.6 ::date 2012-06-07T17:06:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt After that they are not able to move , and they sleep through the six months that they need for digestion . "
+# ::zh 尔后就不能再动弹了；它们就在长长的六个月的睡眠中消化这些食物。”
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_6.txt
+# ::tok After that they are not able to move , and they sleep through the six months that they need for digestion . "
+# ::alignments  9-10|0 11-12|0.1 14-15|0.1.0.0 15-16|0.1.0+0.1.0.1 18-19|0.1.0.2 5-6|0.0 7-8|0.0.1 0-1|0.0.1.1 1-2|0.0.1.1.0 2-3|0.0.1.0 20-21|0.1.0.2.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.691
+# ::node	0	and	9-10
+# ::node	0.0	possible-01	5-6
+# ::node	0.0.0	-	5-5
+# ::node	0.0.1	move-01	7-8
+# ::node	0.0.1.0	they	2-3
+# ::node	0.0.1.1	after	0-1
+# ::node	0.0.1.1.0	that	1-2
+# ::node	0.1	sleep-01	11-12
+# ::node	0.1.0	temporal-quantity	15-16
+# ::node	0.1.0.0	6	14-15
+# ::node	0.1.0.1	month	15-16
+# ::node	0.1.0.2	need-01	18-19
+# ::node	0.1.0.2.0	digest-01	20-21
+# ::root	0	and
+# ::edge	after	op1	that	0.0.1.1	0.0.1.1.0	
+# ::edge	and	op1	possible-01	0	0.0	
+# ::edge	and	op2	sleep-01	0	0.1	
+# ::edge	digest-01	ARG0	they	0.1.0.2.0	0.0.1.0	
+# ::edge	move-01	ARG0	they	0.0.1	0.0.1.0	
+# ::edge	move-01	time	after	0.0.1	0.0.1.1	
+# ::edge	need-01	ARG0	they	0.1.0.2	0.0.1.0	
+# ::edge	need-01	purpose	digest-01	0.1.0.2	0.1.0.2.0	
+# ::edge	possible-01	ARG1	move-01	0.0	0.0.1	
+# ::edge	possible-01	polarity	-	0.0	0.0.0	
+# ::edge	sleep-01	ARG0	they	0.1	0.0.1.0	
+# ::edge	sleep-01	duration	temporal-quantity	0.1	0.1.0	
+# ::edge	temporal-quantity	ARG1-of	need-01	0.1.0	0.1.0.2	
+# ::edge	temporal-quantity	quant	6	0.1.0	0.1.0.0	
+# ::edge	temporal-quantity	unit	month	0.1.0	0.1.0.1	
+(a / and
+      :op (p / possible-01 :polarity -
+            :ARG1 (m / move-01
+                  :ARG0 (t / they)
+                  :time (a2 / after
+                        :op (t3 / that))))
+      :op (s / sleep-01
+            :ARG0 t
+            :duration (t2 / temporal-quantity :quant 6
+                  :unit (m2 / month)
+                  :ARG1-of (n / need-01
+                        :ARG0 t
+                        :purpose (d / digest-01
+                              :ARG0 t)))))
+
+# ::id lpp_1943.7 ::date 2012-06-07T17:06:38 ::annotator ISI-AMR-05 ::preferred
+# ::snt I pondered deeply , then , over the adventures of the jungle .
+# ::zh 当时，我对丛林中的奇遇想得很多，
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_7.txt
+# ::tok I pondered deeply , then , over the adventures of the jungle .
+# ::alignments 1-2|0 4-5|0.3 8-9|0.1 11-12|0.1.0 0-1|0.0 2-3|0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.707
+# ::node	0	ponder-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	adventure	8-9
+# ::node	0.1.0	jungle	11-12
+# ::node	0.2	deep-02	2-3
+# ::node	0.3	then	4-5
+# ::root	0	ponder-01
+# ::edge	adventure	location	jungle	0.1	0.1.0	
+# ::edge	ponder-01	ARG0	i	0	0.0	
+# ::edge	ponder-01	ARG1	adventure	0	0.1	
+# ::edge	ponder-01	ARG1-of	deep-02	0	0.2	
+# ::edge	ponder-01	time	then	0	0.3	
+(p / ponder-01
+      :ARG0 (i / i)
+      :ARG1 (a / adventure
+            :location (j / jungle))
+      :ARG1-of (d / deep-02)
+      :time (t / then))
+
+# ::id lpp_1943.8 ::date 2012-06-07T17:06:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt And after some work with a colored pencil I succeeded in making my first drawing .
+# ::zh 于是，我也用彩色铅笔画出了我的第一副图画。
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_8.txt
+# ::tok And after some work with a colored pencil I succeeded in making my first drawing .
+# ::alignments 0-1|0 9-10|0.0 1-2|0.0.2 3-4|0.0.2.0 2-3|0.0.2.0.1 7-8|0.0.2.0.0 6-7|0.0.2.0.0.0 11-12|0.0.1 14-15|0.0.1.0.0 8-9|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.735
+# ::node	0	and	0-1
+# ::node	0.0	succeed-01	9-10
+# ::node	0.0.0	i	8-9
+# ::node	0.0.1	make-01	11-12
+# ::node	0.0.1.0	picture	
+# ::node	0.0.1.0.0	draw-01	14-15
+# ::node	0.0.1.0.0.0	ordinal-entity	
+# ::node	0.0.1.0.0.0.0	1	
+# ::node	0.0.2	after	1-2
+# ::node	0.0.2.0	work-01	3-4
+# ::node	0.0.2.0.0	pencil	7-8
+# ::node	0.0.2.0.0.0	color	6-7
+# ::node	0.0.2.0.1	some	2-3
+# ::root	0	and
+# ::edge	after	op1	work-01	0.0.2	0.0.2.0	
+# ::edge	and	op2	succeed-01	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0.1.0.0	0.0.0	
+# ::edge	draw-01	ord	ordinal-entity	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	make-01	ARG0	i	0.0.1	0.0.0	
+# ::edge	make-01	ARG1	picture	0.0.1	0.0.1.0	
+# ::edge	ordinal-entity	value	1	0.0.1.0.0.0	0.0.1.0.0.0.0	
+# ::edge	pencil	mod	color	0.0.2.0.0	0.0.2.0.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.1.0	0.0.1.0.0	
+# ::edge	succeed-01	ARG0	i	0.0	0.0.0	
+# ::edge	succeed-01	ARG1	make-01	0.0	0.0.1	
+# ::edge	succeed-01	time	after	0.0	0.0.2	
+# ::edge	work-01	ARG0	i	0.0.2.0	0.0.0	
+# ::edge	work-01	instrument	pencil	0.0.2.0	0.0.2.0.0	
+# ::edge	work-01	mod	some	0.0.2.0	0.0.2.0.1	
+(a2 / and
+      :op (s / succeed-01
+            :ARG0 (i / i)
+            :ARG1 (m / make-01
+                  :ARG0 i
+                  :ARG1 (p2 / picture
+                        :ARG1-of (d / draw-01
+                              :ARG0 i
+                              :ord (o / ordinal-entity :value 1))))
+            :time (a / after
+                  :op (w / work-01
+                        :ARG0 i
+                        :instrument (p / pencil
+                              :mod (c / color))
+                        :mod (s2 / some)))))
+
+# ::id lpp_1943.9 ::date 2012-06-07T17:06:44 ::annotator ISI-AMR-05 ::preferred
+# ::snt My Drawing Number One .
+# ::zh 我的第一号作品。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_9.txt
+# ::tok My Drawing Number One .
+# ::alignments 1-4|0+0.1+0.1.0+0.1.1+0.1.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.746
+# ::node	0	picture	1-4
+# ::node	0.0	-	
+# ::node	0.1	name	1-4
+# ::node	0.1.0	"Drawing"	1-4
+# ::node	0.1.1	"Number"	1-4
+# ::node	0.1.2	"One"	1-4
+# ::node	0.2	i	
+# ::root	0	picture
+# ::edge	name	op1	"Drawing"	0.1	0.1.0	
+# ::edge	name	op2	"Number"	0.1	0.1.1	
+# ::edge	name	op3	"One"	0.1	0.1.2	
+# ::edge	picture	name	name	0	0.1	
+# ::edge	picture	poss	i	0	0.2	
+# ::edge	picture	wiki	-	0	0.0	
+(p / picture :wiki -
+      :name (n2 / name :op "Drawing" :op "Number" :op "One")
+      :poss (i / i))
+
+# ::id lpp_1943.10 ::date 2012-06-07T17:06:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt It looked like this : I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
+# ::zh 它是这样的：我把我的这副杰作拿给大人看，我问他们我的画是不是叫他们害怕。
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_10.txt
+# ::tok It looked like this : I showed my masterpiece to the grown - ups , and asked them whether the drawing frightened them .
+# ::alignments 15-16|0 16-17|0.2 21-22|0.2.0 20-21|0.2.0.1.0 6-7|0.1 8-9|0.1.1 5-6|0.1.0 1-2|0.0 3-4|0.0.1 0-1|0.0.0 11-12|0.1.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.777
+# ::node	0	and	15-16
+# ::node	0.0	look-02	1-2
+# ::node	0.0.0	it	0-1
+# ::node	0.0.1	this	3-4
+# ::node	0.1	show-01	6-7
+# ::node	0.1.0	i	5-6
+# ::node	0.1.1	masterpiece	8-9
+# ::node	0.1.2	grown-up	11-12
+# ::node	0.2	ask-01	16-17
+# ::node	0.2.0	frighten-01	21-22
+# ::node	0.2.0.0	interrogative	
+# ::node	0.2.0.1	picture	
+# ::node	0.2.0.1.0	draw-01	20-21
+# ::root	0	and
+# ::edge	and	op1	look-02	0	0.0	
+# ::edge	and	op2	show-01	0	0.1	
+# ::edge	and	op3	ask-01	0	0.2	
+# ::edge	ask-01	ARG0	i	0.2	0.1.0	
+# ::edge	ask-01	ARG1	frighten-01	0.2	0.2.0	
+# ::edge	ask-01	ARG2	grown-up	0.2	0.1.2	
+# ::edge	frighten-01	ARG0	picture	0.2.0	0.2.0.1	
+# ::edge	frighten-01	ARG1	grown-up	0.2.0	0.1.2	
+# ::edge	frighten-01	mode	interrogative	0.2.0	0.2.0.0	
+# ::edge	look-02	ARG0	it	0.0	0.0.0	
+# ::edge	look-02	ARG1	this	0.0	0.0.1	
+# ::edge	masterpiece	poss	i	0.1.1	0.1.0	
+# ::edge	picture	ARG1-of	draw-01	0.2.0.1	0.2.0.1.0	
+# ::edge	show-01	ARG0	i	0.1	0.1.0	
+# ::edge	show-01	ARG1	masterpiece	0.1	0.1.1	
+# ::edge	show-01	ARG2	grown-up	0.1	0.1.2	
+(a / and
+      :op (l / look-02
+            :ARG0 (i / it)
+            :ARG1 (t / this))
+      :op (s / show-01
+            :ARG0 (i2 / i)
+            :ARG1 (m / masterpiece
+                  :poss i2)
+            :ARG2 (g / grown-up))
+      :op (a2 / ask-01
+            :ARG0 i2
+            :ARG1 (f / frighten-01 :mode interrogative
+                  :ARG0 (p / picture
+                        :ARG1-of (d / draw-01))
+                  :ARG1 g)
+            :ARG2 g))
+
+# ::id lpp_1943.11 ::date 2012-06-07T17:41:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt But they answered : " Frighten ?
+# ::zh 他们回答我说：”害怕？
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_11.txt
+# ::tok But they answered : " Frighten ?
+# ::alignments 0-1|0 2-3|0.0 5-6|0.0.1 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.787
+# ::node	0	contrast-01	0-1
+# ::node	0.0	answer-01	2-3
+# ::node	0.0.0	they	1-2
+# ::node	0.0.1	frighten-01	5-6
+# ::node	0.0.1.0	interrogative	
+# ::root	0	contrast-01
+# ::edge	answer-01	ARG0	they	0.0	0.0.0	
+# ::edge	answer-01	ARG2	frighten-01	0.0	0.0.1	
+# ::edge	contrast-01	ARG2	answer-01	0	0.0	
+# ::edge	frighten-01	mode	interrogative	0.0.1	0.0.1.0	
+(c / contrast-01
+  :ARG2 (a / answer-01
+          :ARG0 (t / they)
+          :ARG2 (f / frighten-01
+                  :mode interrogative)))
+
+# ::id lpp_1943.12 ::date 2012-06-07T17:42:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt Why should any one be frightened by a hat ? "
+# ::zh “一顶帽子有什么可怕的？”
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_12.txt
+# ::tok Why should any one be frightened by a hat ? "
+# ::alignments 5-6|0 3-4|0.1 2-3|0.1.0 8-9|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.798
+# ::node	0	frighten-01	5-6
+# ::node	0.0	hat	8-9
+# ::node	0.1	one	3-4
+# ::node	0.1.0	any	2-3
+# ::node	0.2	cause-01	
+# ::node	0.2.0	amr-unknown	
+# ::root	0	frighten-01
+# ::edge	cause-01	ARG0	amr-unknown	0.2	0.2.0	
+# ::edge	frighten-01	ARG0	hat	0	0.0	
+# ::edge	frighten-01	ARG1	one	0	0.1	
+# ::edge	frighten-01	ARG1-of	cause-01	0	0.2	
+# ::edge	one	mod	any	0.1	0.1.0	
+(f / frighten-01
+  :ARG0 (h / hat)
+  :ARG1 (o / one
+          :mod (a / any))
+  :ARG1-of (c / cause-01
+             :ARG0 (a2 / amr-unknown)))
+
+# ::id lpp_1943.13 ::date 2012-06-07T17:45:40 ::annotator ISI-AMR-05 ::preferred
+# ::snt My drawing was not a picture of a hat .
+# ::zh 我画的不是帽子，
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_13.txt
+# ::tok My drawing was not a picture of a hat .
+# ::alignments  5-6|0 8-9|0.2 1-2|0.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.810
+# ::node	0	picture-01	5-6
+# ::node	0.0	-	4-4
+# ::node	0.1	picture	
+# ::node	0.1.0	draw-01	1-2
+# ::node	0.1.0.0	i	
+# ::node	0.2	hat	8-9
+# ::root	0	picture-01
+# ::edge	draw-01	ARG0	i	0.1.0	0.1.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.1	0.1.0	
+# ::edge	picture-01	ARG0	picture	0	0.1	
+# ::edge	picture-01	ARG1	hat	0	0.2	
+# ::edge	picture-01	polarity	-	0	0.0	
+(p / picture-01 :polarity -
+      :ARG0 (p2 / picture
+            :ARG1-of (d / draw-01
+                  :ARG0 (i / i)))
+      :ARG1 (h / hat))
+
+# ::id lpp_1943.14 ::date 2012-06-07T17:46:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a picture of a boa constrictor digesting an elephant .
+# ::zh 是一条巨蟒在消化着一头大象。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_14.txt
+# ::tok It was a picture of a boa constrictor digesting an elephant .
+# ::alignments 3-4|0 6-7|0.1 8-9|0.1.1 10-11|0.1.1.0 7-8|0.1.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.827
+# ::node	0	picture-01	3-4
+# ::node	0.0	it	0-1
+# ::node	0.1	boa	6-7
+# ::node	0.1.0	constrictor	7-8
+# ::node	0.1.1	digest-01	8-9
+# ::node	0.1.1.0	elephant	10-11
+# ::root	0	picture-01
+# ::edge	boa	ARG0-of	digest-01	0.1	0.1.1	
+# ::edge	boa	mod	constrictor	0.1	0.1.0	
+# ::edge	digest-01	ARG1	elephant	0.1.1	0.1.1.0	
+# ::edge	picture-01	ARG0	it	0	0.0	
+# ::edge	picture-01	ARG1	boa	0	0.1	
+(p / picture-01
+  :ARG0 (i / it)
+  :ARG1 (b2 / boa
+          :mod (c / constrictor)
+          :ARG0-of (d / digest-01
+                     :ARG1 (e / elephant))))
+
+# ::id lpp_1943.15 ::date 2012-06-07T17:46:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt But since the grown - ups were not able to understand it , I made another drawing : I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
+# ::zh 既然大人们不能够理解。 于是我又把巨蟒肚子里的情况画了出来，以便让大人们能够看懂。
+# ::save-date Fri May 29, 2015 ::file lpp_1943_15.txt
+# ::tok But since the grown - ups were not able to understand it , I made another drawing : I drew the inside of the boa constrictor , so that the grown - ups could see it clearly .
+# ::alignments  0-1|0 16-17|0.0.0 8-9|0.0.0.2.0 10-11|0.0.0.2.0.1 11-12|0.0.0.2.0.1.1 15-16|0.0.0.1.0 13-14|0.0.0.0 19-20|0.0.1 33-34|0.0.1.1 34-35|0.0.1.1.0 35-36|0.0.1.1.0.0 21-22|0.0.1.0 24-25|0.0.1.0.0 25-26|0.0.1.0.0.0 3-4|0.0.0.2.0.1.0 36-37|0.0.1.1.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.858
+# ::node	0	contrast-01	0-1
+# ::node	0.0	and	
+# ::node	0.0.0	draw-01	16-17
+# ::node	0.0.0.0	i	13-14
+# ::node	0.0.0.1	picture	
+# ::node	0.0.0.1.0	another	15-16
+# ::node	0.0.0.2	cause-01	
+# ::node	0.0.0.2.0	possible-01	8-9
+# ::node	0.0.0.2.0.0	-	8-8
+# ::node	0.0.0.2.0.1	understand-01	10-11
+# ::node	0.0.0.2.0.1.0	grown-up	3-4
+# ::node	0.0.0.2.0.1.1	it	11-12
+# ::node	0.0.1	draw-01	19-20
+# ::node	0.0.1.0	inside	21-22
+# ::node	0.0.1.0.0	boa	24-25
+# ::node	0.0.1.0.0.0	constrictor	25-26
+# ::node	0.0.1.1	possible-01	33-34
+# ::node	0.0.1.1.0	see-01	34-35
+# ::node	0.0.1.1.0.0	it	35-36
+# ::node	0.0.1.1.0.1	clear-06	36-37
+# ::root	0	contrast-01
+# ::edge	and	op1	draw-01	0.0	0.0.0	
+# ::edge	and	op2	draw-01	0.0	0.0.1	
+# ::edge	boa	mod	constrictor	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	cause-01	ARG0	possible-01	0.0.0.2	0.0.0.2.0	
+# ::edge	contrast-01	ARG2	and	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0.0	0.0.0.0	
+# ::edge	draw-01	ARG0	i	0.0.1	0.0.0.0	
+# ::edge	draw-01	ARG1	inside	0.0.1	0.0.1.0	
+# ::edge	draw-01	ARG1	picture	0.0.0	0.0.0.1	
+# ::edge	draw-01	ARG1-of	cause-01	0.0.0	0.0.0.2	
+# ::edge	draw-01	purpose	possible-01	0.0.1	0.0.1.1	
+# ::edge	inside	part-of	boa	0.0.1.0	0.0.1.0.0	
+# ::edge	picture	mod	another	0.0.0.1	0.0.0.1.0	
+# ::edge	possible-01	ARG1	see-01	0.0.1.1	0.0.1.1.0	
+# ::edge	possible-01	ARG1	understand-01	0.0.0.2.0	0.0.0.2.0.1	
+# ::edge	possible-01	polarity	-	0.0.0.2.0	0.0.0.2.0.0	
+# ::edge	see-01	ARG0	grown-up	0.0.1.1.0	0.0.0.2.0.1.0	
+# ::edge	see-01	ARG1	it	0.0.1.1.0	0.0.1.1.0.0	
+# ::edge	see-01	ARG1-of	clear-06	0.0.1.1.0	0.0.1.1.0.1	
+# ::edge	understand-01	ARG0	grown-up	0.0.0.2.0.1	0.0.0.2.0.1.0	
+# ::edge	understand-01	ARG1	it	0.0.0.2.0.1	0.0.0.2.0.1.1	
+(c / contrast-01
+      :ARG2 (a2 / and
+            :op (d3 / draw-01
+                  :ARG0 (i / i)
+                  :ARG1 (p2 / picture
+                        :mod (a / another))
+                  :ARG1-of (c3 / cause-01
+                        :ARG0 (p3 / possible-01 :polarity -
+                              :ARG1 (u / understand-01
+                                    :ARG0 (g / grown-up)
+                                    :ARG1 (i2 / it)))))
+            :op (d / draw-01
+                  :ARG0 i
+                  :ARG1 (i3 / inside
+                        :part-of (b2 / boa
+                              :mod (c4 / constrictor)))
+                  :purpose (p / possible-01
+                        :ARG1 (s / see-01
+                              :ARG0 g
+                              :ARG1 (i4 / it)
+                              :ARG1-of (c2 / clear-06))))))
+
+# ::id lpp_1943.16 ::date 2012-06-08T13:12:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt They always need to have things explained .
+# ::zh 这些大人总是需要解释。
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_16.txt
+# ::tok They always need to have things explained .
+# ::alignments 2-3|0 1-2|0.2 6-7|0.1 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.866
+# ::node	0	need-01	2-3
+# ::node	0.0	they	0-1
+# ::node	0.1	explain-01	6-7
+# ::node	0.2	always	1-2
+# ::root	0	need-01
+# ::edge	need-01	ARG0	they	0	0.0	
+# ::edge	need-01	ARG1	explain-01	0	0.1	
+# ::edge	need-01	time	always	0	0.2	
+(n / need-01
+      :ARG0 (t / they)
+      :ARG1 (e / explain-01)
+      :time (a / always))
+
+# ::id lpp_1943.17 ::date 2012-06-08T13:12:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
+# ::zh 我的第二号作品是这样的：大人们劝我把这些画着开着肚皮的，或闭上肚皮的蟒蛇的图画放在一边，还是把兴趣放在地理、历史、算术、语法上。
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_17.txt
+# ::tok My Drawing Number Two looked like this : The grown - ups ' response , this time , was to advise me to lay aside my drawings of boa constrictors , whether from the inside or the outside , and devote myself instead to geography , history , arithmetic and grammar .
+# ::alignments 1-4|0.0.0+0.0.0.1+0.0.0.1.0+0.0.0.1.1+0.0.0.1.2 39-40|0 20-21|0.1.2 49-50|0.1.2.0 40-41|0.1.2.0.1 44-45|0.1.2.0.1.0.0 46-47|0.1.2.0.1.0.1 48-49|0.1.2.0.1.0.2 50-51|0.1.2.0.1.0.3 23-24|0.1.2.0.0 24-25|0.1.2.0.0.1 28-29|0.1.2.0.0.0.1 35-36|0.1.2.0.0.0.1.1 37-38|0.1.2.0.0.0.1.1.1 34-35|0.1.2.0.0.0.1.1.0 29-30|0.1.2.0.0.0.1.0 16-17|0.1.3 6-7|0.1.3.0 4-5|0.0 15-16|0.0.1 13-14|0.1 42-43|0.1.2.0.1.1 26-27|0.1.2.0.0.0.0 9-10|0.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.912
+# ::node	0	and	39-40
+# ::node	0.0	look-02	4-5
+# ::node	0.0.0	picture	1-4
+# ::node	0.0.0.0	-	
+# ::node	0.0.0.1	name	1-4
+# ::node	0.0.0.1.0	"Drawing"	1-4
+# ::node	0.0.0.1.1	"Number"	1-4
+# ::node	0.0.0.1.2	"Two"	1-4
+# ::node	0.0.1	this	15-16
+# ::node	0.1	respond-01	13-14
+# ::node	0.1.0	grown-up	9-10
+# ::node	0.1.1	i	
+# ::node	0.1.2	advise-01	20-21
+# ::node	0.1.2.0	and	49-50
+# ::node	0.1.2.0.0	lay-01	23-24
+# ::node	0.1.2.0.0.0	picture	
+# ::node	0.1.2.0.0.0.0	draw-01	26-27
+# ::node	0.1.2.0.0.0.1	boa	28-29
+# ::node	0.1.2.0.0.0.1.0	constrictor	29-30
+# ::node	0.1.2.0.0.0.1.1	or	35-36
+# ::node	0.1.2.0.0.0.1.1.0	inside	34-35
+# ::node	0.1.2.0.0.0.1.1.1	outside	37-38
+# ::node	0.1.2.0.0.1	aside	24-25
+# ::node	0.1.2.0.1	devote-01	40-41
+# ::node	0.1.2.0.1.0	and	
+# ::node	0.1.2.0.1.0.0	geography	44-45
+# ::node	0.1.2.0.1.0.1	history	46-47
+# ::node	0.1.2.0.1.0.2	arithmetic	48-49
+# ::node	0.1.2.0.1.0.3	grammar	50-51
+# ::node	0.1.2.0.1.1	instead-of-91	42-43
+# ::node	0.1.3	time	16-17
+# ::node	0.1.3.0	this	6-7
+# ::root	0	and
+# ::edge	advise-01	ARG0	grown-up	0.1.2	0.1.0	
+# ::edge	advise-01	ARG1	i	0.1.2	0.1.1	
+# ::edge	advise-01	ARG2	and	0.1.2	0.1.2.0	
+# ::edge	and	op1	geography	0.1.2.0.1.0	0.1.2.0.1.0.0	
+# ::edge	and	op1	lay-01	0.1.2.0	0.1.2.0.0	
+# ::edge	and	op1	look-02	0	0.0	
+# ::edge	and	op2	devote-01	0.1.2.0	0.1.2.0.1	
+# ::edge	and	op2	history	0.1.2.0.1.0	0.1.2.0.1.0.1	
+# ::edge	and	op2	respond-01	0	0.1	
+# ::edge	and	op3	arithmetic	0.1.2.0.1.0	0.1.2.0.1.0.2	
+# ::edge	and	op4	grammar	0.1.2.0.1.0	0.1.2.0.1.0.3	
+# ::edge	boa	mod	constrictor	0.1.2.0.0.0.1	0.1.2.0.0.0.1.0	
+# ::edge	boa	mod	or	0.1.2.0.0.0.1	0.1.2.0.0.0.1.1	
+# ::edge	devote-01	ARG0	i	0.1.2.0.1	0.1.1	
+# ::edge	devote-01	ARG1	i	0.1.2.0.1	0.1.1	
+# ::edge	devote-01	ARG1-of	instead-of-91	0.1.2.0.1	0.1.2.0.1.1	
+# ::edge	devote-01	ARG2	and	0.1.2.0.1	0.1.2.0.1.0	
+# ::edge	draw-01	ARG0	i	0.1.2.0.0.0.0	0.1.1	
+# ::edge	instead-of-91	ARG2	draw-01	0.1.2.0.1.1	0.1.2.0.0.0.0	
+# ::edge	lay-01	ARG0	i	0.1.2.0.0	0.1.1	
+# ::edge	lay-01	ARG1	picture	0.1.2.0.0	0.1.2.0.0.0	
+# ::edge	lay-01	ARG2	aside	0.1.2.0.0	0.1.2.0.0.1	
+# ::edge	look-02	ARG0	picture	0.0	0.0.0	
+# ::edge	look-02	ARG1	this	0.0	0.0.1	
+# ::edge	name	op1	"Drawing"	0.0.0.1	0.0.0.1.0	
+# ::edge	name	op2	"Number"	0.0.0.1	0.0.0.1.1	
+# ::edge	name	op3	"Two"	0.0.0.1	0.0.0.1.2	
+# ::edge	or	op1	inside	0.1.2.0.0.0.1.1	0.1.2.0.0.0.1.1.0	
+# ::edge	or	op2	outside	0.1.2.0.0.0.1.1	0.1.2.0.0.0.1.1.1	
+# ::edge	picture	ARG1-of	draw-01	0.1.2.0.0.0	0.1.2.0.0.0.0	
+# ::edge	picture	name	name	0.0.0	0.0.0.1	
+# ::edge	picture	poss	i	0.0.0	0.1.1	
+# ::edge	picture	topic	boa	0.1.2.0.0.0	0.1.2.0.0.0.1	
+# ::edge	picture	wiki	-	0.0.0	0.0.0.0	
+# ::edge	respond-01	ARG0	grown-up	0.1	0.1.0	
+# ::edge	respond-01	ARG1	i	0.1	0.1.1	
+# ::edge	respond-01	ARG2	advise-01	0.1	0.1.2	
+# ::edge	respond-01	time	time	0.1	0.1.3	
+# ::edge	time	mod	this	0.1.3	0.1.3.0	
+(a6 / and
+      :op (l / look-02
+            :ARG0 (p / picture :wiki - :name (n / name :op "Drawing" :op "Number" :op "Two")
+                  :poss i)
+            :ARG1 (t2 / this))
+      :op (r / respond-01
+            :ARG0 (g / grown-up)
+            :ARG1 (i / i)
+            :ARG2 (a / advise-01
+                  :ARG0 g
+                  :ARG1 i
+                  :ARG2 (a3 / and
+                        :op (l2 / lay-01
+                              :ARG0 i
+                              :ARG1 (p2 / picture
+                                    :ARG1-of (d2 / draw-01
+                                          :ARG0 i)
+                                    :topic (b2 / boa
+                                          :mod (c2 / constrictor)
+                                          :mod (o / or
+                                                :op (i2 / inside)
+                                                :op (o2 / outside))))
+                              :ARG2 (a2 / aside))
+                        :op (d3 / devote-01
+                              :ARG0 i
+                              :ARG1 i
+                              :ARG2 (a4 / and
+                                    :op (g2 / geography)
+                                    :op (h / history)
+                                    :op (a5 / arithmetic)
+                                    :op (g3 / grammar))
+                              :ARG1-of (i4 / instead-of-91
+                                    :ARG2 d2))))
+            :time (t4 / time
+                  :mod (t5 / this))))
+
+# ::id lpp_1943.18 ::date 2012-06-08T13:18:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
+# ::zh 就这样，在六岁的那年，我就放弃了当画家这一美好的职业。
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_18.txt
+# ::tok That is why , at the age of six , I gave up what might have been a magnificent career as a painter .
+# ::alignments 0-1|0.0 10-11|0.1.0 19-20|0.1.1 22-23|0.1.1.1+0.1.1.1.0 18-19|0.1.1.0 6-7|0.1.2 8-9|0.1.2.0.0 11-12|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.931
+# ::node	0	cause-01	
+# ::node	0.0	that	0-1
+# ::node	0.1	give-up-07	11-12
+# ::node	0.1.0	i	10-11
+# ::node	0.1.1	career	19-20
+# ::node	0.1.1.0	magnificent	18-19
+# ::node	0.1.1.1	person	22-23
+# ::node	0.1.1.1.0	paint-02	22-23
+# ::node	0.1.2	age-01	6-7
+# ::node	0.1.2.0	temporal-quantity	
+# ::node	0.1.2.0.0	6	8-9
+# ::node	0.1.2.0.1	year	
+# ::root	0	cause-01
+# ::edge	age-01	ARG1	i	0.1.2	0.1.0	
+# ::edge	age-01	ARG2	temporal-quantity	0.1.2	0.1.2.0	
+# ::edge	career	mod	magnificent	0.1.1	0.1.1.0	
+# ::edge	career	topic	person	0.1.1	0.1.1.1	
+# ::edge	cause-01	ARG0	that	0	0.0	
+# ::edge	cause-01	ARG1	give-up-07	0	0.1	
+# ::edge	give-up-07	ARG0	i	0.1	0.1.0	
+# ::edge	give-up-07	ARG1	career	0.1	0.1.1	
+# ::edge	give-up-07	time	age-01	0.1	0.1.2	
+# ::edge	person	ARG0-of	paint-02	0.1.1.1	0.1.1.1.0	
+# ::edge	temporal-quantity	quant	6	0.1.2.0	0.1.2.0.0	
+# ::edge	temporal-quantity	unit	year	0.1.2.0	0.1.2.0.1	
+(c2 / cause-01
+      :ARG0 (t2 / that)
+      :ARG1 (g / give-up-07
+            :ARG0 (i / i)
+            :ARG1 (c / career
+                  :mod (m / magnificent)
+                  :topic (p / person
+                        :ARG0-of (p2 / paint-02)))
+            :time (a / age-01
+                  :ARG1 i
+                  :ARG2 (t / temporal-quantity :quant 6
+                        :unit (y / year)))))
+
+# ::id lpp_1943.19 ::date 2012-06-09T11:31:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
+# ::zh 我的第一号、第二号作品的不成功，使我泄了气。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_19.txt
+# ::tok I had been disheartened by the failure of my Drawing Number One and my Drawing Number Two .
+# ::alignments 9-12|0.0.0.0+0.0.0.0.1+0.0.0.0.1.0+0.0.0.0.1.1+0.0.0.0.1.2 14-17|0.0.0.1+0.0.0.1.1+0.0.0.1.1.0+0.0.0.1.1.1+0.0.0.1.1.2 3-4|0 0-1|0.1 12-13|0.0.0 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.947
+# ::node	0	dishearten-01	3-4
+# ::node	0.0	fail-01	6-7
+# ::node	0.0.0	and	12-13
+# ::node	0.0.0.0	picture	9-12
+# ::node	0.0.0.0.0	-	
+# ::node	0.0.0.0.1	name	9-12
+# ::node	0.0.0.0.1.0	"Drawing"	9-12
+# ::node	0.0.0.0.1.1	"Number"	9-12
+# ::node	0.0.0.0.1.2	"One"	9-12
+# ::node	0.0.0.1	picture	14-17
+# ::node	0.0.0.1.0	-	
+# ::node	0.0.0.1.1	name	14-17
+# ::node	0.0.0.1.1.0	"Drawing"	14-17
+# ::node	0.0.0.1.1.1	"Number"	14-17
+# ::node	0.0.0.1.1.2	"Two"	14-17
+# ::node	0.1	i	0-1
+# ::root	0	dishearten-01
+# ::edge	and	op1	picture	0.0.0	0.0.0.0	
+# ::edge	and	op2	picture	0.0.0	0.0.0.1	
+# ::edge	and	poss	i	0.0.0	0.1	
+# ::edge	dishearten-01	ARG0	fail-01	0	0.0	
+# ::edge	dishearten-01	ARG1	i	0	0.1	
+# ::edge	fail-01	ARG1	and	0.0	0.0.0	
+# ::edge	name	op1	"Drawing"	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	name	op1	"Drawing"	0.0.0.1.1	0.0.0.1.1.0	
+# ::edge	name	op2	"Number"	0.0.0.0.1	0.0.0.0.1.1	
+# ::edge	name	op2	"Number"	0.0.0.1.1	0.0.0.1.1.1	
+# ::edge	name	op3	"One"	0.0.0.0.1	0.0.0.0.1.2	
+# ::edge	name	op3	"Two"	0.0.0.1.1	0.0.0.1.1.2	
+# ::edge	picture	name	name	0.0.0.0	0.0.0.0.1	
+# ::edge	picture	name	name	0.0.0.1	0.0.0.1.1	
+# ::edge	picture	wiki	-	0.0.0.0	0.0.0.0.0	
+# ::edge	picture	wiki	-	0.0.0.1	0.0.0.1.0	
+(d / dishearten-01
+      :ARG0 (f / fail-01
+            :ARG1 (a / and
+                  :op (p / picture :wiki -
+                        :name (n / name :op "Drawing" :op "Number" :op "One"))
+                  :op (p2 / picture :wiki -
+                        :name (n2 / name :op "Drawing" :op "Number" :op "Two"))
+                  :poss i))
+      :ARG1 (i / i))
+
+# ::id lpp_1943.20 ::date 2012-07-17T12:15:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
+# ::zh 这些大人们，靠他们自己什么也弄不懂，还得老是不断地给他们作解释。
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_20.txt
+# ::tok Grown - ups never understand anything by themselves , and it is tiresome for children to be always and forever explaining things to them .
+# ::alignments 9-10|0 12-13|0.1 20-21|0.1.0 19-20|0.1.0.3 17-18|0.1.0.2 21-22|0.1.0.1 14-15|0.1.0.0 4-5|0.0+0.0.0 5-6|0.0.2 0-1|0.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.973
+# ::node	0	and	9-10
+# ::node	0.0	understand-01	4-5
+# ::node	0.0.0	-	4-5
+# ::node	0.0.1	grown-up	0-1
+# ::node	0.0.2	anything	5-6
+# ::node	0.0.3	ever	
+# ::node	0.0.4	by-oneself	
+# ::node	0.1	tiresome	12-13
+# ::node	0.1.0	explain-01	20-21
+# ::node	0.1.0.0	child	14-15
+# ::node	0.1.0.1	thing	21-22
+# ::node	0.1.0.2	always	17-18
+# ::node	0.1.0.3	forever	19-20
+# ::root	0	and
+# ::edge	and	op1	understand-01	0	0.0	
+# ::edge	and	op2	tiresome	0	0.1	
+# ::edge	explain-01	ARG0	child	0.1.0	0.1.0.0	
+# ::edge	explain-01	ARG1	thing	0.1.0	0.1.0.1	
+# ::edge	explain-01	ARG2	grown-up	0.1.0	0.0.1	
+# ::edge	explain-01	mod	forever	0.1.0	0.1.0.3	
+# ::edge	explain-01	time	always	0.1.0	0.1.0.2	
+# ::edge	tiresome	domain	explain-01	0.1	0.1.0	
+# ::edge	understand-01	ARG0	grown-up	0.0	0.0.1	
+# ::edge	understand-01	ARG1	anything	0.0	0.0.2	
+# ::edge	understand-01	mod	by-oneself	0.0	0.0.4	
+# ::edge	understand-01	polarity	-	0.0	0.0.0	
+# ::edge	understand-01	time	ever	0.0	0.0.3	
+(a / and
+      :op (u / understand-01 :polarity -
+            :ARG0 (g / grown-up)
+            :ARG1 (a3 / anything)
+            :time (e2 / ever)
+            :mod (b / by-oneself))
+      :op (t / tiresome
+            :domain (e / explain-01
+                  :ARG0 (c / child)
+                  :ARG1 (t2 / thing)
+                  :ARG2 g
+                  :time (a4 / always)
+                  :mod (f / forever))))
+
+# ::id lpp_1943.21 ::date 2012-06-14T16:08:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt So then I chose another profession , and learned to pilot airplanes .
+# ::zh 后来，我只好选择了另外一个职业，我学会了开飞机。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_21.txt
+# ::tok So then I chose another profession , and learned to pilot airplanes .
+# ::alignments 7-8|0.0 8-9|0.0.1 10-11|0.0.1.0 11-12|0.0.1.0.0 3-4|0.0.0 5-6|0.0.0.1 4-5|0.0.0.1.0 2-3|0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.984
+# ::node	0	cause-01	
+# ::node	0.0	and	7-8
+# ::node	0.0.0	choose-01	3-4
+# ::node	0.0.0.0	i	2-3
+# ::node	0.0.0.1	profession	5-6
+# ::node	0.0.0.1.0	another	4-5
+# ::node	0.0.1	learn-01	8-9
+# ::node	0.0.1.0	pilot-01	10-11
+# ::node	0.0.1.0.0	airplane	11-12
+# ::root	0	cause-01
+# ::edge	and	op1	choose-01	0.0	0.0.0	
+# ::edge	and	op2	learn-01	0.0	0.0.1	
+# ::edge	cause-01	ARG1	and	0	0.0	
+# ::edge	choose-01	ARG0	i	0.0.0	0.0.0.0	
+# ::edge	choose-01	ARG1	profession	0.0.0	0.0.0.1	
+# ::edge	learn-01	ARG0	i	0.0.1	0.0.0.0	
+# ::edge	learn-01	ARG1	pilot-01	0.0.1	0.0.1.0	
+# ::edge	pilot-01	ARG0	i	0.0.1.0	0.0.0.0	
+# ::edge	pilot-01	ARG1	airplane	0.0.1.0	0.0.1.0.0	
+# ::edge	profession	mod	another	0.0.0.1	0.0.0.1.0	
+(c2 / cause-01
+  :ARG1 (a / and
+          :op (c / choose-01
+                 :ARG0 (i / i)
+                 :ARG1 (p / profession
+                         :mod (a2 / another)))
+          :op (l / learn-01
+                 :ARG0 i
+                 :ARG1 (p2 / pilot-01
+                         :ARG0 i
+                         :ARG1 (a3 / airplane)))))
+
+# ::id lpp_1943.22 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
+# ::zh 世界各地差不多都飞到过。 的确，地理学帮了我很大的忙。
+# ::save-date Mon Jul 6, 2015 ::file lpp_1943_22.txt
+# ::tok I have flown a little over all parts of the world ; and it is true that geography has been very useful to me .
+# ::alignments 11-12|0 21-22|0.1 20-21|0.1.2 17-18|0.1.1 0-1|0.1.0 2-3|0.0 5-6|0.0.0 7-8|0.0.0.0 10-11|0.0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:50.999
+# ::node	0	and	11-12
+# ::node	0.0	fly-01	2-3
+# ::node	0.0.0	over	5-6
+# ::node	0.0.0.0	part	7-8
+# ::node	0.0.0.0.0	world	10-11
+# ::node	0.1	useful-05	21-22
+# ::node	0.1.0	i	0-1
+# ::node	0.1.1	geography	17-18
+# ::node	0.1.2	very	20-21
+# ::root	0	and
+# ::edge	and	op1	fly-01	0	0.0	
+# ::edge	and	op2	useful-05	0	0.1	
+# ::edge	fly-01	ARG0	i	0.0	0.1.0	
+# ::edge	fly-01	location	over	0.0	0.0.0	
+# ::edge	over	op1	part	0.0.0	0.0.0.0	
+# ::edge	part	part-of	world	0.0.0.0	0.0.0.0.0	
+# ::edge	useful-05	ARG0	i	0.1	0.1.0	
+# ::edge	useful-05	ARG1	geography	0.1	0.1.1	
+# ::edge	useful-05	degree	very	0.1	0.1.2	
+(a / and
+      :op (f / fly-01
+            :ARG0 i
+            :location (o / over
+                  :op (p2 / part
+                        :part-of (w / world))))
+      :op (u / useful-05
+            :ARG0 (i / i)
+            :ARG1 (g / geography)
+            :degree (v / very)))
+
+# ::id lpp_1943.23 ::annotator ISI-AMR-05 ::preferred
+# ::snt At a glance I can distinguish China from Arizona .
+# ::zh 我一眼就能分辨出中国和亚里桑那。
+# ::save-date Fri Apr 12, 2013 ::file lpp_1943_23.txt
+# ::tok At a glance I can distinguish China from Arizona .
+# ::alignments 6-7|0.0.1+0.0.1.1+0.0.1.1.0 8-9|0.0.2+0.0.2.1+0.0.2.1.0 4-5|0 5-6|0.0 2-3|0.0.3 3-4|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.009
+# ::node	0	possible-01	4-5
+# ::node	0.0	distinguish-01	5-6
+# ::node	0.0.0	i	3-4
+# ::node	0.0.1	country	6-7
+# ::node	0.0.1.0	"China"	
+# ::node	0.0.1.1	name	6-7
+# ::node	0.0.1.1.0	"China"	6-7
+# ::node	0.0.2	state	8-9
+# ::node	0.0.2.0	"Arizona"	
+# ::node	0.0.2.1	name	8-9
+# ::node	0.0.2.1.0	"Arizona"	8-9
+# ::node	0.0.3	glance-01	2-3
+# ::root	0	possible-01
+# ::edge	country	name	name	0.0.1	0.0.1.1	
+# ::edge	country	wiki	"China"	0.0.1	0.0.1.0	
+# ::edge	distinguish-01	ARG0	i	0.0	0.0.0	
+# ::edge	distinguish-01	ARG1	country	0.0	0.0.1	
+# ::edge	distinguish-01	ARG2	state	0.0	0.0.2	
+# ::edge	distinguish-01	manner	glance-01	0.0	0.0.3	
+# ::edge	glance-01	ARG0	i	0.0.3	0.0.0	
+# ::edge	name	op1	"Arizona"	0.0.2.1	0.0.2.1.0	
+# ::edge	name	op1	"China"	0.0.1.1	0.0.1.1.0	
+# ::edge	possible-01	ARG1	distinguish-01	0	0.0	
+# ::edge	state	name	name	0.0.2	0.0.2.1	
+# ::edge	state	wiki	"Arizona"	0.0.2	0.0.2.0	
+(p / possible-01
+      :ARG1 (d / distinguish-01
+            :ARG0 (i / i)
+            :ARG1 (c / country :wiki "China"
+                  :name (n / name :op "China"))
+            :ARG2 (s / state :wiki "Arizona"
+                  :name (n2 / name :op "Arizona"))
+            :manner (g / glance-01
+                  :ARG0 i)))
+
+# ::id lpp_1943.24 ::date 2012-07-17T13:04:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt If one gets lost in the night , such knowledge is valuable .
+# ::zh 要是夜里迷失了航向，这是很有用的。
+# ::save-date Tue Mar 17, 2015 ::file lpp_1943_24.txt
+# ::tok If one gets lost in the night , such knowledge is valuable .
+# ::alignments 9-10|0.0 8-9|0.0.0 2-3|0.1 3-4|0.1.1 6-7|0.1.1.0.0 1-2|0.1.0 11-12|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.018
+# ::node	0	value-02	11-12
+# ::node	0.0	knowledge	9-10
+# ::node	0.0.0	such	8-9
+# ::node	0.1	get-03	2-3
+# ::node	0.1.0	one	1-2
+# ::node	0.1.1	lost	3-4
+# ::node	0.1.1.0	date-entity	
+# ::node	0.1.1.0.0	night	6-7
+# ::root	0	value-02
+# ::edge	date-entity	dayperiod	night	0.1.1.0	0.1.1.0.0	
+# ::edge	get-03	ARG1	one	0.1	0.1.0	
+# ::edge	get-03	ARG2	lost	0.1	0.1.1	
+# ::edge	knowledge	mod	such	0.0	0.0.0	
+# ::edge	lost	time	date-entity	0.1.1	0.1.1.0	
+# ::edge	value-02	ARG1	knowledge	0	0.0	
+# ::edge	value-02	condition	get-03	0	0.1	
+(v / value-02
+      :ARG1 (k / knowledge
+            :mod (s / such))
+      :condition (g / get-03
+            :ARG1 (o / one)
+            :ARG2 (l / lost
+                  :time (d / date-entity :dayperiod (n / night)))))
+
+# ::id lpp_1943.25 ::date 2012-07-17T13:14:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
+# ::zh 这样，在我的生活中，我跟许多严肃的人有过很多的接触。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_25.txt
+# ::tok In the course of this life I have had a great many encounters with a great many people who have been concerned with matters of consequence .
+# ::alignments 12-13|0 2-3|0.3 5-6|0.3.0 4-5|0.3.0.0 11-12|0.2 10-11|0.2.0 16-17|0.1.0 15-16|0.1.0.0 21-22|0.1+0.1.1 23-24|0.1.1.0 25-26|0.1.1.0.0 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.036
+# ::node	0	encounter-01	12-13
+# ::node	0.0	i	6-7
+# ::node	0.1	person	21-22
+# ::node	0.1.0	many	16-17
+# ::node	0.1.0.0	great	15-16
+# ::node	0.1.1	concern-01	21-22
+# ::node	0.1.1.0	matter	23-24
+# ::node	0.1.1.0.0	consequence	25-26
+# ::node	0.2	many	11-12
+# ::node	0.2.0	great	10-11
+# ::node	0.3	course	2-3
+# ::node	0.3.0	life	5-6
+# ::node	0.3.0.0	this	4-5
+# ::root	0	encounter-01
+# ::edge	concern-01	ARG0	matter	0.1.1	0.1.1.0	
+# ::edge	course	poss	life	0.3	0.3.0	
+# ::edge	encounter-01	ARG0	i	0	0.0	
+# ::edge	encounter-01	ARG1	person	0	0.1	
+# ::edge	encounter-01	quant	many	0	0.2	
+# ::edge	encounter-01	time	course	0	0.3	
+# ::edge	life	mod	this	0.3.0	0.3.0.0	
+# ::edge	many	mod	great	0.1.0	0.1.0.0	
+# ::edge	many	mod	great	0.2	0.2.0	
+# ::edge	matter	mod	consequence	0.1.1.0	0.1.1.0.0	
+# ::edge	person	ARG1-of	concern-01	0.1	0.1.1	
+# ::edge	person	quant	many	0.1	0.1.0	
+(e / encounter-01
+  :ARG0 (i / i)
+  :ARG1 (p / person
+          :quant (m2 / many
+                   :mod (g2 / great))
+          :ARG1-of (c / concern-01
+                     :ARG0 (m3 / matter
+                             :mod (c2 / consequence))))
+  :quant (m / many
+           :mod (g / great))
+  :time (c3 / course
+          :poss (l / life
+                  :mod (t / this))))
+
+# ::id lpp_1943.26 ::date 2012-07-17T13:29:12 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have lived a great deal among grown - ups .
+# ::zh 我在大人们中间生活过很长时间。
+# ::save-date Mon Nov 3, 2014 ::file lpp_1943_26.txt
+# ::tok I have lived a great deal among grown - ups .
+# ::alignments 2-3|0 6-7|0.2 5-6|0.1 4-5|0.1.0 0-1|0.0 7-8|0.2.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.044
+# ::node	0	live-01	2-3
+# ::node	0.0	i	0-1
+# ::node	0.1	deal	5-6
+# ::node	0.1.0	great	4-5
+# ::node	0.2	among	6-7
+# ::node	0.2.0	grown-up	7-8
+# ::root	0	live-01
+# ::edge	among	op1	grown-up	0.2	0.2.0	
+# ::edge	deal	mod	great	0.1	0.1.0	
+# ::edge	live-01	ARG0	i	0	0.0	
+# ::edge	live-01	location	among	0	0.2	
+# ::edge	live-01	mod	deal	0	0.1	
+(l / live-01
+      :ARG0 (i / i)
+      :mod (d / deal
+            :mod (g2 / great))
+      :location (a / among
+            :op (g / grown-up)))
+
+# ::id lpp_1943.27 ::date 2012-07-17T13:31:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt I have seen them intimately , close at hand .
+# ::zh 我仔细地观察过他们，
+# ::save-date Mon Nov 16, 2015 ::file lpp_1943_27.txt
+# ::tok I have seen them intimately , close at hand .
+# ::alignments 2-3|0 6-7|0.2 0-1|0.0 4-5|0.3 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.051
+# ::node	0	see-01	2-3
+# ::node	0.0	i	0-1
+# ::node	0.1	they	
+# ::node	0.2	close-10	6-7
+# ::node	0.2.0	at-hand	
+# ::node	0.3	intimate-02	4-5
+# ::root	0	see-01
+# ::edge	close-10	ARG2	at-hand	0.2	0.2.0	
+# ::edge	intimate-02	ARG1	i	0.3	0.0	
+# ::edge	see-01	ARG0	i	0	0.0	
+# ::edge	see-01	ARG1	they	0	0.1	
+# ::edge	see-01	ARG1-of	close-10	0	0.2	
+# ::edge	see-01	ARG2-of	intimate-02	0	0.3	
+(s / see-01
+      :ARG0 (i / i)
+      :ARG1 (t / they)
+      :ARG1-of (c / close-10
+            :ARG2 (a / at-hand))
+      :ARG2-of (i2 / intimate-02
+            :ARG1 i))
+
+# ::id lpp_1943.28 ::date 2012-07-17T13:35:38 ::annotator ISI-AMR-05 ::preferred
+# ::snt And that has n't much improved my opinion of them .
+# ::zh 但这并没有使我对他们的看法有多大的改变。
+# ::save-date Thu May 16, 2013 ::file lpp_1943_28.txt
+# ::tok And that has n't much improved my opinion of them .
+# ::alignments 0-1|0 5-6|0.0 4-5|0.0.3 1-2|0.0.1 7-8|0.0.2+0.0.2.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.059
+# ::node	0	and	0-1
+# ::node	0.0	improve-01	5-6
+# ::node	0.0.0	-	
+# ::node	0.0.1	that	1-2
+# ::node	0.0.2	thing	7-8
+# ::node	0.0.2.0	opine-01	7-8
+# ::node	0.0.2.0.0	i	
+# ::node	0.0.2.0.1	they	
+# ::node	0.0.3	much	4-5
+# ::root	0	and
+# ::edge	and	op2	improve-01	0	0.0	
+# ::edge	improve-01	ARG0	that	0.0	0.0.1	
+# ::edge	improve-01	ARG1	thing	0.0	0.0.2	
+# ::edge	improve-01	degree	much	0.0	0.0.3	
+# ::edge	improve-01	polarity	-	0.0	0.0.0	
+# ::edge	opine-01	ARG0	i	0.0.2.0	0.0.2.0.0	
+# ::edge	opine-01	topic	they	0.0.2.0	0.0.2.0.1	
+# ::edge	thing	ARG1-of	opine-01	0.0.2	0.0.2.0	
+(a / and
+      :op (i / improve-01 :polarity -
+            :ARG0 (t / that)
+            :ARG1 (t3 / thing
+                  :ARG1-of (o2 / opine-01
+                        :ARG0 (i2 / i)
+                        :topic (t2 / they)))
+            :degree (m2 / much)))
+
+# ::id lpp_1943.29 ::date 2012-07-17T13:38:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt Whenever I met one of them who seemed to me at all clear - sighted , I tried the experiment of showing him my Drawing Number One , which I have always kept .
+# ::zh 当我遇到一个头脑看来稍微清楚的大人时，我就拿出一直保存着的我那第一号作品来测试测试他。
+# ::save-date Tue Mar 1, 2016 ::file lpp_1943_29.txt
+# ::tok Whenever I met one of them who seemed to me at all clear - sighted , I tried the experiment of showing him my Drawing Number One , which I have always kept .
+# ::alignments 24-27|0.1.0.0+0.1.0.0.1+0.1.0.0.1.0+0.1.0.0.1.1+0.1.0.0.1.2 17-18|0 2-3|0.2 4-5|0.2.0+0.2.0.0 12-13|0.2.0.1.0 7-8|0.2.0.1.1 19-20|0.1 21-22|0.1.0 32-33|0.1.0.1 31-32|0.1.0.1.0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.081
+# ::node	0	try-01	17-18
+# ::node	0.0	i	1-2
+# ::node	0.1	experiment-01	19-20
+# ::node	0.1.0	show-01	21-22
+# ::node	0.1.0.0	picture	24-27
+# ::node	0.1.0.0.0	-	
+# ::node	0.1.0.0.1	name	24-27
+# ::node	0.1.0.0.1.0	"Drawing"	24-27
+# ::node	0.1.0.0.1.1	"Number"	24-27
+# ::node	0.1.0.0.1.2	"One"	24-27
+# ::node	0.1.0.1	keep-01	32-33
+# ::node	0.1.0.1.0	always	31-32
+# ::node	0.2	meet-02	2-3
+# ::node	0.2.0	person	4-5
+# ::node	0.2.0.0	include-91	4-5
+# ::node	0.2.0.0.0	they	
+# ::node	0.2.0.1	see-01	
+# ::node	0.2.0.1.0	clear-08	12-13
+# ::node	0.2.0.1.1	seem-01	7-8
+# ::node	0.2.1	any	
+# ::root	0	try-01
+# ::edge	experiment-01	ARG1	show-01	0.1	0.1.0	
+# ::edge	include-91	ARG2	they	0.2.0.0	0.2.0.0.0	
+# ::edge	keep-01	ARG0	i	0.1.0.1	0.0	
+# ::edge	keep-01	time	always	0.1.0.1	0.1.0.1.0	
+# ::edge	meet-02	ARG0	i	0.2	0.0	
+# ::edge	meet-02	ARG1	person	0.2	0.2.0	
+# ::edge	meet-02	mod	any	0.2	0.2.1	
+# ::edge	name	op1	"Drawing"	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	name	op2	"Number"	0.1.0.0.1	0.1.0.0.1.1	
+# ::edge	name	op3	"One"	0.1.0.0.1	0.1.0.0.1.2	
+# ::edge	person	ARG0-of	see-01	0.2.0	0.2.0.1	
+# ::edge	person	ARG1-of	include-91	0.2.0	0.2.0.0	
+# ::edge	picture	name	name	0.1.0.0	0.1.0.0.1	
+# ::edge	picture	wiki	-	0.1.0.0	0.1.0.0.0	
+# ::edge	see-01	ARG1-of	clear-08	0.2.0.1	0.2.0.1.0	
+# ::edge	see-01	ARG1-of	seem-01	0.2.0.1	0.2.0.1.1	
+# ::edge	seem-01	ARG2	i	0.2.0.1.1	0.0	
+# ::edge	show-01	ARG1	picture	0.1.0	0.1.0.0	
+# ::edge	show-01	ARG1-of	keep-01	0.1.0	0.1.0.1	
+# ::edge	show-01	ARG2	person	0.1.0	0.2.0	
+# ::edge	try-01	ARG0	i	0	0.0	
+# ::edge	try-01	ARG1	experiment-01	0	0.1	
+# ::edge	try-01	time	meet-02	0	0.2	
+(t / try-01
+      :ARG0 (i / i)
+      :ARG1 (e / experiment-01
+            :ARG1 (s / show-01
+                  :ARG1 (p2 / picture :wiki - :name (n / name :op "Drawing" :op "Number" :op "One"))
+                  :ARG2 p
+                  :ARG1-of (k / keep-01
+                        :ARG0 i
+                        :time (a / always))))
+      :time (m / meet-02
+            :ARG0 i
+            :ARG1 (p / person
+                  :ARG1-of (i2 / include-91
+                        :ARG2 (t3 / they))
+                  :ARG0-of (s3 / see-01
+                        :ARG1-of (c / clear-08)
+                        :ARG1-of (s4 / seem-01
+                              :ARG2 i)))
+            :mod (a2 / any)))
+
+# ::id lpp_1943.30 ::date 2012-07-24T08:57:30 ::annotator ISI-AMR-05 ::preferred
+# ::snt I would try to find out , so , if this was a person of true understanding .
+# ::zh 我想知道他是否真的有理解能力。
+# ::save-date Thu Feb 4, 2016 ::file lpp_1943_30.txt
+# ::tok I would try to find out , so , if this was a person of true understanding .
+# ::alignments 2-3|0 16-17|0.1.0 15-16|0.1.0.2 13-14|0.1.0.1 10-11|0.1.0.1.0 0-1|0.0 4-5|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.091
+# ::node	0	try-01	2-3
+# ::node	0.0	i	0-1
+# ::node	0.1	find-out-03	4-5
+# ::node	0.1.0	understand-01	16-17
+# ::node	0.1.0.0	interrogative	
+# ::node	0.1.0.1	person	13-14
+# ::node	0.1.0.1.0	this	10-11
+# ::node	0.1.0.2	true-01	15-16
+# ::root	0	try-01
+# ::edge	find-out-03	ARG0	i	0.1	0.0	
+# ::edge	find-out-03	ARG1	understand-01	0.1	0.1.0	
+# ::edge	person	mod	this	0.1.0.1	0.1.0.1.0	
+# ::edge	try-01	ARG0	i	0	0.0	
+# ::edge	try-01	ARG1	find-out-03	0	0.1	
+# ::edge	understand-01	ARG0	person	0.1.0	0.1.0.1	
+# ::edge	understand-01	ARG1-of	true-01	0.1.0	0.1.0.2	
+# ::edge	understand-01	mode	interrogative	0.1.0	0.1.0.0	
+(t / try-01
+      :ARG0 (i / i)
+      :ARG1 (f / find-out-03
+            :ARG0 i
+            :ARG1 (u2 / understand-01 :mode interrogative
+                  :ARG0 (p / person
+                        :mod (t2 / this))
+                  :ARG1-of (t3 / true-01))))
+
+# ::id lpp_1943.31 ::date 2012-07-24T09:59:02 ::annotator ISI-AMR-05 ::preferred
+# ::snt But , whoever it was , he , or she , would always say : " That is a hat . "
+# ::zh 可是，得到的回答总是：“这是顶帽子。”
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_31.txt
+# ::tok But , whoever it was , he , or she , would always say : " That is a hat . "
+# ::alignments 0-1|0 13-14|0.0 12-13|0.0.2 19-20|0.0.1 16-17|0.0.1.0 8-9|0.0.0 9-10|0.0.0.1 6-7|0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.104
+# ::node	0	contrast-01	0-1
+# ::node	0.0	say-01	13-14
+# ::node	0.0.0	or	8-9
+# ::node	0.0.0.0	he	6-7
+# ::node	0.0.0.1	she	9-10
+# ::node	0.0.1	hat	19-20
+# ::node	0.0.1.0	that	16-17
+# ::node	0.0.2	always	12-13
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	say-01	0	0.0	
+# ::edge	hat	domain	that	0.0.1	0.0.1.0	
+# ::edge	or	op1	he	0.0.0	0.0.0.0	
+# ::edge	or	op2	she	0.0.0	0.0.0.1	
+# ::edge	say-01	ARG0	or	0.0	0.0.0	
+# ::edge	say-01	ARG1	hat	0.0	0.0.1	
+# ::edge	say-01	time	always	0.0	0.0.2	
+(c / contrast-01
+  :ARG2 (s / say-01
+          :ARG0 (o / or
+                  :op (h / he)
+                  :op (s2 / she))
+          :ARG1 (h2 / hat
+                  :domain (t / that))
+          :time (a / always)))
+
+# ::id lpp_1943.32 ::date 2012-07-24T10:00:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
+# ::zh 我就不和他谈巨蟒呀，原始森林呀，或者星星之类的事。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_32.txt
+# ::tok Then I would never talk to that person about boa constrictors , or primeval forests , or stars .
+# ::alignments 4-5|0 7-8|0.2 6-7|0.2.0 12-13|0.1 17-18|0.1.2 14-15|0.1.1 13-14|0.1.1.0 9-10|0.1.0 10-11|0.1.0.0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.114
+# ::node	0	talk-01	4-5
+# ::node	0.0	i	1-2
+# ::node	0.1	or	12-13
+# ::node	0.1.0	boa	9-10
+# ::node	0.1.0.0	constrictor	10-11
+# ::node	0.1.1	forest	14-15
+# ::node	0.1.1.0	primeval	13-14
+# ::node	0.1.2	star	17-18
+# ::node	0.2	person	7-8
+# ::node	0.2.0	that	6-7
+# ::node	0.3	ever	
+# ::node	0.4	-	
+# ::root	0	talk-01
+# ::edge	boa	mod	constrictor	0.1.0	0.1.0.0	
+# ::edge	forest	mod	primeval	0.1.1	0.1.1.0	
+# ::edge	or	op1	boa	0.1	0.1.0	
+# ::edge	or	op2	forest	0.1	0.1.1	
+# ::edge	or	op3	star	0.1	0.1.2	
+# ::edge	person	mod	that	0.2	0.2.0	
+# ::edge	talk-01	ARG0	i	0	0.0	
+# ::edge	talk-01	ARG1	or	0	0.1	
+# ::edge	talk-01	ARG2	person	0	0.2	
+# ::edge	talk-01	polarity	-	0	0.4	
+# ::edge	talk-01	time	ever	0	0.3	
+(t / talk-01
+  :ARG0 (i / i)
+  :ARG1 (o / or
+          :op (b / boa
+                 :mod (c2 / constrictor))
+          :op (f / forest
+                 :mod (p2 / primeval))
+          :op (s / star))
+  :ARG2 (p / person
+          :mod (t2 / that))
+  :time (e / ever)
+  :polarity -)
+
+# ::id lpp_1943.33 ::date 2012-07-24T10:02:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt I would bring myself down to his level .
+# ::zh 我只得迁就他的水平，
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_33.txt
+# ::tok I would bring myself down to his level .
+# ::alignments 2-3|0 4-5|0.2 7-8|0.1 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.122
+# ::node	0	bring-01	2-3
+# ::node	0.0	i	0-1
+# ::node	0.1	level	7-8
+# ::node	0.1.0	he	
+# ::node	0.2	down	4-5
+# ::root	0	bring-01
+# ::edge	bring-01	ARG0	i	0	0.0	
+# ::edge	bring-01	ARG1	i	0	0.0	
+# ::edge	bring-01	ARG2	level	0	0.1	
+# ::edge	bring-01	ARG3	down	0	0.2	
+# ::edge	level	poss	he	0.1	0.1.0	
+(b / bring-01
+      :ARG0 (i / i)
+      :ARG1 i
+      :ARG2 (l / level
+            :poss (h / he))
+      :ARG3 (d / down))
+
+# ::id lpp_1943.34 ::date 2012-07-24T10:05:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt I would talk to him about bridge , and golf , and politics , and neckties .
+# ::zh 和他们谈些桥牌呀，高尔夫球呀，政治呀，领带呀这些。
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_34.txt
+# ::tok I would talk to him about bridge , and golf , and politics , and neckties .
+# ::alignments 2-3|0 8-9|0.1 15-16|0.1.3 12-13|0.1.2 9-10|0.1.1 6-7|0.1.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.133
+# ::node	0	talk-01	2-3
+# ::node	0.0	i	0-1
+# ::node	0.1	and	8-9
+# ::node	0.1.0	bridge	6-7
+# ::node	0.1.1	golf	9-10
+# ::node	0.1.2	politics	12-13
+# ::node	0.1.3	necktie	15-16
+# ::node	0.2	he	
+# ::root	0	talk-01
+# ::edge	and	op1	bridge	0.1	0.1.0	
+# ::edge	and	op2	golf	0.1	0.1.1	
+# ::edge	and	op3	politics	0.1	0.1.2	
+# ::edge	and	op4	necktie	0.1	0.1.3	
+# ::edge	talk-01	ARG0	i	0	0.0	
+# ::edge	talk-01	ARG1	and	0	0.1	
+# ::edge	talk-01	ARG2	he	0	0.2	
+(t / talk-01
+  :ARG0 (i / i)
+  :ARG1 (a / and
+          :op (b / bridge)
+          :op (g / golf)
+          :op (p / politics)
+          :op (n2 / necktie))
+  :ARG2 (h / he))
+
+# ::id lpp_1943.35 ::date 2012-07-24T10:08:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt And the grown - up would be greatly pleased to have met such a sensible man .
+# ::zh 于是大人们就十分高兴能认识我这样一个通情达理的人。
+# ::save-date Tue May 5, 2015 ::file lpp_1943_35.txt
+# ::tok And the grown - up would be greatly pleased to have met such a sensible man .
+# ::alignments 0-1|0 8-9|0.0 11-12|0.0.0 15-16|0.0.0.0 12-13|0.0.0.0.0.0 7-8|0.0.2 2-3|0.0.1 14-15|0.0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.143
+# ::node	0	and	0-1
+# ::node	0.0	please-01	8-9
+# ::node	0.0.0	meet-02	11-12
+# ::node	0.0.0.0	man	15-16
+# ::node	0.0.0.0.0	sense-02	14-15
+# ::node	0.0.0.0.0.0	such	12-13
+# ::node	0.0.1	grown-up	2-3
+# ::node	0.0.2	great	7-8
+# ::root	0	and
+# ::edge	and	op2	please-01	0	0.0	
+# ::edge	man	ARG2-of	sense-02	0.0.0.0	0.0.0.0.0	
+# ::edge	meet-02	ARG0	grown-up	0.0.0	0.0.1	
+# ::edge	meet-02	ARG1	man	0.0.0	0.0.0.0	
+# ::edge	please-01	ARG0	meet-02	0.0	0.0.0	
+# ::edge	please-01	ARG1	grown-up	0.0	0.0.1	
+# ::edge	please-01	degree	great	0.0	0.0.2	
+# ::edge	sense-02	degree	such	0.0.0.0.0	0.0.0.0.0.0	
+(a / and
+      :op (p / please-01
+            :ARG0 (m / meet-02
+                  :ARG0 g
+                  :ARG1 (m2 / man
+                        :ARG2-of (s / sense-02
+                              :degree (s2 / such))))
+            :ARG1 (g / grown-up)
+            :degree (g2 / great)))
+
+# ::id lpp_1943.36 ::date 2012-07-24T10:10:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 2 .
+# ::zh II。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_36.txt
+# ::tok Chapter 2 .
+# ::alignments 0-1|0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.145
+# ::node	0	chapter	0-1
+# ::node	0.0	2	1-2
+# ::root	0	chapter
+# ::edge	chapter	mod	2	0	0.0	
+(c / chapter
+  :mod 2)
+
+# ::id lpp_1943.37 ::date 2012-07-24T10:10:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I lived my life alone , without anyone that I could really talk to , until I had an accident with my plane in the Desert of Sahara , six years ago .
+# ::zh 我就这样孤独地生活着，没有一个能真正谈得来的人，一直到六年前在撒哈拉沙漠上发生了那次故障。
+# ::save-date Tue Oct 6, 2015 ::file lpp_1943_37.txt
+# ::tok So I lived my life alone , without anyone that I could really talk to , until I had an accident with my plane in the Desert of Sahara , six years ago .
+# ::alignments 26-29|0.0.3.0.1+0.0.3.0.1.1+0.0.3.0.1.1.0+0.0.3.0.1.1.1+0.0.3.0.1.1.2 2-3|0.0 16-17|0.0.3 18-19|0.0.3.0 30-31|0.0.3.0.2.1.0 31-32|0.0.3.0.2.1+0.0.3.0.2.1.1 20-21|0.0.3.0.0 23-24|0.0.3.0.0.0 5-6|0.0.2 4-5|0.0.1 1-2|0.0.0 13-14|0.0.0.0 8-9|0.0.0.0.1 12-13|0.0.0.0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.166
+# ::node	0	cause-01	
+# ::node	0.0	live-01	2-3
+# ::node	0.0.0	i	1-2
+# ::node	0.0.0.0	talk-01	13-14
+# ::node	0.0.0.0.0	-	
+# ::node	0.0.0.0.1	anyone	8-9
+# ::node	0.0.0.0.2	real-04	12-13
+# ::node	0.0.1	life	4-5
+# ::node	0.0.2	alone	5-6
+# ::node	0.0.3	until	16-17
+# ::node	0.0.3.0	have-06	18-19
+# ::node	0.0.3.0.0	accident	20-21
+# ::node	0.0.3.0.0.0	plane	23-24
+# ::node	0.0.3.0.1	desert	26-29
+# ::node	0.0.3.0.1.0	"Sahara"	
+# ::node	0.0.3.0.1.1	name	26-29
+# ::node	0.0.3.0.1.1.0	"Desert"	26-29
+# ::node	0.0.3.0.1.1.1	"of"	26-29
+# ::node	0.0.3.0.1.1.2	"Sahara"	26-29
+# ::node	0.0.3.0.2	before	
+# ::node	0.0.3.0.2.0	now	
+# ::node	0.0.3.0.2.1	temporal-quantity	31-32
+# ::node	0.0.3.0.2.1.0	6	30-31
+# ::node	0.0.3.0.2.1.1	year	31-32
+# ::root	0	cause-01
+# ::edge	accident	mod	plane	0.0.3.0.0	0.0.3.0.0.0	
+# ::edge	before	op1	now	0.0.3.0.2	0.0.3.0.2.0	
+# ::edge	before	quant	temporal-quantity	0.0.3.0.2	0.0.3.0.2.1	
+# ::edge	cause-01	ARG1	live-01	0	0.0	
+# ::edge	desert	name	name	0.0.3.0.1	0.0.3.0.1.1	
+# ::edge	desert	wiki	"Sahara"	0.0.3.0.1	0.0.3.0.1.0	
+# ::edge	have-06	ARG0	i	0.0.3.0	0.0.0	
+# ::edge	have-06	ARG1	accident	0.0.3.0	0.0.3.0.0	
+# ::edge	have-06	location	desert	0.0.3.0	0.0.3.0.1	
+# ::edge	have-06	time	before	0.0.3.0	0.0.3.0.2	
+# ::edge	i	ARG0-of	talk-01	0.0.0	0.0.0.0	
+# ::edge	life	poss	i	0.0.1	0.0.0	
+# ::edge	live-01	ARG0	i	0.0	0.0.0	
+# ::edge	live-01	ARG1	life	0.0	0.0.1	
+# ::edge	live-01	duration	until	0.0	0.0.3	
+# ::edge	live-01	manner	alone	0.0	0.0.2	
+# ::edge	name	op1	"Desert"	0.0.3.0.1.1	0.0.3.0.1.1.0	
+# ::edge	name	op2	"of"	0.0.3.0.1.1	0.0.3.0.1.1.1	
+# ::edge	name	op3	"Sahara"	0.0.3.0.1.1	0.0.3.0.1.1.2	
+# ::edge	talk-01	ARG1-of	real-04	0.0.0.0	0.0.0.0.2	
+# ::edge	talk-01	ARG2	anyone	0.0.0.0	0.0.0.0.1	
+# ::edge	talk-01	polarity	-	0.0.0.0	0.0.0.0.0	
+# ::edge	temporal-quantity	quant	6	0.0.3.0.2.1	0.0.3.0.2.1.0	
+# ::edge	temporal-quantity	unit	year	0.0.3.0.2.1	0.0.3.0.2.1.1	
+# ::edge	until	op1	have-06	0.0.3	0.0.3.0	
+(c / cause-01
+      :ARG1 (l / live-01
+            :ARG0 (i / i
+                  :ARG0-of (t3 / talk-01 :polarity -
+                        :ARG2 (a5 / anyone)
+                        :ARG1-of (r / real-04)))
+            :ARG1 (l2 / life
+                  :poss i)
+            :manner (a / alone)
+            :duration (u / until
+                  :op (h / have-06
+                        :ARG0 i
+                        :ARG1 (a3 / accident
+                              :mod (p / plane))
+                        :location (d / desert :wiki "Sahara" :name (n / name :op "Desert" :op "of" :op "Sahara"))
+                        :time (b / before
+                              :op (n2 / now)
+                              :quant (t2 / temporal-quantity :quant 6
+                                    :unit (y / year)))))))
+
+# ::id lpp_1943.38 ::date 2012-07-24T10:25:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt Something was broken in my engine .
+# ::zh 我的发动机里有个东西损坏了。
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_38.txt
+# ::tok Something was broken in my engine .
+# ::alignments 2-3|0 0-1|0.0 5-6|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.172
+# ::node	0	break-01	2-3
+# ::node	0.0	something	0-1
+# ::node	0.0.0	engine	5-6
+# ::node	0.0.0.0	i	
+# ::root	0	break-01
+# ::edge	break-01	ARG1	something	0	0.0	
+# ::edge	engine	poss	i	0.0.0	0.0.0.0	
+# ::edge	something	location	engine	0.0	0.0.0	
+(b / break-01
+      :ARG1 (s / something
+            :location (e / engine
+                  :poss (i / i))))
+
+# ::id lpp_1943.39 ::date 2012-07-24T10:28:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt And as I had with me neither a mechanic nor any passengers , I set myself to attempt the difficult repairs all alone .
+# ::zh 当时由于我既没有带机械师也没有带旅客，我就试图独自完成这个困难的维修工作。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_39.txt
+# ::tok And as I had with me neither a mechanic nor any passengers , I set myself to attempt the difficult repairs all alone .
+# ::alignments 0-1|0 3-4|0.0.0 2-3|0.0.0.1 8-9|0.0.0.0.0 11-12|0.0.0.0.1 17-18|0.0.1 22-23|0.0.1.1 21-22|0.0.1.1.0 20-21|0.0.1.0 19-20|0.0.1.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.191
+# ::node	0	and	0-1
+# ::node	0.0	cause-01	
+# ::node	0.0.0	have-03	3-4
+# ::node	0.0.0.0	or	
+# ::node	0.0.0.0.0	mechanic	8-9
+# ::node	0.0.0.0.1	passenger	11-12
+# ::node	0.0.0.1	i	2-3
+# ::node	0.0.0.2	-	
+# ::node	0.0.1	attempt-01	17-18
+# ::node	0.0.1.0	repair-01	20-21
+# ::node	0.0.1.0.0	difficult	19-20
+# ::node	0.0.1.1	alone	22-23
+# ::node	0.0.1.1.0	all	21-22
+# ::root	0	and
+# ::edge	alone	degree	all	0.0.1.1	0.0.1.1.0	
+# ::edge	and	op2	cause-01	0	0.0	
+# ::edge	attempt-01	ARG0	i	0.0.1	0.0.0.1	
+# ::edge	attempt-01	ARG1	repair-01	0.0.1	0.0.1.0	
+# ::edge	attempt-01	mod	alone	0.0.1	0.0.1.1	
+# ::edge	cause-01	ARG0	have-03	0.0	0.0.0	
+# ::edge	cause-01	ARG1	attempt-01	0.0	0.0.1	
+# ::edge	have-03	ARG0	i	0.0.0	0.0.0.1	
+# ::edge	have-03	ARG1	or	0.0.0	0.0.0.0	
+# ::edge	have-03	accompanier	i	0.0.0	0.0.0.1	
+# ::edge	have-03	polarity	-	0.0.0	0.0.0.2	
+# ::edge	or	op1	mechanic	0.0.0.0	0.0.0.0.0	
+# ::edge	or	op2	passenger	0.0.0.0	0.0.0.0.1	
+# ::edge	repair-01	mod	difficult	0.0.1.0	0.0.1.0.0	
+(a / and
+  :op (c / cause-01
+         :ARG0 (h / have-03
+                 :ARG0 i
+                 :ARG1 (o / or
+                         :op (m / mechanic)
+                         :op (p / passenger))
+                 :accompanier (i / i)
+                 :polarity -)
+         :ARG1 (a2 / attempt-01
+                 :ARG0 i
+                 :ARG1 (r / repair-01
+                         :mod (d / difficult))
+                 :mod (a3 / alone
+                        :degree (a4 / all)))))
+
+# ::id lpp_1943.40 ::date 2012-07-24T10:37:48 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was a question of life or death for me : I had scarcely enough drinking water to last a week .
+# ::zh 这对我来说是个生与死的问题。 我随身带的水只够饮用一星期。
+# ::save-date Sat Feb 6, 2016 ::file lpp_1943_40.txt
+# ::tok It was a question of life or death for me : I had scarcely enough drinking water to last a week .
+# ::alignments 3-4|0 12-13|0.1.0 16-17|0.1.0.1 18-19|0.1.0.1.2 20-21|0.1.0.1.2.0+0.1.0.1.2.0.1 14-15|0.1.0.1.1 15-16|0.1.0.1.0 11-12|0.1.0.0 6-7|0.0 7-8|0.0.1 13-14|0.1.0.1.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.213
+# ::node	0	question-01	3-4
+# ::node	0.0	or	6-7
+# ::node	0.0.0	live-01	
+# ::node	0.0.1	die-01	7-8
+# ::node	0.1	cause-01	
+# ::node	0.1.0	have-03	12-13
+# ::node	0.1.0.0	i	11-12
+# ::node	0.1.0.1	water	16-17
+# ::node	0.1.0.1.0	drink-01	15-16
+# ::node	0.1.0.1.1	enough	14-15
+# ::node	0.1.0.1.1.0	scarce	13-14
+# ::node	0.1.0.1.2	last-03	18-19
+# ::node	0.1.0.1.2.0	temporal-quantity	20-21
+# ::node	0.1.0.1.2.0.0	1	
+# ::node	0.1.0.1.2.0.1	week	20-21
+# ::root	0	question-01
+# ::edge	cause-01	ARG0	have-03	0.1	0.1.0	
+# ::edge	drink-01	ARG0	i	0.1.0.1.0	0.1.0.0	
+# ::edge	enough	mod	scarce	0.1.0.1.1	0.1.0.1.1.0	
+# ::edge	have-03	ARG0	i	0.1.0	0.1.0.0	
+# ::edge	have-03	ARG1	water	0.1.0	0.1.0.1	
+# ::edge	last-03	ARG2	temporal-quantity	0.1.0.1.2	0.1.0.1.2.0	
+# ::edge	last-03	ARG3	i	0.1.0.1.2	0.1.0.0	
+# ::edge	or	op1	live-01	0.0	0.0.0	
+# ::edge	or	op2	die-01	0.0	0.0.1	
+# ::edge	question-01	ARG0	i	0	0.1.0.0	
+# ::edge	question-01	ARG1	or	0	0.0	
+# ::edge	question-01	ARG1-of	cause-01	0	0.1	
+# ::edge	temporal-quantity	quant	1	0.1.0.1.2.0	0.1.0.1.2.0.0	
+# ::edge	temporal-quantity	unit	week	0.1.0.1.2.0	0.1.0.1.2.0.1	
+# ::edge	water	ARG1-of	last-03	0.1.0.1	0.1.0.1.2	
+# ::edge	water	purpose	drink-01	0.1.0.1	0.1.0.1.0	
+# ::edge	water	quant	enough	0.1.0.1	0.1.0.1.1	
+(q / question-01
+      :ARG0 i
+      :ARG1 (o / or
+            :op (l / live-01)
+            :op (d / die-01))
+      :ARG1-of (c / cause-01
+            :ARG0 (h / have-03
+                  :ARG0 (i / i)
+                  :ARG1 (w / water
+                        :purpose (d2 / drink-01
+                              :ARG0 i)
+                        :quant (e / enough
+                              :mod (s / scarce))
+                        :ARG1-of (l2 / last-03
+                              :ARG2 (t / temporal-quantity :quant 1
+                                    :unit (w2 / week))
+                              :ARG3 i)))))
+
+# ::id lpp_1943.41 ::date 2012-07-24T10:52:42 ::annotator ISI-AMR-05 ::preferred
+# ::snt The first night , then , I went to sleep on the sand , a thousand miles from any human habitation .
+# ::zh 第一天晚上我就睡在这远离人间烟火的大沙漠上。
+# ::save-date Tue Mar 1, 2016 ::file lpp_1943_41.txt
+# ::tok The first night , then , I went to sleep on the sand , a thousand miles from any human habitation .
+# ::alignments 9-10|0 19-20|0.3.0.0.0 18-19|0.3.0.1 16-17|0.3.1+0.3.1.1 2-3|0.2.0 12-13|0.1 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.239
+# ::node	0	sleep-01	9-10
+# ::node	0.0	i	6-7
+# ::node	0.1	sand	12-13
+# ::node	0.2	date-entity	
+# ::node	0.2.0	night	2-3
+# ::node	0.2.1	ordinal-entity	
+# ::node	0.2.1.0	1	
+# ::node	0.3	relative-position	
+# ::node	0.3.0	place	
+# ::node	0.3.0.0	inhabit-01	
+# ::node	0.3.0.0.0	human	19-20
+# ::node	0.3.0.1	any	18-19
+# ::node	0.3.1	distance-quantity	16-17
+# ::node	0.3.1.0	1000	
+# ::node	0.3.1.1	mile	16-17
+# ::node	0.3.2	away	
+# ::root	0	sleep-01
+# ::edge	date-entity	dayperiod	night	0.2	0.2.0	
+# ::edge	date-entity	ord	ordinal-entity	0.2	0.2.1	
+# ::edge	distance-quantity	quant	1000	0.3.1	0.3.1.0	
+# ::edge	distance-quantity	unit	mile	0.3.1	0.3.1.1	
+# ::edge	inhabit-01	ARG0	human	0.3.0.0	0.3.0.0.0	
+# ::edge	ordinal-entity	value	1	0.2.1	0.2.1.0	
+# ::edge	place	ARG1-of	inhabit-01	0.3.0	0.3.0.0	
+# ::edge	place	mod	any	0.3.0	0.3.0.1	
+# ::edge	relative-position	direction	away	0.3	0.3.2	
+# ::edge	relative-position	op1	place	0.3	0.3.0	
+# ::edge	relative-position	quant	distance-quantity	0.3	0.3.1	
+# ::edge	sleep-01	ARG0	i	0	0.0	
+# ::edge	sleep-01	location	relative-position	0	0.3	
+# ::edge	sleep-01	location	sand	0	0.1	
+# ::edge	sleep-01	time	date-entity	0	0.2	
+(s / sleep-01
+      :ARG0 (i / i)
+      :location (s2 / sand)
+      :time (d2 / date-entity
+            :dayperiod (n / night)
+            :ord (o / ordinal-entity :value 1))
+      :location (r / relative-position
+            :op (p / place
+                  :ARG1-of (i2 / inhabit-01
+                        :ARG0 (h / human))
+                  :mod (a2 / any))
+            :quant (d / distance-quantity :quant 1000
+                  :unit (m / mile))
+            :direction (a3 / away)))
+
+# ::id lpp_1943.42 ::date 2012-07-24T11:10:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean .
+# ::zh 我比大海中伏在小木排上的遇难者还要孤独得多。
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_42.txt
+# ::tok I was more isolated than a shipwrecked sailor on a raft in the middle of the ocean .
+# ::alignments 3-4|0 6-7|0.2.1 10-11|0.2.2 16-17|0.2.2.0 13-14|0.2.2.0.0 2-3|0.1 0-1|0.0 7-8|0.2+0.2.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.257
+# ::node	0	isolate-01	3-4
+# ::node	0.0	i	0-1
+# ::node	0.1	more	2-3
+# ::node	0.2	person	7-8
+# ::node	0.2.0	sail-01	7-8
+# ::node	0.2.1	shipwreck-01	6-7
+# ::node	0.2.2	raft	10-11
+# ::node	0.2.2.0	ocean	16-17
+# ::node	0.2.2.0.0	middle	13-14
+# ::root	0	isolate-01
+# ::edge	isolate-01	ARG1	i	0	0.0	
+# ::edge	isolate-01	compared-to	person	0	0.2	
+# ::edge	isolate-01	degree	more	0	0.1	
+# ::edge	ocean	part	middle	0.2.2.0	0.2.2.0.0	
+# ::edge	person	ARG0-of	sail-01	0.2	0.2.0	
+# ::edge	person	ARG1-of	shipwreck-01	0.2	0.2.1	
+# ::edge	person	location	raft	0.2	0.2.2	
+# ::edge	raft	location	ocean	0.2.2	0.2.2.0	
+(i / isolate-01
+      :ARG1 (i2 / i)
+      :degree (m / more)
+      :compared-to (p / person
+            :ARG0-of (s / sail-01)
+            :ARG1-of (s2 / shipwreck-01)
+            :location (r / raft
+                  :location (o / ocean
+                        :part (m2 / middle)))))
+
+# ::id lpp_1943.43 ::date 2012-07-24T11:16:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt Thus you can imagine my amazement , at sunrise , when I was awakened by an odd little voice .
+# ::zh 而在第二天拂晓，当一个奇怪的小声音叫醒我的时候，你们可以想见我当时是多么吃惊。
+# ::save-date Mon May 13, 2013 ::file lpp_1943_43.txt
+# ::tok Thus you can imagine my amazement , at sunrise , when I was awakened by an odd little voice .
+# ::alignments 2-3|0.0 3-4|0.0.0 11-12|0.0.0.1.0 8-9|0.0.0.1.1 18-19|0.0.0.1.1.0.0 17-18|0.0.0.1.1.0.0.1 16-17|0.0.0.1.1.0.0.0 1-2|0.0.0.0 5-6|0.0.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.274
+# ::node	0	cause-01	
+# ::node	0.0	possible-01	2-3
+# ::node	0.0.0	imagine-01	3-4
+# ::node	0.0.0.0	you	1-2
+# ::node	0.0.0.1	amaze-01	5-6
+# ::node	0.0.0.1.0	i	11-12
+# ::node	0.0.0.1.1	sunrise	8-9
+# ::node	0.0.0.1.1.0	wake-01	
+# ::node	0.0.0.1.1.0.0	voice	18-19
+# ::node	0.0.0.1.1.0.0.0	odd	16-17
+# ::node	0.0.0.1.1.0.0.1	little	17-18
+# ::root	0	cause-01
+# ::edge	amaze-01	ARG1	i	0.0.0.1	0.0.0.1.0	
+# ::edge	amaze-01	time	sunrise	0.0.0.1	0.0.0.1.1	
+# ::edge	cause-01	ARG1	possible-01	0	0.0	
+# ::edge	imagine-01	ARG0	you	0.0.0	0.0.0.0	
+# ::edge	imagine-01	ARG1	amaze-01	0.0.0	0.0.0.1	
+# ::edge	possible-01	ARG1	imagine-01	0.0	0.0.0	
+# ::edge	sunrise	time-of	wake-01	0.0.0.1.1	0.0.0.1.1.0	
+# ::edge	voice	mod	little	0.0.0.1.1.0.0	0.0.0.1.1.0.0.1	
+# ::edge	voice	mod	odd	0.0.0.1.1.0.0	0.0.0.1.1.0.0.0	
+# ::edge	wake-01	ARG0	voice	0.0.0.1.1.0	0.0.0.1.1.0.0	
+# ::edge	wake-01	ARG1	i	0.0.0.1.1.0	0.0.0.1.0	
+(c / cause-01
+      :ARG1 (p / possible-01
+            :ARG1 (i2 / imagine-01
+                  :ARG0 (y / you)
+                  :ARG1 (a / amaze-01
+                        :ARG1 (i / i)
+                        :time (s / sunrise
+                              :time-of (w / wake-01
+                                    :ARG0 (v / voice
+                                          :mod (o / odd)
+                                          :mod (l / little))
+                                    :ARG1 i))))))
+
+# ::id lpp_1943.44 ::date 2012-07-24T11:24:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt It said : " If you please -- draw me a sheep ! "
+# ::zh 这小小的声音说道：“请你给我画一只羊，好吗？”
+# ::save-date Fri Oct 16, 2015 ::file lpp_1943_44.txt
+# ::tok It said : " If you please -- draw me a sheep ! "
+# ::alignments 1-2|0 8-9|0.1 11-12|0.1.3 5-6|0.1.2 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.288
+# ::node	0	say-01	1-2
+# ::node	0.0	it	0-1
+# ::node	0.1	draw-01	8-9
+# ::node	0.1.0	imperative	
+# ::node	0.1.1	+	
+# ::node	0.1.2	you	5-6
+# ::node	0.1.3	sheep	11-12
+# ::node	0.1.4	i	
+# ::root	0	say-01
+# ::edge	draw-01	ARG0	you	0.1	0.1.2	
+# ::edge	draw-01	ARG1	sheep	0.1	0.1.3	
+# ::edge	draw-01	ARG2	i	0.1	0.1.4	
+# ::edge	draw-01	mode	imperative	0.1	0.1.0	
+# ::edge	draw-01	polite	+	0.1	0.1.1	
+# ::edge	say-01	ARG0	it	0	0.0	
+# ::edge	say-01	ARG1	draw-01	0	0.1	
+(s / say-01
+      :ARG0 (i / it)
+      :ARG1 (d / draw-01 :mode imperative :polite +
+            :ARG0 (y2 / you)
+            :ARG1 (s2 / sheep)
+            :ARG2 (i2 / i)))
+
+# ::id lpp_1943.45 ::date 2012-07-24T11:28:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt " What ! "
+# ::zh “啊？
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_45.txt
+# ::tok " What ! "
+# ::alignments 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.292
+# ::node	0	string-entity	
+# ::node	0.0	"what"	1-2
+# ::root	0	string-entity
+# ::edge	string-entity	value	"what"	0	0.0	
+(s / string-entity :value "what")
+
+# ::id lpp_1943.46 ::date 2012-07-24T11:30:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Draw me a sheep ! "
+# ::zh “给我画一只羊…”
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_46.txt
+# ::tok " Draw me a sheep ! "
+# ::alignments 1-2|0 4-5|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.307
+# ::node	0	draw-01	1-2
+# ::node	0.0	you	
+# ::node	0.1	sheep	4-5
+# ::node	0.2	i	
+# ::node	0.3	imperative	
+# ::root	0	draw-01
+# ::edge	draw-01	ARG0	you	0	0.0	
+# ::edge	draw-01	ARG1	sheep	0	0.1	
+# ::edge	draw-01	ARG2	i	0	0.2	
+# ::edge	draw-01	mode	imperative	0	0.3	
+(d / draw-01
+  :ARG0 (y / you)
+  :ARG1 (s / sheep)
+  :ARG2 (i / i)
+  :mode imperative)
+
+# ::id lpp_1943.47 ::date 2012-07-24T11:31:14 ::annotator ISI-AMR-05 ::preferred
+# ::snt I jumped to my feet , completely thunderstruck .
+# ::zh 我象是受到惊雷轰击一般，一下子就站立起来。
+# ::save-date Tue Jul 28, 2015 ::file lpp_1943_47.txt
+# ::tok I jumped to my feet , completely thunderstruck .
+# ::alignments 1-2|0 4-5|0.1 0-1|0.0 7-8|0.0.0 6-7|0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.313
+# ::node	0	jump-03	1-2
+# ::node	0.0	i	0-1
+# ::node	0.0.0	thunderstruck	7-8
+# ::node	0.0.0.0	complete-02	6-7
+# ::node	0.1	foot	4-5
+# ::root	0	jump-03
+# ::edge	foot	part-of	i	0.1	0.0	
+# ::edge	i	mod	thunderstruck	0.0	0.0.0	
+# ::edge	jump-03	ARG0	i	0	0.0	
+# ::edge	jump-03	destination	foot	0	0.1	
+# ::edge	thunderstruck	ARG1-of	complete-02	0.0.0	0.0.0.0	
+(j / jump-03
+      :ARG0 (i / i
+            :mod (t / thunderstruck
+                  :ARG1-of (c / complete-02)))
+      :destination (f / foot
+            :part-of i))
+
+# ::id lpp_1943.48 ::date 2012-06-07T17:07:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt I blinked my eyes hard .
+# ::zh 我使劲地揉了揉眼睛，
+# ::save-date Sat Jul 25, 2015 ::file lpp_1943_48.txt
+# ::tok I blinked my eyes hard .
+# ::alignments 1-2|0 4-5|0.2 3-4|0.1 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.319
+# ::node	0	blink-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	eye	3-4
+# ::node	0.2	hard-04	4-5
+# ::root	0	blink-01
+# ::edge	blink-01	ARG0	i	0	0.0	
+# ::edge	blink-01	ARG1	eye	0	0.1	
+# ::edge	blink-01	ARG1-of	hard-04	0	0.2	
+# ::edge	eye	part-of	i	0.1	0.0	
+(b / blink-01
+      :ARG0 (i / i)
+      :ARG1 (e / eye
+            :part-of i)
+      :ARG1-of (h / hard-04))
+
+# ::id lpp_1943.49 ::date 2012-07-24T11:34:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt I looked carefully all around me .
+# ::zh 仔细地看了看。
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_49.txt
+# ::tok I looked carefully all around me .
+# ::alignments 1-2|0 4-5|0.1 3-4|0.1.0 0-1|0.0 2-3|0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.325
+# ::node	0	look-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	around	4-5
+# ::node	0.1.0	all	3-4
+# ::node	0.2	careful	2-3
+# ::root	0	look-01
+# ::edge	around	mod	all	0.1	0.1.0	
+# ::edge	around	op1	i	0.1	0.0	
+# ::edge	look-01	ARG0	i	0	0.0	
+# ::edge	look-01	direction	around	0	0.1	
+# ::edge	look-01	manner	careful	0	0.2	
+(l / look-01
+      :ARG0 (i / i)
+      :direction (a / around
+            :op i
+            :mod (a2 / all))
+      :manner (c / careful))
+
+# ::id lpp_1943.50 ::date 2012-07-24T11:36:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I saw a most extraordinary small person , who stood there examining me with great seriousness .
+# ::zh 我看见一个十分奇怪的小家伙严肃地朝我凝眸望着。
+# ::save-date Wed Apr 8, 2015 ::file lpp_1943_50.txt
+# ::tok And I saw a most extraordinary small person , who stood there examining me with great seriousness .
+# ::alignments 0-1|0 2-3|0.0 7-8|0.0.1 12-13|0.0.1.3 15-16|0.0.1.3.0.0 10-11|0.0.1.2 11-12|0.0.1.2.0 5-6|0.0.1.1 4-5|0.0.1.1.0 6-7|0.0.1.0 1-2|0.0.0 16-17|0.0.1.3.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.335
+# ::node	0	and	0-1
+# ::node	0.0	see-01	2-3
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	person	7-8
+# ::node	0.0.1.0	small	6-7
+# ::node	0.0.1.1	extraordinary	5-6
+# ::node	0.0.1.1.0	most	4-5
+# ::node	0.0.1.2	stand-01	10-11
+# ::node	0.0.1.2.0	there	11-12
+# ::node	0.0.1.3	examine-01	12-13
+# ::node	0.0.1.3.0	serious-01	16-17
+# ::node	0.0.1.3.0.0	great	15-16
+# ::root	0	and
+# ::edge	and	op2	see-01	0	0.0	
+# ::edge	examine-01	ARG1	i	0.0.1.3	0.0.0	
+# ::edge	examine-01	ARG2-of	serious-01	0.0.1.3	0.0.1.3.0	
+# ::edge	extraordinary	degree	most	0.0.1.1	0.0.1.1.0	
+# ::edge	person	ARG0-of	examine-01	0.0.1	0.0.1.3	
+# ::edge	person	ARG1-of	stand-01	0.0.1	0.0.1.2	
+# ::edge	person	mod	extraordinary	0.0.1	0.0.1.1	
+# ::edge	person	mod	small	0.0.1	0.0.1.0	
+# ::edge	see-01	ARG0	i	0.0	0.0.0	
+# ::edge	see-01	ARG1	person	0.0	0.0.1	
+# ::edge	serious-01	degree	great	0.0.1.3.0	0.0.1.3.0.0	
+# ::edge	stand-01	ARG2	there	0.0.1.2	0.0.1.2.0	
+(a / and
+      :op (s / see-01
+            :ARG0 (i / i)
+            :ARG1 (p / person
+                  :mod (s2 / small)
+                  :mod (e / extraordinary
+                        :degree (m / most))
+                  :ARG1-of (s3 / stand-01
+                        :ARG2 (t / there))
+                  :ARG0-of (e2 / examine-01
+                        :ARG1 i
+                        :ARG2-of (s4 / serious-01
+                              :degree (g / great))))))
+
+# ::id lpp_1943.51 ::date 2012-07-24T11:44:25 ::annotator ISI-AMR-05 ::preferred
+# ::snt Here you may see the best portrait that , later , I was able to make of him .
+# ::zh 这是后来我给他画出来的最好的一副画像。
+# ::save-date Tue Dec 1, 2015 ::file lpp_1943_51.txt
+# ::tok Here you may see the best portrait that , later , I was able to make of him .
+# ::alignments 2-3|0 3-4|0.0 0-1|0.0.2 6-7|0.0.1 15-16|0.0.1.1 9-10|0.0.1.1.2 13-14|0.0.1.1.1 11-12|0.0.1.1.0 5-6|0.0.1.0+0.0.1.0.0 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.347
+# ::node	0	possible-01	2-3
+# ::node	0.0	see-01	3-4
+# ::node	0.0.0	you	1-2
+# ::node	0.0.1	portrait	6-7
+# ::node	0.0.1.0	good-02	5-6
+# ::node	0.0.1.0.0	most	5-6
+# ::node	0.0.1.1	make-01	15-16
+# ::node	0.0.1.1.0	i	11-12
+# ::node	0.0.1.1.1	possible-01	13-14
+# ::node	0.0.1.1.2	late	9-10
+# ::node	0.0.1.1.2.0	more	
+# ::node	0.0.1.2	he	
+# ::node	0.0.2	here	0-1
+# ::root	0	possible-01
+# ::edge	good-02	degree	most	0.0.1.0	0.0.1.0.0	
+# ::edge	late	degree	more	0.0.1.1.2	0.0.1.1.2.0	
+# ::edge	make-01	ARG0	i	0.0.1.1	0.0.1.1.0	
+# ::edge	make-01	ARG1-of	possible-01	0.0.1.1	0.0.1.1.1	
+# ::edge	make-01	time	late	0.0.1.1	0.0.1.1.2	
+# ::edge	portrait	ARG1-of	good-02	0.0.1	0.0.1.0	
+# ::edge	portrait	ARG1-of	make-01	0.0.1	0.0.1.1	
+# ::edge	portrait	topic	he	0.0.1	0.0.1.2	
+# ::edge	possible-01	ARG1	see-01	0	0.0	
+# ::edge	see-01	ARG0	you	0.0	0.0.0	
+# ::edge	see-01	ARG1	portrait	0.0	0.0.1	
+# ::edge	see-01	location	here	0.0	0.0.2	
+(p / possible-01
+      :ARG1 (s / see-01
+            :ARG0 (y / you)
+            :ARG1 (p2 / portrait
+                  :ARG1-of (g / good-02
+                        :degree (m / most))
+                  :ARG1-of (m2 / make-01
+                        :ARG0 (i / i)
+                        :ARG1-of (p3 / possible-01)
+                        :time (l / late
+                              :degree (m3 / more)))
+                  :topic (h / he))
+            :location (h2 / here)))
+
+# ::id lpp_1943.52 ::date 2012-07-24T11:50:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt But my drawing is certainly very much less charming than its model .
+# ::zh 可是，我的画当然要比他本人的模样逊色得多。
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_52.txt
+# ::tok But my drawing is certainly very much less charming than its model .
+# ::alignments 0-1|0 8-9|0.0 11-12|0.0.3 7-8|0.0.1 6-7|0.0.1.0 5-6|0.0.1.0.0 2-3|0.0.0.0 4-5|0.0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.360
+# ::node	0	contrast-01	0-1
+# ::node	0.0	charm-01	8-9
+# ::node	0.0.0	picture	
+# ::node	0.0.0.0	draw-01	2-3
+# ::node	0.0.0.0.0	i	
+# ::node	0.0.1	less	7-8
+# ::node	0.0.1.0	much	6-7
+# ::node	0.0.1.0.0	very	5-6
+# ::node	0.0.2	certain	4-5
+# ::node	0.0.3	model	11-12
+# ::root	0	contrast-01
+# ::edge	charm-01	ARG0	picture	0.0	0.0.0	
+# ::edge	charm-01	compared-to	model	0.0	0.0.3	
+# ::edge	charm-01	mod	certain	0.0	0.0.2	
+# ::edge	charm-01	quant	less	0.0	0.0.1	
+# ::edge	contrast-01	ARG2	charm-01	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0.0.0	0.0.0.0.0	
+# ::edge	less	degree	much	0.0.1	0.0.1.0	
+# ::edge	model	poss	picture	0.0.3	0.0.0	
+# ::edge	much	degree	very	0.0.1.0	0.0.1.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.0	0.0.0.0	
+(c3 / contrast-01
+      :ARG2 (c / charm-01
+            :ARG0 (p / picture
+                  :ARG1-of (d / draw-01
+                        :ARG0 (i / i)))
+            :quant (l / less
+                  :degree (m / much
+                        :degree (v / very)))
+            :mod (c2 / certain)
+            :compared-to (m2 / model
+                  :poss p)))
+
+# ::id lpp_1943.53 ::date 2012-07-24T11:54:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt That , however , is not my fault .
+# ::zh 这不是我的过错。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_53.txt
+# ::tok That , however , is not my fault .
+# ::alignments  7-8|0.0 0-1|0.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.367
+# ::node	0	contrast-01	
+# ::node	0.0	fault-01	7-8
+# ::node	0.0.0	i	
+# ::node	0.0.1	that	0-1
+# ::node	0.0.2	-	6-6
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	fault-01	0	0.0	
+# ::edge	fault-01	ARG1	i	0.0	0.0.0	
+# ::edge	fault-01	ARG2	that	0.0	0.0.1	
+# ::edge	fault-01	polarity	-	0.0	0.0.2	
+(c / contrast-01
+  :ARG2 (f / fault-01
+          :ARG1 (i / i)
+          :ARG2 (t / that)
+          :polarity -))
+
+# ::id lpp_1943.54 ::date 2012-07-24T11:56:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt The grown - ups discouraged me in my painter 's career when I was six years old , and I never learned to draw anything , except boas from the outside and boas from the inside .
+# ::zh 六岁时，大人们使我对我的画家生涯失去了勇气，除了画过开着肚皮和闭着肚皮的蟒蛇，后来再没有学过画。
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_54.txt
+# ::tok The grown - ups discouraged me in my painter 's career when I was six years old , and I never learned to draw anything , except boas from the outside and boas from the inside .
+# ::alignments 4-5|0 14-15|0.4.0.0 15-16|0.4.0+0.4.0.1 21-22|0.3.0 26-27|0.3.0.3 18-19|0.3.0.3.0 27-28|0.3.0.3.0.1 28-29|0.3.0.3.0.1.0 35-36|0.3.0.3.0.1.0.0 32-33|0.3.0.3.0.0 33-34|0.3.0.3.0.0.0 30-31|0.3.0.3.0.0.0.0 23-24|0.3.0.1 24-25|0.3.0.1.0 10-11|0.2 8-9|0.2.0+0.2.0.0 12-13|0.1 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.386
+# ::node	0	discourage-01	4-5
+# ::node	0.0	grown-up	1-2
+# ::node	0.1	i	12-13
+# ::node	0.2	career	10-11
+# ::node	0.2.0	person	8-9
+# ::node	0.2.0.0	paint-02	8-9
+# ::node	0.3	cause-01	
+# ::node	0.3.0	learn-01	21-22
+# ::node	0.3.0.0	-	
+# ::node	0.3.0.1	draw-01	23-24
+# ::node	0.3.0.1.0	anything	24-25
+# ::node	0.3.0.2	ever	
+# ::node	0.3.0.3	except-01	26-27
+# ::node	0.3.0.3.0	and	18-19
+# ::node	0.3.0.3.0.0	boa	32-33
+# ::node	0.3.0.3.0.0.0	from	33-34
+# ::node	0.3.0.3.0.0.0.0	outside	30-31
+# ::node	0.3.0.3.0.1	boa	27-28
+# ::node	0.3.0.3.0.1.0	from	28-29
+# ::node	0.3.0.3.0.1.0.0	inside	35-36
+# ::node	0.4	age-01	
+# ::node	0.4.0	temporal-quantity	15-16
+# ::node	0.4.0.0	6	14-15
+# ::node	0.4.0.1	year	15-16
+# ::root	0	discourage-01
+# ::edge	age-01	ARG1	i	0.4	0.1	
+# ::edge	age-01	ARG2	temporal-quantity	0.4	0.4.0	
+# ::edge	and	op1	boa	0.3.0.3.0	0.3.0.3.0.0	
+# ::edge	and	op2	boa	0.3.0.3.0	0.3.0.3.0.1	
+# ::edge	boa	direction	from	0.3.0.3.0.0	0.3.0.3.0.0.0	
+# ::edge	boa	direction	from	0.3.0.3.0.1	0.3.0.3.0.1.0	
+# ::edge	career	poss	i	0.2	0.1	
+# ::edge	career	topic	person	0.2	0.2.0	
+# ::edge	cause-01	ARG1	learn-01	0.3	0.3.0	
+# ::edge	discourage-01	ARG0	grown-up	0	0.0	
+# ::edge	discourage-01	ARG0-of	cause-01	0	0.3	
+# ::edge	discourage-01	ARG1	i	0	0.1	
+# ::edge	discourage-01	ARG2	career	0	0.2	
+# ::edge	discourage-01	time	age-01	0	0.4	
+# ::edge	draw-01	ARG0	i	0.3.0.1	0.1	
+# ::edge	draw-01	ARG1	anything	0.3.0.1	0.3.0.1.0	
+# ::edge	except-01	ARG1	and	0.3.0.3	0.3.0.3.0	
+# ::edge	from	op1	inside	0.3.0.3.0.1.0	0.3.0.3.0.1.0.0	
+# ::edge	from	op1	outside	0.3.0.3.0.0.0	0.3.0.3.0.0.0.0	
+# ::edge	learn-01	ARG0	i	0.3.0	0.1	
+# ::edge	learn-01	ARG1	draw-01	0.3.0	0.3.0.1	
+# ::edge	learn-01	ARG2-of	except-01	0.3.0	0.3.0.3	
+# ::edge	learn-01	polarity	-	0.3.0	0.3.0.0	
+# ::edge	learn-01	time	ever	0.3.0	0.3.0.2	
+# ::edge	person	ARG0-of	paint-02	0.2.0	0.2.0.0	
+# ::edge	temporal-quantity	quant	6	0.4.0	0.4.0.0	
+# ::edge	temporal-quantity	unit	year	0.4.0	0.4.0.1	
+(d / discourage-01
+      :ARG0 (g / grown-up)
+      :ARG1 (i / i)
+      :ARG2 (c / career
+            :topic (p / person
+                  :ARG0-of (p2 / paint-02))
+            :poss i)
+      :ARG0-of (c2 / cause-01
+            :ARG1 (l / learn-01 :polarity -
+                  :ARG0 i
+                  :ARG1 (d2 / draw-01
+                        :ARG0 i
+                        :ARG1 (a2 / anything))
+                  :time (e / ever)
+                  :ARG2-of (e2 / except-01
+                        :ARG1 (a3 / and
+                              :op (b / boa
+                                    :direction (f / from
+                                          :op (o / outside)))
+                              :op (b2 / boa
+                                    :direction (f2 / from
+                                          :op (i2 / inside)))))))
+      :time (a / age-01
+            :ARG1 i
+            :ARG2 (t2 / temporal-quantity :quant 6
+                  :unit (y / year))))
+
+# ::id lpp_1943.55 ::date 2012-07-24T12:05:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Now I stared at this sudden apparition with my eyes fairly starting out of my head in astonishment .
+# ::zh 我惊奇地睁大着眼睛看着这突然出现的小家伙。
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_55.txt
+# ::tok Now I stared at this sudden apparition with my eyes fairly starting out of my head in astonishment .
+# ::alignments 2-3|0 11-12|0.3 12-13|0.3.3 15-16|0.3.3.0 9-10|0.3.0 0-1|0.2 5-6|0.1.0.0 4-5|0.1.1 1-2|0.0 10-11|0.3.2 17-18|0.3.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.398
+# ::node	0	stare-01	2-3
+# ::node	0.0	i	1-2
+# ::node	0.1	thing	
+# ::node	0.1.0	appear-01	
+# ::node	0.1.0.0	sudden	5-6
+# ::node	0.1.1	this	4-5
+# ::node	0.2	now	0-1
+# ::node	0.3	start-03	11-12
+# ::node	0.3.0	eye	9-10
+# ::node	0.3.1	cause-01	
+# ::node	0.3.1.0	astonish-01	17-18
+# ::node	0.3.2	fair	10-11
+# ::node	0.3.3	out-06	12-13
+# ::node	0.3.3.0	head	15-16
+# ::root	0	stare-01
+# ::edge	appear-01	manner	sudden	0.1.0	0.1.0.0	
+# ::edge	astonish-01	ARG1	i	0.3.1.0	0.0	
+# ::edge	cause-01	ARG0	astonish-01	0.3.1	0.3.1.0	
+# ::edge	eye	part-of	i	0.3.0	0.0	
+# ::edge	head	part-of	i	0.3.3.0	0.0	
+# ::edge	out-06	ARG1	eye	0.3.3	0.3.0	
+# ::edge	out-06	ARG2	head	0.3.3	0.3.3.0	
+# ::edge	stare-01	ARG0	i	0	0.0	
+# ::edge	stare-01	ARG1	thing	0	0.1	
+# ::edge	stare-01	manner	start-03	0	0.3	
+# ::edge	stare-01	time	now	0	0.2	
+# ::edge	start-03	ARG0	eye	0.3	0.3.0	
+# ::edge	start-03	ARG1-of	cause-01	0.3	0.3.1	
+# ::edge	start-03	degree	fair	0.3	0.3.2	
+# ::edge	start-03	manner	out-06	0.3	0.3.3	
+# ::edge	thing	ARG1-of	appear-01	0.1	0.1.0	
+# ::edge	thing	mod	this	0.1	0.1.1	
+(s / stare-01
+      :ARG0 (i / i)
+      :ARG1 (t / thing
+            :ARG1-of (a / appear-01
+                  :manner (s2 / sudden))
+            :mod (t2 / this))
+      :time (n / now)
+      :manner (s3 / start-03
+            :ARG0 (e / eye
+                  :part-of i)
+            :ARG1-of (c / cause-01
+                  :ARG0 (a2 / astonish-01
+                        :ARG1 i))
+            :degree (f / fair)
+            :manner (o / out-06
+                  :ARG1 e
+                  :ARG2 (h / head
+                        :part-of i))))
+
+# ::id lpp_1943.56 ::date 2012-07-24T12:11:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt Remember , I had crashed in the desert a thousand miles from any inhabited region .
+# ::zh 你们不要忘记，我当时处在远离人烟千里之外的地方。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_56.txt
+# ::tok Remember , I had crashed in the desert a thousand miles from any inhabited region .
+# ::alignments 0-1|0 4-5|0.1 14-15|0.1.2.0 12-13|0.1.2.0.1 13-14|0.1.2.0.0 10-11|0.1.2.1+0.1.2.1.0 7-8|0.1.1 2-3|0.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.408
+# ::node	0	remember-01	0-1
+# ::node	0.0	you	
+# ::node	0.1	crash-01	4-5
+# ::node	0.1.0	i	2-3
+# ::node	0.1.1	desert	7-8
+# ::node	0.1.2	relative-position	
+# ::node	0.1.2.0	region	14-15
+# ::node	0.1.2.0.0	inhabit-01	13-14
+# ::node	0.1.2.0.1	any	12-13
+# ::node	0.1.2.1	distance-quantity	10-11
+# ::node	0.1.2.1.0	mile	10-11
+# ::node	0.1.2.1.1	1000	
+# ::node	0.1.2.2	away	
+# ::node	0.2	imperative	
+# ::root	0	remember-01
+# ::edge	crash-01	ARG1	i	0.1	0.1.0	
+# ::edge	crash-01	location	desert	0.1	0.1.1	
+# ::edge	crash-01	location	relative-position	0.1	0.1.2	
+# ::edge	distance-quantity	quant	1000	0.1.2.1	0.1.2.1.1	
+# ::edge	distance-quantity	unit	mile	0.1.2.1	0.1.2.1.0	
+# ::edge	region	ARG1-of	inhabit-01	0.1.2.0	0.1.2.0.0	
+# ::edge	region	mod	any	0.1.2.0	0.1.2.0.1	
+# ::edge	relative-position	direction	away	0.1.2	0.1.2.2	
+# ::edge	relative-position	op1	region	0.1.2	0.1.2.0	
+# ::edge	relative-position	quant	distance-quantity	0.1.2	0.1.2.1	
+# ::edge	remember-01	ARG0	you	0	0.0	
+# ::edge	remember-01	ARG1	crash-01	0	0.1	
+# ::edge	remember-01	mode	imperative	0	0.2	
+(r / remember-01
+  :ARG0 (y / you)
+  :ARG1 (c / crash-01
+          :ARG1 (i / i)
+          :location (d / desert)
+          :location (r3 / relative-position
+                      :op (r2 / region
+                             :ARG1-of (i2 / inhabit-01)
+                             :mod (a2 / any))
+                      :quant (d2 / distance-quantity
+                               :unit (m / mile)
+                               :quant 1000)
+                      :direction (a / away)))
+  :mode imperative)
+
+# ::id lpp_1943.57 ::date 2012-07-24T12:14:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt And yet my little man seemed neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear .
+# ::zh 而这个小家伙给我的印象是，他既不象迷了路的样子，也没有半点疲乏、饥渴、惧怕的神情。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_57.txt
+# ::tok And yet my little man seemed neither to be straying uncertainly among the sands , nor to be fainting from fatigue or hunger or thirst or fear .
+# ::alignments 5-6|0.0 0-1|0.0.0 18-19|0.0.0.1 21-22|0.0.0.1.0.0 26-27|0.0.0.1.0.0.3 24-25|0.0.0.1.0.0.2 22-23|0.0.0.1.0.0.1 20-21|0.0.0.1.0.0.0 9-10|0.0.0.0 11-12|0.0.0.0.1 13-14|0.0.0.0.1.0 4-5|0.0.0.0.0 3-4|0.0.0.0.0.0 10-11|0.0.0.0.2+0.0.0.0.2.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.426
+# ::node	0	contrast-01	
+# ::node	0.0	seem-01	5-6
+# ::node	0.0.0	and	0-1
+# ::node	0.0.0.0	stray-01	9-10
+# ::node	0.0.0.0.0	man	4-5
+# ::node	0.0.0.0.0.0	little	3-4
+# ::node	0.0.0.0.0.1	i	
+# ::node	0.0.0.0.1	among	11-12
+# ::node	0.0.0.0.1.0	sand	13-14
+# ::node	0.0.0.0.2	certain	10-11
+# ::node	0.0.0.0.2.0	-	10-11
+# ::node	0.0.0.0.3	-	
+# ::node	0.0.0.1	faint-01	18-19
+# ::node	0.0.0.1.0	cause-01	
+# ::node	0.0.0.1.0.0	or	21-22
+# ::node	0.0.0.1.0.0.0	fatigue-01	20-21
+# ::node	0.0.0.1.0.0.1	hunger-01	22-23
+# ::node	0.0.0.1.0.0.2	thirst-01	24-25
+# ::node	0.0.0.1.0.0.3	fear-01	26-27
+# ::node	0.0.0.1.1	-	
+# ::root	0	contrast-01
+# ::edge	among	op1	sand	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	and	op1	stray-01	0.0.0	0.0.0.0	
+# ::edge	and	op2	faint-01	0.0.0	0.0.0.1	
+# ::edge	cause-01	ARG0	or	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	certain	polarity	-	0.0.0.0.2	0.0.0.0.2.0	
+# ::edge	contrast-01	ARG2	seem-01	0	0.0	
+# ::edge	faint-01	ARG0	man	0.0.0.1	0.0.0.0.0	
+# ::edge	faint-01	ARG1-of	cause-01	0.0.0.1	0.0.0.1.0	
+# ::edge	faint-01	polarity	-	0.0.0.1	0.0.0.1.1	
+# ::edge	man	mod	little	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	man	poss	i	0.0.0.0.0	0.0.0.0.0.1	
+# ::edge	or	op1	fatigue-01	0.0.0.1.0.0	0.0.0.1.0.0.0	
+# ::edge	or	op2	hunger-01	0.0.0.1.0.0	0.0.0.1.0.0.1	
+# ::edge	or	op3	thirst-01	0.0.0.1.0.0	0.0.0.1.0.0.2	
+# ::edge	or	op4	fear-01	0.0.0.1.0.0	0.0.0.1.0.0.3	
+# ::edge	seem-01	ARG1	and	0.0	0.0.0	
+# ::edge	stray-01	ARG0	man	0.0.0.0	0.0.0.0.0	
+# ::edge	stray-01	ARG1	among	0.0.0.0	0.0.0.0.1	
+# ::edge	stray-01	manner	certain	0.0.0.0	0.0.0.0.2	
+# ::edge	stray-01	polarity	-	0.0.0.0	0.0.0.0.3	
+(c3 / contrast-01
+  :ARG2 (s / seem-01
+          :ARG1 (a / and
+                  :op (s2 / stray-01
+                         :ARG0 (m / man
+                                 :mod (l / little)
+                                 :poss (i / i))
+                         :ARG1 (a3 / among
+                                 :op (s3 / sand))
+                         :manner (c / certain
+                                   :polarity -)
+                         :polarity -)
+                  :op (f / faint-01
+                         :ARG0 m
+                         :ARG1-of (c2 / cause-01
+                                    :ARG0 (o / or
+                                            :op (f2 / fatigue-01)
+                                            :op (h / hunger-01)
+                                            :op (t / thirst-01)
+                                            :op (f3 / fear-01)))
+                         :polarity -))))
+
+# ::id lpp_1943.58 ::date 2012-07-24T12:23:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt Nothing about him gave any suggestion of a child lost in the middle of the desert , a thousand miles from any human habitation .
+# ::zh 他丝毫不象是一个迷失在旷无人烟的大沙漠中的孩子。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_58.txt
+# ::tok Nothing about him gave any suggestion of a child lost in the middle of the desert , a thousand miles from any human habitation .
+# ::alignments 0-1|0.0 8-9|0.1 9-10|0.1.0 22-23|0.1.0.1.0.0.0 4-5|0.1.0.1.0.1 19-20|0.1.0.1.1+0.1.0.1.1.0 15-16|0.1.0.0 12-13|0.1.0.0.0 5-6|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.438
+# ::node	0	suggest-01	5-6
+# ::node	0.0	nothing	0-1
+# ::node	0.0.0	he	
+# ::node	0.1	child	8-9
+# ::node	0.1.0	lose-02	9-10
+# ::node	0.1.0.0	desert	15-16
+# ::node	0.1.0.0.0	middle	12-13
+# ::node	0.1.0.1	relative-position	
+# ::node	0.1.0.1.0	thing	
+# ::node	0.1.0.1.0.0	inhabit-01	
+# ::node	0.1.0.1.0.0.0	human	22-23
+# ::node	0.1.0.1.0.1	any	4-5
+# ::node	0.1.0.1.1	distance-quantity	19-20
+# ::node	0.1.0.1.1.0	mile	19-20
+# ::node	0.1.0.1.1.1	1000	
+# ::node	0.1.0.1.2	away	
+# ::root	0	suggest-01
+# ::edge	child	ARG1-of	lose-02	0.1	0.1.0	
+# ::edge	desert	part	middle	0.1.0.0	0.1.0.0.0	
+# ::edge	distance-quantity	quant	1000	0.1.0.1.1	0.1.0.1.1.1	
+# ::edge	distance-quantity	unit	mile	0.1.0.1.1	0.1.0.1.1.0	
+# ::edge	inhabit-01	ARG0	human	0.1.0.1.0.0	0.1.0.1.0.0.0	
+# ::edge	lose-02	location	desert	0.1.0	0.1.0.0	
+# ::edge	lose-02	location	relative-position	0.1.0	0.1.0.1	
+# ::edge	nothing	topic	he	0.0	0.0.0	
+# ::edge	relative-position	direction	away	0.1.0.1	0.1.0.1.2	
+# ::edge	relative-position	op1	thing	0.1.0.1	0.1.0.1.0	
+# ::edge	relative-position	quant	distance-quantity	0.1.0.1	0.1.0.1.1	
+# ::edge	suggest-01	ARG0	nothing	0	0.0	
+# ::edge	suggest-01	ARG1	child	0	0.1	
+# ::edge	thing	ARG1-of	inhabit-01	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	thing	mod	any	0.1.0.1.0	0.1.0.1.0.1	
+(s / suggest-01
+  :ARG0 (n / nothing
+          :topic (h / he))
+  :ARG1 (c / child
+          :ARG1-of (l / lose-02
+                     :location (d / desert
+                                 :part (m / middle))
+                     :location (r / relative-position
+                                 :op (t / thing
+                                        :ARG1-of (i / inhabit-01
+                                                   :ARG0 (h2 / human))
+                                        :mod (a3 / any))
+                                 :quant (d2 / distance-quantity
+                                          :unit (m2 / mile)
+                                          :quant 1000)
+                                 :direction (a2 / away)))))
+
+# ::id lpp_1943.59 ::date 2012-07-24T12:28:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt When at last I was able to speak , I said to him : " But -- what are you doing here ? "
+# ::zh 当我在惊讶之中终于又能说出话来的时候，对他说道：“唉，你在这儿干什么？”
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_59.txt
+# ::tok When at last I was able to speak , I said to him : " But -- what are you doing here ? "
+# ::alignments 10-11|0 5-6|0.3 7-8|0.3.0 15-16|0.1 19-20|0.1.0.1 21-22|0.1.0.2 3-4|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.449
+# ::node	0	say-01	10-11
+# ::node	0.0	i	3-4
+# ::node	0.1	contrast-01	15-16
+# ::node	0.1.0	be-located-at-91	
+# ::node	0.1.0.0	interrogative	
+# ::node	0.1.0.1	you	19-20
+# ::node	0.1.0.2	here	21-22
+# ::node	0.1.0.3	cause-01	
+# ::node	0.1.0.3.0	amr-unknown	
+# ::node	0.2	he	
+# ::node	0.3	possible-01	5-6
+# ::node	0.3.0	speak-01	7-8
+# ::node	0.3.0.0	at-last	
+# ::root	0	say-01
+# ::edge	be-located-at-91	ARG1	you	0.1.0	0.1.0.1	
+# ::edge	be-located-at-91	ARG1-of	cause-01	0.1.0	0.1.0.3	
+# ::edge	be-located-at-91	ARG2	here	0.1.0	0.1.0.2	
+# ::edge	be-located-at-91	mode	interrogative	0.1.0	0.1.0.0	
+# ::edge	cause-01	ARG0	amr-unknown	0.1.0.3	0.1.0.3.0	
+# ::edge	contrast-01	ARG2	be-located-at-91	0.1	0.1.0	
+# ::edge	possible-01	ARG1	speak-01	0.3	0.3.0	
+# ::edge	say-01	ARG0	i	0	0.0	
+# ::edge	say-01	ARG1	contrast-01	0	0.1	
+# ::edge	say-01	ARG2	he	0	0.2	
+# ::edge	say-01	time	possible-01	0	0.3	
+# ::edge	speak-01	ARG0	i	0.3.0	0.0	
+# ::edge	speak-01	time	at-last	0.3.0	0.3.0.0	
+(s / say-01
+      :ARG0 (i / i)
+      :ARG1 (c / contrast-01
+            :ARG2 (b2 / be-located-at-91 :mode interrogative
+                  :ARG1 (y2 / you)
+                  :ARG2 (h2 / here)
+                  :ARG1-of (c2 / cause-01
+                        :ARG0 (a / amr-unknown))))
+      :ARG2 (h / he)
+      :time (p / possible-01
+            :ARG1 (s2 / speak-01
+                  :ARG0 i
+                  :time (a2 / at-last))))
+
+# ::id lpp_1943.60 ::date 2012-07-24T12:32:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt And in answer he repeated , very slowly , as if he were speaking of a matter of great consequence : " If you please -- draw me a sheep ... "
+# ::zh 可是他却不慌不忙地好象有一件重要的事一般，对我重复地说道：“请…给我画一只羊…”
+# ::save-date Wed Nov 11, 2015 ::file lpp_1943_60.txt
+# ::tok And in answer he repeated , very slowly , as if he were speaking of a matter of great consequence : " If you please -- draw me a sheep ... "
+# ::alignments 0-1|0 4-5|0.0 13-14|0.0.4 16-17|0.0.4.0 19-20|0.0.4.0.0 18-19|0.0.4.0.0.0 6-7|0.0.3.0 2-3|0.0.2 26-27|0.0.1 29-30|0.0.1.3 23-24|0.0.1.2 3-4|0.0.0 7-8|0.0.3 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.464
+# ::node	0	and	0-1
+# ::node	0.0	repeat-01	4-5
+# ::node	0.0.0	he	3-4
+# ::node	0.0.1	draw-01	26-27
+# ::node	0.0.1.0	imperative	
+# ::node	0.0.1.1	+	
+# ::node	0.0.1.2	you	23-24
+# ::node	0.0.1.3	sheep	29-30
+# ::node	0.0.1.4	i	
+# ::node	0.0.2	answer-01	2-3
+# ::node	0.0.3	slow-05	7-8
+# ::node	0.0.3.0	very	6-7
+# ::node	0.0.4	speak-01	13-14
+# ::node	0.0.4.0	matter	16-17
+# ::node	0.0.4.0.0	consequence	19-20
+# ::node	0.0.4.0.0.0	great	18-19
+# ::root	0	and
+# ::edge	and	op2	repeat-01	0	0.0	
+# ::edge	answer-01	ARG0	he	0.0.2	0.0.0	
+# ::edge	consequence	mod	great	0.0.4.0.0	0.0.4.0.0.0	
+# ::edge	draw-01	ARG0	you	0.0.1	0.0.1.2	
+# ::edge	draw-01	ARG1	sheep	0.0.1	0.0.1.3	
+# ::edge	draw-01	ARG2	i	0.0.1	0.0.1.4	
+# ::edge	draw-01	mode	imperative	0.0.1	0.0.1.0	
+# ::edge	draw-01	polite	+	0.0.1	0.0.1.1	
+# ::edge	matter	mod	consequence	0.0.4.0	0.0.4.0.0	
+# ::edge	repeat-01	ARG0	he	0.0	0.0.0	
+# ::edge	repeat-01	ARG1	draw-01	0.0	0.0.1	
+# ::edge	repeat-01	ARG1-of	slow-05	0.0	0.0.3	
+# ::edge	repeat-01	conj-as-if	speak-01	0.0	0.0.4	
+# ::edge	repeat-01	purpose	answer-01	0.0	0.0.2	
+# ::edge	slow-05	degree	very	0.0.3	0.0.3.0	
+# ::edge	speak-01	ARG0	he	0.0.4	0.0.0	
+# ::edge	speak-01	ARG1	matter	0.0.4	0.0.4.0	
+(a / and
+      :op (r / repeat-01
+            :ARG0 (h / he)
+            :ARG1 (d / draw-01 :mode imperative :polite +
+                  :ARG0 (y2 / you)
+                  :ARG1 (s3 / sheep)
+                  :ARG2 (i / i))
+            :purpose (a2 / answer-01
+                  :ARG0 h)
+            :ARG1-of (s / slow-05
+                  :degree (v / very))
+            :conj-as-if (s2 / speak-01
+                  :ARG0 h
+                  :ARG1 (m / matter
+                        :mod (c / consequence
+                              :mod (g / great))))))
+
+# ::id lpp_1943.61 ::date 2012-07-24T12:43:23 ::annotator ISI-AMR-05 ::preferred
+# ::snt When a mystery is too overpowering , one dare not disobey .
+# ::zh 当一种神秘的东西把你镇住的时候，你是不敢不听从它的支配的，
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_61.txt
+# ::tok When a mystery is too overpowering , one dare not disobey .
+# ::alignments  8-9|0 5-6|0.3 4-5|0.3.1 2-3|0.3.0 10-11|0.1 7-8|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.472
+# ::node	0	dare-01	8-9
+# ::node	0.0	one	7-8
+# ::node	0.1	disobey-01	10-11
+# ::node	0.2	-	10-10
+# ::node	0.3	overpower-01	5-6
+# ::node	0.3.0	mystery	2-3
+# ::node	0.3.1	too	4-5
+# ::root	0	dare-01
+# ::edge	dare-01	ARG0	one	0	0.0	
+# ::edge	dare-01	ARG2	disobey-01	0	0.1	
+# ::edge	dare-01	polarity	-	0	0.2	
+# ::edge	dare-01	time	overpower-01	0	0.3	
+# ::edge	disobey-01	ARG0	one	0.1	0.0	
+# ::edge	overpower-01	ARG0	mystery	0.3	0.3.0	
+# ::edge	overpower-01	degree	too	0.3	0.3.1	
+(d / dare-01
+  :ARG0 (o / one)
+  :ARG2 (d2 / disobey-01
+          :ARG0 o)
+  :polarity -
+  :time (o2 / overpower-01
+          :ARG0 (m / mystery)
+          :degree (t2 / too)))
+
+# ::id lpp_1943.62 ::date 2012-07-24T12:49:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Absurd as it might seem to me , a thousand miles from any human habitation and in danger of death , I took out of my pocket a sheet of paper and my fountain - pen .
+# ::zh 在这旷无人烟的沙漠上，面临死亡的危险的情况下，尽管这样的举动使我感到十分荒诞，我还是掏出了一张纸和一支钢笔。
+# ::save-date Mon May 25, 2015 ::file lpp_1943_62.txt
+# ::tok Absurd as it might seem to me , a thousand miles from any human habitation and in danger of death , I took out of my pocket a sheet of paper and my fountain - pen .
+# ::alignments 22-23|0 4-5|0.3.0 0-1|0.3.0.0 26-27|0.2 15-16|0.1 35-36|0.1.1 33-34|0.1.1.0 30-31|0.1.0 28-29|0.1.0.0 21-22|0.0 19-20|0.0.1.0 12-13|0.0.0.0.0 13-14|0.0.0.0.1.0 10-11|0.0.0.1+0.0.0.1.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.493
+# ::node	0	take-01	22-23
+# ::node	0.0	i	21-22
+# ::node	0.0.0	relative-position	
+# ::node	0.0.0.0	place	
+# ::node	0.0.0.0.0	any	12-13
+# ::node	0.0.0.0.1	inhabit-01	
+# ::node	0.0.0.0.1.0	human	13-14
+# ::node	0.0.0.1	distance-quantity	10-11
+# ::node	0.0.0.1.0	1000	
+# ::node	0.0.0.1.1	mile	10-11
+# ::node	0.0.0.2	away	
+# ::node	0.0.1	endanger-01	
+# ::node	0.0.1.0	die-01	19-20
+# ::node	0.1	and	15-16
+# ::node	0.1.0	paper	30-31
+# ::node	0.1.0.0	sheet	28-29
+# ::node	0.1.0.0.0	1	
+# ::node	0.1.1	pen	35-36
+# ::node	0.1.1.0	fountain	33-34
+# ::node	0.2	pocket	26-27
+# ::node	0.3	possible-01	
+# ::node	0.3.0	seem-01	4-5
+# ::node	0.3.0.0	absurd	0-1
+# ::root	0	take-01
+# ::edge	and	op1	paper	0.1	0.1.0	
+# ::edge	and	op2	pen	0.1	0.1.1	
+# ::edge	die-01	ARG1	i	0.0.1.0	0.0	
+# ::edge	distance-quantity	quant	1000	0.0.0.1	0.0.0.1.0	
+# ::edge	distance-quantity	unit	mile	0.0.0.1	0.0.0.1.1	
+# ::edge	endanger-01	ARG0	die-01	0.0.1	0.0.1.0	
+# ::edge	i	ARG1-of	endanger-01	0.0	0.0.1	
+# ::edge	i	location	relative-position	0.0	0.0.0	
+# ::edge	inhabit-01	ARG0	human	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	paper	quant	sheet	0.1.0	0.1.0.0	
+# ::edge	pen	mod	fountain	0.1.1	0.1.1.0	
+# ::edge	pen	poss	i	0.1.1	0.0	
+# ::edge	place	ARG1-of	inhabit-01	0.0.0.0	0.0.0.0.1	
+# ::edge	place	mod	any	0.0.0.0	0.0.0.0.0	
+# ::edge	pocket	poss	i	0.2	0.0	
+# ::edge	possible-01	ARG1	seem-01	0.3	0.3.0	
+# ::edge	relative-position	direction	away	0.0.0	0.0.0.2	
+# ::edge	relative-position	op1	place	0.0.0	0.0.0.0	
+# ::edge	relative-position	quant	distance-quantity	0.0.0	0.0.0.1	
+# ::edge	seem-01	ARG1	absurd	0.3.0	0.3.0.0	
+# ::edge	seem-01	ARG2	i	0.3.0	0.0	
+# ::edge	sheet	quant	1	0.1.0.0	0.1.0.0.0	
+# ::edge	take-01	ARG0	i	0	0.0	
+# ::edge	take-01	ARG1	and	0	0.1	
+# ::edge	take-01	ARG2	pocket	0	0.2	
+# ::edge	take-01	concession	possible-01	0	0.3	
+(t / take-01
+      :ARG0 (i / i
+            :location (r / relative-position
+                  :op (p5 / place
+                        :mod (a3 / any)
+                        :ARG1-of (i2 / inhabit-01
+                              :ARG0 (h / human)))
+                  :quant (d / distance-quantity :quant 1000
+                        :unit (m / mile))
+                  :direction (a2 / away))
+            :ARG1-of (e / endanger-01
+                  :ARG0 (d2 / die-01
+                        :ARG1 i)))
+      :ARG1 (a / and
+            :op (p / paper
+                  :quant (s / sheet :quant 1))
+            :op (p2 / pen
+                  :mod (f / fountain)
+                  :poss i))
+      :ARG2 (p3 / pocket
+            :poss i)
+      :concession (p4 / possible-01
+            :ARG1 (s2 / seem-01
+                  :ARG1 (a4 / absurd)
+                  :ARG2 i)))
+
+# ::id lpp_1943.63 ::date 2012-07-24T12:58:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt But then I remembered how my studies had been concentrated on geography , history , arithmetic , and grammar , and I told the little chap ( a little crossly , too ) that I did not know how to draw .
+# ::zh 这时我却又记起，我只学过地理、历史、算术和语法，就有点不大高兴地对小家伙说我不会画画。
+# ::save-date Wed Mar 18, 2015 ::file lpp_1943_63.txt
+# ::tok But then I remembered how my studies had been concentrated on geography , history , arithmetic , and grammar , and I told the little chap ( a little crossly , too ) that I did not know how to draw .
+# ::alignments  0-1|0 17-18|0.0 22-23|0.0.1 24-25|0.0.1.2.0 25-26|0.0.1.1 28-29|0.0.1.1.0 37-38|0.0.1.0 40-41|0.0.1.0.1 3-4|0.0.0 1-2|0.0.0.2 9-10|0.0.0.1 6-7|0.0.0.1.1 20-21|0.0.0.1.0 18-19|0.0.0.1.0.3 15-16|0.0.0.1.0.2 13-14|0.0.0.1.0.1 11-12|0.0.0.1.0.0 2-3|0.0.0.0 29-30|0.0.1.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.511
+# ::node	0	contrast-01	0-1
+# ::node	0.0	and	17-18
+# ::node	0.0.0	remember-01	3-4
+# ::node	0.0.0.0	i	2-3
+# ::node	0.0.0.1	concentrate-01	9-10
+# ::node	0.0.0.1.0	and	20-21
+# ::node	0.0.0.1.0.0	geography	11-12
+# ::node	0.0.0.1.0.1	history	13-14
+# ::node	0.0.0.1.0.2	arithmetic	15-16
+# ::node	0.0.0.1.0.3	grammar	18-19
+# ::node	0.0.0.1.1	study-01	6-7
+# ::node	0.0.0.2	then	1-2
+# ::node	0.0.1	tell-01	22-23
+# ::node	0.0.1.0	know-03	37-38
+# ::node	0.0.1.0.0	-	37-37
+# ::node	0.0.1.0.1	draw-01	40-41
+# ::node	0.0.1.1	chap	25-26
+# ::node	0.0.1.1.0	little	28-29
+# ::node	0.0.1.2	cross	29-30
+# ::node	0.0.1.2.0	little	24-25
+# ::node	0.0.1.2.1	also	
+# ::root	0	contrast-01
+# ::edge	and	op1	geography	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	and	op1	remember-01	0.0	0.0.0	
+# ::edge	and	op2	history	0.0.0.1.0	0.0.0.1.0.1	
+# ::edge	and	op2	tell-01	0.0	0.0.1	
+# ::edge	and	op3	arithmetic	0.0.0.1.0	0.0.0.1.0.2	
+# ::edge	and	op4	grammar	0.0.0.1.0	0.0.0.1.0.3	
+# ::edge	chap	mod	little	0.0.1.1	0.0.1.1.0	
+# ::edge	concentrate-01	ARG1	and	0.0.0.1	0.0.0.1.0	
+# ::edge	concentrate-01	ARG2	study-01	0.0.0.1	0.0.0.1.1	
+# ::edge	contrast-01	ARG2	and	0	0.0	
+# ::edge	cross	mod	also	0.0.1.2	0.0.1.2.1	
+# ::edge	cross	mod	little	0.0.1.2	0.0.1.2.0	
+# ::edge	draw-01	ARG0	i	0.0.1.0.1	0.0.0.0	
+# ::edge	know-03	ARG0	i	0.0.1.0	0.0.0.0	
+# ::edge	know-03	ARG1	draw-01	0.0.1.0	0.0.1.0.1	
+# ::edge	know-03	polarity	-	0.0.1.0	0.0.1.0.0	
+# ::edge	remember-01	ARG0	i	0.0.0	0.0.0.0	
+# ::edge	remember-01	ARG1	concentrate-01	0.0.0	0.0.0.1	
+# ::edge	remember-01	time	then	0.0.0	0.0.0.2	
+# ::edge	study-01	ARG0	i	0.0.0.1.1	0.0.0.0	
+# ::edge	tell-01	ARG0	i	0.0.1	0.0.0.0	
+# ::edge	tell-01	ARG1	know-03	0.0.1	0.0.1.0	
+# ::edge	tell-01	ARG2	chap	0.0.1	0.0.1.1	
+# ::edge	tell-01	manner	cross	0.0.1	0.0.1.2	
+(c4 / contrast-01
+      :ARG2 (a / and
+            :op (r / remember-01
+                  :ARG0 (i / i)
+                  :ARG1 (c / concentrate-01
+                        :ARG1 (a2 / and
+                              :op (g / geography)
+                              :op (h / history)
+                              :op (a3 / arithmetic)
+                              :op (g2 / grammar))
+                        :ARG2 (s / study-01
+                              :ARG0 i))
+                  :time (t / then))
+            :op (t2 / tell-01
+                  :ARG0 i
+                  :ARG1 (k / know-03 :polarity -
+                        :ARG0 i
+                        :ARG1 (d / draw-01
+                              :ARG0 i))
+                  :ARG2 (c2 / chap
+                        :mod (l / little))
+                  :manner (c3 / cross
+                        :mod (l2 / little)
+                        :mod (a4 / also)))))
+
+# ::id lpp_1943.64 ::date 2012-07-24T13:07:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt He answered me : " That does n't matter .
+# ::zh 他回答我说：“没有关系，
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_64.txt
+# ::tok He answered me : " That does n't matter .
+# ::alignments 1-2|0 8-9|0.2 5-6|0.2.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.518
+# ::node	0	answer-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.1	i	
+# ::node	0.2	matter-01	8-9
+# ::node	0.2.0	that	5-6
+# ::node	0.2.1	-	
+# ::root	0	answer-01
+# ::edge	answer-01	ARG0	he	0	0.0	
+# ::edge	answer-01	ARG1	i	0	0.1	
+# ::edge	answer-01	ARG2	matter-01	0	0.2	
+# ::edge	matter-01	ARG1	that	0.2	0.2.0	
+# ::edge	matter-01	polarity	-	0.2	0.2.1	
+(a / answer-01
+  :ARG0 (h / he)
+  :ARG1 (i / i)
+  :ARG2 (m2 / matter-01
+          :ARG1 (t / that)
+          :polarity -))
+
+# ::id lpp_1943.65 ::date 2012-07-24T13:09:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt Draw me a sheep ... "
+# ::zh 给我画一只羊吧！”
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_65.txt
+# ::tok Draw me a sheep ... "
+# ::alignments 0-1|0 3-4|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.522
+# ::node	0	draw-01	0-1
+# ::node	0.0	you	
+# ::node	0.1	sheep	3-4
+# ::node	0.2	i	
+# ::node	0.3	imperative	
+# ::root	0	draw-01
+# ::edge	draw-01	ARG0	you	0	0.0	
+# ::edge	draw-01	ARG1	sheep	0	0.1	
+# ::edge	draw-01	ARG2	i	0	0.2	
+# ::edge	draw-01	mode	imperative	0	0.3	
+(d / draw-01
+  :ARG0 (y / you)
+  :ARG1 (s / sheep)
+  :ARG2 (i / i)
+  :mode imperative)
+
+# ::id lpp_1943.66 ::date 2012-07-24T13:09:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt But I had never drawn a sheep .
+# ::zh 因为我从来没有画过羊。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_66.txt
+# ::tok But I had never drawn a sheep .
+# ::alignments 0-1|0 4-5|0.0 6-7|0.0.1 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.527
+# ::node	0	contrast-01	0-1
+# ::node	0.0	draw-01	4-5
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	sheep	6-7
+# ::node	0.0.2	ever	
+# ::node	0.0.3	-	
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	draw-01	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0	0.0.0	
+# ::edge	draw-01	ARG1	sheep	0.0	0.0.1	
+# ::edge	draw-01	polarity	-	0.0	0.0.3	
+# ::edge	draw-01	time	ever	0.0	0.0.2	
+(c / contrast-01
+  :ARG2 (d / draw-01
+          :ARG0 (i / i)
+          :ARG1 (s / sheep)
+          :time (e / ever)
+          :polarity -))
+
+# ::id lpp_1943.67 ::date 2012-07-24T13:11:14 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I drew for him one of the two pictures I had drawn so often .
+# ::zh 我就给他重画我所仅仅会画的两副画中
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_67.txt
+# ::tok So I drew for him one of the two pictures I had drawn so often .
+# ::alignments 2-3|0.0 9-10|0.0.1 6-7|0.0.1.1 8-9|0.0.1.1.0.0 12-13|0.0.1.1.0.1 14-15|0.0.1.1.0.1.0 0-1|0.0.1.1.0.1.0.0 5-6|0.0.1.0 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.541
+# ::node	0	cause-01	
+# ::node	0.0	draw-01	2-3
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	picture	9-10
+# ::node	0.0.1.0	1	5-6
+# ::node	0.0.1.1	include-91	6-7
+# ::node	0.0.1.1.0	picture	
+# ::node	0.0.1.1.0.0	2	8-9
+# ::node	0.0.1.1.0.1	draw-01	12-13
+# ::node	0.0.1.1.0.1.0	often	14-15
+# ::node	0.0.1.1.0.1.0.0	so	0-1
+# ::node	0.0.2	he	
+# ::root	0	cause-01
+# ::edge	cause-01	ARG1	draw-01	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0	0.0.0	
+# ::edge	draw-01	ARG0	i	0.0.1.1.0.1	0.0.0	
+# ::edge	draw-01	ARG1	picture	0.0	0.0.1	
+# ::edge	draw-01	ARG2	he	0.0	0.0.2	
+# ::edge	draw-01	time	often	0.0.1.1.0.1	0.0.1.1.0.1.0	
+# ::edge	include-91	ARG2	picture	0.0.1.1	0.0.1.1.0	
+# ::edge	often	degree	so	0.0.1.1.0.1.0	0.0.1.1.0.1.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.1.1.0	0.0.1.1.0.1	
+# ::edge	picture	ARG1-of	include-91	0.0.1	0.0.1.1	
+# ::edge	picture	quant	1	0.0.1	0.0.1.0	
+# ::edge	picture	quant	2	0.0.1.1.0	0.0.1.1.0.0	
+(c / cause-01
+  :ARG1 (d / draw-01
+          :ARG0 (i / i)
+          :ARG1 (p / picture
+                  :quant 1
+                  :ARG1-of (i2 / include-91
+                             :ARG2 (p2 / picture
+                                     :quant 2
+                                     :ARG1-of (d2 / draw-01
+                                                :ARG0 i
+                                                :time (o / often
+                                                        :degree (s / so))))))
+          :ARG2 (h / he)))
+
+# ::id lpp_1943.68 ::date 2012-07-24T13:13:12 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was that of the boa constrictor from the outside .
+# ::zh 的那副闭着肚皮的巨蟒。
+# ::save-date Mon Nov 3, 2014 ::file lpp_1943_68.txt
+# ::tok It was that of the boa constrictor from the outside .
+# ::alignments 5-6|0 7-8|0.1 9-10|0.1.0 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.546
+# ::node	0	boa	5-6
+# ::node	0.0	constrictor	6-7
+# ::node	0.1	from	7-8
+# ::node	0.1.0	outside	9-10
+# ::root	0	boa
+# ::edge	boa	direction	from	0	0.1	
+# ::edge	boa	mod	constrictor	0	0.0	
+# ::edge	from	op1	outside	0.1	0.1.0	
+(b / boa
+      :mod (c2 / constrictor)
+      :direction (f / from
+            :op (o / outside)))
+
+# ::id lpp_1943.69 ::date 2012-07-24T13:14:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I was astounded to hear the little fellow greet it with , " No , no , no !
+# ::zh “不，不！” 我听了他的话，简直目瞪口呆。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_69.txt
+# ::tok And I was astounded to hear the little fellow greet it with , " No , no , no !
+# ::alignments 0-1|0 3-4|0.0 1-2|0.0.1 5-6|0.0.0 8-9|0.0.0.1 7-8|0.0.0.1.0 9-10|0.0.0.0 14-15|0.0.0.0.1.0 16-17|0.0.0.0.1.1 18-19|0.0.0.0.1.2 10-11|0.0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.557
+# ::node	0	and	0-1
+# ::node	0.0	astound-01	3-4
+# ::node	0.0.0	hear-01	5-6
+# ::node	0.0.0.0	greet-01	9-10
+# ::node	0.0.0.0.0	it	10-11
+# ::node	0.0.0.0.1	and	
+# ::node	0.0.0.0.1.0	no	14-15
+# ::node	0.0.0.0.1.1	no	16-17
+# ::node	0.0.0.0.1.2	no	18-19
+# ::node	0.0.0.1	fellow	8-9
+# ::node	0.0.0.1.0	little	7-8
+# ::node	0.0.1	i	1-2
+# ::root	0	and
+# ::edge	and	op1	no	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	and	op2	astound-01	0	0.0	
+# ::edge	and	op2	no	0.0.0.0.1	0.0.0.0.1.1	
+# ::edge	and	op3	no	0.0.0.0.1	0.0.0.0.1.2	
+# ::edge	astound-01	ARG0	hear-01	0.0	0.0.0	
+# ::edge	astound-01	ARG1	i	0.0	0.0.1	
+# ::edge	fellow	mod	little	0.0.0.1	0.0.0.1.0	
+# ::edge	greet-01	ARG0	fellow	0.0.0.0	0.0.0.1	
+# ::edge	greet-01	ARG1	it	0.0.0.0	0.0.0.0.0	
+# ::edge	greet-01	ARG3	and	0.0.0.0	0.0.0.0.1	
+# ::edge	hear-01	ARG0	i	0.0.0	0.0.1	
+# ::edge	hear-01	ARG1	greet-01	0.0.0	0.0.0.0	
+# ::edge	hear-01	ARG2	fellow	0.0.0	0.0.0.1	
+(a / and
+  :op (a2 / astound-01
+         :ARG0 (h / hear-01
+                 :ARG0 i
+                 :ARG1 (g / greet-01
+                         :ARG0 f
+                         :ARG1 (i2 / it)
+                         :ARG3 (a3 / and
+                                 :op (n / no)
+                                 :op (n2 / no)
+                                 :op (n3 / no)))
+                 :ARG2 (f / fellow
+                         :mod (l / little)))
+         :ARG1 (i / i)))
+
+# ::id lpp_1943.70 ::date 2012-07-24T13:17:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt I do not want an elephant inside a boa constrictor .
+# ::zh 我不要蟒蛇，它肚子里还有一头象。”
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_70.txt
+# ::tok I do not want an elephant inside a boa constrictor .
+# ::alignments  3-4|0 5-6|0.1 6-7|0.1.0 8-9|0.1.0.0 9-10|0.1.0.0.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.562
+# ::node	0	want-01	3-4
+# ::node	0.0	i	0-1
+# ::node	0.1	elephant	5-6
+# ::node	0.1.0	inside	6-7
+# ::node	0.1.0.0	boa	8-9
+# ::node	0.1.0.0.0	constrictor	9-10
+# ::node	0.2	-	3-3
+# ::root	0	want-01
+# ::edge	boa	mod	constrictor	0.1.0.0	0.1.0.0.0	
+# ::edge	elephant	location	inside	0.1	0.1.0	
+# ::edge	inside	op1	boa	0.1.0	0.1.0.0	
+# ::edge	want-01	ARG0	i	0	0.0	
+# ::edge	want-01	ARG1	elephant	0	0.1	
+# ::edge	want-01	polarity	-	0	0.2	
+(w / want-01
+  :ARG0 (i / i)
+  :ARG1 (e / elephant
+          :location (i2 / inside
+                      :op (b2 / boa
+                             :mod (c2 / constrictor))))
+  :polarity -)
+
+# ::id lpp_1943.71 ::date 2012-07-24T13:18:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt A boa constrictor is a very dangerous creature , and an elephant is very cumbersome .
+# ::zh 巨蟒这东西太危险，大象又太占地方。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_71.txt
+# ::tok A boa constrictor is a very dangerous creature , and an elephant is very cumbersome .
+# ::alignments 9-10|0 14-15|0.1 11-12|0.1.1 5-6|0.1.0 7-8|0.0 1-2|0.0.1 2-3|0.0.1.0 6-7|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.570
+# ::node	0	and	9-10
+# ::node	0.0	creature	7-8
+# ::node	0.0.0	dangerous	6-7
+# ::node	0.0.1	boa	1-2
+# ::node	0.0.1.0	constrictor	2-3
+# ::node	0.1	cumbersome	14-15
+# ::node	0.1.0	very	5-6
+# ::node	0.1.1	elephant	11-12
+# ::root	0	and
+# ::edge	and	op1	creature	0	0.0	
+# ::edge	and	op2	cumbersome	0	0.1	
+# ::edge	boa	mod	constrictor	0.0.1	0.0.1.0	
+# ::edge	creature	domain	boa	0.0	0.0.1	
+# ::edge	creature	mod	dangerous	0.0	0.0.0	
+# ::edge	cumbersome	degree	very	0.1	0.1.0	
+# ::edge	cumbersome	domain	elephant	0.1	0.1.1	
+(a / and
+  :op (c2 / creature
+         :mod (d2 / dangerous)
+         :domain (b / boa
+                   :mod (c / constrictor)))
+  :op (c3 / cumbersome
+         :degree (v2 / very)
+         :domain (e / elephant)))
+
+# ::id lpp_1943.72 ::date 2012-07-24T13:22:24 ::annotator ISI-AMR-05 ::preferred
+# ::snt Where I live , everything is very small .
+# ::zh 我住的地方非常小。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_72.txt
+# ::tok Where I live , everything is very small .
+# ::alignments 7-8|0 2-3|0.2 1-2|0.2.0 4-5|0.1 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.575
+# ::node	0	small	7-8
+# ::node	0.0	very	6-7
+# ::node	0.1	everything	4-5
+# ::node	0.2	live-01	2-3
+# ::node	0.2.0	i	1-2
+# ::root	0	small
+# ::edge	live-01	ARG0	i	0.2	0.2.0	
+# ::edge	small	degree	very	0	0.0	
+# ::edge	small	domain	everything	0	0.1	
+# ::edge	small	location	live-01	0	0.2	
+(s / small
+  :degree (v / very)
+  :domain (e / everything)
+  :location (l2 / live-01
+              :ARG0 (i / i)))
+
+# ::id lpp_1943.73 ::date 2012-07-24T13:23:37 ::annotator ISI-AMR-05 ::preferred
+# ::snt What I need is a sheep .
+# ::zh 我需要一只羊。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_73.txt
+# ::tok What I need is a sheep .
+# ::alignments 2-3|0 5-6|0.1 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.578
+# ::node	0	need-01	2-3
+# ::node	0.0	i	1-2
+# ::node	0.1	sheep	5-6
+# ::root	0	need-01
+# ::edge	need-01	ARG0	i	0	0.0	
+# ::edge	need-01	ARG1	sheep	0	0.1	
+(n / need-01
+  :ARG0 (i / i)
+  :ARG1 (s / sheep))
+
+# ::id lpp_1943.74 ::date 2012-07-24T13:24:55 ::annotator ISI-AMR-05 ::preferred
+# ::snt Draw me a sheep . "
+# ::zh 给我画一只羊吧。”
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_74.txt
+# ::tok Draw me a sheep . "
+# ::alignments 0-1|0 3-4|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.583
+# ::node	0	draw-01	0-1
+# ::node	0.0	you	
+# ::node	0.1	sheep	3-4
+# ::node	0.2	i	
+# ::node	0.3	imperative	
+# ::root	0	draw-01
+# ::edge	draw-01	ARG0	you	0	0.0	
+# ::edge	draw-01	ARG1	sheep	0	0.1	
+# ::edge	draw-01	ARG2	i	0	0.2	
+# ::edge	draw-01	mode	imperative	0	0.3	
+(d / draw-01
+  :ARG0 (y / you)
+  :ARG1 (s / sheep)
+  :ARG2 (i / i)
+  :mode imperative)
+
+# ::id lpp_1943.75 ::date 2012-07-24T13:25:43 ::annotator ISI-AMR-05 ::preferred
+# ::snt So then I made a drawing .
+# ::zh 我就给他画了。
+# ::save-date Tue Apr 9, 2013 ::file lpp_1943_75.txt
+# ::tok So then I made a drawing .
+# ::alignments 5-6|0.0 1-2|0.0.1 2-3|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.586
+# ::node	0	cause-01	
+# ::node	0.0	draw-01	5-6
+# ::node	0.0.0	i	2-3
+# ::node	0.0.1	then	1-2
+# ::root	0	cause-01
+# ::edge	cause-01	ARG1	draw-01	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0	0.0.0	
+# ::edge	draw-01	time	then	0.0	0.0.1	
+(c / cause-01
+  :ARG1 (d / draw-01
+          :ARG0 (i / i)
+          :time (t2 / then)))
+
+# ::id lpp_1943.76 ::date 2012-07-24T13:26:32 ::annotator ISI-AMR-05 ::preferred
+# ::snt He looked at it carefully , then he said : " No .
+# ::zh 他专心地看着，随后又说：“我不要，
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_76.txt
+# ::tok He looked at it carefully , then he said : " No .
+# ::alignments 1-2|0.0 3-4|0.0.1 0-1|0.0.0 8-9|0.1 6-7|0.1.1 11-12|0.1.0 4-5|0.0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.592
+# ::node	0	and	
+# ::node	0.0	look-01	1-2
+# ::node	0.0.0	he	0-1
+# ::node	0.0.1	it	3-4
+# ::node	0.0.2	careful	4-5
+# ::node	0.1	say-01	8-9
+# ::node	0.1.0	no	11-12
+# ::node	0.1.1	then	6-7
+# ::root	0	and
+# ::edge	and	op1	look-01	0	0.0	
+# ::edge	and	op2	say-01	0	0.1	
+# ::edge	look-01	ARG0	he	0.0	0.0.0	
+# ::edge	look-01	ARG1	it	0.0	0.0.1	
+# ::edge	look-01	manner	careful	0.0	0.0.2	
+# ::edge	say-01	ARG0	he	0.1	0.0.0	
+# ::edge	say-01	ARG1	no	0.1	0.1.0	
+# ::edge	say-01	time	then	0.1	0.1.1	
+(a / and
+  :op (l / look-01
+         :ARG0 (h / he)
+         :ARG1 (i / it)
+         :manner (c / careful))
+  :op (s / say-01
+         :ARG0 h
+         :ARG1 (n / no)
+         :time (t / then)))
+
+# ::id lpp_1943.77 ::date 2012-07-24T13:27:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt This sheep is already very sickly .
+# ::zh 这只羊已经病得很重了。
+# ::save-date Mon Jul 27, 2015 ::file lpp_1943_77.txt
+# ::tok This sheep is already very sickly .
+# ::alignments 1-2|0.0 0-1|0.0.0 4-5|0.1 3-4|0.2 5-6|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.596
+# ::node	0	sick-05	5-6
+# ::node	0.0	sheep	1-2
+# ::node	0.0.0	this	0-1
+# ::node	0.1	very	4-5
+# ::node	0.2	already	3-4
+# ::root	0	sick-05
+# ::edge	sheep	mod	this	0.0	0.0.0	
+# ::edge	sick-05	ARG1	sheep	0	0.0	
+# ::edge	sick-05	degree	very	0	0.1	
+# ::edge	sick-05	time	already	0	0.2	
+(s2 / sick-05
+      :ARG1 (s / sheep
+            :mod (t / this))
+      :degree (v / very)
+      :time (a / already))
+
+# ::id lpp_1943.78 ::date 2012-07-24T13:28:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt Make me another . "
+# ::zh 给我重新画一只。”
+# ::save-date Wed Apr 10, 2013 ::file lpp_1943_78.txt
+# ::tok Make me another . "
+# ::alignments 0-1|0 2-3|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.600
+# ::node	0	make-01	0-1
+# ::node	0.0	you	
+# ::node	0.1	another	2-3
+# ::node	0.2	i	
+# ::node	0.3	imperative	
+# ::root	0	make-01
+# ::edge	make-01	ARG0	you	0	0.0	
+# ::edge	make-01	ARG1	another	0	0.1	
+# ::edge	make-01	ARG3	i	0	0.2	
+# ::edge	make-01	mode	imperative	0	0.3	
+(m / make-01
+  :ARG0 (y / you)
+  :ARG1 (a / another)
+  :ARG3 (i / i)
+  :mode imperative)
+
+# ::id lpp_1943.79 ::date 2012-07-24T13:29:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I made another drawing .
+# ::zh 我又画了起来。
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_79.txt
+# ::tok So I made another drawing .
+# ::alignments 2-3|0.0 4-5|0.0.1.0 3-4|0.0.1.1 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.605
+# ::node	0	cause-01	
+# ::node	0.0	make-01	2-3
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	picture	
+# ::node	0.0.1.0	draw-01	4-5
+# ::node	0.0.1.1	another	3-4
+# ::root	0	cause-01
+# ::edge	cause-01	ARG1	make-01	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0.1.0	0.0.0	
+# ::edge	make-01	ARG0	i	0.0	0.0.0	
+# ::edge	make-01	ARG1	picture	0.0	0.0.1	
+# ::edge	picture	ARG1-of	draw-01	0.0.1	0.0.1.0	
+# ::edge	picture	mod	another	0.0.1	0.0.1.1	
+(c / cause-01
+      :ARG1 (m / make-01
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (d / draw-01
+                        :ARG0 i)
+                  :mod (a / another))))
+
+# ::id lpp_1943.80 ::date 2012-07-24T13:29:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt My friend smiled gently and indulgently .
+# ::zh 我的这位朋友天真可爱地笑了。
+# ::save-date Fri Apr 18, 2014 ::file lpp_1943_80.txt
+# ::tok My friend smiled gently and indulgently .
+# ::alignments 2-3|0 1-2|0.0.0+0.0.0.1 5-6|0.2 3-4|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.609
+# ::node	0	smile-01	2-3
+# ::node	0.0	person	
+# ::node	0.0.0	have-rel-role-91	1-2
+# ::node	0.0.0.0	i	
+# ::node	0.0.0.1	friend	1-2
+# ::node	0.1	gentle	3-4
+# ::node	0.2	indulgent	5-6
+# ::root	0	smile-01
+# ::edge	have-rel-role-91	ARG1	i	0.0.0	0.0.0.0	
+# ::edge	have-rel-role-91	ARG2	friend	0.0.0	0.0.0.1	
+# ::edge	person	ARG0-of	have-rel-role-91	0.0	0.0.0	
+# ::edge	smile-01	ARG0	person	0	0.0	
+# ::edge	smile-01	manner	gentle	0	0.1	
+# ::edge	smile-01	manner	indulgent	0	0.2	
+(s / smile-01
+      :ARG0 (p / person
+            :ARG0-of (h / have-rel-role-91
+                  :ARG1 (i / i)
+                  :ARG2 (f / friend)))
+      :manner (g / gentle)
+      :manner (i2 / indulgent))
+
+# ::id lpp_1943.81 ::date 2012-07-24T13:31:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt " You see yourself , " he said , " that this is not a sheep .
+# ::zh “你看，你画的不是小羊”他说。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_81.txt
+# ::tok " You see yourself , " he said , " that this is not a sheep .
+# ::alignments  7-8|0 2-3|0.1 15-16|0.1.1 11-12|0.1.1.0 1-2|0.1.0 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.617
+# ::node	0	say-01	7-8
+# ::node	0.0	he	6-7
+# ::node	0.1	see-01	2-3
+# ::node	0.1.0	you	1-2
+# ::node	0.1.1	sheep	15-16
+# ::node	0.1.1.0	this	11-12
+# ::node	0.1.1.1	-	14-14
+# ::root	0	say-01
+# ::edge	say-01	ARG0	he	0	0.0	
+# ::edge	say-01	ARG1	see-01	0	0.1	
+# ::edge	see-01	ARG0	you	0.1	0.1.0	
+# ::edge	see-01	ARG1	sheep	0.1	0.1.1	
+# ::edge	sheep	domain	this	0.1.1	0.1.1.0	
+# ::edge	sheep	polarity	-	0.1.1	0.1.1.1	
+(s / say-01
+  :ARG0 (h / he)
+  :ARG1 (s2 / see-01
+          :ARG0 (y / you)
+          :ARG1 (s4 / sheep
+                  :domain (t2 / this)
+                  :polarity -)))
+
+# ::id lpp_1943.82 ::date 2012-07-24T13:32:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt This is a ram .
+# ::zh 是头公羊，
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_82.txt
+# ::tok This is a ram .
+# ::alignments 3-4|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.619
+# ::node	0	ram	3-4
+# ::node	0.0	this	0-1
+# ::root	0	ram
+# ::edge	ram	domain	this	0	0.0	
+(r2 / ram
+  :domain (t2 / this))
+
+# ::id lpp_1943.83 ::date 2012-07-24T13:32:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt It has horns . "
+# ::zh 还有犄角呢。”
+# ::save-date Tue Jul 24, 2012 ::file lpp_1943_83.txt
+# ::tok It has horns . "
+# ::alignments 1-2|0 2-3|0.1 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.622
+# ::node	0	have-03	1-2
+# ::node	0.0	it	0-1
+# ::node	0.1	horn	2-3
+# ::root	0	have-03
+# ::edge	have-03	ARG0	it	0	0.0	
+# ::edge	have-03	ARG1	horn	0	0.1	
+(h / have-03
+      :ARG0 (i / it)
+      :ARG1 (h2 / horn))
+
+# ::id lpp_1943.84 ::date 2012-07-24T13:33:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt So then I did my drawing over once more .
+# ::zh 于是我又重新画了一张。
+# ::save-date Tue Feb 23, 2016 ::file lpp_1943_84.txt
+# ::tok So then I did my drawing over once more .
+# ::alignments 3-4|0.0 1-2|0.0.4 6-7|0.0.2 5-6|0.0.1.0 2-3|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.628
+# ::node	0	cause-01	
+# ::node	0.0	do-02	3-4
+# ::node	0.0.0	i	2-3
+# ::node	0.0.1	picture	
+# ::node	0.0.1.0	draw-01	5-6
+# ::node	0.0.2	over	6-7
+# ::node	0.0.3	again	
+# ::node	0.0.3.0	1	
+# ::node	0.0.4	then	1-2
+# ::root	0	cause-01
+# ::edge	again	frequency	1	0.0.3	0.0.3.0	
+# ::edge	cause-01	ARG1	do-02	0	0.0	
+# ::edge	do-02	ARG0	i	0.0	0.0.0	
+# ::edge	do-02	ARG1	picture	0.0	0.0.1	
+# ::edge	do-02	mod	again	0.0	0.0.3	
+# ::edge	do-02	mod	over	0.0	0.0.2	
+# ::edge	do-02	time	then	0.0	0.0.4	
+# ::edge	draw-01	ARG0	i	0.0.1.0	0.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.1	0.0.1.0	
+(c / cause-01
+      :ARG1 (d / do-02
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (d2 / draw-01
+                        :ARG0 i))
+            :mod (o / over)
+            :mod (a / again :frequency 1)
+            :time (t2 / then)))
+
+# ::id lpp_1943.85 ::date 2012-07-24T13:34:56 ::annotator ISI-AMR-05 ::preferred
+# ::snt But it was rejected too , just like the others .
+# ::zh 这副画同前几副一样又被拒绝了。
+# ::save-date Mon May 13, 2013 ::file lpp_1943_85.txt
+# ::tok But it was rejected too , just like the others .
+# ::alignments 0-1|0 3-4|0.0 4-5|0.0.2 9-10|0.0.1.0 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.636
+# ::node	0	contrast-01	0-1
+# ::node	0.0	reject-01	3-4
+# ::node	0.0.0	it	1-2
+# ::node	0.0.1	resemble-01	
+# ::node	0.0.1.0	other	9-10
+# ::node	0.0.2	too	4-5
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG1	reject-01	0	0.0	
+# ::edge	reject-01	ARG1	it	0.0	0.0.0	
+# ::edge	reject-01	ARG1-of	resemble-01	0.0	0.0.1	
+# ::edge	reject-01	mod	too	0.0	0.0.2	
+# ::edge	resemble-01	ARG2	other	0.0.1	0.0.1.0	
+(c / contrast-01
+      :ARG1 (r / reject-01
+            :ARG1 (i / it)
+            :ARG1-of (r2 / resemble-01
+                  :ARG2 (o / other))
+            :mod (t / too)))
+
+# ::id lpp_1943.86 ::date 2012-07-24T13:40:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt " This one is too old .
+# ::zh “这一只太老了。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_86.txt
+# ::tok " This one is too old .
+# ::alignments 5-6|0 2-3|0.1 1-2|0.1.0 4-5|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.640
+# ::node	0	old	5-6
+# ::node	0.0	too	4-5
+# ::node	0.1	one	2-3
+# ::node	0.1.0	this	1-2
+# ::root	0	old
+# ::edge	old	degree	too	0	0.0	
+# ::edge	old	domain	one	0	0.1	
+# ::edge	one	mod	this	0.1	0.1.0	
+(o2 / old
+  :degree (t2 / too)
+  :domain (o / one
+            :mod (t / this)))
+
+# ::id lpp_1943.87 ::date 2012-07-31T06:15:17 ::annotator ISI-AMR-05 ::preferred
+# ::snt I want a sheep that will live a long time . "
+# ::zh 我想要一只能活得长的羊。”
+# ::save-date Thu Jun 4, 2015 ::file lpp_1943_87.txt
+# ::tok I want a sheep that will live a long time . "
+# ::alignments 1-2|0 3-4|0.1 6-7|0.1.0 8-9|0.1.0.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.644
+# ::node	0	want-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	sheep	3-4
+# ::node	0.1.0	live-01	6-7
+# ::node	0.1.0.0	long-03	8-9
+# ::root	0	want-01
+# ::edge	live-01	ARG1-of	long-03	0.1.0	0.1.0.0	
+# ::edge	sheep	ARG0-of	live-01	0.1	0.1.0	
+# ::edge	want-01	ARG0	i	0	0.0	
+# ::edge	want-01	ARG1	sheep	0	0.1	
+(w / want-01
+      :ARG0 (i / i)
+      :ARG1 (s / sheep
+            :ARG0-of (l / live-01
+                  :ARG1-of (l2 / long-03))))
+
+# ::id lpp_1943.88 ::date 2012-07-31T06:16:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt By this time my patience was exhausted , because I was in a hurry to start taking my engine apart .
+# ::zh 我不耐烦了。 因为我急于要检修发动机，
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_88.txt
+# ::tok By this time my patience was exhausted , because I was in a hurry to start taking my engine apart .
+# ::alignments 6-7|0 0-1|0.2 2-3|0.2.0 1-2|0.2.0.0 8-9|0.1 13-14|0.1.0 15-16|0.1.0.0 18-19|0.1.0.0.0.0 9-10|0.0.0 4-5|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.654
+# ::node	0	exhaust-01	6-7
+# ::node	0.0	patient-01	4-5
+# ::node	0.0.0	i	9-10
+# ::node	0.1	cause-01	8-9
+# ::node	0.1.0	hurry-01	13-14
+# ::node	0.1.0.0	start-01	15-16
+# ::node	0.1.0.0.0	disassemble-01	
+# ::node	0.1.0.0.0.0	engine	18-19
+# ::node	0.2	by	0-1
+# ::node	0.2.0	time	2-3
+# ::node	0.2.0.0	this	1-2
+# ::root	0	exhaust-01
+# ::edge	by	op1	time	0.2	0.2.0	
+# ::edge	cause-01	ARG0	hurry-01	0.1	0.1.0	
+# ::edge	disassemble-01	ARG0	i	0.1.0.0.0	0.0.0	
+# ::edge	disassemble-01	ARG1	engine	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	engine	poss	i	0.1.0.0.0.0	0.0.0	
+# ::edge	exhaust-01	ARG1	patient-01	0	0.0	
+# ::edge	exhaust-01	ARG1-of	cause-01	0	0.1	
+# ::edge	exhaust-01	time	by	0	0.2	
+# ::edge	hurry-01	ARG1	i	0.1.0	0.0.0	
+# ::edge	hurry-01	ARG2	start-01	0.1.0	0.1.0.0	
+# ::edge	patient-01	ARG1	i	0.0	0.0.0	
+# ::edge	start-01	ARG0	i	0.1.0.0	0.0.0	
+# ::edge	start-01	ARG1	disassemble-01	0.1.0.0	0.1.0.0.0	
+# ::edge	time	mod	this	0.2.0	0.2.0.0	
+(e / exhaust-01
+      :ARG1 (p / patient-01
+            :ARG1 (i / i))
+      :ARG1-of (c / cause-01
+            :ARG0 (h / hurry-01
+                  :ARG1 i
+                  :ARG2 (s / start-01
+                        :ARG0 i
+                        :ARG1 (d / disassemble-01
+                              :ARG0 i
+                              :ARG1 (e2 / engine
+                                    :poss i)))))
+      :time (b / by
+            :op (t / time
+                  :mod (t2 / this))))
+
+# ::id lpp_1943.89 ::date 2012-07-31T06:21:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt So I tossed off this drawing .
+# ::zh 于是就草草画了这张画，
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_89.txt
+# ::tok So I tossed off this drawing .
+# ::alignments 1-2|0.0.0 5-6|0.0.1.0 4-5|0.0.1.1 3-4|0.0.2 2-3|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.661
+# ::node	0	cause-01	
+# ::node	0.0	toss-out-02	2-3
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	picture	
+# ::node	0.0.1.0	draw-01	5-6
+# ::node	0.0.1.1	this	4-5
+# ::node	0.0.2	off	3-4
+# ::root	0	cause-01
+# ::edge	cause-01	ARG1	toss-out-02	0	0.0	
+# ::edge	draw-01	ARG0	i	0.0.1.0	0.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.1	0.0.1.0	
+# ::edge	picture	mod	this	0.0.1	0.0.1.1	
+# ::edge	toss-out-02	ARG0	i	0.0	0.0.0	
+# ::edge	toss-out-02	ARG1	picture	0.0	0.0.1	
+# ::edge	toss-out-02	direction	off	0.0	0.0.2	
+(c / cause-01
+      :ARG1 (t / toss-out-02
+            :ARG0 (i / i)
+            :ARG1 (p / picture
+                  :ARG1-of (d / draw-01
+                        :ARG0 i)
+                  :mod (t3 / this))
+            :direction (o / off)))
+
+# ::id lpp_1943.90 ::date 2012-07-31T06:25:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I threw out an explanation with it .
+# ::zh 并且匆匆地对他说道：“
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_90.txt
+# ::tok And I threw out an explanation with it .
+# ::alignments 0-1|0 1-2|0.0.0 7-8|0.0.1 5-6|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.666
+# ::node	0	and	0-1
+# ::node	0.0	explain-01	5-6
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	it	7-8
+# ::root	0	and
+# ::edge	and	op2	explain-01	0	0.0	
+# ::edge	explain-01	ARG0	i	0.0	0.0.0	
+# ::edge	explain-01	ARG1	it	0.0	0.0.1	
+(a / and
+  :op (e / explain-01
+         :ARG0 (i / i)
+         :ARG1 (i3 / it)))
+
+# ::id lpp_1943.91 ::date 2012-07-31T06:32:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " This is only his box .
+# ::zh 这是一只箱子，
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_91.txt
+# ::tok " This is only his box .
+# ::alignments 5-6|0 3-4|0.2 1-2|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.672
+# ::node	0	box	5-6
+# ::node	0.0	he	
+# ::node	0.1	this	1-2
+# ::node	0.2	only	3-4
+# ::root	0	box
+# ::edge	box	domain	this	0	0.1	
+# ::edge	box	mod	only	0	0.2	
+# ::edge	box	poss	he	0	0.0	
+(b / box
+  :poss (h / he)
+  :domain (t / this)
+  :mod (o / only))
+
+# ::id lpp_1943.92 ::date 2012-07-31T06:48:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt The sheep you asked for is inside . "
+# ::zh 你要的羊就在里面。”
+# ::save-date Tue May 7, 2013 ::file lpp_1943_92.txt
+# ::tok The sheep you asked for is inside . "
+# ::alignments 1-2|0.0 3-4|0.0.0 2-3|0.0.0.0 6-7|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.678
+# ::node	0	be-located-at-91	
+# ::node	0.0	sheep	1-2
+# ::node	0.0.0	ask-01	3-4
+# ::node	0.0.0.0	you	2-3
+# ::node	0.1	inside	6-7
+# ::root	0	be-located-at-91
+# ::edge	ask-01	ARG0	you	0.0.0	0.0.0.0	
+# ::edge	be-located-at-91	ARG1	sheep	0	0.0	
+# ::edge	be-located-at-91	ARG2	inside	0	0.1	
+# ::edge	sheep	ARG1-of	ask-01	0.0	0.0.0	
+(b / be-located-at-91
+      :ARG1 (s2 / sheep
+            :ARG1-of (a / ask-01
+                  :ARG0 (y / you)))
+      :ARG2 (i2 / inside))
+
+# ::id lpp_1943.93 ::date 2012-07-31T06:50:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt I was very surprised to see a light break over the face of my young judge : " That is exactly the way I wanted it !
+# ::zh 这时我十分惊奇地看到我的这位小评判员喜笑颜开。 他说：“这正是我想要的，
+# ::save-date Tue Apr 30, 2013 ::file lpp_1943_93.txt
+# ::tok I was very surprised to see a light break over the face of my young judge : " That is exactly the way I wanted it !
+# ::alignments 3-4|0.0 2-3|0.0.2 0-1|0.0.1 5-6|0.0.0 8-9|0.0.0.0 9-10|0.0.0.0.1 11-12|0.0.0.0.1.0 15-16|0.0.0.0.1.0.0+0.0.0.0.1.0.0.0 14-15|0.0.0.0.1.0.0.1 7-8|0.0.0.0.0 22-23|0.1.0 24-25|0.1.0.1 25-26|0.1.0.1.0 20-21|0.1.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.695
+# ::node	0	and	
+# ::node	0.0	surprise-01	3-4
+# ::node	0.0.0	see-01	5-6
+# ::node	0.0.0.0	break-13	8-9
+# ::node	0.0.0.0.0	light	7-8
+# ::node	0.0.0.0.1	over	9-10
+# ::node	0.0.0.0.1.0	face	11-12
+# ::node	0.0.0.0.1.0.0	person	15-16
+# ::node	0.0.0.0.1.0.0.0	judge-01	15-16
+# ::node	0.0.0.0.1.0.0.1	young	14-15
+# ::node	0.0.1	i	0-1
+# ::node	0.0.2	very	2-3
+# ::node	0.1	say-01	
+# ::node	0.1.0	way	22-23
+# ::node	0.1.0.0	exact	20-21
+# ::node	0.1.0.1	want-01	24-25
+# ::node	0.1.0.1.0	it	25-26
+# ::root	0	and
+# ::edge	and	op1	surprise-01	0	0.0	
+# ::edge	and	op2	say-01	0	0.1	
+# ::edge	break-13	ARG1	light	0.0.0.0	0.0.0.0.0	
+# ::edge	break-13	location	over	0.0.0.0	0.0.0.0.1	
+# ::edge	face	part-of	person	0.0.0.0.1.0	0.0.0.0.1.0.0	
+# ::edge	over	op1	face	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	person	ARG0-of	judge-01	0.0.0.0.1.0.0	0.0.0.0.1.0.0.0	
+# ::edge	person	mod	young	0.0.0.0.1.0.0	0.0.0.0.1.0.0.1	
+# ::edge	person	poss	i	0.0.0.0.1.0.0	0.0.1	
+# ::edge	say-01	ARG1	way	0.1	0.1.0	
+# ::edge	see-01	ARG0	i	0.0.0	0.0.1	
+# ::edge	see-01	ARG1	break-13	0.0.0	0.0.0.0	
+# ::edge	surprise-01	ARG0	see-01	0.0	0.0.0	
+# ::edge	surprise-01	ARG1	i	0.0	0.0.1	
+# ::edge	surprise-01	degree	very	0.0	0.0.2	
+# ::edge	want-01	ARG0	person	0.1.0.1	0.0.0.0.1.0.0	
+# ::edge	want-01	ARG1	it	0.1.0.1	0.1.0.1.0	
+# ::edge	way	domain	want-01	0.1.0	0.1.0.1	
+# ::edge	way	mod	exact	0.1.0	0.1.0.0	
+(a / and
+      :op (s / surprise-01
+            :ARG0 (s2 / see-01
+                  :ARG0 i
+                  :ARG1 (b / break-13
+                        :ARG1 (l / light)
+                        :location (o / over
+                              :op (f / face
+                                    :part-of (p / person
+                                          :ARG0-of (j / judge-01)
+                                          :poss i
+                                          :mod (y / young))))))
+            :ARG1 (i / i)
+            :degree (v / very))
+      :op (s3 / say-01
+            :ARG1 (w / way
+                  :mod (e / exact)
+                  :domain (w2 / want-01
+                        :ARG0 p
+                        :ARG1 (i2 / it)))))
+
+# ::id lpp_1943.94 ::date 2012-07-31T06:59:45 ::annotator ISI-AMR-05 ::preferred
+# ::snt Do you think that this sheep will have to have a great deal of grass ? "
+# ::zh 你说这只羊需要很多草吗？”
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_94.txt
+# ::tok Do you think that this sheep will have to have a great deal of grass ? "
+# ::alignments 2-3|0 7-8|0.1.0 14-15|0.1.0.1 12-13|0.1.0.1.0 11-12|0.1.0.1.0.0 5-6|0.1.0.0 4-5|0.1.0.0.0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.709
+# ::node	0	think-01	2-3
+# ::node	0.0	you	1-2
+# ::node	0.1	obligate-01	
+# ::node	0.1.0	have-03	7-8
+# ::node	0.1.0.0	sheep	5-6
+# ::node	0.1.0.0.0	this	4-5
+# ::node	0.1.0.1	grass	14-15
+# ::node	0.1.0.1.0	deal	12-13
+# ::node	0.1.0.1.0.0	great	11-12
+# ::node	0.2	interrogative	
+# ::root	0	think-01
+# ::edge	deal	mod	great	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	grass	quant	deal	0.1.0.1	0.1.0.1.0	
+# ::edge	have-03	ARG0	sheep	0.1.0	0.1.0.0	
+# ::edge	have-03	ARG1	grass	0.1.0	0.1.0.1	
+# ::edge	obligate-01	ARG2	have-03	0.1	0.1.0	
+# ::edge	sheep	mod	this	0.1.0.0	0.1.0.0.0	
+# ::edge	think-01	ARG0	you	0	0.0	
+# ::edge	think-01	ARG1	obligate-01	0	0.1	
+# ::edge	think-01	mode	interrogative	0	0.2	
+(t / think-01
+  :ARG0 (y / you)
+  :ARG1 (o / obligate-01
+          :ARG2 (h / have-03
+                  :ARG0 (s / sheep
+                          :mod (t2 / this))
+                  :ARG1 (g / grass
+                          :quant (d / deal
+                                   :mod (g2 / great)))))
+  :mode interrogative)
+
+# ::id lpp_1943.95 ::date 2012-07-31T07:04:48 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Why ? "
+# ::zh “为什么？”
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_95.txt
+# ::tok " Why ? "
+# ::alignments  ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.712
+# ::node	0	cause-01	
+# ::node	0.0	amr-unknown	
+# ::root	0	cause-01
+# ::edge	cause-01	ARG0	amr-unknown	0	0.0	
+(c / cause-01
+      :ARG0 (a / amr-unknown))
+
+# ::id lpp_1943.96 ::date 2012-07-31T07:06:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Because where I live everything is very small ... "
+# ::zh “因为我住的地方一切都非常小…”
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_96.txt
+# ::tok " Because where I live everything is very small ... "
+# ::alignments 1-2|0 8-9|0.0 5-6|0.0.1 4-5|0.0.1.0 3-4|0.0.1.0.0 7-8|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.720
+# ::node	0	cause-01	1-2
+# ::node	0.0	small	8-9
+# ::node	0.0.0	very	7-8
+# ::node	0.0.1	everything	5-6
+# ::node	0.0.1.0	live-01	4-5
+# ::node	0.0.1.0.0	i	3-4
+# ::root	0	cause-01
+# ::edge	cause-01	ARG0	small	0	0.0	
+# ::edge	everything	location	live-01	0.0.1	0.0.1.0	
+# ::edge	live-01	ARG0	i	0.0.1.0	0.0.1.0.0	
+# ::edge	small	degree	very	0.0	0.0.0	
+# ::edge	small	domain	everything	0.0	0.0.1	
+(c / cause-01
+  :ARG0 (s / small
+          :degree (v / very)
+          :domain (e / everything
+                    :location (l / live-01
+                                :ARG0 (i / i)))))
+
+# ::id lpp_1943.97 ::date 2012-07-31T07:08:22 ::annotator ISI-AMR-05 ::preferred
+# ::snt " There will surely be enough grass for him , "
+# ::zh 地方小也够喂养它的。”
+# ::save-date Thu Jul 9, 2015 ::file lpp_1943_97.txt
+# ::tok " There will surely be enough grass for him , "
+# ::alignments 6-7|0.0 5-6|0.0.0 3-4|0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.727
+# ::node	0	benefit-01	
+# ::node	0.0	grass	6-7
+# ::node	0.0.0	enough	5-6
+# ::node	0.0.0.0	sure-02	3-4
+# ::node	0.1	he	
+# ::root	0	benefit-01
+# ::edge	benefit-01	ARG0	grass	0	0.0	
+# ::edge	benefit-01	ARG1	he	0	0.1	
+# ::edge	enough	ARG1-of	sure-02	0.0.0	0.0.0.0	
+# ::edge	grass	mod	enough	0.0	0.0.0	
+(b / benefit-01
+      :ARG0 (g3 / grass
+            :mod (e3 / enough
+                  :ARG1-of (s / sure-02)))
+      :ARG1 (h2 / he))
+
+# ::id lpp_1943.98 ::date 2012-07-31T07:10:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt I said .
+# ::zh 我说
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_98.txt
+# ::tok I said .
+# ::alignments 1-2|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.730
+# ::node	0	say-01	1-2
+# ::node	0.0	i	0-1
+# ::root	0	say-01
+# ::edge	say-01	ARG0	i	0	0.0	
+(s / say-01
+      :ARG0 (i / i))
+
+# ::id lpp_1943.99 ::date 2012-07-31T07:10:44 ::annotator ISI-AMR-05 ::preferred
+# ::snt " It is a very small sheep that I have given you . "
+# ::zh “我给你画的是一只很小的小羊，
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_99.txt
+# ::tok " It is a very small sheep that I have given you . "
+# ::alignments 10-11|0 11-12|0.2 6-7|0.1 5-6|0.1.0 4-5|0.1.0.0 8-9|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.738
+# ::node	0	give-01	10-11
+# ::node	0.0	i	8-9
+# ::node	0.1	sheep	6-7
+# ::node	0.1.0	small	5-6
+# ::node	0.1.0.0	very	4-5
+# ::node	0.2	you	11-12
+# ::root	0	give-01
+# ::edge	give-01	ARG0	i	0	0.0	
+# ::edge	give-01	ARG1	sheep	0	0.1	
+# ::edge	give-01	ARG2	you	0	0.2	
+# ::edge	sheep	mod	small	0.1	0.1.0	
+# ::edge	small	degree	very	0.1.0	0.1.0.0	
+(g / give-01
+      :ARG0 (i / i)
+      :ARG1 (s / sheep
+            :mod (s2 / small
+                  :degree (v / very)))
+      :ARG2 (y / you))
+
+# ::id lpp_1943.100 ::date 2012-07-31T07:11:47 ::annotator ISI-AMR-05 ::preferred
+# ::snt He bent his head over the drawing : " Not so small that -- Look !
+# ::zh 他把脑袋靠近这张画。 “并不象你说的那么小…瞧！
+# ::save-date Thu Oct 29, 2015 ::file lpp_1943_100.txt
+# ::tok He bent his head over the drawing : " Not so small that -- Look !
+# ::alignments 1-2|0.0 3-4|0.0.0 4-5|0.0.0.0 6-7|0.0.0.0.0.0 0-1|0.1.0 14-15|0.1.1 11-12|0.1.1.2 12-13|0.1.1.2.2 10-11|0.1.1.2.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.749
+# ::node	0	and	
+# ::node	0.0	bend-01	1-2
+# ::node	0.0.0	head	3-4
+# ::node	0.0.0.0	over	4-5
+# ::node	0.0.0.0.0	picture	
+# ::node	0.0.0.0.0.0	draw-01	6-7
+# ::node	0.1	say-01	
+# ::node	0.1.0	he	0-1
+# ::node	0.1.1	look-01	14-15
+# ::node	0.1.1.0	imperative	
+# ::node	0.1.1.1	you	
+# ::node	0.1.1.2	small	11-12
+# ::node	0.1.1.2.0	-	
+# ::node	0.1.1.2.1	so	10-11
+# ::node	0.1.1.2.2	that	12-13
+# ::root	0	and
+# ::edge	and	op2	bend-01	0	0.0	
+# ::edge	and	op2	say-01	0	0.1	
+# ::edge	bend-01	ARG1	head	0.0	0.0.0	
+# ::edge	head	location	over	0.0.0	0.0.0.0	
+# ::edge	head	part-of	he	0.0.0	0.1.0	
+# ::edge	look-01	ARG0	you	0.1.1	0.1.1.1	
+# ::edge	look-01	ARG1	small	0.1.1	0.1.1.2	
+# ::edge	look-01	mode	imperative	0.1.1	0.1.1.0	
+# ::edge	over	op1	picture	0.0.0.0	0.0.0.0.0	
+# ::edge	picture	ARG1-of	draw-01	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	say-01	ARG0	he	0.1	0.1.0	
+# ::edge	say-01	ARG1	look-01	0.1	0.1.1	
+# ::edge	small	degree	so	0.1.1.2	0.1.1.2.1	
+# ::edge	small	domain	that	0.1.1.2	0.1.1.2.2	
+# ::edge	small	polarity	-	0.1.1.2	0.1.1.2.0	
+(a / and
+      :op (b / bend-01
+            :ARG1 (h2 / head
+                  :location (o / over
+                        :op (p / picture
+                              :ARG1-of (d / draw-01)))
+                  :part-of h3))
+      :op (s / say-01
+            :ARG0 (h3 / he)
+            :ARG1 (l / look-01 :mode imperative
+                  :ARG0 (y / you)
+                  :ARG1 (s2 / small :polarity -
+                        :degree (s3 / so)
+                        :domain (t2 / that)))))
+
+# ::id lpp_1943.101 ::date 2012-07-31T07:21:41 ::annotator ISI-AMR-05 ::preferred
+# ::snt He has gone to sleep ... "
+# ::zh 它睡着了…”
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_101.txt
+# ::tok He has gone to sleep ... "
+# ::alignments 4-5|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.754
+# ::node	0	sleep-01	4-5
+# ::node	0.0	he	0-1
+# ::root	0	sleep-01
+# ::edge	sleep-01	ARG0	he	0	0.0	
+(s / sleep-01
+      :ARG0 (h / he))
+
+# ::id lpp_1943.102 ::date 2012-07-31T07:25:20 ::annotator ISI-AMR-05 ::preferred
+# ::snt And that is how I made the acquaintance of the little prince .
+# ::zh 就这样，我认识了小王子。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_102.txt
+# ::tok And that is how I made the acquaintance of the little prince .
+# ::alignments 0-1|0 4-5|0.0.0 11-12|0.0.1 10-11|0.0.1.0 1-2|0.0.2 7-8|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.762
+# ::node	0	and	0-1
+# ::node	0.0	acquaint-01	7-8
+# ::node	0.0.0	i	4-5
+# ::node	0.0.1	prince	11-12
+# ::node	0.0.1.0	little	10-11
+# ::node	0.0.2	that	1-2
+# ::root	0	and
+# ::edge	acquaint-01	ARG1	i	0.0	0.0.0	
+# ::edge	acquaint-01	ARG2	prince	0.0	0.0.1	
+# ::edge	acquaint-01	manner	that	0.0	0.0.2	
+# ::edge	and	op2	acquaint-01	0	0.0	
+# ::edge	prince	mod	little	0.0.1	0.0.1.0	
+(a / and
+  :op (a2 / acquaint-01
+         :ARG1 (i / i)
+         :ARG2 (p / prince
+                 :mod (l / little))
+         :manner (t / that)))
+
+# ::id lpp_1943.103 ::date 2012-07-31T07:37:59 ::annotator ISI-AMR-05 ::preferred
+# ::snt Chapter 3 .
+# ::zh III。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_103.txt
+# ::tok Chapter 3 .
+# ::alignments 0-1|0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.765
+# ::node	0	chapter	0-1
+# ::node	0.0	3	1-2
+# ::root	0	chapter
+# ::edge	chapter	mod	3	0	0.0	
+(c2 / chapter
+  :mod 3)
+
+# ::id lpp_1943.104 ::date 2012-07-31T07:38:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt It took me a long time to learn where he came from .
+# ::zh 我费了好长时间才弄清楚他是从哪里来的。
+# ::save-date Mon Dec 7, 2015 ::file lpp_1943_104.txt
+# ::tok It took me a long time to learn where he came from .
+# ::alignments 1-2|0 4-5|0.0.0 7-8|0.0.0.0 10-11|0.0.0.0.1.0 9-10|0.0.0.0.1.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.773
+# ::node	0	take-10	1-2
+# ::node	0.0	temporal-quantity	
+# ::node	0.0.0	long-03	4-5
+# ::node	0.0.0.0	learn-01	7-8
+# ::node	0.0.0.0.0	i	
+# ::node	0.0.0.0.1	place	
+# ::node	0.0.0.0.1.0	come-01	10-11
+# ::node	0.0.0.0.1.0.0	he	9-10
+# ::root	0	take-10
+# ::edge	come-01	ARG1	he	0.0.0.0.1.0	0.0.0.0.1.0.0	
+# ::edge	learn-01	ARG0	i	0.0.0.0	0.0.0.0.0	
+# ::edge	learn-01	ARG1	place	0.0.0.0	0.0.0.0.1	
+# ::edge	long-03	ARG1	learn-01	0.0.0	0.0.0.0	
+# ::edge	place	ARG3-of	come-01	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	take-10	ARG1	temporal-quantity	0	0.0	
+# ::edge	temporal-quantity	ARG2-of	long-03	0.0	0.0.0	
+(t2 / take-10
+      :ARG1 (t / temporal-quantity
+            :ARG2-of (l / long-03
+                  :ARG1 (l2 / learn-01
+                        :ARG0 (i / i)
+                        :ARG1 (p / place
+                              :ARG3-of (c / come-01
+                                    :ARG1 (h / he)))))))
+
+# ::id lpp_1943.105 ::date 2012-07-31T07:42:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt The little prince , who asked me so many questions , never seemed to hear the ones I asked him .
+# ::zh 小王子向我提出了很多问题，可是，对我提出的问题，他好象压根没有听见似的。
+# ::save-date Wed Apr 8, 2015 ::file lpp_1943_105.txt
+# ::tok The little prince , who asked me so many questions , never seemed to hear the ones I asked him .
+# ::alignments 12-13|0 14-15|0.0 16-17|0.0.2 5-6|0.0.2.0 2-3|0.0.1 9-10|0.0.1.1 8-9|0.0.1.1.1 7-8|0.0.1.1.1.0 17-18|0.0.1.1.0 1-2|0.0.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.790
+# ::node	0	seem-01	12-13
+# ::node	0.0	hear-01	14-15
+# ::node	0.0.0	-	
+# ::node	0.0.1	prince	2-3
+# ::node	0.0.1.0	little	1-2
+# ::node	0.0.1.1	question-01	9-10
+# ::node	0.0.1.1.0	i	17-18
+# ::node	0.0.1.1.1	many	8-9
+# ::node	0.0.1.1.1.0	so	7-8
+# ::node	0.0.2	one	16-17
+# ::node	0.0.2.0	ask-01	5-6
+# ::node	0.0.3	ever	
+# ::root	0	seem-01
+# ::edge	ask-01	ARG0	i	0.0.2.0	0.0.1.1.0	
+# ::edge	ask-01	ARG2	prince	0.0.2.0	0.0.1	
+# ::edge	hear-01	ARG0	prince	0.0	0.0.1	
+# ::edge	hear-01	ARG1	one	0.0	0.0.2	
+# ::edge	hear-01	polarity	-	0.0	0.0.0	
+# ::edge	hear-01	time	ever	0.0	0.0.3	
+# ::edge	many	degree	so	0.0.1.1.1	0.0.1.1.1.0	
+# ::edge	one	ARG1-of	ask-01	0.0.2	0.0.2.0	
+# ::edge	prince	ARG0-of	question-01	0.0.1	0.0.1.1	
+# ::edge	prince	mod	little	0.0.1	0.0.1.0	
+# ::edge	question-01	ARG2	i	0.0.1.1	0.0.1.1.0	
+# ::edge	question-01	quant	many	0.0.1.1	0.0.1.1.1	
+# ::edge	seem-01	ARG1	hear-01	0	0.0	
+(s / seem-01
+      :ARG1 (h / hear-01 :polarity -
+            :ARG0 (p / prince
+                  :mod (l / little)
+                  :ARG0-of (q / question-01
+                        :ARG2 (i / i)
+                        :quant (m / many
+                              :degree (s2 / so))))
+            :ARG1 (o / one
+                  :ARG1-of (a2 / ask-01
+                        :ARG0 i
+                        :ARG2 p))
+            :time (e2 / ever)))
+
+# ::id lpp_1943.106 ::date 2012-07-31T08:02:13 ::annotator ISI-AMR-05 ::preferred
+# ::snt It was from words dropped by chance that , little by little , everything was revealed to me .
+# ::zh 他无意中吐露的一些话逐渐使我搞清了他的来历。
+# ::save-date Wed Jul 29, 2015 ::file lpp_1943_106.txt
+# ::tok It was from words dropped by chance that , little by little , everything was revealed to me .
+# ::alignments 15-16|0 13-14|0.1 3-4|0.0 4-5|0.0.0 6-7|0.0.0.0 9-10|0.3 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.800
+# ::node	0	reveal-01	15-16
+# ::node	0.0	word	3-4
+# ::node	0.0.0	drop-06	4-5
+# ::node	0.0.0.0	chance-02	6-7
+# ::node	0.1	everything	13-14
+# ::node	0.2	i	
+# ::node	0.3	little-by-little	9-10
+# ::root	0	reveal-01
+# ::edge	drop-06	ARG1-of	chance-02	0.0.0	0.0.0.0	
+# ::edge	reveal-01	ARG0	word	0	0.0	
+# ::edge	reveal-01	ARG1	everything	0	0.1	
+# ::edge	reveal-01	ARG2	i	0	0.2	
+# ::edge	reveal-01	manner	little-by-little	0	0.3	
+# ::edge	word	ARG1-of	drop-06	0.0	0.0.0	
+(r / reveal-01
+      :ARG0 (w / word
+            :ARG1-of (d / drop-06
+                  :ARG1-of (c / chance-02)))
+      :ARG1 (e / everything)
+      :ARG2 (i / i)
+      :manner (l / little-by-little))
+
+# ::id lpp_1943.107 ::date 2012-07-31T08:05:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt The first time he saw my airplane , for instance ( I shall not draw my airplane ; that would be much too complicated for me ) , he asked me : " What is that object ? "
+# ::zh 例如，当他第一次瞅见我的飞机时（我就不画出我的飞机了，因为这种图画对我来说太复杂），他问我道：“这是个啥玩艺？”
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_107.txt
+# ::tok The first time he saw my airplane , for instance ( I shall not draw my airplane ; that would be much too complicated for me ) , he asked me : " What is that object ? "
+# ::alignments  29-30|0 4-5|0.3 6-7|0.3.0 14-15|0.3.0.0 23-24|0.3.0.0.1.0 22-23|0.3.0.0.1.0.0 21-22|0.3.0.0.1.0.0.0 11-12|0.2 36-37|0.1 18-19|0.1.0 3-4|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.821
+# ::node	0	ask-01	29-30
+# ::node	0.0	he	3-4
+# ::node	0.1	object	36-37
+# ::node	0.1.0	that	18-19
+# ::node	0.1.1	amr-unknown	
+# ::node	0.2	i	11-12
+# ::node	0.3	see-01	4-5
+# ::node	0.3.0	airplane	6-7
+# ::node	0.3.0.0	draw-01	14-15
+# ::node	0.3.0.0.0	-	14-14
+# ::node	0.3.0.0.1	cause-01	
+# ::node	0.3.0.0.1.0	complicate-01	23-24
+# ::node	0.3.0.0.1.0.0	too	22-23
+# ::node	0.3.0.0.1.0.0.0	much	21-22
+# ::node	0.3.1	ordinal-entity	
+# ::node	0.3.1.0	1	
+# ::root	0	ask-01
+# ::edge	airplane	ARG1-of	draw-01	0.3.0	0.3.0.0	
+# ::edge	airplane	poss	i	0.3.0	0.2	
+# ::edge	ask-01	ARG0	he	0	0.0	
+# ::edge	ask-01	ARG1	object	0	0.1	
+# ::edge	ask-01	ARG2	i	0	0.2	
+# ::edge	ask-01	time	see-01	0	0.3	
+# ::edge	cause-01	ARG0	complicate-01	0.3.0.0.1	0.3.0.0.1.0	
+# ::edge	complicate-01	ARG2	i	0.3.0.0.1.0	0.2	
+# ::edge	complicate-01	degree	too	0.3.0.0.1.0	0.3.0.0.1.0.0	
+# ::edge	draw-01	ARG0	i	0.3.0.0	0.2	
+# ::edge	draw-01	ARG1-of	cause-01	0.3.0.0	0.3.0.0.1	
+# ::edge	draw-01	polarity	-	0.3.0.0	0.3.0.0.0	
+# ::edge	object	domain	amr-unknown	0.1	0.1.1	
+# ::edge	object	mod	that	0.1	0.1.0	
+# ::edge	ordinal-entity	value	1	0.3.1	0.3.1.0	
+# ::edge	see-01	ARG0	he	0.3	0.0	
+# ::edge	see-01	ARG1	airplane	0.3	0.3.0	
+# ::edge	see-01	ord	ordinal-entity	0.3	0.3.1	
+# ::edge	too	degree	much	0.3.0.0.1.0.0	0.3.0.0.1.0.0.0	
+(a / ask-01
+      :ARG0 (h / he)
+      :ARG1 (o / object
+            :mod (t / that)
+            :domain (a2 / amr-unknown))
+      :ARG2 (i / i)
+      :time (s / see-01
+            :ARG0 h
+            :ARG1 (a3 / airplane
+                  :poss i
+                  :ARG1-of (d / draw-01 :polarity -
+                        :ARG0 i
+                        :ARG1-of (c / cause-01
+                              :ARG0 (c2 / complicate-01
+                                    :ARG2 i
+                                    :degree (t3 / too
+                                          :degree (m / much))))))
+            :ord (o2 / ordinal-entity :value 1)))
+
+# ::id lpp_1943.108 ::date 2012-07-31T08:12:33 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is not an object .
+# ::zh “这不是‘玩艺儿’。
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_108.txt
+# ::tok " That is not an object .
+# ::alignments  5-6|0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.826
+# ::node	0	object	5-6
+# ::node	0.0	that	1-2
+# ::node	0.1	-	4-4
+# ::root	0	object
+# ::edge	object	domain	that	0	0.0	
+# ::edge	object	polarity	-	0	0.1	
+(o / object
+  :domain (t / that)
+  :polarity -)
+
+# ::id lpp_1943.109 ::date 2012-07-31T08:14:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt It flies .
+# ::zh 它能飞。
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_109.txt
+# ::tok It flies .
+# ::alignments 1-2|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.828
+# ::node	0	fly-01	1-2
+# ::node	0.0	it	0-1
+# ::root	0	fly-01
+# ::edge	fly-01	ARG1	it	0	0.0	
+(f / fly-01
+      :ARG1 (i / it))
+
+# ::id lpp_1943.110 ::date 2012-07-31T08:14:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is an airplane .
+# ::zh 这是飞机。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_110.txt
+# ::tok It is an airplane .
+# ::alignments 3-4|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.832
+# ::node	0	airplane	3-4
+# ::node	0.0	it	0-1
+# ::root	0	airplane
+# ::edge	airplane	domain	it	0	0.0	
+(a / airplane
+  :domain (i / it))
+
+# ::id lpp_1943.111 ::date 2012-07-31T08:14:54 ::annotator ISI-AMR-05 ::preferred
+# ::snt It is my airplane . "
+# ::zh 是我的飞机。”
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_111.txt
+# ::tok It is my airplane . "
+# ::alignments 3-4|0 0-1|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.837
+# ::node	0	airplane	3-4
+# ::node	0.0	i	
+# ::node	0.1	it	0-1
+# ::root	0	airplane
+# ::edge	airplane	domain	it	0	0.1	
+# ::edge	airplane	poss	i	0	0.0	
+(a2 / airplane
+  :poss (i2 / i)
+  :domain (i / it))
+
+# ::id lpp_1943.112 ::date 2012-07-31T08:15:30 ::annotator ISI-AMR-05 ::preferred
+# ::snt And I was proud to have him learn that I could fly .
+# ::zh 我当时很骄傲地告诉他我能飞。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_112.txt
+# ::tok And I was proud to have him learn that I could fly .
+# ::alignments 0-1|0 1-2|0.0.0 7-8|0.0.1 10-11|0.0.1.1 11-12|0.0.1.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.845
+# ::node	0	and	0-1
+# ::node	0.0	pride-01	
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	learn-01	7-8
+# ::node	0.0.1.0	he	
+# ::node	0.0.1.1	possible-01	10-11
+# ::node	0.0.1.1.0	fly-01	11-12
+# ::root	0	and
+# ::edge	and	op2	pride-01	0	0.0	
+# ::edge	fly-01	ARG1	i	0.0.1.1.0	0.0.0	
+# ::edge	learn-01	ARG0	he	0.0.1	0.0.1.0	
+# ::edge	learn-01	ARG1	possible-01	0.0.1	0.0.1.1	
+# ::edge	possible-01	ARG1	fly-01	0.0.1.1	0.0.1.1.0	
+# ::edge	pride-01	ARG0	i	0.0	0.0.0	
+# ::edge	pride-01	ARG2	learn-01	0.0	0.0.1	
+(a / and
+  :op (p / pride-01
+         :ARG0 (i / i)
+         :ARG2 (l / learn-01
+                 :ARG0 (h2 / he)
+                 :ARG1 (p2 / possible-01
+                         :ARG1 (f / fly-01
+                                   :ARG1 i)))))
+
+# ::id lpp_1943.113 ::date 2012-07-31T08:19:29 ::annotator ISI-AMR-05 ::preferred
+# ::snt He cried out , then : " What !
+# ::zh 于是他惊奇地说道：“怎么？
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_113.txt
+# ::tok He cried out , then : " What !
+# ::alignments 0-1|0.0 7-8|0.1.0 4-5|0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.851
+# ::node	0	cry-out-03	
+# ::node	0.0	he	0-1
+# ::node	0.1	string-entity	
+# ::node	0.1.0	"what"	7-8
+# ::node	0.2	then	4-5
+# ::root	0	cry-out-03
+# ::edge	cry-out-03	ARG0	he	0	0.0	
+# ::edge	cry-out-03	ARG1	string-entity	0	0.1	
+# ::edge	cry-out-03	time	then	0	0.2	
+# ::edge	string-entity	value	"what"	0.1	0.1.0	
+(c / cry-out-03
+      :ARG0 (h / he)
+      :ARG1 (s / string-entity :value "what")
+      :time (t / then))
+
+# ::id lpp_1943.114 ::date 2012-07-31T08:22:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt You dropped down from the sky ? "
+# ::zh 你是从天上掉下来的？”
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_114.txt
+# ::tok You dropped down from the sky ? "
+# ::alignments 1-2|0 2-3|0.2 5-6|0.1 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.856
+# ::node	0	drop-01	1-2
+# ::node	0.0	you	0-1
+# ::node	0.1	sky	5-6
+# ::node	0.2	down	2-3
+# ::node	0.3	interrogative	
+# ::root	0	drop-01
+# ::edge	drop-01	ARG1	you	0	0.0	
+# ::edge	drop-01	ARG3	sky	0	0.1	
+# ::edge	drop-01	direction	down	0	0.2	
+# ::edge	drop-01	mode	interrogative	0	0.3	
+(d / drop-01
+      :ARG1 (y / you)
+      :ARG3 (s / sky)
+      :direction (d2 / down)
+      :mode interrogative)
+
+# ::id lpp_1943.115 ::date 2012-07-31T08:24:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Yes , "
+# ::zh “是的”。
+# ::save-date Wed May 1, 2013 ::file lpp_1943_115.txt
+# ::tok " Yes , "
+# ::alignments 1-2|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.858
+# ::node	0	yes	1-2
+# ::root	0	yes
+(y2 / yes)
+
+# ::id lpp_1943.116 ::date 2012-07-31T08:35:52 ::annotator ISI-AMR-05 ::preferred
+# ::snt I answered , modestly .
+# ::zh 我谦逊地答道。
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_116.txt
+# ::tok I answered , modestly .
+# ::alignments 1-2|0 0-1|0.0 3-4|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.868
+# ::node	0	answer-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	modest	3-4
+# ::root	0	answer-01
+# ::edge	answer-01	ARG0	i	0	0.0	
+# ::edge	answer-01	manner	modest	0	0.1	
+(a / answer-01
+      :ARG0 (i / i)
+      :manner (m / modest))
+
+# ::id lpp_1943.117 ::date 2012-07-31T08:38:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Oh !
+# ::zh “啊？
+# ::save-date Wed May 15, 2013 ::file lpp_1943_117.txt
+# ::tok " Oh !
+# ::alignments 1-2|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.870
+# ::node	0	oh	1-2
+# ::node	0.0	expressive	
+# ::root	0	oh
+# ::edge	oh	mode	expressive	0	0.0	
+(o / oh :mode expressive)
+
+# ::id lpp_1943.118 ::date 2012-07-31T08:38:53 ::annotator ISI-AMR-05 ::preferred
+# ::snt That is funny ! "
+# ::zh 这真滑稽。”
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_118.txt
+# ::tok That is funny ! "
+# ::alignments 2-3|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.873
+# ::node	0	funny	2-3
+# ::node	0.0	that	0-1
+# ::root	0	funny
+# ::edge	funny	domain	that	0	0.0	
+(f2 / funny
+  :domain (t2 / that))
+
+# ::id lpp_1943.119 ::date 2012-07-31T08:39:31 ::annotator ISI-AMR-05 ::preferred
+# ::snt And the little prince broke into a lovely peal of laughter , which irritated me very much .
+# ::zh 此时小王子发出一阵清脆的笑声。 这使我很不高兴。
+# ::save-date Mon May 13, 2013 ::file lpp_1943_119.txt
+# ::tok And the little prince broke into a lovely peal of laughter , which irritated me very much .
+# ::alignments 0-1|0 3-4|0.0.0 2-3|0.0.0.0 8-9|0.0.1.0 7-8|0.0.1.0.0 13-14|0.0.2 16-17|0.0.2.1 15-16|0.0.2.1.0 4-5|0.0 10-11|0.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.880
+# ::node	0	and	0-1
+# ::node	0.0	break-in-17	4-5
+# ::node	0.0.0	prince	3-4
+# ::node	0.0.0.0	little	2-3
+# ::node	0.0.1	laugh-01	10-11
+# ::node	0.0.1.0	peal	8-9
+# ::node	0.0.1.0.0	lovely	7-8
+# ::node	0.0.2	irritate-01	13-14
+# ::node	0.0.2.0	i	
+# ::node	0.0.2.1	much	16-17
+# ::node	0.0.2.1.0	very	15-16
+# ::root	0	and
+# ::edge	and	op2	break-in-17	0	0.0	
+# ::edge	break-in-17	ARG0	prince	0.0	0.0.0	
+# ::edge	break-in-17	ARG0-of	irritate-01	0.0	0.0.2	
+# ::edge	break-in-17	ARG1	laugh-01	0.0	0.0.1	
+# ::edge	irritate-01	ARG1	i	0.0.2	0.0.2.0	
+# ::edge	irritate-01	degree	much	0.0.2	0.0.2.1	
+# ::edge	laugh-01	quant	peal	0.0.1	0.0.1.0	
+# ::edge	much	degree	very	0.0.2.1	0.0.2.1.0	
+# ::edge	peal	mod	lovely	0.0.1.0	0.0.1.0.0	
+# ::edge	prince	mod	little	0.0.0	0.0.0.0	
+(a / and
+      :op (b / break-in-17
+            :ARG0 (p / prince
+                  :mod (l / little))
+            :ARG1 (l2 / laugh-01
+                  :quant (p2 / peal
+                        :mod (l3 / lovely)))
+            :ARG0-of (i / irritate-01
+                  :ARG1 (i2 / i)
+                  :degree (m / much
+                        :degree (v / very)))))
+
+# ::id lpp_1943.120 ::date 2012-07-31T08:41:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt I like my misfortunes to be taken seriously .
+# ::zh 我要求别人严肃地对待我的不幸。
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_120.txt
+# ::tok I like my misfortunes to be taken seriously .
+# ::alignments 1-2|0 6-7|0.1 3-4|0.1.0 0-1|0.0 7-8|0.1.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.884
+# ::node	0	like-02	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	take-04	6-7
+# ::node	0.1.0	misfortune	3-4
+# ::node	0.1.1	serious-01	7-8
+# ::root	0	like-02
+# ::edge	like-02	ARG0	i	0	0.0	
+# ::edge	like-02	ARG1	take-04	0	0.1	
+# ::edge	misfortune	poss	i	0.1.0	0.0	
+# ::edge	take-04	ARG1	misfortune	0.1	0.1.0	
+# ::edge	take-04	manner	serious-01	0.1	0.1.1	
+(l / like-02
+      :ARG0 (i / i)
+      :ARG1 (t / take-04
+            :ARG1 (m / misfortune
+                  :poss i)
+            :manner (s / serious-01)))
+
+# ::id lpp_1943.121 ::date 2012-07-31T08:45:10 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then he added : " So you , too , come from the sky !
+# ::zh 然后，他又说道：“那么，你也是从天上来的了！
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_121.txt
+# ::tok Then he added : " So you , too , come from the sky !
+# ::alignments 2-3|0 0-1|0.2 10-11|0.1.0 8-9|0.1.0.2 13-14|0.1.0.1 6-7|0.1.0.0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.890
+# ::node	0	add-01	2-3
+# ::node	0.0	he	1-2
+# ::node	0.1	cause-01	
+# ::node	0.1.0	come-01	10-11
+# ::node	0.1.0.0	you	6-7
+# ::node	0.1.0.1	sky	13-14
+# ::node	0.1.0.2	too	8-9
+# ::node	0.2	then	0-1
+# ::root	0	add-01
+# ::edge	add-01	ARG0	he	0	0.0	
+# ::edge	add-01	ARG1	cause-01	0	0.1	
+# ::edge	add-01	time	then	0	0.2	
+# ::edge	cause-01	ARG1	come-01	0.1	0.1.0	
+# ::edge	come-01	ARG1	you	0.1.0	0.1.0.0	
+# ::edge	come-01	ARG3	sky	0.1.0	0.1.0.1	
+# ::edge	come-01	mod	too	0.1.0	0.1.0.2	
+(a / add-01
+  :ARG0 (h / he)
+  :ARG1 (c2 / cause-01
+          :ARG1 (c / come-01
+                  :ARG1 (y / you)
+                  :ARG3 (s2 / sky)
+                  :mod (t2 / too)))
+  :time (t / then))
+
+# ::id lpp_1943.122 ::date 2012-07-31T08:48:46 ::annotator ISI-AMR-05 ::preferred
+# ::snt Which is your planet ? "
+# ::zh 你是哪个星球上的？”
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_122.txt
+# ::tok Which is your planet ? "
+# ::alignments 3-4|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.893
+# ::node	0	planet	3-4
+# ::node	0.0	you	
+# ::node	0.1	amr-unknown	
+# ::root	0	planet
+# ::edge	planet	domain	amr-unknown	0	0.1	
+# ::edge	planet	poss	you	0	0.0	
+(p / planet
+      :poss (y / you)
+      :domain (a / amr-unknown))
+
+# ::id lpp_1943.123 ::date 2012-07-31T08:49:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt At that moment I caught a gleam of light in the impenetrable mystery of his presence ; and I demanded , abruptly : " Do you come from another planet ? "
+# ::zh 即刻，对于他是从哪里来的这个秘密我隐约发现到了一点线索；于是，我就突然问道：“你是从另一个星球上来的吗？”
+# ::save-date Mon Nov 2, 2015 ::file lpp_1943_123.txt
+# ::tok At that moment I caught a gleam of light in the impenetrable mystery of his presence ; and I demanded , abruptly : " Do you come from another planet ? "
+# ::alignments 16-17|0 19-20|0.1 26-27|0.1.0 29-30|0.1.0.2 28-29|0.1.0.2.0 25-26|0.1.0.1 4-5|0.0 2-3|0.0.2 1-2|0.0.2.0 6-7|0.0.1 12-13|0.0.1.1 8-9|0.0.1.0 3-4|0.0.0 21-22|0.1.1 15-16|0.0.1.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.908
+# ::node	0	and	16-17
+# ::node	0.0	catch-03	4-5
+# ::node	0.0.0	i	3-4
+# ::node	0.0.1	gleam	6-7
+# ::node	0.0.1.0	light	8-9
+# ::node	0.0.1.1	mystery	12-13
+# ::node	0.0.1.1.0	present-02	15-16
+# ::node	0.0.1.1.0.0	he	
+# ::node	0.0.1.1.1	penetrate-01	
+# ::node	0.0.1.1.1.0	possible-01	
+# ::node	0.0.1.1.1.0.0	-	
+# ::node	0.0.2	moment	2-3
+# ::node	0.0.2.0	that	1-2
+# ::node	0.1	demand-01	19-20
+# ::node	0.1.0	come-01	26-27
+# ::node	0.1.0.0	interrogative	
+# ::node	0.1.0.1	you	25-26
+# ::node	0.1.0.2	planet	29-30
+# ::node	0.1.0.2.0	another	28-29
+# ::node	0.1.1	abrupt	21-22
+# ::root	0	and
+# ::edge	and	op1	catch-03	0	0.0	
+# ::edge	and	op2	demand-01	0	0.1	
+# ::edge	catch-03	ARG0	i	0.0	0.0.0	
+# ::edge	catch-03	ARG1	gleam	0.0	0.0.1	
+# ::edge	catch-03	time	moment	0.0	0.0.2	
+# ::edge	come-01	ARG1	you	0.1.0	0.1.0.1	
+# ::edge	come-01	ARG3	planet	0.1.0	0.1.0.2	
+# ::edge	come-01	mode	interrogative	0.1.0	0.1.0.0	
+# ::edge	demand-01	ARG0	i	0.1	0.0.0	
+# ::edge	demand-01	ARG1	come-01	0.1	0.1.0	
+# ::edge	demand-01	manner	abrupt	0.1	0.1.1	
+# ::edge	gleam	consist-of	light	0.0.1	0.0.1.0	
+# ::edge	gleam	location	mystery	0.0.1	0.0.1.1	
+# ::edge	moment	mod	that	0.0.2	0.0.2.0	
+# ::edge	mystery	ARG1-of	penetrate-01	0.0.1.1	0.0.1.1.1	
+# ::edge	mystery	domain	present-02	0.0.1.1	0.0.1.1.0	
+# ::edge	penetrate-01	ARG1-of	possible-01	0.0.1.1.1	0.0.1.1.1.0	
+# ::edge	planet	mod	another	0.1.0.2	0.1.0.2.0	
+# ::edge	possible-01	polarity	-	0.0.1.1.1.0	0.0.1.1.1.0.0	
+# ::edge	present-02	ARG1	he	0.0.1.1.0	0.0.1.1.0.0	
+(a / and
+      :op (c / catch-03
+            :ARG0 (i / i)
+            :ARG1 (g / gleam
+                  :consist-of (l / light)
+                  :location (m / mystery
+                        :domain (p / present-02
+                              :ARG1 (h / he))
+                        :ARG1-of (p3 / penetrate-01
+                              :ARG1-of (p2 / possible-01 :polarity -))))
+            :time (m2 / moment
+                  :mod (t / that)))
+      :op (d / demand-01
+            :ARG0 i
+            :ARG1 (c2 / come-01 :mode interrogative
+                  :ARG1 (y / you)
+                  :ARG3 (p4 / planet
+                        :mod (a3 / another)))
+            :manner (a2 / abrupt)))
+
+# ::id lpp_1943.124 ::date 2012-07-31T08:57:08 ::annotator ISI-AMR-05 ::preferred
+# ::snt But he did not reply .
+# ::zh 可是他不回答我的问题。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_124.txt
+# ::tok But he did not reply .
+# ::alignments  0-1|0 4-5|0.0 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.911
+# ::node	0	contrast-01	0-1
+# ::node	0.0	reply-01	4-5
+# ::node	0.0.0	he	1-2
+# ::node	0.0.1	-	4-4
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	reply-01	0	0.0	
+# ::edge	reply-01	ARG0	he	0.0	0.0.0	
+# ::edge	reply-01	polarity	-	0.0	0.0.1	
+(c / contrast-01
+  :ARG2 (r / reply-01
+          :ARG0 (h / he)
+          :polarity -))
+
+# ::id lpp_1943.125 ::date 2012-07-31T08:57:39 ::annotator ISI-AMR-05 ::preferred
+# ::snt He tossed his head gently , without taking his eyes from my plane : " It is true that on that you can n't have come from very far away ... "
+# ::zh 他一面看着我的飞机，一面微微地点点头，接着说道：“可不是么，乘坐这玩艺儿，你不可能是从很远的地方来的…”
+# ::save-date Mon Nov 3, 2014 ::file lpp_1943_125.txt
+# ::tok He tossed his head gently , without taking his eyes from my plane : " It is true that on that you can n't have come from very far away ... "
+# ::alignments 1-2|0.0 9-10|0.0.3.1 12-13|0.0.3.2 3-4|0.0.1 0-1|0.0.0 22-23|0.1.0 25-26|0.1.0.1 29-30|0.1.0.1.1 28-29|0.1.0.1.1.0 27-28|0.1.0.1.1.0.0 21-22|0.1.0.1.0 7-8|0.0.3 4-5|0.0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.923
+# ::node	0	and	
+# ::node	0.0	toss-01	1-2
+# ::node	0.0.0	he	0-1
+# ::node	0.0.1	head	3-4
+# ::node	0.0.2	gentle	4-5
+# ::node	0.0.3	take-away-05	7-8
+# ::node	0.0.3.0	-	
+# ::node	0.0.3.1	eye	9-10
+# ::node	0.0.3.2	plane	12-13
+# ::node	0.0.3.2.0	i	
+# ::node	0.1	say-01	
+# ::node	0.1.0	possible-01	22-23
+# ::node	0.1.0.0	-	
+# ::node	0.1.0.1	come-01	25-26
+# ::node	0.1.0.1.0	you	21-22
+# ::node	0.1.0.1.1	away	29-30
+# ::node	0.1.0.1.1.0	far	28-29
+# ::node	0.1.0.1.1.0.0	very	27-28
+# ::root	0	and
+# ::edge	and	op1	toss-01	0	0.0	
+# ::edge	and	op2	say-01	0	0.1	
+# ::edge	away	extent	far	0.1.0.1.1	0.1.0.1.1.0	
+# ::edge	come-01	ARG1	you	0.1.0.1	0.1.0.1.0	
+# ::edge	come-01	ARG3	away	0.1.0.1	0.1.0.1.1	
+# ::edge	come-01	manner	plane	0.1.0.1	0.0.3.2	
+# ::edge	eye	part-of	he	0.0.3.1	0.0.0	
+# ::edge	far	degree	very	0.1.0.1.1.0	0.1.0.1.1.0.0	
+# ::edge	head	part-of	he	0.0.1	0.0.0	
+# ::edge	plane	poss	i	0.0.3.2	0.0.3.2.0	
+# ::edge	possible-01	ARG1	come-01	0.1.0	0.1.0.1	
+# ::edge	possible-01	polarity	-	0.1.0	0.1.0.0	
+# ::edge	say-01	ARG0	he	0.1	0.0.0	
+# ::edge	say-01	ARG1	possible-01	0.1	0.1.0	
+# ::edge	take-away-05	ARG0	he	0.0.3	0.0.0	
+# ::edge	take-away-05	ARG1	eye	0.0.3	0.0.3.1	
+# ::edge	take-away-05	direction	plane	0.0.3	0.0.3.2	
+# ::edge	take-away-05	polarity	-	0.0.3	0.0.3.0	
+# ::edge	toss-01	ARG0	he	0.0	0.0.0	
+# ::edge	toss-01	ARG1	head	0.0	0.0.1	
+# ::edge	toss-01	manner	gentle	0.0	0.0.2	
+# ::edge	toss-01	manner	take-away-05	0.0	0.0.3	
+(a / and
+      :op (t / toss-01
+            :ARG0 (h / he)
+            :ARG1 (h2 / head
+                  :part-of h)
+            :manner (g / gentle)
+            :manner (t2 / take-away-05 :polarity -
+                  :ARG0 h
+                  :ARG1 (e / eye
+                        :part-of h)
+                  :direction (p2 / plane
+                        :poss (i / i))))
+      :op (s / say-01
+            :ARG0 h
+            :ARG1 (p / possible-01 :polarity -
+                  :ARG1 (c / come-01
+                        :ARG1 (y / you)
+                        :ARG3 (a2 / away
+                              :extent (f / far
+                                    :degree (v / very)))
+                        :manner p2))))
+
+# ::id lpp_1943.126 ::date 2012-07-31T10:09:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt And he sank into a reverie , which lasted a long time .
+# ::zh 说到这里，他就长时间地陷入沉思之中。
+# ::save-date Thu Jun 4, 2015 ::file lpp_1943_126.txt
+# ::tok And he sank into a reverie , which lasted a long time .
+# ::alignments 0-1|0 2-3|0.0 5-6|0.0.1 10-11|0.0.1.0 1-2|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.929
+# ::node	0	and	0-1
+# ::node	0.0	sink-01	2-3
+# ::node	0.0.0	he	1-2
+# ::node	0.0.1	reverie	5-6
+# ::node	0.0.1.0	long-03	10-11
+# ::root	0	and
+# ::edge	and	op2	sink-01	0	0.0	
+# ::edge	reverie	ARG1-of	long-03	0.0.1	0.0.1.0	
+# ::edge	sink-01	ARG0	he	0.0	0.0.0	
+# ::edge	sink-01	ARG4	reverie	0.0	0.0.1	
+(a / and
+      :op (s / sink-01
+            :ARG0 (h / he)
+            :ARG4 (r / reverie
+                  :ARG1-of (l / long-03))))
+
+# ::id lpp_1943.127 ::date 2012-07-31T10:12:07 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then , taking my sheep out of his pocket , he buried himself in the contemplation of his treasure .
+# ::zh 然后，从口袋里掏出了我画的小羊，看着他的宝贝入了神。
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_127.txt
+# ::tok Then , taking my sheep out of his pocket , he buried himself in the contemplation of his treasure .
+# ::alignments 11-12|0 0-1|0.3 4-5|0.2.0 8-9|0.2.0.0 18-19|0.1.0 10-11|0.0 2-3|0.2 15-16|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.939
+# ::node	0	bury-01	11-12
+# ::node	0.0	he	10-11
+# ::node	0.1	contemplate-01	15-16
+# ::node	0.1.0	treasure	18-19
+# ::node	0.2	take-out-11	2-3
+# ::node	0.2.0	sheep	4-5
+# ::node	0.2.0.0	pocket	8-9
+# ::node	0.2.0.1	i	
+# ::node	0.3	then	0-1
+# ::root	0	bury-01
+# ::edge	bury-01	ARG0	he	0	0.0	
+# ::edge	bury-01	ARG1	he	0	0.0	
+# ::edge	bury-01	ARG2	contemplate-01	0	0.1	
+# ::edge	bury-01	time	take-out-11	0	0.2	
+# ::edge	bury-01	time	then	0	0.3	
+# ::edge	contemplate-01	ARG0	he	0.1	0.0	
+# ::edge	contemplate-01	ARG1	treasure	0.1	0.1.0	
+# ::edge	pocket	poss	he	0.2.0.0	0.0	
+# ::edge	sheep	poss	i	0.2.0	0.2.0.1	
+# ::edge	sheep	source	pocket	0.2.0	0.2.0.0	
+# ::edge	take-out-11	ARG0	he	0.2	0.0	
+# ::edge	take-out-11	ARG1	sheep	0.2	0.2.0	
+# ::edge	treasure	poss	he	0.1.0	0.0	
+(b / bury-01
+  :ARG0 (h / he)
+  :ARG1 h
+  :ARG2 (c / contemplate-01
+          :ARG0 h
+          :ARG1 (t / treasure
+                  :poss h))
+  :time (t2 / take-out-11
+          :ARG0 h
+          :ARG1 (s / sheep
+                  :source (p / pocket
+                            :poss h)
+                  :poss (i / i)))
+  :time (t3 / then))
+
+# ::id lpp_1943.128 ::date 2012-07-31T10:17:28 ::annotator ISI-AMR-05 ::preferred
+# ::snt You can imagine how my curiosity was aroused by this half - confidence about the " other planets . "
+# ::zh 你们可以想见这种关于“别的星球”的若明若暗的话语使我心里多么好奇。
+# ::save-date Mon May 4, 2015 ::file lpp_1943_128.txt
+# ::tok You can imagine how my curiosity was aroused by this half - confidence about the " other planets . "
+# ::alignments 1-2|0 2-3|0.0 7-8|0.0.1 12-13|0.0.1.0 17-18|0.0.1.0.1 16-17|0.0.1.0.1.0 10-11|0.0.1.0.0 0-1|0.0.0 5-6|0.0.1.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.948
+# ::node	0	possible-01	1-2
+# ::node	0.0	imagine-01	2-3
+# ::node	0.0.0	you	0-1
+# ::node	0.0.1	arouse-01	7-8
+# ::node	0.0.1.0	confidence	12-13
+# ::node	0.0.1.0.0	half	10-11
+# ::node	0.0.1.0.1	planet	17-18
+# ::node	0.0.1.0.1.0	other	16-17
+# ::node	0.0.1.0.2	he	
+# ::node	0.0.1.1	curious-01	5-6
+# ::node	0.0.1.1.0	i	
+# ::root	0	possible-01
+# ::edge	arouse-01	ARG0	confidence	0.0.1	0.0.1.0	
+# ::edge	arouse-01	ARG1	curious-01	0.0.1	0.0.1.1	
+# ::edge	confidence	degree	half	0.0.1.0	0.0.1.0.0	
+# ::edge	confidence	poss	he	0.0.1.0	0.0.1.0.2	
+# ::edge	confidence	topic	planet	0.0.1.0	0.0.1.0.1	
+# ::edge	curious-01	ARG1	i	0.0.1.1	0.0.1.1.0	
+# ::edge	imagine-01	ARG0	you	0.0	0.0.0	
+# ::edge	imagine-01	ARG1	arouse-01	0.0	0.0.1	
+# ::edge	planet	mod	other	0.0.1.0.1	0.0.1.0.1.0	
+# ::edge	possible-01	ARG1	imagine-01	0	0.0	
+(p / possible-01
+      :ARG1 (i2 / imagine-01
+            :ARG0 (y / you)
+            :ARG1 (a / arouse-01
+                  :ARG0 (c4 / confidence
+                        :degree (h2 / half)
+                        :topic (p3 / planet
+                              :mod (o2 / other))
+                        :poss (h / he))
+                  :ARG1 (c / curious-01
+                        :ARG1 (i / i)))))
+
+# ::id lpp_1943.129 ::date 2012-07-31T10:28:11 ::annotator ISI-AMR-05 ::preferred
+# ::snt I made a great effort , therefore , to find out more on this subject .
+# ::zh 因此我竭力地想知道其中更多的奥秘。
+# ::save-date Thu Jan 21, 2016 ::file lpp_1943_129.txt
+# ::tok I made a great effort , therefore , to find out more on this subject .
+# ::alignments 4-5|0.0 3-4|0.0.2 11-12|0.0.1.0.0 14-15|0.0.1.0.1 13-14|0.0.1.0.1.0 0-1|0.0.0 9-10|0.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.957
+# ::node	0	cause-01	
+# ::node	0.0	effort-01	4-5
+# ::node	0.0.0	i	0-1
+# ::node	0.0.1	find-out-03	9-10
+# ::node	0.0.1.0	information	
+# ::node	0.0.1.0.0	more	11-12
+# ::node	0.0.1.0.1	subject	14-15
+# ::node	0.0.1.0.1.0	this	13-14
+# ::node	0.0.2	great	3-4
+# ::root	0	cause-01
+# ::edge	cause-01	ARG1	effort-01	0	0.0	
+# ::edge	effort-01	ARG0	i	0.0	0.0.0	
+# ::edge	effort-01	ARG1	find-out-03	0.0	0.0.1	
+# ::edge	effort-01	mod	great	0.0	0.0.2	
+# ::edge	find-out-03	ARG0	i	0.0.1	0.0.0	
+# ::edge	find-out-03	ARG1	information	0.0.1	0.0.1.0	
+# ::edge	information	quant	more	0.0.1.0	0.0.1.0.0	
+# ::edge	information	topic	subject	0.0.1.0	0.0.1.0.1	
+# ::edge	subject	mod	this	0.0.1.0.1	0.0.1.0.1.0	
+(c / cause-01
+      :ARG1 (e / effort-01
+            :ARG0 (i / i)
+            :ARG1 (f / find-out-03
+                  :ARG0 i
+                  :ARG1 (i2 / information
+                        :quant (m2 / more)
+                        :topic (s / subject
+                              :mod (t2 / this))))
+            :mod (g / great)))
+
+# ::id lpp_1943.130 ::date 2012-07-31T10:45:15 ::annotator ISI-AMR-05 ::preferred
+# ::snt " My little man , where do you come from ?
+# ::zh “你是从哪里来的，我的小家伙？
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_130.txt
+# ::tok " My little man , where do you come from ?
+# ::alignments 8-9|0.0 7-8|0.0.0 3-4|0.1 2-3|0.1.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.962
+# ::node	0	say-01	
+# ::node	0.0	come-01	8-9
+# ::node	0.0.0	you	7-8
+# ::node	0.0.1	amr-unknown	
+# ::node	0.1	man	3-4
+# ::node	0.1.0	little	2-3
+# ::node	0.1.1	i	
+# ::root	0	say-01
+# ::edge	come-01	ARG1	you	0.0	0.0.0	
+# ::edge	come-01	ARG3	amr-unknown	0.0	0.0.1	
+# ::edge	man	mod	little	0.1	0.1.0	
+# ::edge	man	poss	i	0.1	0.1.1	
+# ::edge	say-01	ARG1	come-01	0	0.0	
+# ::edge	say-01	ARG2	man	0	0.1	
+(s / say-01
+      :ARG1 (c / come-01
+            :ARG1 (y / you)
+            :ARG3 (a / amr-unknown))
+      :ARG2 (m / man
+            :mod (l / little)
+            :poss (i / i)))
+
+# ::id lpp_1943.131 ::date 2012-07-31T10:46:35 ::annotator ISI-AMR-05 ::preferred
+# ::snt What is this ' where I live , ' of which you speak ?
+# ::zh 你的家在什么地方？
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_131.txt
+# ::tok What is this ' where I live , ' of which you speak ?
+# ::alignments 6-7|0 12-13|0.1.0 11-12|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.970
+# ::node	0	live-01	6-7
+# ::node	0.0	you	11-12
+# ::node	0.1	place	
+# ::node	0.1.0	speak-01	12-13
+# ::node	0.1.1	amr-unknown	
+# ::root	0	live-01
+# ::edge	live-01	ARG0	you	0	0.0	
+# ::edge	live-01	location	place	0	0.1	
+# ::edge	place	ARG1-of	speak-01	0.1	0.1.0	
+# ::edge	place	domain	amr-unknown	0.1	0.1.1	
+# ::edge	speak-01	ARG0	you	0.1.0	0.0	
+(l / live-01
+      :ARG0 (y / you)
+      :location (p / place
+            :ARG1-of (s / speak-01
+                  :ARG0 y)
+            :domain (a / amr-unknown)))
+
+# ::id lpp_1943.132 ::date 2012-07-31T10:49:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt Where do you want to take your sheep ? "
+# ::zh 你要把你的小羊带到哪里去？”
+# ::save-date Mon May 25, 2015 ::file lpp_1943_132.txt
+# ::tok Where do you want to take your sheep ? "
+# ::alignments 3-4|0 5-6|0.1 7-8|0.1.0 2-3|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.974
+# ::node	0	want-01	3-4
+# ::node	0.0	you	2-3
+# ::node	0.1	take-01	5-6
+# ::node	0.1.0	sheep	7-8
+# ::node	0.1.1	amr-unknown	
+# ::root	0	want-01
+# ::edge	sheep	poss	you	0.1.0	0.0	
+# ::edge	take-01	ARG0	you	0.1	0.0	
+# ::edge	take-01	ARG1	sheep	0.1	0.1.0	
+# ::edge	take-01	ARG3	amr-unknown	0.1	0.1.1	
+# ::edge	want-01	ARG0	you	0	0.0	
+# ::edge	want-01	ARG1	take-01	0	0.1	
+(w / want-01
+      :ARG0 (y / you)
+      :ARG1 (t / take-01
+            :ARG0 y
+            :ARG1 (s / sheep
+                  :poss y)
+            :ARG3 (a / amr-unknown)))
+
+# ::id lpp_1943.133 ::date 2012-07-31T10:49:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt After a reflective silence he answered : " The thing that is so good about the box you have given me is that at night he can use it as his house . "
+# ::zh 他沉思了一会，然后回答我说：“好在有你给我的那只箱子，夜晚可以给小羊当房子用。”
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_133.txt
+# ::tok After a reflective silence he answered : " The thing that is so good about the box you have given me is that at night he can use it as his house . "
+# ::alignments 5-6|0 0-1|0.2 9-10|0.1 26-27|0.1.2 27-28|0.1.2.0 24-25|0.1.2.0.2.0 31-32|0.1.2.0.1 4-5|0.1.2.0.0 16-17|0.1.1 19-20|0.1.1.0 17-18|0.1.1.0.0 13-14|0.1.0 12-13|0.1.0.0 25-26|0.0 3-4|0.2.0 2-3|0.2.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.985
+# ::node	0	answer-01	5-6
+# ::node	0.0	he	25-26
+# ::node	0.1	thing	9-10
+# ::node	0.1.0	good-02	13-14
+# ::node	0.1.0.0	so	12-13
+# ::node	0.1.1	box	16-17
+# ::node	0.1.1.0	give-01	19-20
+# ::node	0.1.1.0.0	you	17-18
+# ::node	0.1.2	possible-01	26-27
+# ::node	0.1.2.0	use-01	27-28
+# ::node	0.1.2.0.0	he	4-5
+# ::node	0.1.2.0.1	house	31-32
+# ::node	0.1.2.0.2	date-entity	
+# ::node	0.1.2.0.2.0	night	24-25
+# ::node	0.2	after	0-1
+# ::node	0.2.0	silent	3-4
+# ::node	0.2.0.0	reflect-02	2-3
+# ::root	0	answer-01
+# ::edge	after	op1	silent	0.2	0.2.0	
+# ::edge	answer-01	ARG0	he	0	0.0	
+# ::edge	answer-01	ARG1	thing	0	0.1	
+# ::edge	answer-01	time	after	0	0.2	
+# ::edge	box	ARG1-of	give-01	0.1.1	0.1.1.0	
+# ::edge	date-entity	dayperiod	night	0.1.2.0.2	0.1.2.0.2.0	
+# ::edge	give-01	ARG0	you	0.1.1.0	0.1.1.0.0	
+# ::edge	give-01	ARG2	he	0.1.1.0	0.0	
+# ::edge	good-02	degree	so	0.1.0	0.1.0.0	
+# ::edge	house	poss	he	0.1.2.0.1	0.1.2.0.0	
+# ::edge	possible-01	ARG1	use-01	0.1.2	0.1.2.0	
+# ::edge	silent	mod	reflect-02	0.2.0	0.2.0.0	
+# ::edge	thing	ARG1-of	good-02	0.1	0.1.0	
+# ::edge	thing	domain	possible-01	0.1	0.1.2	
+# ::edge	thing	topic	box	0.1	0.1.1	
+# ::edge	use-01	ARG0	he	0.1.2.0	0.1.2.0.0	
+# ::edge	use-01	ARG1	box	0.1.2.0	0.1.1	
+# ::edge	use-01	ARG2	house	0.1.2.0	0.1.2.0.1	
+# ::edge	use-01	time	date-entity	0.1.2.0	0.1.2.0.2	
+(a / answer-01
+      :ARG0 (h / he)
+      :ARG1 (t / thing
+            :ARG1-of (g / good-02
+                  :degree (s2 / so))
+            :topic (b / box
+                  :ARG1-of (g2 / give-01
+                        :ARG0 (y / you)
+                        :ARG2 h))
+            :domain (p / possible-01
+                  :ARG1 (u / use-01
+                        :ARG0 (h2 / he)
+                        :ARG1 b
+                        :ARG2 (h3 / house
+                              :poss h2)
+                        :time (d / date-entity :dayperiod (n / night)))))
+      :time (a2 / after
+            :op (s / silent
+                  :mod (r / reflect-02))))
+
+# ::id lpp_1943.134 ::date 2012-07-31T10:54:57 ::annotator ISI-AMR-05 ::preferred
+# ::snt " That is so .
+# ::zh “那当然。
+# ::save-date Sat Dec 29, 2012 ::file lpp_1943_134.txt
+# ::tok " That is so .
+# ::alignments 3-4|0 1-2|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.989
+# ::node	0	so	3-4
+# ::node	0.0	that	1-2
+# ::root	0	so
+# ::edge	so	domain	that	0	0.0	
+(s / so
+  :domain (t / that))
+
+# ::id lpp_1943.135 ::date 2012-07-31T10:55:19 ::annotator ISI-AMR-05 ::preferred
+# ::snt And if you are good I will give you a string , too , so that you can tie him during the day , and a post to tie him to . "
+# ::zh 如果你听话的话，我再给你画一根绳子，白天可以栓住它。
+# ::save-date Mon Feb 29, 2016 ::file lpp_1943_135.txt
+# ::tok And if you are good I will give you a string , too , so that you can tie him during the day , and a post to tie him to . "
+# ::alignments 0-1|0 7-8|0.0 4-5|0.0.3 2-3|0.0.2 24-25|0.0.1 26-27|0.0.1.1 18-19|0.0.1.1.0 10-11|0.0.1.0 28-29|0.0.1.0.0 22-23|0.0.1.0.0.1.0 5-6|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:51.999
+# ::node	0	and	0-1
+# ::node	0.0	give-01	7-8
+# ::node	0.0.0	i	5-6
+# ::node	0.0.1	and	24-25
+# ::node	0.0.1.0	string	10-11
+# ::node	0.0.1.0.0	tie-01	28-29
+# ::node	0.0.1.0.0.0	he	
+# ::node	0.0.1.0.0.1	date-entity	
+# ::node	0.0.1.0.0.1.0	day	22-23
+# ::node	0.0.1.1	post	26-27
+# ::node	0.0.1.1.0	tie-01	18-19
+# ::node	0.0.2	you	2-3
+# ::node	0.0.3	good-02	4-5
+# ::root	0	and
+# ::edge	and	op1	string	0.0.1	0.0.1.0	
+# ::edge	and	op2	give-01	0	0.0	
+# ::edge	and	op2	post	0.0.1	0.0.1.1	
+# ::edge	date-entity	dayperiod	day	0.0.1.0.0.1	0.0.1.0.0.1.0	
+# ::edge	give-01	ARG0	i	0.0	0.0.0	
+# ::edge	give-01	ARG1	and	0.0	0.0.1	
+# ::edge	give-01	ARG2	you	0.0	0.0.2	
+# ::edge	give-01	condition	good-02	0.0	0.0.3	
+# ::edge	good-02	ARG1	you	0.0.3	0.0.2	
+# ::edge	post	purpose	tie-01	0.0.1.1	0.0.1.1.0	
+# ::edge	string	ARG3-of	tie-01	0.0.1.0	0.0.1.0.0	
+# ::edge	tie-01	ARG0	you	0.0.1.0.0	0.0.2	
+# ::edge	tie-01	ARG0	you	0.0.1.1.0	0.0.2	
+# ::edge	tie-01	ARG1	he	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	tie-01	ARG1	he	0.0.1.1.0	0.0.1.0.0.0	
+# ::edge	tie-01	time	date-entity	0.0.1.0.0	0.0.1.0.0.1	
+(a / and
+      :op (g / give-01
+            :ARG0 (i / i)
+            :ARG1 (a2 / and
+                  :op (s / string
+                        :ARG3-of (t / tie-01
+                              :ARG0 y
+                              :ARG1 (h / he)
+                              :time (d / date-entity
+                                    :dayperiod (d2 / day))))
+                  :op (p2 / post
+                        :purpose (t3 / tie-01
+                              :ARG0 y
+                              :ARG1 h)))
+            :ARG2 (y / you)
+            :condition (g2 / good-02
+                  :ARG1 y)))
+
+# ::id lpp_1943.136 ::date 2012-07-31T10:59:50 ::annotator ISI-AMR-05 ::preferred
+# ::snt But the little prince seemed shocked by this offer : " Tie him !
+# ::zh 我的建议看来有点使小王子反感。 “栓住它，
+# ::save-date Wed Jul 29, 2015 ::file lpp_1943_136.txt
+# ::tok But the little prince seemed shocked by this offer : " Tie him !
+# ::alignments 0-1|0 4-5|0.0 5-6|0.0.0 3-4|0.0.0.1 11-12|0.0.0.1.1.0 2-3|0.0.0.1.0 8-9|0.0.0.0 7-8|0.0.0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.006
+# ::node	0	contrast-01	0-1
+# ::node	0.0	seem-01	4-5
+# ::node	0.0.0	shock-01	5-6
+# ::node	0.0.0.0	offer	8-9
+# ::node	0.0.0.0.0	this	7-8
+# ::node	0.0.0.1	prince	3-4
+# ::node	0.0.0.1.0	little	2-3
+# ::node	0.0.0.1.1	say-01	
+# ::node	0.0.0.1.1.0	tie-01	11-12
+# ::node	0.0.0.1.1.0.0	imperative	
+# ::node	0.0.0.1.1.0.1	he	
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	seem-01	0	0.0	
+# ::edge	offer	mod	this	0.0.0.0	0.0.0.0.0	
+# ::edge	prince	ARG0-of	say-01	0.0.0.1	0.0.0.1.1	
+# ::edge	prince	mod	little	0.0.0.1	0.0.0.1.0	
+# ::edge	say-01	ARG1	tie-01	0.0.0.1.1	0.0.0.1.1.0	
+# ::edge	seem-01	ARG1	shock-01	0.0	0.0.0	
+# ::edge	shock-01	ARG0	offer	0.0.0	0.0.0.0	
+# ::edge	shock-01	ARG1	prince	0.0.0	0.0.0.1	
+# ::edge	tie-01	ARG0	prince	0.0.0.1.1.0	0.0.0.1	
+# ::edge	tie-01	ARG1	he	0.0.0.1.1.0	0.0.0.1.1.0.1	
+# ::edge	tie-01	mode	imperative	0.0.0.1.1.0	0.0.0.1.1.0.0	
+(c / contrast-01
+      :ARG2 (s / seem-01
+            :ARG1 (s2 / shock-01
+                  :ARG0 (o / offer
+                        :mod (t / this))
+                  :ARG1 (p / prince
+                        :mod (l / little)
+                        :ARG0-of (s3 / say-01
+                              :ARG1 (t2 / tie-01 :mode imperative
+                                    :ARG0 p
+                                    :ARG1 (h / he)))))))
+
+# ::id lpp_1943.137 ::date 2012-07-31T11:04:06 ::annotator ISI-AMR-05 ::preferred
+# ::snt What a queer idea ! "
+# ::zh 多么奇怪的主意。”
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_137.txt
+# ::tok What a queer idea ! "
+# ::alignments 2-3|0 3-4|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.008
+# ::node	0	queer	2-3
+# ::node	0.0	idea	3-4
+# ::root	0	queer
+# ::edge	queer	domain	idea	0	0.0	
+(q / queer
+      :domain (i / idea))
+
+# ::id lpp_1943.138 ::date 2012-07-31T11:04:58 ::annotator ISI-AMR-05 ::preferred
+# ::snt " But if you do n't tie him , "
+# ::zh “如果你不栓住它，
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_138.txt
+# ::tok " But if you do n't tie him , "
+# ::alignments 1-2|0 6-7|0.0 3-4|0.0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.012
+# ::node	0	contrast-01	1-2
+# ::node	0.0	tie-01	6-7
+# ::node	0.0.0	-	
+# ::node	0.0.1	you	3-4
+# ::node	0.0.2	he	
+# ::node	0.0.3	thing	
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	tie-01	0	0.0	
+# ::edge	tie-01	ARG0	you	0.0	0.0.1	
+# ::edge	tie-01	ARG1	he	0.0	0.0.2	
+# ::edge	tie-01	condition-of	thing	0.0	0.0.3	
+# ::edge	tie-01	polarity	-	0.0	0.0.0	
+(c / contrast-01
+      :ARG2 (t / tie-01 :polarity -
+            :ARG0 (y / you)
+            :ARG1 (h / he)
+            :condition-of (t2 / thing)))
+
+# ::id lpp_1943.139 ::date 2012-07-31T11:06:51 ::annotator ISI-AMR-05 ::preferred
+# ::snt I said , " he will wander off somewhere , and get lost . "
+# ::zh 它就到处跑，那么它会跑丢的。”
+# ::save-date Mon Apr 15, 2013 ::file lpp_1943_139.txt
+# ::tok I said , " he will wander off somewhere , and get lost . "
+# ::alignments 1-2|0 10-11|0.1 11-12|0.1.1 12-13|0.1.1.0 6-7|0.1.0 8-9|0.1.0.1 4-5|0.1.0.0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.019
+# ::node	0	say-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	and	10-11
+# ::node	0.1.0	wander-01	6-7
+# ::node	0.1.0.0	he	4-5
+# ::node	0.1.0.1	somewhere	8-9
+# ::node	0.1.1	get-03	11-12
+# ::node	0.1.1.0	lost	12-13
+# ::root	0	say-01
+# ::edge	and	op1	wander-01	0.1	0.1.0	
+# ::edge	and	op2	get-03	0.1	0.1.1	
+# ::edge	get-03	ARG1	he	0.1.1	0.1.0.0	
+# ::edge	get-03	ARG2	lost	0.1.1	0.1.1.0	
+# ::edge	say-01	ARG0	i	0	0.0	
+# ::edge	say-01	ARG1	and	0	0.1	
+# ::edge	wander-01	ARG0	he	0.1.0	0.1.0.0	
+# ::edge	wander-01	ARG1	somewhere	0.1.0	0.1.0.1	
+(s / say-01
+  :ARG0 (i / i)
+  :ARG1 (a / and
+          :op (w / wander-01
+                 :ARG0 (h / he)
+                 :ARG1 (s2 / somewhere))
+          :op (g / get-03
+                 :ARG1 h
+                 :ARG2 (l / lost))))
+
+# ::id lpp_1943.140 ::date 2012-07-31T11:08:34 ::annotator ISI-AMR-05 ::preferred
+# ::snt My friend broke into another peal of laughter : " But where do you think he would go ? "
+# ::zh 我的这位朋友又笑出了声：“你想要它跑到哪里去呀？”
+# ::save-date Tue Nov 4, 2014 ::file lpp_1943_140.txt
+# ::tok My friend broke into another peal of laughter : " But where do you think he would go ? "
+# ::alignments 1-2|0.0.0+0.0.0.1 10-11|0.0.1.0 14-15|0.0.1.0.0 17-18|0.0.1.0.0.1 15-16|0.0.1.0.0.1.0 13-14|0.0.1.0.0.0 5-6|0.1.0 4-5|0.1.0.0 2-3|0 7-8|0.1 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.027
+# ::node	0	break-in-17	2-3
+# ::node	0.0	person	
+# ::node	0.0.0	have-rel-role-91	1-2
+# ::node	0.0.0.0	i	
+# ::node	0.0.0.1	friend	1-2
+# ::node	0.0.1	say-01	
+# ::node	0.0.1.0	contrast-01	10-11
+# ::node	0.0.1.0.0	think-01	14-15
+# ::node	0.0.1.0.0.0	you	13-14
+# ::node	0.0.1.0.0.1	go-02	17-18
+# ::node	0.0.1.0.0.1.0	he	15-16
+# ::node	0.0.1.0.0.1.1	amr-unknown	
+# ::node	0.1	laugh-01	7-8
+# ::node	0.1.0	peal	5-6
+# ::node	0.1.0.0	another	4-5
+# ::root	0	break-in-17
+# ::edge	break-in-17	ARG0	person	0	0.0	
+# ::edge	break-in-17	ARG1	laugh-01	0	0.1	
+# ::edge	contrast-01	ARG2	think-01	0.0.1.0	0.0.1.0.0	
+# ::edge	go-02	ARG0	he	0.0.1.0.0.1	0.0.1.0.0.1.0	
+# ::edge	go-02	ARG4	amr-unknown	0.0.1.0.0.1	0.0.1.0.0.1.1	
+# ::edge	have-rel-role-91	ARG1	i	0.0.0	0.0.0.0	
+# ::edge	have-rel-role-91	ARG2	friend	0.0.0	0.0.0.1	
+# ::edge	laugh-01	quant	peal	0.1	0.1.0	
+# ::edge	peal	mod	another	0.1.0	0.1.0.0	
+# ::edge	person	ARG0-of	have-rel-role-91	0.0	0.0.0	
+# ::edge	person	ARG0-of	say-01	0.0	0.0.1	
+# ::edge	say-01	ARG1	contrast-01	0.0.1	0.0.1.0	
+# ::edge	think-01	ARG0	you	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	think-01	ARG1	go-02	0.0.1.0.0	0.0.1.0.0.1	
+(b / break-in-17
+      :ARG0 (p2 / person
+            :ARG0-of (h2 / have-rel-role-91
+                  :ARG1 (i / i)
+                  :ARG2 (f / friend))
+            :ARG0-of (s / say-01
+                  :ARG1 (c / contrast-01
+                        :ARG2 (t / think-01
+                              :ARG0 (y / you)
+                              :ARG1 (g / go-02
+                                    :ARG0 (h / he)
+                                    :ARG4 (a2 / amr-unknown))))))
+      :ARG1 (l / laugh-01
+            :quant (p / peal
+                  :mod (a / another))))
+
+# ::id lpp_1943.141 ::date 2012-07-31T11:14:00 ::annotator ISI-AMR-05 ::preferred
+# ::snt " Anywhere .
+# ::zh “不管什么地方。
+# ::save-date Tue Jul 31, 2012 ::file lpp_1943_141.txt
+# ::tok " Anywhere .
+# ::alignments 1-2|0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.029
+# ::node	0	anywhere	1-2
+# ::root	0	anywhere
+(a / anywhere)
+
+# ::id lpp_1943.142 ::date 2012-07-31T11:14:16 ::annotator ISI-AMR-05 ::preferred
+# ::snt Straight ahead of him . "
+# ::zh 它一直往前跑…”
+# ::save-date Mon Jul 20, 2015 ::file lpp_1943_142.txt
+# ::tok Straight ahead of him . "
+# ::alignments 1-2|0 0-1|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.031
+# ::node	0	ahead	1-2
+# ::node	0.0	straight-04	0-1
+# ::node	0.1	he	
+# ::root	0	ahead
+# ::edge	ahead	ARG1-of	straight-04	0	0.0	
+# ::edge	ahead	compared-to	he	0	0.1	
+(a / ahead
+      :ARG1-of (s / straight-04)
+      :compared-to (h / he))
+
+# ::id lpp_1943.143 ::date 2012-07-31T11:15:21 ::annotator ISI-AMR-05 ::preferred
+# ::snt Then the little prince said , earnestly : " That does n't matter .
+# ::zh 这时，小王子郑重其事地说：“这没有什么关系，
+# ::save-date Wed Nov 4, 2015 ::file lpp_1943_143.txt
+# ::tok Then the little prince said , earnestly : " That does n't matter .
+# ::alignments 4-5|0 0-1|0.3 12-13|0.1 9-10|0.1.1 3-4|0.0 2-3|0.0.0 6-7|0.2 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.039
+# ::node	0	say-01	4-5
+# ::node	0.0	prince	3-4
+# ::node	0.0.0	little	2-3
+# ::node	0.1	matter-01	12-13
+# ::node	0.1.0	-	
+# ::node	0.1.1	that	9-10
+# ::node	0.2	earnest-01	6-7
+# ::node	0.3	then	0-1
+# ::root	0	say-01
+# ::edge	matter-01	ARG1	that	0.1	0.1.1	
+# ::edge	matter-01	polarity	-	0.1	0.1.0	
+# ::edge	prince	mod	little	0.0	0.0.0	
+# ::edge	say-01	ARG0	prince	0	0.0	
+# ::edge	say-01	ARG1	matter-01	0	0.1	
+# ::edge	say-01	manner	earnest-01	0	0.2	
+# ::edge	say-01	time	then	0	0.3	
+(s / say-01
+      :ARG0 (p / prince
+            :mod (l / little))
+      :ARG1 (m / matter-01 :polarity -
+            :ARG1 (t2 / that))
+      :manner (e / earnest-01)
+      :time (t / then))
+
+# ::id lpp_1943.144 ::date 2012-07-31T11:16:49 ::annotator ISI-AMR-05 ::preferred
+# ::snt Where I live , everything is so small ! "
+# ::zh 我那里很小很小。”
+# ::save-date Fri Apr 19, 2013 ::file lpp_1943_144.txt
+# ::tok Where I live , everything is so small ! "
+# ::alignments 7-8|0 4-5|0.1 2-3|0.1.0 1-2|0.1.0.0 6-7|0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.043
+# ::node	0	small	7-8
+# ::node	0.0	so	6-7
+# ::node	0.1	everything	4-5
+# ::node	0.1.0	live-01	2-3
+# ::node	0.1.0.0	i	1-2
+# ::root	0	small
+# ::edge	everything	location	live-01	0.1	0.1.0	
+# ::edge	live-01	ARG0	i	0.1.0	0.1.0.0	
+# ::edge	small	degree	so	0	0.0	
+# ::edge	small	domain	everything	0	0.1	
+(s / small
+      :degree (s2 / so)
+      :domain (e / everything
+            :location (l / live-01
+                  :ARG0 (i / i))))
+
+# ::id lpp_1943.145 ::date 2012-07-31T11:17:27 ::annotator ISI-AMR-05 ::preferred
+# ::snt And , with perhaps a hint of sadness , he added : " Straight ahead of him , nobody can go very far ... "
+# ::zh 接着，他略带伤感地又补充了一句：“一直朝前走，也不会走出多远…”
+# ::save-date Sun Jul 26, 2015 ::file lpp_1943_145.txt
+# ::tok And , with perhaps a hint of sadness , he added : " Straight ahead of him , nobody can go very far ... "
+# ::alignments 0-1|0 10-11|0.0 5-6|0.0.2.0 19-20|0.0.2.1 20-21|0.0.1 14-15|0.0.1.2 13-14|0.0.1.2.0 22-23|0.0.1.1 21-22|0.0.1.1.0 9-10|0.0.0 ::annotator Aligner v.02 ::date 2017-01-11T20:26:52.052
+# ::node	0	and	0-1
+# ::node	0.0	add-01	10-11
+# ::node	0.0.0	he	9-10
+# ::node	0.0.1	go-02	20-21
+# ::node	0.0.1.0	somebody	
+# ::node	0.0.1.0.0	-	
+# ::node	0.0.1.1	far	22-23
+# ::node	0.0.1.1.0	very	21-22
+# ::node	0.0.1.2	ahead	14-15
+# ::node	0.0.1.2.0	straight-04	13-14
+# ::node	0.0.2	sad-02	
+# ::node	0.0.2.0	hint	5-6
+# ::node	0.0.2.1	possible-01	19-20
+# ::root	0	and
+# ::edge	add-01	ARG0	he	0.0	0.0.0	
+# ::edge	add-01	ARG1	go-02	0.0	0.0.1	
+# ::edge	add-01	manner	sad-02	0.0	0.0.2	
+# ::edge	ahead	ARG1-of	straight-04	0.0.1.2	0.0.1.2.0	
+# ::edge	ahead	compared-to	somebody	0.0.1.2	0.0.1.0	
+# ::edge	and	op2	add-01	0	0.0	
+# ::edge	far	degree	very	0.0.1.1	0.0.1.1.0	
+# ::edge	go-02	ARG0	somebody	0.0.1	0.0.1.0	
+# ::edge	go-02	ARG4	far	0.0.1	0.0.1.1	
+# ::edge	go-02	direction	ahead	0.0.1	0.0.1.2	
+# ::edge	sad-02	ARG1-of	possible-01	0.0.2	0.0.2.1	
+# ::edge	sad-02	quant	hint	0.0.2	0.0.2.0	
+# ::edge	somebody	polarity	-	0.0.1.0	0.0.1.0.0	
+(a / and
+      :op (a2 / add-01
+            :ARG0 (h / he)
+            :ARG1 (g / go-02
+                  :ARG0 (s2 / somebody :polarity -)
+                  :ARG4 (f / far
+                        :degree (v / very))
+                  :direction (a3 / ahead
+                        :ARG1-of (s3 / straight-04)
+                        :compared-to s2))
+            :manner (s / sad-02
+                  :quant (h2 / hint)
+                  :ARG1-of (p / possible-01))))
+

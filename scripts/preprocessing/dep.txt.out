@@ -1,0 +1,19 @@
+(ROOT
+  (IP
+    (IP
+      (NP (PN 我))
+      (VP
+        (PP (P 在)
+          (NP (NR 故宫)))
+        (VP (VV 修)
+          (NP (NN 文物，)))))
+    (IP
+      (ADVP (AD 但是))
+      (NP (PN 我))
+      (VP
+        (ADVP (AD 很))
+        (VP (VV 喜欢)
+          (IP
+            (VP (VV 这个)
+              (NP (NN 工作。)))))))))
+

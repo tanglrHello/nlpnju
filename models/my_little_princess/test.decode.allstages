@@ -1,0 +1,3275 @@
+# ::snt Chapter 4 .
+# ::tok Chapter 4 .
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:19:58.766
+# ::node	0	chapter	0-1
+# ::root	0	chapter
+(c / chapter)
+
+# ::snt I had thus learned a second fact of great importance : this was that the planet the little prince came from was scarcely any larger than a house !
+# ::tok I had thus learned a second fact of great importance : this was that the planet the little prince came from was scarcely any larger than a house !
+# ::alignments 27-28|0.2.0.0.0.0 24-25|0.2.0.0.0 23-24|0.2.0.0.2.0 22-23|0.2.0.0.2 19-20|0.2.0.0 18-19|0.2.0.0.1 17-18|0.2.0.0.1.0 15-16|0.2.0 11-12|0.2 9-10|0.1 8-9|0.1.0 5-6|0.1.1.0+0.1.1 3-4|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:00.015
+# ::node	0	learn-01	3-4
+# ::node	0.0	i	0-1
+# ::node	0.1	important	9-10
+# ::node	0.1.0	great	8-9
+# ::node	0.1.1	temporal-quantity	5-6
+# ::node	0.1.1.0	second	5-6
+# ::node	0.2	this	11-12
+# ::node	0.2.0	planet	15-16
+# ::node	0.2.0.0	come-01	19-20
+# ::node	0.2.0.0.0	large	24-25
+# ::node	0.2.0.0.0.0	house	27-28
+# ::node	0.2.0.0.1	prince	18-19
+# ::node	0.2.0.0.1.0	little	17-18
+# ::node	0.2.0.0.2	scarce	22-23
+# ::node	0.2.0.0.2.0	any	23-24
+# ::root	0	learn-01
+# ::edge	any	mod	scarce	0.2.0.0.2.0	0.2.0.0.2	
+# ::edge	come-01	ARG0	large	0.2.0.0	0.2.0.0.0	
+# ::edge	come-01	ARG1	prince	0.2.0.0	0.2.0.0.1	
+# ::edge	come-01	ARG2	scarce	0.2.0.0	0.2.0.0.2	
+# ::edge	come-01	ARG4	planet	0.2.0.0	0.2.0	
+# ::edge	important	mod	great	0.1	0.1.0	
+# ::edge	important	quant	temporal-quantity	0.1	0.1.1	
+# ::edge	large	compared-to	house	0.2.0.0.0	0.2.0.0.0.0	
+# ::edge	learn-01	ARG0	i	0	0.0	
+# ::edge	learn-01	ARG1	important	0	0.1	
+# ::edge	learn-01	ARG2	this	0	0.2	
+# ::edge	planet	domain	this	0.2.0	0.2	
+# ::edge	prince	mod	little	0.2.0.0.1	0.2.0.0.1.0	
+# ::edge	temporal-quantity	unit	second	0.1.1	0.1.1.0	
+(l3 / learn-01 
+      :ARG0 (i2 / i) 
+      :ARG1 (i / important 
+            :mod (g / great) 
+            :quant (t2 / temporal-quantity 
+                  :unit (s2 / second))) 
+      :ARG2 (t / this 
+            :domain-of (p2 / planet 
+                  :ARG4-of (c / come-01 
+                        :ARG0 (l / large 
+                              :compared-to (h / house)) 
+                        :ARG1 (p / prince 
+                              :mod (l2 / little)) 
+                        :ARG2 (s / scarce 
+                              :mod-of (a / any))))))
+
+# ::snt But that did not really surprise me much .
+# ::tok But that did not really surprise me much .
+# ::alignments 7-8|0.0 4-5|0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:00.050
+# ::node	0	contrast-01	0-1
+# ::node	0.0	much	7-8
+# ::node	0.0.0	real-04	4-5
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG1	much	0	0.0	
+# ::edge	real-04	ARG1	much	0.0.0	0.0	
+(c / contrast-01 
+      :ARG1 (m / much 
+            :ARG1-of (r / real-04)))
+
+# ::snt I knew very well that in addition to the great planets -- such as the Earth , Jupiter , Mars , Venus -- to which we have given names , there are also hundreds of others , some of which are so small that one has a hard time seeing them through the telescope .
+# ::tok I knew very well that in addition to the great planets -- such as the Earth , Jupiter , Mars , Venus -- to which we have given names , there are also hundreds of others , some of which are so small that one has a hard time seeing them through the telescope .
+# ::alignments 51-52|0.5 48-49|0.4.2.1 45-46|0.4.2 42-43|0.4.2.2 41-42|0.4.2.2.0 37-38|0.4.2.0 35-36|0.4.2.2.1 32-33|0.2.0 30-31|0.2 27-28|0 25-26|0.0 15-16|0.3.0.0+0.3.0+0.3 12-13|0.4.1 10-11|0.1 9-10|0.1.0 3-4|0.4.3 2-3|0.4.3.0 1-2|0.4 0-1|0.4.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.363
+# ::node	0	give-01	27-28
+# ::node	0.0	we	25-26
+# ::node	0.1	planet	10-11
+# ::node	0.1.0	great	9-10
+# ::node	0.2	there	30-31
+# ::node	0.2.0	also	32-33
+# ::node	0.3	planet	15-16
+# ::node	0.3.0	name	15-16
+# ::node	0.3.0.0	"Earth"	15-16
+# ::node	0.4	know-01	1-2
+# ::node	0.4.0	i	0-1
+# ::node	0.4.1	such	12-13
+# ::node	0.4.2	have-03	45-46
+# ::node	0.4.2.0	some	37-38
+# ::node	0.4.2.1	time	48-49
+# ::node	0.4.2.2	small	42-43
+# ::node	0.4.2.2.0	so	41-42
+# ::node	0.4.2.2.1	other	35-36
+# ::node	0.4.3	well	3-4
+# ::node	0.4.3.0	very	2-3
+# ::node	0.5	through	51-52
+# ::root	0	give-01
+# ::edge	give-01	ARG0	we	0	0.0	
+# ::edge	give-01	ARG1	planet	0	0.1	
+# ::edge	give-01	ARG2	there	0	0.2	
+# ::edge	give-01	accompanier	planet	0	0.3	
+# ::edge	give-01	condition	know-01	0	0.4	
+# ::edge	have-03	ARG0	some	0.4.2	0.4.2.0	
+# ::edge	have-03	ARG1	time	0.4.2	0.4.2.1	
+# ::edge	have-03	ARG2	small	0.4.2	0.4.2.2	
+# ::edge	have-03	condition	know-01	0.4.2	0.4	
+# ::edge	know-01	ARG0	i	0.4	0.4.0	
+# ::edge	know-01	ARG2	such	0.4	0.4.1	
+# ::edge	know-01	degree	well	0.4	0.4.3	
+# ::edge	name	op1	"Earth"	0.3.0	0.3.0.0	
+# ::edge	other	mod	small	0.4.2.2.1	0.4.2.2	
+# ::edge	planet	mod	great	0.1	0.1.0	
+# ::edge	planet	name	name	0.3	0.3.0	
+# ::edge	small	degree	so	0.4.2.2	0.4.2.2.0	
+# ::edge	there	op1	also	0.2	0.2.0	
+# ::edge	through	op1	give-01	0.5	0	
+# ::edge	well	degree	very	0.4.3	0.4.3.0	
+(g / give-01 
+      :ARG0 (w / we) 
+      :ARG1 (p2 / planet 
+            :mod (g2 / great)) 
+      :ARG2 (t3 / there 
+            :op1 (a / also)) 
+      :accompanier (p / planet 
+            :name (n / name 
+                  :op1 "Earth")) 
+      :condition (k / know-01 
+            :ARG0 (i / i) 
+            :ARG2 (s4 / such) 
+            :condition-of (h / have-03 
+                  :ARG0 (s3 / some) 
+                  :ARG1 (t2 / time) 
+                  :ARG2 (s / small 
+                        :degree (s2 / so) 
+                        :mod-of (o / other))) 
+            :degree (w2 / well 
+                  :degree (v / very))) 
+      :op-of (t / through))
+
+# ::snt When an astronomer discovers one of these he does not give it a name , but only a number .
+# ::tok When an astronomer discovers one of these he does not give it a name , but only a number .
+# ::alignments 18-19|0.1 16-17|0.0 15-16|0 11-12|0.0.0.1 10-11|0.0.0 7-8|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.429
+# ::node	0	contrast-01	15-16
+# ::node	0.0	only	16-17
+# ::node	0.0.0	give-01	10-11
+# ::node	0.0.0.0	he	7-8
+# ::node	0.0.0.1	it	11-12
+# ::node	0.1	number	18-19
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG0	only	0	0.0	
+# ::edge	contrast-01	ARG1	number	0	0.1	
+# ::edge	give-01	ARG0	he	0.0.0	0.0.0.0	
+# ::edge	give-01	ARG1	only	0.0.0	0.0	
+# ::edge	give-01	ARG2	it	0.0.0	0.0.0.1	
+(c / contrast-01 
+      :ARG0 (o / only 
+            :ARG1-of (g / give-01 
+                  :ARG0 (h / he) 
+                  :ARG2 (i / it))) 
+      :ARG1 (n / number))
+
+# ::snt He might call it , for example , " Asteroid 325 . "
+# ::tok He might call it , for example , " Asteroid 325 . "
+# ::alignments 10-11|0.2.0.0+0.2.0+0.2 3-4|0.1 2-3|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.571
+# ::node	0	call-on-05	2-3
+# ::node	0.0	he	0-1
+# ::node	0.1	it	3-4
+# ::node	0.2	asteroid	10-11
+# ::node	0.2.0	name	10-11
+# ::node	0.2.0.0	325	10-11
+# ::root	0	call-on-05
+# ::edge	asteroid	name	name	0.2	0.2.0	
+# ::edge	call-on-05	ARG0	he	0	0.0	
+# ::edge	call-on-05	ARG1	it	0	0.1	
+# ::edge	call-on-05	ARG2	asteroid	0	0.2	
+# ::edge	name	op1	325	0.2.0	0.2.0.0	
+(c / call-on-05 
+      :ARG0 (h / he) 
+      :ARG1 (i / it) 
+      :ARG2 (a / asteroid 
+            :name (n / name 
+                  :op1 325)))
+
+# ::snt I have serious reason to believe that the planet from which the little prince came is the asteroid known as B-612 .
+# ::tok I have serious reason to believe that the planet from which the little prince came is the asteroid known as B - 612 .
+# ::alignments 18-19|0 14-15|0.0.0 13-14|0.0.0.0 12-13|0.0.0.0.0 8-9|0.0 5-6|0.0.1 3-4|0.0.1.1 2-3|0.0.1.1.0 0-1|0.0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.711
+# ::node	0	know-01	18-19
+# ::node	0.0	planet	8-9
+# ::node	0.0.0	come-01	14-15
+# ::node	0.0.0.0	prince	13-14
+# ::node	0.0.0.0.0	little	12-13
+# ::node	0.0.1	believe-01	5-6
+# ::node	0.0.1.0	i	0-1
+# ::node	0.0.1.1	reason-01	3-4
+# ::node	0.0.1.1.0	serious-01	2-3
+# ::root	0	know-01
+# ::edge	believe-01	ARG0	i	0.0.1	0.0.1.0	
+# ::edge	believe-01	ARG1	planet	0.0.1	0.0	
+# ::edge	come-01	ARG0	planet	0.0.0	0.0	
+# ::edge	come-01	ARG1	prince	0.0.0	0.0.0.0	
+# ::edge	know-01	ARG0	planet	0	0.0	
+# ::edge	prince	mod	little	0.0.0.0	0.0.0.0.0	
+# ::edge	reason-01	ARG1	believe-01	0.0.1.1	0.0.1	
+# ::edge	serious-01	ARG1	reason-01	0.0.1.1.0	0.0.1.1	
+(k / know-01 
+      :ARG0 (p2 / planet 
+            :ARG0-of (c / come-01 
+                  :ARG1 (p / prince 
+                        :mod (l / little))) 
+            :ARG1-of (b / believe-01 
+                  :ARG0 (i / i) 
+                  :ARG1-of (r / reason-01 
+                        :ARG1-of (s / serious-01)))))
+
+# ::snt This asteroid has only once been seen through the telescope .
+# ::tok This asteroid has only once been seen through the telescope .
+# ::alignments 7-8|0.2 6-7|0 4-5|0.0.0 3-4|0.0 2-3|0.1 0-1|0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.815
+# ::node	0	see-01	6-7
+# ::node	0.0	only	3-4
+# ::node	0.0.0	once	4-5
+# ::node	0.1	have-03	2-3
+# ::node	0.1.0	this	0-1
+# ::node	0.2	through	7-8
+# ::root	0	see-01
+# ::edge	have-03	ARG0	this	0.1	0.1.0	
+# ::edge	have-03	ARG1	see-01	0.1	0	
+# ::edge	once	degree	only	0.0.0	0.0	
+# ::edge	see-01	ARG1	only	0	0.0	
+# ::edge	see-01	ARG2	through	0	0.2	
+(s / see-01 
+      :ARG1 (o2 / only 
+            :degree-of (o / once)) 
+      :ARG1-of (h / have-03 
+            :ARG0 (t2 / this)) 
+      :ARG2 (t / through))
+
+# ::snt That was by a Turkish astronomer , in 1909 .
+# ::tok That was by a Turkish astronomer , in 1909 .
+# ::alignments 8-9|0.1+0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.848
+# ::node	0	date-entity	8-9
+# ::node	0.0	that	0-1
+# ::node	0.1	1909	8-9
+# ::root	0	date-entity
+# ::edge	date-entity	year	1909	0	0.1	
+# ::edge	that	op1	date-entity	0.0	0	
+(d / date-entity 
+      :op-of (t / that) 
+      :year 1909)
+
+# ::snt On making his discovery , the astronomer had presented it to the International Astronomical Congress , in a great demonstration .
+# ::tok On making his discovery , the astronomer had presented it to the International Astronomical Congress , in a great demonstration .
+# ::alignments 18-19|0.0.1 9-10|0.0.0 3-4|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:01.899
+# ::node	0	make-02	1-2
+# ::node	0.0	discover-01	3-4
+# ::node	0.0.0	it	9-10
+# ::node	0.0.1	great	18-19
+# ::root	0	make-02
+# ::edge	discover-01	ARG0	it	0.0	0.0.0	
+# ::edge	discover-01	ARG1	great	0.0	0.0.1	
+# ::edge	make-02	ARG1	discover-01	0	0.0	
+(m / make-02 
+      :ARG1 (d / discover-01 
+            :ARG0 (i / it) 
+            :ARG1 (g / great)))
+
+# ::snt But he was in Turkish costume , and so nobody would believe what he said .
+# ::tok But he was in Turkish costume , and so nobody would believe what he said .
+# ::alignments 14-15|0.1.0 13-14|0.1.0.0 11-12|0.1.0.1 9-10|0.1.0.1.1 8-9|0.0 7-8|0.1 1-2|0.1.0.1.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:02.143
+# ::node	0	contrast-01	0-1
+# ::node	0.0	so	8-9
+# ::node	0.1	and	7-8
+# ::node	0.1.0	say-01	14-15
+# ::node	0.1.0.0	he	13-14
+# ::node	0.1.0.1	believe-01	11-12
+# ::node	0.1.0.1.0	he	1-2
+# ::node	0.1.0.1.1	nobody	9-10
+# ::root	0	contrast-01
+# ::edge	and	op1	say-01	0.1	0.1.0	
+# ::edge	believe-01	ARG0	he	0.1.0.1	0.1.0.1.0	
+# ::edge	believe-01	ARG1	nobody	0.1.0.1	0.1.0.1.1	
+# ::edge	contrast-01	ARG1	so	0	0.0	
+# ::edge	contrast-01	ARG2	and	0	0.1	
+# ::edge	say-01	ARG0	he	0.1.0	0.1.0.0	
+# ::edge	say-01	ARG1	believe-01	0.1.0	0.1.0.1	
+(c / contrast-01 
+      :ARG1 (s2 / so) 
+      :ARG2 (a / and 
+            :op1 (s / say-01 
+                  :ARG0 (h / he) 
+                  :ARG1 (b / believe-01 
+                        :ARG0 (h2 / he) 
+                        :ARG1 (n / nobody)))))
+
+# ::snt Grown - ups are like that ...
+# ::tok Grown - ups are like that ...
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:02.162
+# ::node	0	amr-empty	0-1
+# ::root	0	amr-empty
+(a / amr-empty)
+
+# ::snt Fortunately , however , for the reputation of Asteroid B-612 , a Turkish dictator made a law that his subjects , under pain of death , should change to European costume .
+# ::tok Fortunately , however , for the reputation of Asteroid B - 612 , a Turkish dictator made a law that his subjects , under pain of death , should change to European costume .
+# ::alignments 29-30|0.1 28-29|0 26-27|0.1.1.0 23-24|0.1.1 21-22|0.1.0 6-7|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:02.404
+# ::node	0	recommend-01	28-29
+# ::node	0.0	reputation	6-7
+# ::node	0.1	change-01	29-30
+# ::node	0.1.0	subject	21-22
+# ::node	0.1.1	under	23-24
+# ::node	0.1.1.0	die-01	26-27
+# ::root	0	recommend-01
+# ::edge	change-01	ARG1	subject	0.1	0.1.0	
+# ::edge	change-01	time	under	0.1	0.1.1	
+# ::edge	recommend-01	ARG0	reputation	0	0.0	
+# ::edge	recommend-01	ARG1	change-01	0	0.1	
+# ::edge	under	op1	die-01	0.1.1	0.1.1.0	
+(r / recommend-01 
+      :ARG0 (r2 / reputation) 
+      :ARG1 (c / change-01 
+            :ARG1 (s / subject) 
+            :time (u / under 
+                  :op1 (d / die-01))))
+
+# ::snt So in 1920 the astronomer gave his demonstration all over again , dressed with impressive style and elegance .
+# ::tok So in 1920 the astronomer gave his demonstration all over again , dressed with impressive style and elegance .
+# ::alignments 16-17|0.2.1 12-13|0.2 10-11|0.0 8-9|0.1 5-6|0 2-3|0.2.0.0+0.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:02.590
+# ::node	0	give-01	5-6
+# ::node	0.0	again	10-11
+# ::node	0.1	all	8-9
+# ::node	0.2	dress-01	12-13
+# ::node	0.2.0	date-entity	2-3
+# ::node	0.2.0.0	1920	2-3
+# ::node	0.2.1	and	16-17
+# ::root	0	give-01
+# ::edge	date-entity	year	1920	0.2.0	0.2.0.0	
+# ::edge	dress-01	ARG0	date-entity	0.2	0.2.0	
+# ::edge	dress-01	ARG1	give-01	0.2	0	
+# ::edge	dress-01	ARG2	and	0.2	0.2.1	
+# ::edge	give-01	ARG0	again	0	0.0	
+# ::edge	give-01	ARG1	all	0	0.1	
+(g / give-01 
+      :ARG0 (a2 / again) 
+      :ARG1 (a3 / all) 
+      :ARG1-of (d / dress-01 
+            :ARG0 (d2 / date-entity 
+                  :year 1920) 
+            :ARG2 (a / and)))
+
+# ::snt And this time everybody accepted his report .
+# ::tok And this time everybody accepted his report .
+# ::alignments 2-3|0.0 1-2|0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:02.619
+# ::node	0	and	0-1
+# ::node	0.0	time	2-3
+# ::node	0.0.0	this	1-2
+# ::root	0	and
+# ::edge	and	concession	time	0	0.0	
+# ::edge	time	mod	this	0.0	0.0.0	
+(a / and 
+      :concession (t / time 
+            :mod (t2 / this)))
+
+# ::snt If I have told you these details about the asteroid , and made a note of its number for you , it is on account of the grown - ups and their ways .
+# ::tok If I have told you these details about the asteroid , and made a note of its number for you , it is on account of the grown - ups and their ways .
+# ::alignments 30-31|0.0.3 27-28|0.0.2 24-25|0.0.0.0 21-22|0.0.4 19-20|0.1.0 17-18|0.1.1 16-17|0.1.1.0 14-15|0.1 11-12|0 4-5|0.0.1 3-4|0.0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:03.444
+# ::node	0	and	11-12
+# ::node	0.0	tell-01	3-4
+# ::node	0.0.0	i	1-2
+# ::node	0.0.0.0	account	24-25
+# ::node	0.0.1	you	4-5
+# ::node	0.0.2	grown-up	27-28
+# ::node	0.0.3	and	30-31
+# ::node	0.0.4	it	21-22
+# ::node	0.1	note-02	14-15
+# ::node	0.1.0	you	19-20
+# ::node	0.1.1	number	17-18
+# ::node	0.1.1.0	it	16-17
+# ::root	0	and
+# ::edge	account	poss	i	0.0.0.0	0.0.0	
+# ::edge	and	op1	tell-01	0	0.0	
+# ::edge	and	op1	tell-01	0.0.3	0.0	
+# ::edge	and	op2	note-02	0	0.1	
+# ::edge	note-02	ARG0	you	0.1	0.1.0	
+# ::edge	note-02	ARG1	number	0.1	0.1.1	
+# ::edge	number	poss	it	0.1.1	0.1.1.0	
+# ::edge	tell-01	ARG0	i	0.0	0.0.0	
+# ::edge	tell-01	ARG1	you	0.0	0.0.1	
+# ::edge	tell-01	ARG2	grown-up	0.0	0.0.2	
+# ::edge	tell-01	time	it	0.0	0.0.4	
+(a3 / and 
+      :op1 (t / tell-01 
+            :ARG0 (i3 / i 
+                  :poss-of (a2 / account)) 
+            :ARG1 (y2 / you) 
+            :ARG2 (g / grown-up) 
+            :op-of (a / and) 
+            :time (i / it)) 
+      :op2 (n2 / note-02 
+            :ARG0 (y / you) 
+            :ARG1 (n / number 
+                  :poss (i2 / it))))
+
+# ::snt WHen you tell them that you have made a new friend , they never ask you any questions about essential matters .
+# ::tok WHen you tell them that you have made a new friend , they never ask you any questions about essential matters .
+# ::alignments 20-21|0.3.1.0 19-20|0.3.1.0.0 17-18|0.3.1 16-17|0.3.1.1 15-16|0.3.2 14-15|0.3 12-13|0.3.0 10-11|0.1 9-10|0.1.0 5-6|0.2 2-3|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:03.970
+# ::node	0	tell-01	2-3
+# ::node	0.0	you	1-2
+# ::node	0.1	friend	10-11
+# ::node	0.1.0	new-01	9-10
+# ::node	0.2	you	5-6
+# ::node	0.3	ask-02	14-15
+# ::node	0.3.0	they	12-13
+# ::node	0.3.1	question-01	17-18
+# ::node	0.3.1.0	matter	20-21
+# ::node	0.3.1.0.0	essential	19-20
+# ::node	0.3.1.1	any	16-17
+# ::node	0.3.2	you	15-16
+# ::root	0	tell-01
+# ::edge	ask-02	ARG0	they	0.3	0.3.0	
+# ::edge	ask-02	ARG1	question-01	0.3	0.3.1	
+# ::edge	ask-02	ARG2	you	0.3	0.3.2	
+# ::edge	ask-02	condition	tell-01	0.3	0	
+# ::edge	matter	mod	essential	0.3.1.0	0.3.1.0.0	
+# ::edge	new-01	ARG1	friend	0.1.0	0.1	
+# ::edge	question-01	ARG0	matter	0.3.1	0.3.1.0	
+# ::edge	question-01	ARG2	any	0.3.1	0.3.1.1	
+# ::edge	tell-01	ARG0	you	0	0.0	
+# ::edge	tell-01	ARG1	friend	0	0.1	
+# ::edge	tell-01	ARG2	you	0	0.2	
+(t2 / tell-01 
+      :ARG0 (y3 / you) 
+      :ARG1 (f / friend 
+            :ARG1-of (n / new-01)) 
+      :ARG2 (y2 / you) 
+      :condition-of (a2 / ask-02 
+            :ARG0 (t / they) 
+            :ARG1 (q / question-01 
+                  :ARG0 (m / matter 
+                        :mod (e / essential)) 
+                  :ARG2 (a / any)) 
+            :ARG2 (y / you)))
+
+# ::snt They never say to you , " What does his voice sound like ?
+# ::tok They never say to you , " What does his voice sound like ?
+# ::alignments 11-12|0.0.0 10-11|0.0.0.0 4-5|0.1 2-3|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.096
+# ::node	0	say-01	2-3
+# ::node	0.0	they	0-1
+# ::node	0.0.0	sound-02	11-12
+# ::node	0.0.0.0	voice	10-11
+# ::node	0.1	you	4-5
+# ::root	0	say-01
+# ::edge	say-01	ARG0	they	0	0.0	
+# ::edge	say-01	ARG1	you	0	0.1	
+# ::edge	sound-02	ARG0	they	0.0.0	0.0	
+# ::edge	sound-02	ARG1	voice	0.0.0	0.0.0.0	
+(s2 / say-01 
+      :ARG0 (t / they 
+            :ARG0-of (s / sound-02 
+                  :ARG1 (v / voice))) 
+      :ARG1 (y / you))
+
+# ::snt What games does he love best ?
+# ::tok What games does he love best ?
+# ::alignments 5-6|0.1.0+0.1 4-5|0 3-4|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.109
+# ::node	0	love-01	4-5
+# ::node	0.0	he	3-4
+# ::node	0.1	well	5-6
+# ::node	0.1.0	most	5-6
+# ::root	0	love-01
+# ::edge	love-01	ARG0	he	0	0.0	
+# ::edge	love-01	ARG1	well	0	0.1	
+# ::edge	well	degree	most	0.1	0.1.0	
+(l / love-01 
+      :ARG0 (h / he) 
+      :ARG1 (w / well 
+            :degree (m / most)))
+
+# ::snt Does he collect butterflies ? "
+# ::tok Does he collect butterflies ? "
+# ::alignments 3-4|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.116
+# ::node	0	butterfly	3-4
+# ::node	0.0	he	1-2
+# ::root	0	butterfly
+# ::edge	butterfly	quant	he	0	0.0	
+(b / butterfly 
+      :quant (h / he))
+
+# ::snt Instead , they demand : " How old is he ?
+# ::tok Instead , they demand : " How old is he ?
+# ::alignments 9-10|0.0 7-8|0 2-3|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.131
+# ::node	0	old	7-8
+# ::node	0.0	he	9-10
+# ::node	0.0.0	they	2-3
+# ::root	0	old
+# ::edge	he	poss	they	0.0	0.0.0	
+# ::edge	old	op1	he	0	0.0	
+(o / old 
+      :op1 (h / he 
+            :poss (t / they)))
+
+# ::snt How many brothers has he ?
+# ::tok How many brothers has he ?
+# ::alignments 4-5|0.1 3-4|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.139
+# ::node	0	have-03	3-4
+# ::node	0.0	many	1-2
+# ::node	0.1	he	4-5
+# ::root	0	have-03
+# ::edge	have-03	ARG0	many	0	0.0	
+# ::edge	have-03	ARG1	he	0	0.1	
+(h2 / have-03 
+      :ARG0 (m / many) 
+      :ARG1 (h / he))
+
+# ::snt How much does he weigh ?
+# ::tok How much does he weigh ?
+# ::alignments 3-4|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.148
+# ::node	0	much	1-2
+# ::node	0.0	he	3-4
+# ::root	0	much
+# ::edge	much	op1	he	0	0.0	
+(m / much 
+      :op1 (h / he))
+
+# ::snt How much money does his father make ? "
+# ::tok How much money does his father make ? "
+# ::alignments 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.156
+# ::node	0	much	1-2
+# ::root	0	much
+(m / much)
+
+# ::snt Only from these figures do they think they have learned anything about him .
+# ::tok Only from these figures do they think they have learned anything about him .
+# ::alignments 10-11|0.0.1.1 9-10|0.0.1 7-8|0.0.1.0 6-7|0.0 5-6|0.0.0 3-4|0 0-1|0.0.2 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:04.319
+# ::node	0	figure	3-4
+# ::node	0.0	think-01	6-7
+# ::node	0.0.0	they	5-6
+# ::node	0.0.1	learn-01	9-10
+# ::node	0.0.1.0	they	7-8
+# ::node	0.0.1.1	anything	10-11
+# ::node	0.0.2	only	0-1
+# ::root	0	figure
+(f / figure 
+      :ARG3-of (t2 / think-01 
+            :ARG0 (t3 / they) 
+            :ARG1 (l / learn-01 
+                  :ARG0 (t / they) 
+                  :ARG1 (a / anything)) 
+            :ARG2 (o / only)))
+
+# ::snt If you were to say to the grown - ups : " I saw a beautiful house made of rosy brick , with geraniums in the windows and doves on the roof , " they would not be able to get any idea of that house at all .
+# ::tok If you were to say to the grown - ups : " I saw a beautiful house made of rosy brick , with geraniums in the windows and doves on the roof , " they would not be able to get any idea of that house at all .
+# ::alignments 47-48|0.2.0.0.0 45-46|0.1.1.1 42-43|0.1.1 41-42|0.1.1.0 40-41|0.1 38-39|0 34-35|0.1.0 27-28|0.2.1.0.0 16-17|0.2.0 15-16|0.2.0.0 13-14|0.2 12-13|0.2.2 7-8|0.0 4-5|0.2.1.0 1-2|0.2.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:05.767
+# ::node	0	possible-01	38-39
+# ::node	0.0	grown-up	7-8
+# ::node	0.1	get-01	40-41
+# ::node	0.1.0	they	34-35
+# ::node	0.1.1	idea	42-43
+# ::node	0.1.1.0	any	41-42
+# ::node	0.1.1.1	house	45-46
+# ::node	0.2	see-01	13-14
+# ::node	0.2.0	house	16-17
+# ::node	0.2.0.0	beautiful-02	15-16
+# ::node	0.2.0.0.0	all	47-48
+# ::node	0.2.1	you	1-2
+# ::node	0.2.1.0	say-01	4-5
+# ::node	0.2.1.0.0	and	27-28
+# ::node	0.2.2	i	12-13
+# ::root	0	possible-01
+# ::edge	beautiful-02	ARG0	all	0.2.0.0	0.2.0.0.0	
+# ::edge	beautiful-02	ARG1	house	0.2.0.0	0.2.0	
+# ::edge	get-01	ARG0	they	0.1	0.1.0	
+# ::edge	get-01	ARG1	idea	0.1	0.1.1	
+# ::edge	idea	mod	any	0.1.1	0.1.1.0	
+# ::edge	idea	topic	house	0.1.1	0.1.1.1	
+# ::edge	possible-01	ARG0	grown-up	0	0.0	
+# ::edge	possible-01	ARG1	get-01	0	0.1	
+# ::edge	possible-01	ARG2	see-01	0	0.2	
+# ::edge	say-01	ARG0	you	0.2.1.0	0.2.1	
+# ::edge	say-01	ARG1	and	0.2.1.0	0.2.1.0.0	
+# ::edge	see-01	ARG0	house	0.2	0.2.0	
+# ::edge	see-01	ARG1	you	0.2	0.2.1	
+# ::edge	see-01	ARG2	i	0.2	0.2.2	
+(p / possible-01 
+      :ARG0 (g2 / grown-up) 
+      :ARG1 (g / get-01 
+            :ARG0 (t / they) 
+            :ARG1 (i / idea 
+                  :mod (a2 / any) 
+                  :topic (h / house))) 
+      :ARG2 (s / see-01 
+            :ARG0 (h2 / house 
+                  :ARG1-of (b / beautiful-02 
+                        :ARG0 (a / all))) 
+            :ARG1 (y / you 
+                  :ARG0-of (s2 / say-01 
+                        :ARG1 (a3 / and))) 
+            :ARG2 (i2 / i)))
+
+# ::snt You would have to say to them : " I saw a house that cost $ 20,000 . "
+# ::tok You would have to say to them : " I saw a house that cost $ 20,000 . "
+# ::alignments 12-13|0.1.1 10-11|0.1 9-10|0.1.0 4-5|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:05.846
+# ::node	0	say-01	4-5
+# ::node	0.0	you	0-1
+# ::node	0.1	see-01	10-11
+# ::node	0.1.0	i	9-10
+# ::node	0.1.1	house	12-13
+# ::root	0	say-01
+# ::edge	say-01	ARG0	you	0	0.0	
+# ::edge	say-01	ARG1	see-01	0	0.1	
+# ::edge	see-01	ARG0	i	0.1	0.1.0	
+# ::edge	see-01	ARG1	house	0.1	0.1.1	
+(s2 / say-01 
+      :ARG0 (y / you) 
+      :ARG1 (s / see-01 
+            :ARG0 (i / i) 
+            :ARG1 (h / house)))
+
+# ::snt Then they would exclaim : " Oh , what a pretty house that is ! "
+# ::tok Then they would exclaim : " Oh , what a pretty house that is ! "
+# ::alignments 11-12|0.0 10-11|0 6-7|0.0.0 1-2|0.0.1 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:05.874
+# ::node	0	pretty	10-11
+# ::node	0.0	house	11-12
+# ::node	0.0.0	oh	6-7
+# ::node	0.0.1	they	1-2
+# ::node	0.1	then	0-1
+# ::root	0	pretty
+(p / pretty 
+      :mod-of (h / house 
+            :domain (o / oh) 
+            :poss (t / they)) 
+      :poss-of (t2 / then))
+
+# ::snt Just so , you might say to them : " The proof that the little prince existed is that he was charming , that he laughed , and that he was looking for a sheep .
+# ::tok Just so , you might say to them : " The proof that the little prince existed is that he was charming , that he laughed , and that he was looking for a sheep .
+# ::alignments 34-35|0.1.0.0.1.1.0.1 31-32|0.1.0.0.1.1.0 29-30|0.1.0.0.1.1.0.0 27-28|0.1.0.0.1.1 25-26|0.1.0.0.1 24-25|0.1.0.0.1.0 21-22|0.1.0.0 19-20|0.1.0.0.0 15-16|0.2 14-15|0.2.0 5-6|0 3-4|0.0 1-2|0.1 0-1|0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.248
+# ::node	0	say-01	5-6
+# ::node	0.0	you	3-4
+# ::node	0.1	so	1-2
+# ::node	0.1.0	just	0-1
+# ::node	0.1.0.0	charm-01	21-22
+# ::node	0.1.0.0.0	he	19-20
+# ::node	0.1.0.0.1	laugh-01	25-26
+# ::node	0.1.0.0.1.0	he	24-25
+# ::node	0.1.0.0.1.1	and	27-28
+# ::node	0.1.0.0.1.1.0	look-01	31-32
+# ::node	0.1.0.0.1.1.0.0	he	29-30
+# ::node	0.1.0.0.1.1.0.1	sheep	34-35
+# ::node	0.2	prince	15-16
+# ::node	0.2.0	little	14-15
+# ::root	0	say-01
+# ::edge	and	op1	laugh-01	0.1.0.0.1.1	0.1.0.0.1	
+# ::edge	and	op2	look-01	0.1.0.0.1.1	0.1.0.0.1.1.0	
+# ::edge	charm-01	ARG0	just	0.1.0.0	0.1.0	
+# ::edge	charm-01	ARG1	he	0.1.0.0	0.1.0.0.0	
+# ::edge	charm-01	ARG2	laugh-01	0.1.0.0	0.1.0.0.1	
+# ::edge	laugh-01	ARG0	he	0.1.0.0.1	0.1.0.0.1.0	
+# ::edge	look-01	ARG0	he	0.1.0.0.1.1.0	0.1.0.0.1.1.0.0	
+# ::edge	look-01	ARG1	sheep	0.1.0.0.1.1.0	0.1.0.0.1.1.0.1	
+# ::edge	prince	mod	little	0.2	0.2.0	
+# ::edge	say-01	ARG0	you	0	0.0	
+# ::edge	say-01	ARG1	so	0	0.1	
+# ::edge	say-01	ARG2	prince	0	0.2	
+# ::edge	so	mod	just	0.1	0.1.0	
+(s2 / say-01 
+      :ARG0 (y / you) 
+      :ARG1 (s3 / so 
+            :mod (j / just 
+                  :ARG0-of (c / charm-01 
+                        :ARG1 (h3 / he) 
+                        :ARG2 (l2 / laugh-01 
+                              :ARG0 (h2 / he) 
+                              :op-of (a / and 
+                                    :op1 (l / look-01 
+                                          :ARG0 (h / he) 
+                                          :ARG1 (s / sheep))))))) 
+      :ARG2 (p / prince 
+            :mod (l3 / little)))
+
+# ::snt If anybody wants a sheep , that is a proof that he exists . "
+# ::tok If anybody wants a sheep , that is a proof that he exists . "
+# ::alignments 11-12|0.0.0 4-5|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.267
+# ::node	0	anybody	1-2
+# ::node	0.0	sheep	4-5
+# ::node	0.0.0	he	11-12
+# ::root	0	anybody
+(a / anybody 
+      :op-of (s / sheep 
+            :poss (h / he)))
+
+# ::snt And what good would it do to tell them that ?
+# ::tok And what good would it do to tell them that ?
+# ::alignments 7-8|0.0.0.0 4-5|0.0.0 2-3|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.300
+# ::node	0	and	0-1
+# ::node	0.0	good-04	2-3
+# ::node	0.0.0	it	4-5
+# ::node	0.0.0.0	tell-01	7-8
+# ::root	0	and
+(a / and 
+      :ARG0-of (g / good-04 
+            :ARG1 (i / it 
+                  :ARG1-of (t / tell-01))))
+
+# ::snt They would shrug their shoulders , and treat you like a child .
+# ::tok They would shrug their shoulders , and treat you like a child .
+# ::alignments 11-12|0.0.2 8-9|0.0.1 7-8|0.0 6-7|0 4-5|0.0.3 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.483
+# ::node	0	and	6-7
+# ::node	0.0	treat-02	7-8
+# ::node	0.0.0	they	0-1
+# ::node	0.0.1	you	8-9
+# ::node	0.0.2	child	11-12
+# ::node	0.0.3	shoulder	4-5
+# ::root	0	and
+# ::edge	and	op1	treat-02	0	0.0	
+# ::edge	treat-02	ARG0	they	0.0	0.0.0	
+# ::edge	treat-02	ARG1	you	0.0	0.0.1	
+# ::edge	treat-02	ARG2	child	0.0	0.0.2	
+# ::edge	treat-02	beneficiary	shoulder	0.0	0.0.3	
+(a / and 
+      :op1 (t / treat-02 
+            :ARG0 (t2 / they) 
+            :ARG1 (y / you) 
+            :ARG2 (c / child) 
+            :beneficiary (s / shoulder)))
+
+# ::snt But if you said to them : " The planet he came from is Asteroid B-612 , " then they would be convinced , and leave you in peace from their questions .
+# ::tok But if you said to them : " The planet he came from is Asteroid B - 612 , " then they would be convinced , and leave you in peace from their questions .
+# ::alignments 33-34|0.2.0.2 30-31|0.0 28-29|0.2.0.1 27-28|0.2.0 26-27|0.2 21-22|0.2.0.0 20-21|0.2.0.2.0 11-12|0.1.1.0 10-11|0.1.1.0.0 9-10|0.1.1 3-4|0.1 2-3|0.1.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.928
+# ::node	0	contrast-01	0-1
+# ::node	0.0	peace	30-31
+# ::node	0.1	say-01	3-4
+# ::node	0.1.0	you	2-3
+# ::node	0.1.1	planet	9-10
+# ::node	0.1.1.0	come-01	11-12
+# ::node	0.1.1.0.0	he	10-11
+# ::node	0.2	and	26-27
+# ::node	0.2.0	leave-15	27-28
+# ::node	0.2.0.0	they	21-22
+# ::node	0.2.0.1	you	28-29
+# ::node	0.2.0.2	question-01	33-34
+# ::node	0.2.0.2.0	then	20-21
+# ::root	0	contrast-01
+# ::edge	and	op1	leave-15	0.2	0.2.0	
+# ::edge	come-01	ARG0	planet	0.1.1.0	0.1.1	
+# ::edge	come-01	ARG1	he	0.1.1.0	0.1.1.0.0	
+# ::edge	contrast-01	ARG0	peace	0	0.0	
+# ::edge	contrast-01	ARG1	say-01	0	0.1	
+# ::edge	contrast-01	ARG2	and	0	0.2	
+# ::edge	leave-15	ARG0	they	0.2.0	0.2.0.0	
+# ::edge	leave-15	ARG1	you	0.2.0	0.2.0.1	
+# ::edge	leave-15	manner	question-01	0.2.0	0.2.0.2	
+# ::edge	question-01	ARG0	then	0.2.0.2	0.2.0.2.0	
+# ::edge	say-01	ARG0	you	0.1	0.1.0	
+# ::edge	say-01	ARG1	planet	0.1	0.1.1	
+(c2 / contrast-01 
+      :ARG0 (p / peace) 
+      :ARG1 (s / say-01 
+            :ARG0 (y2 / you) 
+            :ARG1 (p2 / planet 
+                  :ARG0-of (c / come-01 
+                        :ARG1 (h / he)))) 
+      :ARG2 (a / and 
+            :op1 (l / leave-15 
+                  :ARG0 (t / they) 
+                  :ARG1 (y / you) 
+                  :manner (q / question-01 
+                        :ARG0 (t2 / then)))))
+
+# ::snt They are like that .
+# ::tok They are like that .
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.937
+# ::node	0	they	0-1
+# ::root	0	they
+(t / they)
+
+# ::snt One must not hold it against them .
+# ::tok One must not hold it against them .
+# ::alignments 5-6|0.0.0 4-5|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:06.951
+# ::node	0	one	0-1
+# ::node	0.0	it	4-5
+# ::node	0.0.0	again	5-6
+# ::root	0	one
+# ::edge	it	mod	again	0.0	0.0.0	
+# ::edge	one	poss	it	0	0.0	
+(o / one 
+      :poss (i / it 
+            :mod (a / again)))
+
+# ::snt Children should always show great forbearance toward grown - up people .
+# ::tok Children should always show great forbearance toward grown - up people .
+# ::alignments 9-10|0.1.0 7-8|0.1.1 6-7|0.1.2 4-5|0.0 3-4|0.1 2-3|0.1.3 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.049
+# ::node	0	recommend-01	1-2
+# ::node	0.0	great	4-5
+# ::node	0.1	show-01	3-4
+# ::node	0.1.0	up	9-10
+# ::node	0.1.1	grown-up	7-8
+# ::node	0.1.2	toward	6-7
+# ::node	0.1.3	always	2-3
+# ::root	0	recommend-01
+# ::edge	recommend-01	ARG0	great	0	0.0	
+# ::edge	recommend-01	ARG1	show-01	0	0.1	
+# ::edge	show-01	ARG0	up	0.1	0.1.0	
+# ::edge	show-01	ARG1	grown-up	0.1	0.1.1	
+# ::edge	show-01	ARG2	toward	0.1	0.1.2	
+# ::edge	show-01	time	always	0.1	0.1.3	
+(r / recommend-01 
+      :ARG0 (g2 / great) 
+      :ARG1 (s / show-01 
+            :ARG0 (u / up) 
+            :ARG1 (g / grown-up) 
+            :ARG2 (t / toward) 
+            :time (a / always)))
+
+# ::snt But certainly , for us who understand life , figures are a matter of indifference .
+# ::tok But certainly , for us who understand life , figures are a matter of indifference .
+# ::alignments 12-13|0.0 9-10|0.2 7-8|0.0.0.0 6-7|0.0.0 1-2|0.1 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.103
+# ::node	0	contrast-01	0-1
+# ::node	0.0	matter	12-13
+# ::node	0.0.0	understand-01	6-7
+# ::node	0.0.0.0	life	7-8
+# ::node	0.1	certain	1-2
+# ::node	0.2	figure	9-10
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG0	matter	0	0.0	
+# ::edge	contrast-01	ARG1	certain	0	0.1	
+# ::edge	contrast-01	time	figure	0	0.2	
+# ::edge	understand-01	ARG0	matter	0.0.0	0.0	
+# ::edge	understand-01	ARG1	life	0.0.0	0.0.0.0	
+(c2 / contrast-01 
+      :ARG0 (m / matter 
+            :ARG0-of (u / understand-01 
+                  :ARG1 (l / life))) 
+      :ARG1 (c / certain) 
+      :time (f / figure))
+
+# ::snt I should have liked to begin this story in the fashion of the fairy - tales .
+# ::tok I should have liked to begin this story in the fashion of the fairy - tales .
+# ::alignments 7-8|0.0.1.0 6-7|0.0.1.0.0 5-6|0.0.1 3-4|0.0 1-2|0 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.181
+# ::node	0	recommend-01	1-2
+# ::node	0.0	like-02	3-4
+# ::node	0.0.0	i	0-1
+# ::node	0.0.1	begin-01	5-6
+# ::node	0.0.1.0	story	7-8
+# ::node	0.0.1.0.0	this	6-7
+# ::root	0	recommend-01
+# ::edge	begin-01	ARG0	i	0.0.1	0.0.0	
+# ::edge	begin-01	ARG1	story	0.0.1	0.0.1.0	
+# ::edge	like-02	ARG0	i	0.0	0.0.0	
+# ::edge	like-02	ARG1	begin-01	0.0	0.0.1	
+# ::edge	recommend-01	ARG1	like-02	0	0.0	
+# ::edge	story	mod	this	0.0.1.0	0.0.1.0.0	
+(r / recommend-01 
+      :ARG1 (l / like-02 
+            :ARG0 (i / i) 
+            :ARG1 (b / begin-01 
+                  :ARG1 (s / story 
+                        :mod (t / this)) 
+                  :ARG0 i)))
+
+# ::snt I should have like to say : " Once upon a time there was a little prince who lived on a planet that was scarcely any bigger than himself , and who had need of a sheep ... "
+# ::tok I should have like to say : " Once upon a time there was a little prince who lived on a planet that was scarcely any bigger than himself , and who had need of a sheep ... "
+# ::alignments 36-37|0.1.0.2.1 33-34|0.1.0.2 30-31|0.1.0.0 25-26|0.1.0.1.0.0 24-25|0.1.0.1.0.1 21-22|0.1.0.1.0.2 18-19|0.1.0.1.0 16-17|0.1.0.1 15-16|0.1.0.1.1 12-13|0.0 11-12|0.1.0.2.0 5-6|0.1.0 1-2|0 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.668
+# ::node	0	recommend-01	1-2
+# ::node	0.0	there	12-13
+# ::node	0.1	i	0-1
+# ::node	0.1.0	say-01	5-6
+# ::node	0.1.0.0	and	30-31
+# ::node	0.1.0.1	prince	16-17
+# ::node	0.1.0.1.0	live-01	18-19
+# ::node	0.1.0.1.0.0	any	25-26
+# ::node	0.1.0.1.0.1	scarce	24-25
+# ::node	0.1.0.1.0.2	planet	21-22
+# ::node	0.1.0.1.1	little	15-16
+# ::node	0.1.0.2	need-01	33-34
+# ::node	0.1.0.2.0	time	11-12
+# ::node	0.1.0.2.1	sheep	36-37
+# ::root	0	recommend-01
+# ::edge	live-01	ARG0	prince	0.1.0.1.0	0.1.0.1	
+# ::edge	live-01	ARG1	any	0.1.0.1.0	0.1.0.1.0.0	
+# ::edge	live-01	ARG2	scarce	0.1.0.1.0	0.1.0.1.0.1	
+# ::edge	live-01	location	planet	0.1.0.1.0	0.1.0.1.0.2	
+# ::edge	need-01	ARG0	time	0.1.0.2	0.1.0.2.0	
+# ::edge	need-01	ARG1	sheep	0.1.0.2	0.1.0.2.1	
+# ::edge	need-01	condition	say-01	0.1.0.2	0.1.0	
+# ::edge	prince	mod	little	0.1.0.1	0.1.0.1.1	
+# ::edge	recommend-01	ARG0	there	0	0.0	
+# ::edge	recommend-01	ARG2	i	0	0.1	
+# ::edge	say-01	ARG0	i	0.1.0	0.1	
+# ::edge	say-01	ARG1	and	0.1.0	0.1.0.0	
+# ::edge	say-01	ARG2	prince	0.1.0	0.1.0.1	
+(r / recommend-01 
+      :ARG0 (t / there) 
+      :ARG2 (i / i 
+            :ARG0-of (s3 / say-01 
+                  :ARG1 (a / and) 
+                  :ARG2 (p2 / prince 
+                        :ARG0-of (l / live-01 
+                              :ARG1 (a2 / any) 
+                              :ARG2 (s2 / scarce) 
+                              :location (p / planet)) 
+                        :mod (l2 / little)) 
+                  :condition-of (n / need-01 
+                        :ARG0 (t2 / time) 
+                        :ARG1 (s / sheep)))))
+
+# ::snt To those who understand life , that would have given a much greater air of truth to my story .
+# ::tok To those who understand life , that would have given a much greater air of truth to my story .
+# ::alignments 18-19|0.2.1 15-16|0.2.0.0 13-14|0.2.0 11-12|0.0 9-10|0.2 4-5|0.1 3-4|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.727
+# ::node	0	understand-01	3-4
+# ::node	0.0	much	11-12
+# ::node	0.1	life	4-5
+# ::node	0.2	give-01	9-10
+# ::node	0.2.0	air	13-14
+# ::node	0.2.0.0	truth	15-16
+# ::node	0.2.1	story	18-19
+# ::root	0	understand-01
+# ::edge	air	domain	truth	0.2.0	0.2.0.0	
+# ::edge	give-01	ARG1	air	0.2	0.2.0	
+# ::edge	give-01	ARG2	understand-01	0.2	0	
+# ::edge	give-01	destination	story	0.2	0.2.1	
+# ::edge	understand-01	ARG0	much	0	0.0	
+# ::edge	understand-01	ARG1	life	0	0.1	
+(u / understand-01 
+      :ARG0 (m / much) 
+      :ARG1 (l / life) 
+      :ARG2-of (g / give-01 
+            :ARG1 (a / air 
+                  :domain (t / truth)) 
+            :destination (s / story)))
+
+# ::snt For I do not want any one to read my book carelessly .
+# ::tok For I do not want any one to read my book carelessly .
+# ::alignments 10-11|0.2 5-6|0.1 4-5|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.790
+# ::node	0	want-01	4-5
+# ::node	0.0	i	1-2
+# ::node	0.1	any	5-6
+# ::node	0.2	book	10-11
+# ::root	0	want-01
+# ::edge	want-01	ARG0	i	0	0.0	
+# ::edge	want-01	ARG1	any	0	0.1	
+# ::edge	want-01	ARG2	book	0	0.2	
+(w / want-01 
+      :ARG0 (i / i) 
+      :ARG1 (a / any) 
+      :ARG2 (b / book))
+
+# ::snt I have suffered too much grief in setting down these memories .
+# ::tok I have suffered too much grief in setting down these memories .
+# ::alignments 10-11|0.0.0 8-9|0.0 5-6|0 4-5|0.2 3-4|0.3 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.828
+# ::node	0	grieve-01	5-6
+# ::node	0.0	down	8-9
+# ::node	0.0.0	memory	10-11
+# ::node	0.1	i	0-1
+# ::node	0.2	much	4-5
+# ::node	0.3	too	3-4
+# ::root	0	grieve-01
+# ::edge	down	op1	memory	0.0	0.0.0	
+# ::edge	grieve-01	ARG0	down	0	0.0	
+# ::edge	grieve-01	ARG1	i	0	0.1	
+# ::edge	grieve-01	degree	much	0	0.2	
+# ::edge	grieve-01	mod	too	0	0.3	
+(g / grieve-01 
+      :ARG0 (d / down 
+            :op1 (m / memory)) 
+      :ARG1 (i / i) 
+      :degree (m2 / much) 
+      :mod (t / too))
+
+# ::snt Six years have already passed since my friend went away from me , with his sheep .
+# ::tok Six years have already passed since my friend went away from me , with his sheep .
+# ::alignments 15-16|0.0.0.1 9-10|0.0.0.0 7-8|0.0 5-6|0.0.0 3-4|0.0.0.1.0 1-2|0.1+0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:07.870
+# ::node	0	temporal-quantity	1-2
+# ::node	0.0	friend	7-8
+# ::node	0.0.0	since	5-6
+# ::node	0.0.0.0	away	9-10
+# ::node	0.0.0.1	sheep	15-16
+# ::node	0.0.0.1.0	already	3-4
+# ::node	0.1	year	1-2
+# ::root	0	temporal-quantity
+# ::edge	away	domain	since	0.0.0.0	0.0.0	
+# ::edge	friend	poss	temporal-quantity	0.0	0	
+# ::edge	sheep	domain	already	0.0.0.1	0.0.0.1.0	
+# ::edge	sheep	poss	since	0.0.0.1	0.0.0	
+# ::edge	since	op1	friend	0.0.0	0.0	
+# ::edge	temporal-quantity	unit	year	0	0.1	
+(t / temporal-quantity 
+      :poss-of (f / friend 
+            :op-of (s2 / since 
+                  :domain-of (a / away) 
+                  :poss-of (s / sheep 
+                        :domain (a2 / already)))) 
+      :unit (y / year))
+
+# ::snt If I try to describe him here , it is to make sure that I shall not forget him .
+# ::tok If I try to describe him here , it is to make sure that I shall not forget him .
+# ::alignments 17-18|0.0 14-15|0.0.0 12-13|0 8-9|0.0.1.0.0 6-7|0.0.1.0.1 4-5|0.0.1.0 2-3|0.0.1 1-2|0.0.1.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.013
+# ::node	0	sure-02	12-13
+# ::node	0.0	forget-01	17-18
+# ::node	0.0.0	i	14-15
+# ::node	0.0.1	try-01	2-3
+# ::node	0.0.1.0	describe-01	4-5
+# ::node	0.0.1.0.0	it	8-9
+# ::node	0.0.1.0.1	here	6-7
+# ::node	0.0.1.1	i	1-2
+# ::root	0	sure-02
+# ::edge	describe-01	ARG0	i	0.0.1.0	0.0.1.1	
+# ::edge	describe-01	ARG1	it	0.0.1.0	0.0.1.0.0	
+# ::edge	describe-01	location	here	0.0.1.0	0.0.1.0.1	
+# ::edge	forget-01	ARG0	i	0.0	0.0.0	
+# ::edge	forget-01	ARG1	try-01	0.0	0.0.1	
+# ::edge	sure-02	ARG1	forget-01	0	0.0	
+# ::edge	try-01	ARG1	describe-01	0.0.1	0.0.1.0	
+# ::edge	try-01	ARG2	i	0.0.1	0.0.1.1	
+(s / sure-02 
+      :ARG1 (f / forget-01 
+            :ARG0 (i / i) 
+            :ARG1 (t / try-01 
+                  :ARG1 (d / describe-01 
+                        :ARG1 (i2 / it) 
+                        :location (h / here)) 
+                  :ARG2 (i3 / i 
+                        :ARG0-of d))))
+
+# ::snt To forget a friend is sad .
+# ::tok To forget a friend is sad .
+# ::alignments 5-6|0.0.0 3-4|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.021
+# ::node	0	forget-01	1-2
+# ::node	0.0	friend	3-4
+# ::node	0.0.0	sad-02	5-6
+# ::root	0	forget-01
+# ::edge	forget-01	ARG1	friend	0	0.0	
+# ::edge	sad-02	ARG1	friend	0.0.0	0.0	
+(f2 / forget-01 
+      :ARG1 (f / friend 
+            :ARG1-of (s / sad-02)))
+
+# ::snt Not every one has had a friend .
+# ::tok Not every one has had a friend .
+# ::alignments 6-7|0.0 3-4|0 1-2|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.033
+# ::node	0	have-03	3-4
+# ::node	0.0	friend	6-7
+# ::node	0.1	every	1-2
+# ::root	0	have-03
+# ::edge	have-03	ARG0	friend	0	0.0	
+# ::edge	have-03	ARG1	every	0	0.1	
+(h / have-03 
+      :ARG0 (f / friend) 
+      :ARG1 (e / every))
+
+# ::snt And if I forget him , I may become like the grown - ups who are no longer interested in anything but figures ...
+# ::tok And if I forget him , I may become like the grown - ups who are no longer interested in anything but figures ...
+# ::alignments 22-23|0.1 21-22|0 20-21|0.0.1 18-19|0.0 17-18|0.0.2 16-17|0.0.2.0 11-12|0.0.0 8-9|0.0.0.0 7-8|0.0.0.0.2.1.0+0.0.0.0.2.1 6-7|0.0.0.0.0 3-4|0.0.0.0.2 2-3|0.0.0.0.2.0 0-1|0.0.0.0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.502
+# ::node	0	contrast-01	21-22
+# ::node	0.0	interest-01	18-19
+# ::node	0.0.0	grown-up	11-12
+# ::node	0.0.0.0	become-01	8-9
+# ::node	0.0.0.0.0	i	6-7
+# ::node	0.0.0.0.1	and	0-1
+# ::node	0.0.0.0.2	forget-01	3-4
+# ::node	0.0.0.0.2.0	i	2-3
+# ::node	0.0.0.0.2.1	date-entity	7-8
+# ::node	0.0.0.0.2.1.0	5	7-8
+# ::node	0.0.1	anything	20-21
+# ::node	0.0.2	long-03	17-18
+# ::node	0.0.2.0	-	16-17
+# ::node	0.1	figure	22-23
+# ::root	0	contrast-01
+# ::edge	and	op1	become-01	0.0.0.0.1	0.0.0.0	
+# ::edge	become-01	ARG0	i	0.0.0.0	0.0.0.0.0	
+# ::edge	become-01	ARG1	grown-up	0.0.0.0	0.0.0	
+# ::edge	become-01	time	forget-01	0.0.0.0	0.0.0.0.2	
+# ::edge	contrast-01	ARG1	interest-01	0	0.0	
+# ::edge	contrast-01	ARG2	figure	0	0.1	
+# ::edge	date-entity	month	5	0.0.0.0.2.1	0.0.0.0.2.1.0	
+# ::edge	forget-01	ARG0	i	0.0.0.0.2	0.0.0.0.2.0	
+# ::edge	forget-01	ARG1	date-entity	0.0.0.0.2	0.0.0.0.2.1	
+# ::edge	interest-01	ARG0	grown-up	0.0	0.0.0	
+# ::edge	interest-01	ARG1	anything	0.0	0.0.1	
+# ::edge	long-03	ARG1	interest-01	0.0.2	0.0	
+# ::edge	long-03	mod	-	0.0.2	0.0.2.0	
+(c / contrast-01 
+      :ARG1 (i / interest-01 
+            :ARG0 (g / grown-up 
+                  :ARG1-of (b / become-01 
+                        :ARG0 (i2 / i) 
+                        :op-of (a2 / and) 
+                        :time (f2 / forget-01 
+                              :ARG0 (i3 / i) 
+                              :ARG1 (d / date-entity 
+                                    :month 5)))) 
+            :ARG1 (a / anything) 
+            :ARG1-of (l / long-03 
+                  :mod (- / -))) 
+      :ARG2 (f / figure))
+
+# ::snt It is for that purpose , again , that I have bought a box of paints and some pencils .
+# ::tok It is for that purpose , again , that I have bought a box of paints and some pencils .
+# ::alignments 17-18|0.0.1.0 16-17|0 13-14|0.0 9-10|0.0.0 6-7|0.1 0-1|0.0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.534
+# ::node	0	and	16-17
+# ::node	0.0	box	13-14
+# ::node	0.0.0	i	9-10
+# ::node	0.0.1	it	0-1
+# ::node	0.0.1.0	some	17-18
+# ::node	0.1	again	6-7
+# ::root	0	and
+# ::edge	again	poss	and	0.1	0	
+# ::edge	and	op1	box	0	0.0	
+# ::edge	box	poss	it	0.0	0.0.1	
+# ::edge	i	part	box	0.0.0	0.0	
+# ::edge	it	poss	some	0.0.1	0.0.1.0	
+(a / and 
+      :op1 (b / box 
+            :part-of (i / i) 
+            :poss (i2 / it 
+                  :poss (s / some))) 
+      :poss-of (a2 / again))
+
+# ::snt It is hard to take up drawing again at my age , when I have never made any pictures except those of the boa constrictor from the outside and the boa constrictor from the inside , since I was six .
+# ::tok It is hard to take up drawing again at my age , when I have never made any pictures except those of the boa constrictor from the outside and the boa constrictor from the inside , since I was six .
+# ::alignments 39-40|0.0.0 37-38|0.0.4 36-37|0.0.4.0 34-35|0.0.4.1 30-31|0.1.0 28-29|0 27-28|0.1 23-24|0.0.2 19-20|0.0 17-18|0.0.1 13-14|0.0.4.1.0 7-8|0.0.3 5-6|0.0.5 0-1|0.0.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.754
+# ::node	0	and	28-29
+# ::node	0.0	except-01	19-20
+# ::node	0.0.0	6	39-40
+# ::node	0.0.1	any	17-18
+# ::node	0.0.2	boa	23-24
+# ::node	0.0.2.0	it	0-1
+# ::node	0.0.3	again	7-8
+# ::node	0.0.4	i	37-38
+# ::node	0.0.4.0	since	36-37
+# ::node	0.0.4.1	inside	34-35
+# ::node	0.0.4.1.0	i	13-14
+# ::node	0.0.5	up	5-6
+# ::node	0.1	outside	27-28
+# ::node	0.1.0	boa	30-31
+# ::root	0	and
+# ::edge	and	op1	outside	0	0.1	
+# ::edge	boa	part	outside	0.1.0	0.1	
+# ::edge	boa	poss	it	0.0.2	0.0.2.0	
+# ::edge	except-01	ARG1	6	0.0	0.0.0	
+# ::edge	except-01	ARG2	any	0.0	0.0.1	
+# ::edge	except-01	ARG3	boa	0.0	0.0.2	
+# ::edge	except-01	accompanier	again	0.0	0.0.3	
+# ::edge	except-01	mod	and	0.0	0	
+# ::edge	except-01	mod	i	0.0	0.0.4	
+# ::edge	except-01	mod	up	0.0	0.0.5	
+# ::edge	i	mod	since	0.0.4	0.0.4.0	
+# ::edge	i	part	inside	0.0.4.1.0	0.0.4.1	
+# ::edge	inside	poss	i	0.0.4.1	0.0.4	
+(a / and 
+      :mod-of (e / except-01 
+            :ARG1 6 
+            :ARG2 (a2 / any) 
+            :ARG3 (b2 / boa 
+                  :poss (i4 / it)) 
+            :accompanier (a3 / again) 
+            :mod (i / i 
+                  :mod (s / since) 
+                  :poss-of (i2 / inside 
+                        :part-of (i3 / i))) 
+            :mod (u / up)) 
+      :op1 (o / outside 
+            :part-of (b / boa)))
+
+# ::snt I shall certainly try to make my portraits as true to life as possible .
+# ::tok I shall certainly try to make my portraits as true to life as possible .
+# ::alignments 13-14|0 11-12|0.0 9-10|0.0.0 3-4|0.0.0.0 2-3|0.0.0.0.1 0-1|0.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.785
+# ::node	0	possible-01	13-14
+# ::node	0.0	life	11-12
+# ::node	0.0.0	true-01	9-10
+# ::node	0.0.0.0	try-01	3-4
+# ::node	0.0.0.0.0	i	0-1
+# ::node	0.0.0.0.1	certain	2-3
+# ::root	0	possible-01
+# ::edge	possible-01	ARG1	life	0	0.0	
+# ::edge	true-01	ARG1	try-01	0.0.0	0.0.0.0	
+# ::edge	true-01	ARG2	life	0.0.0	0.0	
+# ::edge	try-01	ARG0	i	0.0.0.0	0.0.0.0.0	
+# ::edge	try-01	ARG1	certain	0.0.0.0	0.0.0.0.1	
+(p / possible-01 
+      :ARG1 (l / life 
+            :ARG2-of (t / true-01 
+                  :ARG1 (t2 / try-01 
+                        :ARG0 (i / i) 
+                        :ARG1 (c / certain)))))
+
+# ::snt But I am not at all sure of success .
+# ::tok But I am not at all sure of success .
+# ::alignments 6-7|0.0 5-6|0.0.1 1-2|0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.798
+# ::node	0	contrast-01	0-1
+# ::node	0.0	sure-02	6-7
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	all	5-6
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	sure-02	0	0.0	
+# ::edge	sure-02	ARG0	i	0.0	0.0.0	
+# ::edge	sure-02	ARG1	all	0.0	0.0.1	
+(c / contrast-01 
+      :ARG2 (s / sure-02 
+            :ARG0 (i / i) 
+            :ARG1 (a / all)))
+
+# ::snt One drawing goes along all right , and another has no resemblance to its subject .
+# ::tok One drawing goes along all right , and another has no resemblance to its subject .
+# ::alignments 14-15|0.1.0.0 13-14|0.1.0 10-11|0.1.2 9-10|0.1 8-9|0.1.1 7-8|0 4-5|0.0.1 3-4|0.0.2 2-3|0.0 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:08.857
+# ::node	0	and	7-8
+# ::node	0.0	go-02	2-3
+# ::node	0.0.0	one	0-1
+# ::node	0.0.1	all	4-5
+# ::node	0.0.2	along	3-4
+# ::node	0.1	have-03	9-10
+# ::node	0.1.0	it	13-14
+# ::node	0.1.0.0	subject	14-15
+# ::node	0.1.1	another	8-9
+# ::node	0.1.2	-	10-11
+# ::root	0	and
+# ::edge	and	op1	go-02	0	0.0	
+# ::edge	and	op2	have-03	0	0.1	
+# ::edge	go-02	ARG0	one	0.0	0.0.0	
+# ::edge	go-02	ARG1	all	0.0	0.0.1	
+# ::edge	go-02	time	along	0.0	0.0.2	
+# ::edge	have-03	ARG0	it	0.1	0.1.0	
+# ::edge	have-03	ARG1	another	0.1	0.1.1	
+# ::edge	have-03	polarity	-	0.1	0.1.2	
+# ::edge	subject	poss	it	0.1.0.0	0.1.0	
+(a2 / and 
+      :op1 (g / go-02 
+            :ARG0 (o / one) 
+            :ARG1 (a3 / all) 
+            :time (a4 / along)) 
+      :op2 (h / have-03 
+            :ARG0 (i / it 
+                  :poss-of (s / subject)) 
+            :ARG1 (a / another) 
+            :polarity (- / -)))
+
+# ::snt I make some errors , too , in the little prince 's height : in one place he is too tall and in another too short .
+# ::tok I make some errors , too , in the little prince 's height : in one place he is too tall and in another too short .
+# ::alignments 25-26|0.0.0 24-25|0.0.0.3 23-24|0.0.0.4 21-22|0 19-20|0.0 17-18|0.0.0.2 16-17|0.0.0.2.0 10-11|0.0.0.5.0 9-10|0.0.0.5 5-6|0.0.0.1 2-3|0.0.0.6 0-1|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.004
+# ::node	0	and	21-22
+# ::node	0.0	too	19-20
+# ::node	0.0.0	short-07	25-26
+# ::node	0.0.0.0	i	0-1
+# ::node	0.0.0.1	too	5-6
+# ::node	0.0.0.2	he	17-18
+# ::node	0.0.0.2.0	place	16-17
+# ::node	0.0.0.3	too	24-25
+# ::node	0.0.0.4	another	23-24
+# ::node	0.0.0.5	little	9-10
+# ::node	0.0.0.5.0	prince	10-11
+# ::node	0.0.0.6	some	2-3
+# ::root	0	and
+# ::edge	and	degree	too	0	0.0	
+# ::edge	place	poss	he	0.0.0.2.0	0.0.0.2	
+# ::edge	prince	mod	little	0.0.0.5.0	0.0.0.5	
+# ::edge	short-07	ARG0	i	0.0.0	0.0.0.0	
+# ::edge	short-07	ARG1	too	0.0.0	0.0.0.1	
+# ::edge	short-07	ARG3	he	0.0.0	0.0.0.2	
+# ::edge	short-07	degree	too	0.0.0	0.0.0.3	
+# ::edge	short-07	mod	another	0.0.0	0.0.0.4	
+# ::edge	short-07	mod	little	0.0.0	0.0.0.5	
+# ::edge	short-07	time	too	0.0.0	0.0	
+# ::edge	some	op1	short-07	0.0.0.6	0.0.0	
+(a2 / and 
+      :degree (t2 / too 
+            :time-of (s / short-07 
+                  :ARG0 (i / i) 
+                  :ARG1 (t3 / too) 
+                  :ARG3 (h / he 
+                        :poss-of (p / place)) 
+                  :degree (t / too) 
+                  :mod (a / another) 
+                  :mod (l / little 
+                        :mod-of (p2 / prince)) 
+                  :op-of (s2 / some))))
+
+# ::snt And I feel some doubts about the color of his costume .
+# ::tok And I feel some doubts about the color of his costume .
+# ::alignments 7-8|0.2 3-4|0.1 2-3|0 1-2|0.0 0-1|0.3 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.023
+# ::node	0	feel-01	2-3
+# ::node	0.0	i	1-2
+# ::node	0.1	some	3-4
+# ::node	0.2	color	7-8
+# ::node	0.3	and	0-1
+# ::root	0	feel-01
+# ::edge	and	op1	feel-01	0.3	0	
+# ::edge	feel-01	ARG0	i	0	0.0	
+# ::edge	feel-01	ARG1	some	0	0.1	
+# ::edge	feel-01	ARG2	color	0	0.2	
+(f / feel-01 
+      :ARG0 (i / i) 
+      :ARG1 (s / some) 
+      :ARG2 (c / color) 
+      :op-of (a / and))
+
+# ::snt So I fumble along as best I can , now good , now bad , and I hope generally fair - to - middling .
+# ::tok So I fumble along as best I can , now good , now bad , and I hope generally fair - to - middling .
+# ::alignments 19-20|0.0.1 17-18|0.0 16-17|0.0.2 15-16|0 13-14|0.0.0.0.1 12-13|0.0.0.0.1.0 10-11|0.0.0.0 9-10|0.0.0.0.3 7-8|0.0.0.0.2 6-7|0.0.0.0.2.0 5-6|0.0.0.0.2.1.0+0.0.0.0.2.1 3-4|0.0.0.0.0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.314
+# ::node	0	and	15-16
+# ::node	0.0	hopeful-03	17-18
+# ::node	0.0.0	i	1-2
+# ::node	0.0.0.0	good-04	10-11
+# ::node	0.0.0.0.0	along	3-4
+# ::node	0.0.0.0.1	bad-07	13-14
+# ::node	0.0.0.0.1.0	now	12-13
+# ::node	0.0.0.0.2	possible-01	7-8
+# ::node	0.0.0.0.2.0	i	6-7
+# ::node	0.0.0.0.2.1	well	5-6
+# ::node	0.0.0.0.2.1.0	most	5-6
+# ::node	0.0.0.0.3	now	9-10
+# ::node	0.0.1	fair-01	19-20
+# ::node	0.0.2	i	16-17
+# ::root	0	and
+# ::edge	and	op1	hopeful-03	0	0.0	
+# ::edge	bad-07	ARG1	good-04	0.0.0.0.1	0.0.0.0	
+# ::edge	bad-07	time	now	0.0.0.0.1	0.0.0.0.1.0	
+# ::edge	fair-01	ARG1	hopeful-03	0.0.1	0.0	
+# ::edge	good-04	ARG0	along	0.0.0.0	0.0.0.0.0	
+# ::edge	good-04	ARG1	i	0.0.0.0	0.0.0	
+# ::edge	good-04	time	now	0.0.0.0	0.0.0.0.3	
+# ::edge	hopeful-03	ARG0	i	0.0	0.0.0	
+# ::edge	hopeful-03	ARG2	i	0.0	0.0.2	
+# ::edge	possible-01	ARG1	good-04	0.0.0.0.2	0.0.0.0	
+# ::edge	possible-01	ARG2	i	0.0.0.0.2	0.0.0.0.2.0	
+# ::edge	well	compared-to	possible-01	0.0.0.0.2.1	0.0.0.0.2	
+# ::edge	well	degree	most	0.0.0.0.2.1	0.0.0.0.2.1.0	
+(a / and 
+      :op1 (h / hopeful-03 
+            :ARG0 (i3 / i 
+                  :ARG1-of (g / good-04 
+                        :ARG0 (a2 / along) 
+                        :ARG1-of (b / bad-07 
+                              :time (n / now)) 
+                        :ARG1-of (p / possible-01 
+                              :ARG2 (i2 / i) 
+                              :compared-to-of (w / well 
+                                    :degree (m / most))) 
+                        :time (n2 / now))) 
+            :ARG1-of (f / fair-01) 
+            :ARG2 (i / i)))
+
+# ::snt In certain more important details I shall make mistakes , also .
+# ::tok In certain more important details I shall make mistakes , also .
+# ::alignments 10-11|0.0.2 8-9|0.0 5-6|0.0.0 3-4|0.0.1 2-3|0.0.1.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.379
+# ::node	0	certain	1-2
+# ::node	0.0	mistake-02	8-9
+# ::node	0.0.0	i	5-6
+# ::node	0.0.1	important	3-4
+# ::node	0.0.1.0	more	2-3
+# ::node	0.0.2	also	10-11
+# ::root	0	certain
+(c / certain 
+      :ARG1-of (m / mistake-02 
+            :ARG0 (i / i) 
+            :ARG2 (i2 / important 
+                  :degree (m2 / more)) 
+            :mod (a / also)))
+
+# ::snt But that is something that will not be my fault .
+# ::tok But that is something that will not be my fault .
+# ::alignments 9-10|0.1 3-4|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.390
+# ::node	0	contrast-01	0-1
+# ::node	0.0	something	3-4
+# ::node	0.1	fault-01	9-10
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG0	something	0	0.0	
+# ::edge	contrast-01	ARG1	fault-01	0	0.1	
+(c / contrast-01 
+      :ARG0 (s / something) 
+      :ARG1 (f / fault-01))
+
+# ::snt My friend never explained anything to me .
+# ::tok My friend never explained anything to me .
+# ::alignments 4-5|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.402
+# ::node	0	friend	1-2
+# ::node	0.0	anything	4-5
+# ::root	0	friend
+(f / friend 
+      :poss-of (a / anything))
+
+# ::snt He thought , perhaps , that I was like himself .
+# ::tok He thought , perhaps , that I was like himself .
+# ::alignments 6-7|0.1 3-4|0.2 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.452
+# ::node	0	think-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.1	i	6-7
+# ::node	0.2	perhaps	3-4
+# ::root	0	think-01
+# ::edge	think-01	ARG0	he	0	0.0	
+# ::edge	think-01	ARG2	i	0	0.1	
+# ::edge	think-01	mod	perhaps	0	0.2	
+(t / think-01 
+      :ARG0 (h / he) 
+      :ARG2 (i / i) 
+      :mod (p / perhaps))
+
+# ::snt But I , alas , do not know how to see sheep through the walls of boxes .
+# ::tok But I , alas , do not know how to see sheep through the walls of boxes .
+# ::alignments 12-13|0.0.1.0 11-12|0.0.1 10-11|0.0 1-2|0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.481
+# ::node	0	contrast-01	0-1
+# ::node	0.0	see-01	10-11
+# ::node	0.0.0	i	1-2
+# ::node	0.0.1	sheep	11-12
+# ::node	0.0.1.0	through	12-13
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	see-01	0	0.0	
+# ::edge	see-01	ARG0	i	0.0	0.0.0	
+# ::edge	see-01	ARG1	sheep	0.0	0.0.1	
+# ::edge	sheep	direction	through	0.0.1	0.0.1.0	
+(c / contrast-01 
+      :ARG2 (s2 / see-01 
+            :ARG0 (i / i) 
+            :ARG1 (s / sheep 
+                  :direction (t / through))))
+
+# ::snt Perhaps I am a little like the grown - ups .
+# ::tok Perhaps I am a little like the grown - ups .
+# ::alignments 7-8|0 4-5|0.0.0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.499
+# ::node	0	grown-up	7-8
+# ::node	0.0	i	1-2
+# ::node	0.0.0	little	4-5
+# ::root	0	grown-up
+# ::edge	grown-up	poss	i	0	0.0	
+# ::edge	i	op1	little	0.0	0.0.0	
+(g / grown-up 
+      :poss (i / i 
+            :op1 (l / little)))
+
+# ::snt I have had to grow old .
+# ::tok I have had to grow old .
+# ::alignments 5-6|0 4-5|0.0 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.510
+# ::node	0	old	5-6
+# ::node	0.0	grow-02	4-5
+# ::node	0.0.0	i	0-1
+# ::root	0	old
+(o / old 
+      :ARG2-of (g / grow-02 
+            :ARG0 (i / i)))
+
+# ::snt Chapter 5 .
+# ::tok Chapter 5 .
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.515
+# ::node	0	chapter	0-1
+# ::root	0	chapter
+(c / chapter)
+
+# ::snt As each day passed I would learn , in our talk , something about the little prince 's planet , his departure from it , his journey .
+# ::tok As each day passed I would learn , in our talk , something about the little prince 's planet , his departure from it , his journey .
+# ::alignments 26-27|0.0.0.1 23-24|0.0.0.0.1 21-22|0.0.0.0 18-19|0.0.0.0.0.0 16-17|0.0.0.1.0 15-16|0.0.0.1.0.0 12-13|0.0.0.0.0 10-11|0.0.0 4-5|0.0.0.1.1 2-3|0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.945
+# ::node	0	each	1-2
+# ::node	0.0	day	2-3
+# ::node	0.0.0	talk-01	10-11
+# ::node	0.0.0.0	depart-01	21-22
+# ::node	0.0.0.0.0	something	12-13
+# ::node	0.0.0.0.0.0	planet	18-19
+# ::node	0.0.0.0.1	it	23-24
+# ::node	0.0.0.1	journey-01	26-27
+# ::node	0.0.0.1.0	prince	16-17
+# ::node	0.0.0.1.0.0	little	15-16
+# ::node	0.0.0.1.1	i	4-5
+# ::root	0	each
+(e / each 
+      :mod-of (d2 / day 
+            :ARG0-of (t / talk-01 
+                  :condition (d / depart-01 
+                        :ARG0 (s / something 
+                              :domain-of (p / planet)) 
+                        :ARG1 (i / it)) 
+                  :condition (j / journey-01 
+                        :ARG0 (p2 / prince 
+                              :mod (l / little)) 
+                        :ARG2 (i2 / i)))))
+
+# ::snt The information would come very slowly , as it might chance to fall from his thoughts .
+# ::tok The information would come very slowly , as it might chance to fall from his thoughts .
+# ::alignments 10-11|0 8-9|0.0 5-6|0.0.0 4-5|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:09.979
+# ::node	0	chance-02	10-11
+# ::node	0.0	it	8-9
+# ::node	0.0.0	slow-05	5-6
+# ::node	0.0.0.0	very	4-5
+# ::root	0	chance-02
+# ::edge	chance-02	ARG1	it	0	0.0	
+# ::edge	slow-05	ARG1	it	0.0.0	0.0	
+# ::edge	slow-05	degree	very	0.0.0	0.0.0.0	
+(c / chance-02 
+      :ARG1 (i / it 
+            :ARG1-of (s / slow-05 
+                  :degree (v / very))))
+
+# ::snt It was in this way that I heard , on the third day , about the catastrophe of the baobabs .
+# ::tok It was in this way that I heard , on the third day , about the catastrophe of the baobabs .
+# ::alignments 19-20|0.3 12-13|0.2 7-8|0 6-7|0.0 4-5|0.0.0 3-4|0.0.0.0 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.098
+# ::node	0	hear-01	7-8
+# ::node	0.0	i	6-7
+# ::node	0.0.0	way	4-5
+# ::node	0.0.0.0	this	3-4
+# ::node	0.1	it	0-1
+# ::node	0.2	day	12-13
+# ::node	0.3	baobab	19-20
+# ::root	0	hear-01
+# ::edge	hear-01	ARG0	i	0	0.0	
+# ::edge	hear-01	ARG1	it	0	0.1	
+# ::edge	hear-01	ARG2	day	0	0.2	
+# ::edge	hear-01	accompanier	baobab	0	0.3	
+# ::edge	way	mod	this	0.0.0	0.0.0.0	
+# ::edge	way	poss	i	0.0.0	0.0	
+(h / hear-01 
+      :ARG0 (i / i 
+            :poss-of (w / way 
+                  :mod (t / this))) 
+      :ARG1 (i2 / it) 
+      :ARG2 (d / day) 
+      :accompanier (b / baobab))
+
+# ::snt This time , once more , I had the sheep to thank for it .
+# ::tok This time , once more , I had the sheep to thank for it .
+# ::alignments 13-14|0.1.0.1.0 9-10|0.1 6-7|0.1.0.0 4-5|0.1.0 3-4|0.1.0.1 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.123
+# ::node	0	time	1-2
+# ::node	0.0	this	0-1
+# ::node	0.1	sheep	9-10
+# ::node	0.1.0	more	4-5
+# ::node	0.1.0.0	i	6-7
+# ::node	0.1.0.1	once	3-4
+# ::node	0.1.0.1.0	it	13-14
+# ::root	0	time
+# ::edge	it	poss	once	0.1.0.1.0	0.1.0.1	
+# ::edge	more	domain	i	0.1.0	0.1.0.0	
+# ::edge	more	mod	once	0.1.0	0.1.0.1	
+# ::edge	sheep	mod	more	0.1	0.1.0	
+# ::edge	time	mod	this	0	0.0	
+# ::edge	time	part	sheep	0	0.1	
+(t / time 
+      :mod (t2 / this) 
+      :part (s / sheep 
+            :mod (m / more 
+                  :domain (i2 / i) 
+                  :mod (o / once 
+                        :poss-of (i / it)))))
+
+# ::snt For the little prince asked me abruptly -- as if seized by a grave doubt -- " It is true , is n't it , that sheep eat little bushes ? "
+# ::tok For the little prince asked me abruptly -- as if seized by a grave doubt -- " It is true , is n't it , that sheep eat little bushes ? "
+# ::alignments 29-30|0.1.2.1 28-29|0.1.2.1.0 27-28|0.1.2 26-27|0.1.2.0 23-24|0.1.0 19-20|0.1 17-18|0.1.1 14-15|0.1.1.0 4-5|0 3-4|0.0 2-3|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.398
+# ::node	0	ask-01	4-5
+# ::node	0.0	prince	3-4
+# ::node	0.0.0	little	2-3
+# ::node	0.1	true-01	19-20
+# ::node	0.1.0	it	23-24
+# ::node	0.1.1	it	17-18
+# ::node	0.1.1.0	doubt-01	14-15
+# ::node	0.1.2	eat-01	27-28
+# ::node	0.1.2.0	sheep	26-27
+# ::node	0.1.2.1	bush	29-30
+# ::node	0.1.2.1.0	little	28-29
+# ::root	0	ask-01
+# ::edge	ask-01	ARG0	prince	0	0.0	
+# ::edge	ask-01	ARG1	true-01	0	0.1	
+# ::edge	bush	mod	little	0.1.2.1	0.1.2.1.0	
+# ::edge	doubt-01	ARG0	it	0.1.1.0	0.1.1	
+# ::edge	eat-01	ARG0	sheep	0.1.2	0.1.2.0	
+# ::edge	eat-01	ARG1	bush	0.1.2	0.1.2.1	
+# ::edge	prince	mod	little	0.0	0.0.0	
+# ::edge	true-01	ARG0	it	0.1	0.1.0	
+# ::edge	true-01	ARG1	it	0.1	0.1.1	
+# ::edge	true-01	ARG2	eat-01	0.1	0.1.2	
+(a / ask-01 
+      :ARG0 (p / prince 
+            :mod (l2 / little)) 
+      :ARG1 (t / true-01 
+            :ARG0 (i / it) 
+            :ARG1 (i2 / it 
+                  :ARG0-of (d / doubt-01)) 
+            :ARG2 (e / eat-01 
+                  :ARG0 (s / sheep) 
+                  :ARG1 (b / bush 
+                        :mod (l / little)))))
+
+# ::snt " Yes , that is true . "
+# ::tok " Yes , that is true . "
+# ::alignments 5-6|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.407
+# ::node	0	true-01	5-6
+# ::node	0.0	yes	1-2
+# ::root	0	true-01
+# ::edge	true-01	ARG1	yes	0	0.0	
+(t / true-01 
+      :ARG1 (y / yes))
+
+# ::snt " Ah !
+# ::tok " Ah !
+# ::alignments 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.410
+# ::node	0	ah	1-2
+# ::root	0	ah
+(a / ah)
+
+# ::snt I am glad ! "
+# ::tok I am glad ! "
+# ::alignments 2-3|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.415
+# ::node	0	glad-02	2-3
+# ::node	0.0	i	0-1
+# ::root	0	glad-02
+# ::edge	glad-02	ARG1	i	0	0.0	
+(g / glad-02 
+      :ARG1 (i / i))
+
+# ::snt I did not understand why it was so important that sheep should eat little bushes .
+# ::tok I did not understand why it was so important that sheep should eat little bushes .
+# ::alignments 14-15|0.1.1 13-14|0.1.1.0 12-13|0.1 11-12|0 10-11|0.1.0 8-9|0.0 7-8|0.0.0 5-6|0.0.1 3-4|0.0.1.0 0-1|0.0.1.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.633
+# ::node	0	recommend-01	11-12
+# ::node	0.0	important	8-9
+# ::node	0.0.0	so	7-8
+# ::node	0.0.1	it	5-6
+# ::node	0.0.1.0	understand-01	3-4
+# ::node	0.0.1.0.0	i	0-1
+# ::node	0.1	eat-01	12-13
+# ::node	0.1.0	sheep	10-11
+# ::node	0.1.1	bush	14-15
+# ::node	0.1.1.0	little	13-14
+# ::root	0	recommend-01
+# ::edge	bush	mod	little	0.1.1	0.1.1.0	
+# ::edge	eat-01	ARG0	sheep	0.1	0.1.0	
+# ::edge	eat-01	ARG1	bush	0.1	0.1.1	
+# ::edge	important	degree	so	0.0	0.0.0	
+# ::edge	important	domain	it	0.0	0.0.1	
+# ::edge	recommend-01	ARG0	important	0	0.0	
+# ::edge	recommend-01	ARG1	eat-01	0	0.1	
+# ::edge	understand-01	ARG0	i	0.0.1.0	0.0.1.0.0	
+# ::edge	understand-01	ARG1	it	0.0.1.0	0.0.1	
+(r / recommend-01 
+      :ARG0 (i / important 
+            :degree (s2 / so) 
+            :domain (i2 / it 
+                  :ARG1-of (u / understand-01 
+                        :ARG0 (i3 / i)))) 
+      :ARG1 (e / eat-01 
+            :ARG0 (s / sheep) 
+            :ARG1 (b / bush 
+                  :mod (l / little))))
+
+# ::snt But the little prince added : " Then it follows that they also eat baobabs ? "
+# ::tok But the little prince added : " Then it follows that they also eat baobabs ? "
+# ::alignments 14-15|0.0.2.1 13-14|0.0.2 12-13|0.0.2.3 11-12|0.0.2.0 8-9|0.0.2.2 7-8|0.0.1 4-5|0.0 3-4|0.0.0 2-3|0.0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:10.948
+# ::node	0	contrast-01	0-1
+# ::node	0.0	add-01	4-5
+# ::node	0.0.0	prince	3-4
+# ::node	0.0.0.0	little	2-3
+# ::node	0.0.1	then	7-8
+# ::node	0.0.2	eat-01	13-14
+# ::node	0.0.2.0	they	11-12
+# ::node	0.0.2.1	baobab	14-15
+# ::node	0.0.2.2	it	8-9
+# ::node	0.0.2.3	also	12-13
+# ::root	0	contrast-01
+# ::edge	add-01	ARG0	prince	0.0	0.0.0	
+# ::edge	add-01	ARG1	then	0.0	0.0.1	
+# ::edge	contrast-01	ARG2	add-01	0	0.0	
+# ::edge	eat-01	ARG0	they	0.0.2	0.0.2.0	
+# ::edge	eat-01	ARG1	baobab	0.0.2	0.0.2.1	
+# ::edge	eat-01	ARG2	add-01	0.0.2	0.0	
+# ::edge	eat-01	beneficiary	it	0.0.2	0.0.2.2	
+# ::edge	eat-01	mod	also	0.0.2	0.0.2.3	
+# ::edge	prince	mod	little	0.0.0	0.0.0.0	
+(c / contrast-01 
+      :ARG2 (a2 / add-01 
+            :ARG0 (p / prince 
+                  :mod (l / little)) 
+            :ARG1 (t2 / then) 
+            :ARG2-of (e / eat-01 
+                  :ARG0 (t / they) 
+                  :ARG1 (b / baobab) 
+                  :beneficiary (i / it) 
+                  :mod (a / also))))
+
+# ::snt I pointed out to the little prince that baobabs were not little bushes , but , on the contrary , trees as big as castles ; and that even if he took a whole herd of elephants away with him , the herd would not eat up one single baobab .
+# ::tok I pointed out to the little prince that baobabs were not little bushes , but , on the contrary , trees as big as castles ; and that even if he took a whole herd of elephants away with him , the herd would not eat up one single baobab .
+# ::alignments 49-50|0.0.2.1 48-49|0.0.2.1.0 46-47|0.0.2.2 45-46|0.0.2 37-38|0.0.0.0 33-34|0.0.0.1.0.0 30-31|0.0.2.0 26-27|0.0 25-26|0 22-23|0.0.2.1.0.0 18-19|0.0.0.1.0 14-15|0.0.0 12-13|0.0.0.1 11-12|0.0.0.1.1 8-9|0.0.0.1.2 6-7|0.0.1.1 5-6|0.0.1.1.0 1-2|0.0.1 0-1|0.0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.026
+# ::node	0	and	25-26
+# ::node	0.0	and	26-27
+# ::node	0.0.0	contrast-01	14-15
+# ::node	0.0.0.0	away	37-38
+# ::node	0.0.0.1	bush	12-13
+# ::node	0.0.0.1.0	contrary-01	18-19
+# ::node	0.0.0.1.0.0	whole	33-34
+# ::node	0.0.0.1.1	little	11-12
+# ::node	0.0.0.1.2	baobab	8-9
+# ::node	0.0.1	pointed	1-2
+# ::node	0.0.1.0	i	0-1
+# ::node	0.0.1.1	prince	6-7
+# ::node	0.0.1.1.0	little	5-6
+# ::node	0.0.2	eat-01	45-46
+# ::node	0.0.2.0	he	30-31
+# ::node	0.0.2.1	baobab	49-50
+# ::node	0.0.2.1.0	single-02	48-49
+# ::node	0.0.2.1.0.0	big	22-23
+# ::node	0.0.2.2	up	46-47
+# ::root	0	and
+(a3 / and 
+      :op-of (a2 / and 
+            :ARG2-of (c2 / contrast-01 
+                  :ARG0 (a / away) 
+                  :ARG1 (b3 / bush 
+                        :ARG1-of (c / contrary-01 
+                              :ARG0 (w / whole)) 
+                        :degree (l / little) 
+                        :domain (b4 / baobab))) 
+            :op1 (p2 / pointed 
+                  :ARG0 (i / i) 
+                  :destination (p / prince 
+                        :mod (l2 / little))) 
+            :op2 (e / eat-01 
+                  :ARG0 (h / he) 
+                  :ARG1 (b / baobab 
+                        :ARG1-of (s / single-02 
+                              :ARG0 (b2 / big))) 
+                  :direction (u / up))))
+
+# ::snt The idea of the herd of elephants made the little prince laugh .
+# ::tok The idea of the herd of elephants made the little prince laugh .
+# ::alignments 11-12|0.0 10-11|0.0.0 9-10|0.0.1 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.099
+# ::node	0	idea	1-2
+# ::node	0.0	laugh-01	11-12
+# ::node	0.0.0	prince	10-11
+# ::node	0.0.1	little	9-10
+# ::root	0	idea
+(i / idea 
+      :ARG0-of (l / laugh-01 
+            :mod (p / prince) 
+            :mod (l2 / little)))
+
+# ::snt " We would have to put them one on top of the other , " he said .
+# ::tok " We would have to put them one on top of the other , " he said .
+# ::alignments 16-17|0 15-16|0.0 12-13|0.1 9-10|0.2.1 5-6|0.2 1-2|0.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.124
+# ::node	0	say-01	16-17
+# ::node	0.0	he	15-16
+# ::node	0.1	other	12-13
+# ::node	0.2	put-01	5-6
+# ::node	0.2.0	we	1-2
+# ::node	0.2.1	top	9-10
+# ::root	0	say-01
+# ::edge	put-01	ARG0	we	0.2	0.2.0	
+# ::edge	put-01	ARG1	top	0.2	0.2.1	
+# ::edge	say-01	ARG0	he	0	0.0	
+# ::edge	say-01	ARG1	other	0	0.1	
+# ::edge	say-01	purpose	put-01	0	0.2	
+(s / say-01 
+      :ARG0 (h / he) 
+      :ARG1 (o / other) 
+      :purpose (p / put-01 
+            :ARG0 (w / we) 
+            :ARG1 (t / top)))
+
+# ::snt But he made a wise comment : " Before they grow so big , the baobabs start out by being little . "
+# ::tok But he made a wise comment : " Before they grow so big , the baobabs start out by being little . "
+# ::alignments 20-21|0.1 19-20|0.1.0 15-16|0.0.1.0.0 12-13|0.0 11-12|0.0.0 10-11|0.0.1.0 9-10|0.0.1 1-2|0.0.1.0.1 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.290
+# ::node	0	contrast-01	0-1
+# ::node	0.0	big	12-13
+# ::node	0.0.0	so	11-12
+# ::node	0.0.1	they	9-10
+# ::node	0.0.1.0	grow-02	10-11
+# ::node	0.0.1.0.0	baobab	15-16
+# ::node	0.0.1.0.1	he	1-2
+# ::node	0.1	little	20-21
+# ::node	0.1.0	being	19-20
+# ::root	0	contrast-01
+# ::edge	being	mod	little	0.1.0	0.1	
+# ::edge	big	degree	so	0.0	0.0.0	
+# ::edge	big	domain	they	0.0	0.0.1	
+# ::edge	contrast-01	ARG0	big	0	0.0	
+# ::edge	contrast-01	ARG1	little	0	0.1	
+# ::edge	grow-02	ARG0	baobab	0.0.1.0	0.0.1.0.0	
+# ::edge	grow-02	ARG1	they	0.0.1.0	0.0.1	
+# ::edge	he	op1	grow-02	0.0.1.0.1	0.0.1.0	
+(c / contrast-01 
+      :ARG0 (b3 / big 
+            :degree (s / so) 
+            :domain (t / they 
+                  :ARG1-of (g / grow-02 
+                        :ARG0 (b2 / baobab) 
+                        :op-of (h / he)))) 
+      :ARG1 (l / little 
+            :mod-of (b / being)))
+
+# ::snt " That is strictly correct , "
+# ::tok " That is strictly correct , "
+# ::alignments 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.296
+# ::node	0	that	1-2
+# ::root	0	that
+(t / that)
+
+# ::snt I said .
+# ::tok I said .
+# ::alignments 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.300
+# ::node	0	say-01	1-2
+# ::node	0.0	i	0-1
+# ::root	0	say-01
+# ::edge	say-01	ARG0	i	0	0.0	
+(s / say-01 
+      :ARG0 (i / i))
+
+# ::snt " But why do you want the sheep to eat the little baobabs ? "
+# ::tok " But why do you want the sheep to eat the little baobabs ? "
+# ::alignments 12-13|0.0.1.0.0 11-12|0.0.1.0.0.0 9-10|0.0.1.0 7-8|0.0.1 5-6|0.0 4-5|0.0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.325
+# ::node	0	contrast-01	1-2
+# ::node	0.0	want-01	5-6
+# ::node	0.0.0	you	4-5
+# ::node	0.0.1	sheep	7-8
+# ::node	0.0.1.0	eat-01	9-10
+# ::node	0.0.1.0.0	baobab	12-13
+# ::node	0.0.1.0.0.0	little	11-12
+# ::root	0	contrast-01
+# ::edge	baobab	mod	little	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	contrast-01	ARG2	want-01	0	0.0	
+# ::edge	eat-01	ARG0	sheep	0.0.1.0	0.0.1	
+# ::edge	eat-01	ARG1	baobab	0.0.1.0	0.0.1.0.0	
+# ::edge	want-01	ARG0	you	0.0	0.0.0	
+# ::edge	want-01	ARG1	sheep	0.0	0.0.1	
+(c / contrast-01 
+      :ARG2 (w / want-01 
+            :ARG0 (y / you) 
+            :ARG1 (s / sheep 
+                  :ARG0-of (e / eat-01 
+                        :ARG1 (b / baobab 
+                              :mod (l / little))))))
+
+# ::snt He answered me at once , " Oh , come , come ! " , as if he were speaking of something that was self - evident .
+# ::tok He answered me at once , " Oh , come , come ! " , as if he were speaking of something that was self - evident .
+# ::alignments 21-22|0.1 19-20|0.0.0 17-18|0.0.0.0 7-8|0.3 4-5|0.2 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.710
+# ::node	0	answer-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.0.0	speak-01	19-20
+# ::node	0.0.0.0	he	17-18
+# ::node	0.1	something	21-22
+# ::node	0.2	once	4-5
+# ::node	0.3	oh	7-8
+# ::root	0	answer-01
+# ::edge	answer-01	ARG0	he	0	0.0	
+# ::edge	answer-01	ARG1	something	0	0.1	
+# ::edge	answer-01	ARG2	once	0	0.2	
+# ::edge	answer-01	time	oh	0	0.3	
+# ::edge	speak-01	ARG0	he	0.0.0	0.0	
+# ::edge	speak-01	ARG1	he	0.0.0	0.0.0.0	
+(a / answer-01 
+      :ARG0 (h2 / he 
+            :ARG0-of (s2 / speak-01 
+                  :ARG1 (h / he))) 
+      :ARG1 (s / something) 
+      :ARG2 (o2 / once) 
+      :time (o / oh))
+
+# ::snt And I was obliged to make a great mental effort to solve this problem , without any assistance .
+# ::tok And I was obliged to make a great mental effort to solve this problem , without any assistance .
+# ::alignments 16-17|0.0.0 13-14|0.0.1.0.0 12-13|0.0.1.0.0.0 11-12|0.0.1.0 9-10|0.0.1 7-8|0.0.1.1 3-4|0.0 1-2|0.0.2 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:12.854
+# ::node	0	and	0-1
+# ::node	0.0	oblige-02	3-4
+# ::node	0.0.0	any	16-17
+# ::node	0.0.1	effort-01	9-10
+# ::node	0.0.1.0	solve-01	11-12
+# ::node	0.0.1.0.0	problem	13-14
+# ::node	0.0.1.0.0.0	this	12-13
+# ::node	0.0.1.1	great	7-8
+# ::node	0.0.2	i	1-2
+# ::root	0	and
+# ::edge	and	op1	oblige-02	0	0.0	
+# ::edge	effort-01	ARG0	oblige-02	0.0.1	0.0	
+# ::edge	effort-01	ARG1	solve-01	0.0.1	0.0.1.0	
+# ::edge	effort-01	mod	great	0.0.1	0.0.1.1	
+# ::edge	oblige-02	ARG0	any	0.0	0.0.0	
+# ::edge	oblige-02	ARG1	i	0.0	0.0.2	
+# ::edge	problem	mod	this	0.0.1.0.0	0.0.1.0.0.0	
+# ::edge	solve-01	ARG1	problem	0.0.1.0	0.0.1.0.0	
+(a2 / and 
+      :op1 (o / oblige-02 
+            :ARG0 (a / any) 
+            :ARG0-of (e / effort-01 
+                  :ARG1 (s / solve-01 
+                        :ARG1 (p / problem 
+                              :mod (t / this))) 
+                  :mod (g / great)) 
+            :ARG1 (i / i)))
+
+# ::snt Indeed , as I learned , there were on the planet where the little prince lived -- as on all planets -- good plants and bad plants .
+# ::tok Indeed , as I learned , there were on the planet where the little prince lived -- as on all planets -- good plants and bad plants .
+# ::alignments 25-26|0 24-25|0.0 22-23|0.1 20-21|0.1.0 19-20|0.1.0.0 15-16|0.0.0.0 14-15|0.0.0.0.0 13-14|0.0.0.0.0.0 10-11|0.0.0 6-7|0.0.0.1.0.0 4-5|0.0.0.1.0 3-4|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:13.091
+# ::node	0	bad-07	25-26
+# ::node	0.0	and	24-25
+# ::node	0.0.0	planet	10-11
+# ::node	0.0.0.0	live-01	15-16
+# ::node	0.0.0.0.0	prince	14-15
+# ::node	0.0.0.0.0.0	little	13-14
+# ::node	0.0.0.1	i	3-4
+# ::node	0.0.0.1.0	learn-01	4-5
+# ::node	0.0.0.1.0.0	there	6-7
+# ::node	0.1	good-04	22-23
+# ::node	0.1.0	planet	20-21
+# ::node	0.1.0.0	all	19-20
+# ::root	0	bad-07
+# ::edge	and	op1	planet	0.0	0.0.0	
+# ::edge	bad-07	ARG0	and	0	0.0	
+# ::edge	bad-07	ARG1	good-04	0	0.1	
+# ::edge	good-04	ARG1	planet	0.1	0.1.0	
+# ::edge	learn-01	ARG0	i	0.0.0.1.0	0.0.0.1	
+# ::edge	learn-01	ARG1	there	0.0.0.1.0	0.0.0.1.0.0	
+# ::edge	live-01	ARG0	prince	0.0.0.0	0.0.0.0.0	
+# ::edge	live-01	ARG1	planet	0.0.0.0	0.0.0	
+# ::edge	planet	mod	all	0.1.0	0.1.0.0	
+# ::edge	planet	poss	i	0.0.0	0.0.0.1	
+# ::edge	prince	mod	little	0.0.0.0.0	0.0.0.0.0.0	
+(b / bad-07 
+      :ARG0 (a / and 
+            :op1 (p3 / planet 
+                  :ARG1-of (l / live-01 
+                        :ARG0 (p2 / prince 
+                              :mod (l2 / little))) 
+                  :poss (i / i 
+                        :ARG0-of (l3 / learn-01 
+                              :ARG1 (t / there))))) 
+      :ARG1 (g / good-04 
+            :ARG1 (p / planet 
+                  :mod (a2 / all))))
+
+# ::snt In consequence , there were good seeds from good plants , and bad seeds from bad plants .
+# ::tok In consequence , there were good seeds from good plants , and bad seeds from bad plants .
+# ::alignments 15-16|0.1.0 12-13|0.1 11-12|0 8-9|0.0.1 5-6|0.0 3-4|0.0.0 1-2|0.1.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:13.140
+# ::node	0	and	11-12
+# ::node	0.0	good-04	5-6
+# ::node	0.0.0	there	3-4
+# ::node	0.0.1	good-04	8-9
+# ::node	0.1	bad-07	12-13
+# ::node	0.1.0	bad-07	15-16
+# ::node	0.1.0.0	consequence	1-2
+# ::root	0	and
+(a / and 
+      :ARG0-of (g2 / good-04 
+            :ARG1 (t / there) 
+            :ARG3 (g / good-04)) 
+      :ARG0-of (b2 / bad-07 
+            :ARG3 (b / bad-07 
+                  :ARG0 (c / consequence))))
+
+# ::snt But seeds are invisible .
+# ::tok But seeds are invisible .
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:13.145
+# ::node	0	contrast-01	0-1
+# ::root	0	contrast-01
+(c / contrast-01)
+
+# ::snt They sleep deep in the heart of the earth 's darkness , until some one among them is seized with the desire to awaken .
+# ::tok They sleep deep in the heart of the earth 's darkness , until some one among them is seized with the desire to awaken .
+# ::alignments 15-16|0.0 13-14|0.2.1 12-13|0.2.3 10-11|0.1 8-9|0.1.0 5-6|0.2.2 2-3|0 1-2|0.2 0-1|0.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:13.296
+# ::node	0	deep-02	2-3
+# ::node	0.0	among	15-16
+# ::node	0.1	darkness	10-11
+# ::node	0.1.0	earth	8-9
+# ::node	0.2	sleep-01	1-2
+# ::node	0.2.0	they	0-1
+# ::node	0.2.1	some	13-14
+# ::node	0.2.2	heart	5-6
+# ::node	0.2.3	until	12-13
+# ::root	0	deep-02
+# ::edge	darkness	poss	earth	0.1	0.1.0	
+# ::edge	deep-02	ARG0	among	0	0.0	
+# ::edge	deep-02	ARG1	darkness	0	0.1	
+# ::edge	deep-02	ARG3	sleep-01	0	0.2	
+# ::edge	sleep-01	ARG0	they	0.2	0.2.0	
+# ::edge	sleep-01	ARG1	some	0.2	0.2.1	
+# ::edge	sleep-01	ARG2	heart	0.2	0.2.2	
+# ::edge	sleep-01	time	until	0.2	0.2.3	
+(d2 / deep-02 
+      :ARG0 (a / among) 
+      :ARG1 (d / darkness 
+            :poss (e / earth)) 
+      :ARG3 (s2 / sleep-01 
+            :ARG0 (t / they) 
+            :ARG1 (s / some) 
+            :ARG2 (h / heart) 
+            :time (u / until)))
+
+# ::snt Then this little seed will stretch itself and begin -- timidly at first -- to push a charming little sprig inoffensively upward toward the sun .
+# ::tok Then this little seed will stretch itself and begin -- timidly at first -- to push a charming little sprig inoffensively upward toward the sun .
+# ::alignments 24-25|0.0.1.0 22-23|0.0.1 18-19|0.0.2.0 17-18|0.0.2 8-9|0.0 7-8|0 3-4|0.0.0 2-3|0.0.0.0 1-2|0.0.0.1 0-1|0.0.0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:13.418
+# ::node	0	and	7-8
+# ::node	0.0	begin-01	8-9
+# ::node	0.0.0	seed	3-4
+# ::node	0.0.0.0	little	2-3
+# ::node	0.0.0.1	this	1-2
+# ::node	0.0.0.1.0	then	0-1
+# ::node	0.0.1	toward	22-23
+# ::node	0.0.1.0	sun	24-25
+# ::node	0.0.2	charm-01	17-18
+# ::node	0.0.2.0	little	18-19
+# ::root	0	and
+# ::edge	and	op1	begin-01	0	0.0	
+# ::edge	begin-01	ARG0	seed	0.0	0.0.0	
+# ::edge	begin-01	ARG1	toward	0.0	0.0.1	
+# ::edge	charm-01	ARG0	little	0.0.2	0.0.2.0	
+# ::edge	charm-01	ARG1	begin-01	0.0.2	0.0	
+# ::edge	seed	mod	little	0.0.0	0.0.0.0	
+# ::edge	seed	mod	this	0.0.0	0.0.0.1	
+# ::edge	this	mod	then	0.0.0.1	0.0.0.1.0	
+# ::edge	toward	op1	sun	0.0.1	0.0.1.0	
+(a / and 
+      :op1 (b / begin-01 
+            :ARG0 (s2 / seed 
+                  :mod (l2 / little) 
+                  :mod (t2 / this 
+                        :mod (t3 / then))) 
+            :ARG1 (t / toward 
+                  :op1 (s / sun)) 
+            :ARG1-of (c / charm-01 
+                  :ARG0 (l / little))))
+
+# ::snt If it is only a sprout of radish or the sprig of a rose - bush , one would let it grow wherever it might wish .
+# ::tok If it is only a sprout of radish or the sprig of a rose - bush , one would let it grow wherever it might wish .
+# ::alignments 25-26|0 23-24|0.0 21-22|0.2 20-21|0.2.0 19-20|0.2.2 13-14|0.1 8-9|0.2.2.1.0 5-6|0.2.2.1 3-4|0.2.1 1-2|0.2.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:13.703
+# ::node	0	wish-01	25-26
+# ::node	0.0	it	23-24
+# ::node	0.1	rose	13-14
+# ::node	0.2	grow-02	21-22
+# ::node	0.2.0	it	20-21
+# ::node	0.2.1	only	3-4
+# ::node	0.2.2	let-01	19-20
+# ::node	0.2.2.0	it	1-2
+# ::node	0.2.2.1	sprout	5-6
+# ::node	0.2.2.1.0	or	8-9
+# ::root	0	wish-01
+# ::edge	grow-02	ARG0	it	0.2	0.2.0	
+# ::edge	grow-02	ARG1	only	0.2	0.2.1	
+# ::edge	grow-02	condition	wish-01	0.2	0	
+# ::edge	let-01	ARG0	it	0.2.2	0.2.2.0	
+# ::edge	let-01	ARG1	grow-02	0.2.2	0.2	
+# ::edge	let-01	time	sprout	0.2.2	0.2.2.1	
+# ::edge	or	op1	sprout	0.2.2.1.0	0.2.2.1	
+# ::edge	wish-01	ARG0	it	0	0.0	
+# ::edge	wish-01	ARG1	rose	0	0.1	
+(w / wish-01 
+      :ARG0 (i / it) 
+      :ARG1 (r / rose) 
+      :condition-of (g / grow-02 
+            :ARG0 (i2 / it) 
+            :ARG1 (o2 / only) 
+            :ARG1-of (l / let-01 
+                  :ARG0 (i3 / it) 
+                  :time (s / sprout 
+                        :op-of (o / or)))))
+
+# ::snt But when it is a bad plant , one must destroy it as soon as possible , the very first instant that one recognizes it .
+# ::tok But when it is a bad plant , one must destroy it as soon as possible , the very first instant that one recognizes it .
+# ::alignments 24-25|0.0 20-21|0.2.0 18-19|0.1.0.0 15-16|0.2.0.0 13-14|0.2.0.0.0 11-12|0.2.1 10-11|0.2 6-7|0.1 5-6|0.1.0 2-3|0.1.1 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.002
+# ::node	0	contrast-01	0-1
+# ::node	0.0	it	24-25
+# ::node	0.1	plant	6-7
+# ::node	0.1.0	bad-07	5-6
+# ::node	0.1.0.0	very	18-19
+# ::node	0.1.1	it	2-3
+# ::node	0.2	destroy-01	10-11
+# ::node	0.2.0	instant	20-21
+# ::node	0.2.0.0	possible-01	15-16
+# ::node	0.2.0.0.0	soon	13-14
+# ::node	0.2.1	it	11-12
+# ::root	0	contrast-01
+# ::edge	bad-07	ARG0	very	0.1.0	0.1.0.0	
+# ::edge	bad-07	ARG1	plant	0.1.0	0.1	
+# ::edge	contrast-01	ARG0	it	0	0.0	
+# ::edge	contrast-01	ARG1	plant	0	0.1	
+# ::edge	contrast-01	ARG2	destroy-01	0	0.2	
+# ::edge	destroy-01	ARG0	instant	0.2	0.2.0	
+# ::edge	destroy-01	ARG2	it	0.2	0.2.1	
+# ::edge	plant	domain	it	0.1	0.1.1	
+# ::edge	possible-01	ARG0	instant	0.2.0.0	0.2.0	
+# ::edge	possible-01	ARG1	soon	0.2.0.0	0.2.0.0.0	
+(c / contrast-01 
+      :ARG0 (i / it) 
+      :ARG1 (p2 / plant 
+            :ARG1-of (b / bad-07 
+                  :ARG0 (v / very)) 
+            :domain (i4 / it)) 
+      :ARG2 (d / destroy-01 
+            :ARG0 (i2 / instant 
+                  :ARG0-of (p / possible-01 
+                        :ARG1 (s / soon))) 
+            :ARG2 (i3 / it)))
+
+# ::snt Now there were some terrible seeds on the planet that was the home of the little prince ; and these were the seeds of the baobab .
+# ::tok Now there were some terrible seeds on the planet that was the home of the little prince ; and these were the seeds of the baobab .
+# ::alignments 25-26|0.1.0.0.0 18-19|0.1 17-18|0 16-17|0.0 15-16|0.0.0 12-13|0.1.0.1 8-9|0.1.0 4-5|0.1.0.0 3-4|0.1.0.0.2 1-2|0.1.0.0.1 0-1|0.1.0.0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.175
+# ::node	0	and	17-18
+# ::node	0.0	prince	16-17
+# ::node	0.0.0	little	15-16
+# ::node	0.1	and	18-19
+# ::node	0.1.0	planet	8-9
+# ::node	0.1.0.0	terrible-01	4-5
+# ::node	0.1.0.0.0	baobab	25-26
+# ::node	0.1.0.0.1	there	1-2
+# ::node	0.1.0.0.1.0	now	0-1
+# ::node	0.1.0.0.2	some	3-4
+# ::node	0.1.0.1	home	12-13
+# ::root	0	and
+# ::edge	and	op1	planet	0.1	0.1.0	
+# ::edge	and	op1	prince	0	0.0	
+# ::edge	and	op2	and	0	0.1	
+# ::edge	planet	mod	home	0.1.0	0.1.0.1	
+# ::edge	prince	mod	little	0.0	0.0.0	
+# ::edge	terrible-01	ARG0	baobab	0.1.0.0	0.1.0.0.0	
+# ::edge	terrible-01	ARG1	there	0.1.0.0	0.1.0.0.1	
+# ::edge	terrible-01	ARG2	some	0.1.0.0	0.1.0.0.2	
+# ::edge	terrible-01	location	planet	0.1.0.0	0.1.0	
+# ::edge	there	mod	now	0.1.0.0.1	0.1.0.0.1.0	
+(a2 / and 
+      :op1 (p / prince 
+            :mod (l / little)) 
+      :op2 (a / and 
+            :op1 (p2 / planet 
+                  :location-of (t / terrible-01 
+                        :ARG0 (b / baobab) 
+                        :ARG1 (t2 / there 
+                              :mod (n / now)) 
+                        :ARG2 (s / some)) 
+                  :mod (h / home))))
+
+# ::snt The soil of that planet was infested with them .
+# ::tok The soil of that planet was infested with them .
+# ::alignments 4-5|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.188
+# ::node	0	planet	4-5
+# ::root	0	planet
+(p / planet)
+
+# ::snt A baobab is something you will never , never be able to get rid of if you attend to it too late .
+# ::tok A baobab is something you will never , never be able to get rid of if you attend to it too late .
+# ::alignments 20-21|0.2.0 19-20|0.2.1 16-17|0.2.2 12-13|0.2 10-11|0 4-5|0.0 3-4|0.1 1-2|0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.379
+# ::node	0	possible-01	10-11
+# ::node	0.0	you	4-5
+# ::node	0.1	something	3-4
+# ::node	0.1.0	baobab	1-2
+# ::node	0.2	get-01	12-13
+# ::node	0.2.0	too	20-21
+# ::node	0.2.1	it	19-20
+# ::node	0.2.2	you	16-17
+# ::root	0	possible-01
+# ::edge	get-01	ARG0	too	0.2	0.2.0	
+# ::edge	get-01	ARG1	it	0.2	0.2.1	
+# ::edge	get-01	ARG2	you	0.2	0.2.2	
+# ::edge	possible-01	ARG0	you	0	0.0	
+# ::edge	possible-01	ARG1	something	0	0.1	
+# ::edge	possible-01	ARG2	get-01	0	0.2	
+# ::edge	something	domain	baobab	0.1	0.1.0	
+(p / possible-01 
+      :ARG0 (y2 / you) 
+      :ARG1 (s / something 
+            :domain (b / baobab)) 
+      :ARG2 (g / get-01 
+            :ARG0 (t / too) 
+            :ARG1 (i / it) 
+            :ARG2 (y / you)))
+
+# ::snt It spreads over the entire planet .
+# ::tok It spreads over the entire planet .
+# ::alignments 5-6|0.0 4-5|0 0-1|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.391
+# ::node	0	entire	4-5
+# ::node	0.0	planet	5-6
+# ::node	0.0.0	it	0-1
+# ::root	0	entire
+(e / entire 
+      :extent-of (p / planet 
+            :domain (i / it)))
+
+# ::snt It bores clear through it with its roots .
+# ::tok It bores clear through it with its roots .
+# ::alignments 7-8|0.0.0 6-7|0.0 4-5|0.3 3-4|0.2 2-3|0 0-1|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.437
+# ::node	0	clear-06	2-3
+# ::node	0.0	it	6-7
+# ::node	0.0.0	root	7-8
+# ::node	0.1	it	0-1
+# ::node	0.2	through	3-4
+# ::node	0.3	it	4-5
+# ::root	0	clear-06
+# ::edge	clear-06	ARG0	it	0	0.0	
+# ::edge	clear-06	ARG1	it	0	0.1	
+# ::edge	clear-06	ARG2	through	0	0.2	
+# ::edge	clear-06	compared-to	it	0	0.3	
+# ::edge	root	poss	it	0.0.0	0.0	
+(c / clear-06 
+      :ARG0 (i / it 
+            :poss-of (r / root)) 
+      :ARG1 (i3 / it) 
+      :ARG2 (t / through) 
+      :compared-to (i2 / it))
+
+# ::snt And if the planet is too small , and the baobabs are too many , they split it in pieces ...
+# ::tok And if the planet is too small , and the baobabs are too many , they split it in pieces ...
+# ::alignments 17-18|0.0.0.1.0 15-16|0.0.0.1 13-14|0.0.0.2.0 12-13|0.0.0.2.0.0 10-11|0.0.0.2.0.1 8-9|0.0.0.2 6-7|0.0.0 5-6|0.0.0.0 3-4|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.487
+# ::node	0	and	0-1
+# ::node	0.0	planet	3-4
+# ::node	0.0.0	small	6-7
+# ::node	0.0.0.0	too	5-6
+# ::node	0.0.0.1	they	15-16
+# ::node	0.0.0.1.0	it	17-18
+# ::node	0.0.0.2	and	8-9
+# ::node	0.0.0.2.0	many	13-14
+# ::node	0.0.0.2.0.0	too	12-13
+# ::node	0.0.0.2.0.1	baobab	10-11
+# ::root	0	and
+# ::edge	and	op1	planet	0	0.0	
+# ::edge	and	op1	small	0.0.0.2	0.0.0	
+# ::edge	and	op2	many	0.0.0.2	0.0.0.2.0	
+# ::edge	it	op1	they	0.0.0.1.0	0.0.0.1	
+# ::edge	many	degree	too	0.0.0.2.0	0.0.0.2.0.0	
+# ::edge	many	domain	baobab	0.0.0.2.0	0.0.0.2.0.1	
+# ::edge	small	degree	too	0.0.0	0.0.0.0	
+# ::edge	small	domain	planet	0.0.0	0.0	
+# ::edge	they	domain	small	0.0.0.1	0.0.0	
+(a2 / and 
+      :op1 (p / planet 
+            :domain-of (s / small 
+                  :degree (t3 / too) 
+                  :domain-of (t / they 
+                        :op-of (i / it)) 
+                  :op-of (a / and 
+                        :op1 (m / many 
+                              :degree (t2 / too) 
+                              :domain (b / baobab))))))
+
+# ::snt " It is a question of discipline , " the little prince said to me later on .
+# ::tok " It is a question of discipline , " the little prince said to me later on .
+# ::alignments 15-16|0.1.0 12-13|0 11-12|0.0 10-11|0.0.0 4-5|0.1 1-2|0.1.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.516
+# ::node	0	say-01	12-13
+# ::node	0.0	prince	11-12
+# ::node	0.0.0	little	10-11
+# ::node	0.1	question-01	4-5
+# ::node	0.1.0	late	15-16
+# ::node	0.1.1	it	1-2
+# ::root	0	say-01
+# ::edge	prince	mod	little	0.0	0.0.0	
+# ::edge	question-01	ARG0	late	0.1	0.1.0	
+# ::edge	question-01	ARG2	it	0.1	0.1.1	
+# ::edge	say-01	ARG0	prince	0	0.0	
+# ::edge	say-01	ARG1	question-01	0	0.1	
+(s / say-01 
+      :ARG0 (p / prince 
+            :mod (l2 / little)) 
+      :ARG1 (q / question-01 
+            :ARG0 (l / late) 
+            :ARG2 (i / it)))
+
+# ::snt " When you 've finished your own toilet in the morning , then it is time to attend to the toilet of your planet , just so , with the greatest care .
+# ::tok " When you 've finished your own toilet in the morning , then it is time to attend to the toilet of your planet , just so , with the greatest care .
+# ::alignments 31-32|0 30-31|0.2.1+0.2 26-27|0.2.0.0 25-26|0.2.0.0.0 23-24|0.1 15-16|0.0 13-14|0.0.0 12-13|0.0.1 10-11|0.2.0.1 6-7|0.2.0 2-3|0.2.0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:14.670
+# ::node	0	care-04	31-32
+# ::node	0.0	time	15-16
+# ::node	0.0.0	it	13-14
+# ::node	0.0.1	then	12-13
+# ::node	0.1	planet	23-24
+# ::node	0.2	great	30-31
+# ::node	0.2.0	own-01	6-7
+# ::node	0.2.0.0	so	26-27
+# ::node	0.2.0.0.0	just	25-26
+# ::node	0.2.0.1	morning	10-11
+# ::node	0.2.0.1.0	you	2-3
+# ::node	0.2.1	most	30-31
+# ::root	0	care-04
+# ::edge	care-04	ARG0	time	0	0.0	
+# ::edge	care-04	ARG1	planet	0	0.1	
+# ::edge	care-04	degree	great	0	0.2	
+# ::edge	great	degree	most	0.2	0.2.1	
+# ::edge	morning	poss	you	0.2.0.1	0.2.0.1.0	
+# ::edge	own-01	ARG0	great	0.2.0	0.2	
+# ::edge	own-01	ARG1	so	0.2.0	0.2.0.0	
+# ::edge	own-01	ARG2	morning	0.2.0	0.2.0.1	
+# ::edge	so	mod	just	0.2.0.0	0.2.0.0.0	
+# ::edge	time	domain	it	0.0	0.0.0	
+# ::edge	time	time	then	0.0	0.0.1	
+(c / care-04 
+      :ARG0 (t / time 
+            :domain (i / it) 
+            :time (t2 / then)) 
+      :ARG1 (p / planet) 
+      :degree (g / great 
+            :ARG0-of (o / own-01 
+                  :ARG1 (s / so 
+                        :mod (j / just)) 
+                  :ARG2 (m2 / morning 
+                        :poss (y / you))) 
+            :degree (m / most)))
+
+# ::snt You must see to it that you pull up regularly all the baobabs , at the very first moment when they can be distinguished from the rosebushes which they resemble so closely in their earliest youth .
+# ::tok You must see to it that you pull up regularly all the baobabs , at the very first moment when they can be distinguished from the rosebushes which they resemble so closely in their earliest youth .
+# ::alignments 31-32|0.0.0.1 30-31|0.0.0.1.2 28-29|0.0.0.1.1 21-22|0 20-21|0.2 18-19|0.1 16-17|0.1.0 12-13|0.0.0.0.0 10-11|0.0.0.0.0.0 8-9|0.0.0.1.0 6-7|0.0.0.0 4-5|0.0.0.2 2-3|0.0.0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:15.403
+# ::node	0	possible-01	21-22
+# ::node	0.0	you	0-1
+# ::node	0.0.0	see-01	2-3
+# ::node	0.0.0.0	you	6-7
+# ::node	0.0.0.0.0	baobab	12-13
+# ::node	0.0.0.0.0.0	all	10-11
+# ::node	0.0.0.1	close-10	31-32
+# ::node	0.0.0.1.0	up	8-9
+# ::node	0.0.0.1.1	they	28-29
+# ::node	0.0.0.1.2	so	30-31
+# ::node	0.0.0.2	it	4-5
+# ::node	0.1	moment	18-19
+# ::node	0.1.0	very	16-17
+# ::node	0.2	they	20-21
+# ::root	0	possible-01
+# ::edge	baobab	mod	all	0.0.0.0.0	0.0.0.0.0.0	
+# ::edge	baobab	poss	you	0.0.0.0.0	0.0.0.0	
+# ::edge	close-10	ARG0	up	0.0.0.1	0.0.0.1.0	
+# ::edge	close-10	ARG1	they	0.0.0.1	0.0.0.1.1	
+# ::edge	close-10	degree	so	0.0.0.1	0.0.0.1.2	
+# ::edge	possible-01	ARG0	you	0	0.0	
+# ::edge	possible-01	ARG1	moment	0	0.1	
+# ::edge	possible-01	ARG2	they	0	0.2	
+# ::edge	see-01	ARG1	you	0.0.0	0.0	
+# ::edge	see-01	ARG2	you	0.0.0	0.0.0.0	
+# ::edge	see-01	condition	close-10	0.0.0	0.0.0.1	
+# ::edge	see-01	manner	it	0.0.0	0.0.0.2	
+# ::edge	very	op1	moment	0.1.0	0.1	
+(p / possible-01 
+      :ARG0 (y2 / you 
+            :ARG1-of (s2 / see-01 
+                  :ARG2 (y / you 
+                        :poss-of (b / baobab 
+                              :mod (a / all))) 
+                  :condition (c / close-10 
+                        :ARG0 (u / up) 
+                        :ARG1 (t / they) 
+                        :degree (s / so)) 
+                  :manner (i / it))) 
+      :ARG1 (m / moment 
+            :op-of (v / very)) 
+      :ARG2 (t2 / they))
+
+# ::snt It is very tedious work , " the little prince added , " but very easy . "
+# ::tok It is very tedious work , " the little prince added , " but very easy . "
+# ::alignments 14-15|0.1.0 13-14|0.1 10-11|0 9-10|0.0 8-9|0.0.1 4-5|0.0.0 2-3|0.0.0.0 0-1|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:15.441
+# ::node	0	add-01	10-11
+# ::node	0.0	prince	9-10
+# ::node	0.0.0	work-01	4-5
+# ::node	0.0.0.0	very	2-3
+# ::node	0.0.0.1	it	0-1
+# ::node	0.0.1	little	8-9
+# ::node	0.1	contrast-01	13-14
+# ::node	0.1.0	very	14-15
+# ::root	0	add-01
+# ::edge	add-01	ARG0	prince	0	0.0	
+# ::edge	add-01	ARG1	contrast-01	0	0.1	
+# ::edge	contrast-01	ARG0	very	0.1	0.1.0	
+# ::edge	prince	mod	little	0.0	0.0.1	
+# ::edge	work-01	ARG0	prince	0.0.0	0.0	
+# ::edge	work-01	ARG1	very	0.0.0	0.0.0.0	
+# ::edge	work-01	ARG2	it	0.0.0	0.0.0.1	
+(a / add-01 
+      :ARG0 (p / prince 
+            :ARG0-of (w / work-01 
+                  :ARG1 (v2 / very) 
+                  :ARG2 (i / it)) 
+            :mod (l / little)) 
+      :ARG1 (c / contrast-01 
+            :ARG0 (v / very)))
+
+# ::snt And one day he said to me : " You ought to make a beautiful drawing , so that the children where you live can see exactly how all this is .
+# ::tok And one day he said to me : " You ought to make a beautiful drawing , so that the children where you live can see exactly how all this is .
+# ::alignments 29-30|0.1.1.0.0 28-29|0.1.1.0.0.0 26-27|0.1.0.0 25-26|0.1.0 24-25|0.1 23-24|0.1.0.1 22-23|0.1.0.1.0 20-21|0.1.0.1.1 17-18|0.1.1 14-15|0.1.1.0 9-10|0.2 4-5|0 3-4|0.0 2-3|0.4 0-1|0.3 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:15.810
+# ::node	0	say-01	4-5
+# ::node	0.0	he	3-4
+# ::node	0.1	possible-01	24-25
+# ::node	0.1.0	see-01	25-26
+# ::node	0.1.0.0	exact	26-27
+# ::node	0.1.0.1	live-01	23-24
+# ::node	0.1.0.1.0	you	22-23
+# ::node	0.1.0.1.1	child	20-21
+# ::node	0.1.1	so	17-18
+# ::node	0.1.1.0	beautiful-02	14-15
+# ::node	0.1.1.0.0	this	29-30
+# ::node	0.1.1.0.0.0	all	28-29
+# ::node	0.2	you	9-10
+# ::node	0.3	and	0-1
+# ::node	0.4	day	2-3
+# ::root	0	say-01
+# ::edge	and	op1	say-01	0.3	0	
+# ::edge	beautiful-02	ARG0	this	0.1.1.0	0.1.1.0.0	
+# ::edge	beautiful-02	ARG1	so	0.1.1.0	0.1.1	
+# ::edge	child	location	live-01	0.1.0.1.1	0.1.0.1	
+# ::edge	live-01	ARG0	you	0.1.0.1	0.1.0.1.0	
+# ::edge	possible-01	ARG1	see-01	0.1	0.1.0	
+# ::edge	possible-01	mod	so	0.1	0.1.1	
+# ::edge	say-01	ARG0	he	0	0.0	
+# ::edge	say-01	ARG1	possible-01	0	0.1	
+# ::edge	say-01	ARG2	you	0	0.2	
+# ::edge	say-01	time	day	0	0.4	
+# ::edge	see-01	ARG0	exact	0.1.0	0.1.0.0	
+# ::edge	see-01	ARG1	live-01	0.1.0	0.1.0.1	
+# ::edge	this	mod	all	0.1.1.0.0	0.1.1.0.0.0	
+(s3 / say-01 
+      :ARG0 (h / he) 
+      :ARG1 (p / possible-01 
+            :ARG1 (s / see-01 
+                  :ARG0 (e / exact) 
+                  :ARG1 (l / live-01 
+                        :ARG0 (y / you) 
+                        :location-of (c / child))) 
+            :mod (s2 / so 
+                  :ARG1-of (b / beautiful-02 
+                        :ARG0 (t / this 
+                              :mod (a / all))))) 
+      :ARG2 (y2 / you) 
+      :op-of (a2 / and) 
+      :time (d / day))
+
+# ::snt That would be very useful to them if they were to travel some day .
+# ::tok That would be very useful to them if they were to travel some day .
+# ::alignments 13-14|0.1.0.0 12-13|0.1.0.0.0 11-12|0.1.0 8-9|0.1 4-5|0 3-4|0.2 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:15.845
+# ::node	0	useful-05	4-5
+# ::node	0.0	that	0-1
+# ::node	0.1	they	8-9
+# ::node	0.1.0	travel-01	11-12
+# ::node	0.1.0.0	day	13-14
+# ::node	0.1.0.0.0	some	12-13
+# ::node	0.2	very	3-4
+# ::root	0	useful-05
+# ::edge	day	mod	some	0.1.0.0	0.1.0.0.0	
+# ::edge	travel-01	ARG1	they	0.1.0	0.1	
+# ::edge	travel-01	time	day	0.1.0	0.1.0.0	
+# ::edge	useful-05	ARG0	that	0	0.0	
+# ::edge	useful-05	ARG1	they	0	0.1	
+# ::edge	useful-05	degree	very	0	0.2	
+(u / useful-05 
+      :ARG0 (t3 / that) 
+      :ARG1 (t2 / they 
+            :ARG1-of (t / travel-01 
+                  :time (d / day 
+                        :mod (s / some)))) 
+      :degree (v / very))
+
+# ::snt Sometimes , " he added , " there is no harm in putting off a piece of work until another day .
+# ::tok Sometimes , " he added , " there is no harm in putting off a piece of work until another day .
+# ::alignments 20-21|0.1.1 19-20|0.1.1.0 18-19|0.1 17-18|0.1.0 12-13|0 10-11|0.0 9-10|0.0.1 7-8|0.0.0.0 4-5|0.0.0 3-4|0.0.0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:15.993
+# ::node	0	put-01	12-13
+# ::node	0.0	harm-01	10-11
+# ::node	0.0.0	add-01	4-5
+# ::node	0.0.0.0	there	7-8
+# ::node	0.0.0.1	he	3-4
+# ::node	0.0.1	-	9-10
+# ::node	0.1	until	18-19
+# ::node	0.1.0	work-01	17-18
+# ::node	0.1.1	day	20-21
+# ::node	0.1.1.0	another	19-20
+# ::root	0	put-01
+# ::edge	add-01	ARG0	harm-01	0.0.0	0.0	
+# ::edge	add-01	ARG1	there	0.0.0	0.0.0.0	
+# ::edge	add-01	ARG2	he	0.0.0	0.0.0.1	
+# ::edge	day	mod	another	0.1.1	0.1.1.0	
+# ::edge	harm-01	ARG1	put-01	0.0	0	
+# ::edge	harm-01	polarity	-	0.0	0.0.1	
+# ::edge	put-01	time	until	0	0.1	
+# ::edge	until	op1	day	0.1	0.1.1	
+# ::edge	work-01	ARG0	until	0.1.0	0.1	
+(p / put-01 
+      :ARG1-of (h / harm-01 
+            :ARG0-of (a2 / add-01 
+                  :ARG1 (t / there) 
+                  :ARG2 (h2 / he)) 
+            :polarity (- / -)) 
+      :time (u / until 
+            :ARG0-of (w / work-01) 
+            :op1 (d / day 
+                  :mod (a / another))))
+
+# ::snt But when it is a matter of baobabs , that always means a catastrophe .
+# ::tok But when it is a matter of baobabs , that always means a catastrophe .
+# ::alignments 11-12|0.1 10-11|0.1.1 7-8|0.0 5-6|0.1.0.0 2-3|0.1.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.023
+# ::node	0	contrast-01	0-1
+# ::node	0.0	baobab	7-8
+# ::node	0.1	mean-01	11-12
+# ::node	0.1.0	it	2-3
+# ::node	0.1.0.0	matter	5-6
+# ::node	0.1.1	always	10-11
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG0	baobab	0	0.0	
+# ::edge	contrast-01	ARG2	mean-01	0	0.1	
+# ::edge	matter	domain	it	0.1.0.0	0.1.0	
+# ::edge	mean-01	ARG1	it	0.1	0.1.0	
+# ::edge	mean-01	time	always	0.1	0.1.1	
+(c / contrast-01 
+      :ARG0 (b / baobab) 
+      :ARG2 (m / mean-01 
+            :ARG1 (i / it 
+                  :domain-of (m2 / matter)) 
+            :time (a / always)))
+
+# ::snt I knew a planet that was inhabited by a lazy man .
+# ::tok I knew a planet that was inhabited by a lazy man .
+# ::alignments 10-11|0.1.0.0 9-10|0.1.0.0.0 6-7|0.1.0 3-4|0.1 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.044
+# ::node	0	know-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	planet	3-4
+# ::node	0.1.0	inhabit-01	6-7
+# ::node	0.1.0.0	man	10-11
+# ::node	0.1.0.0.0	lazy	9-10
+# ::root	0	know-01
+# ::edge	inhabit-01	ARG0	man	0.1.0	0.1.0.0	
+# ::edge	inhabit-01	ARG1	planet	0.1.0	0.1	
+# ::edge	know-01	ARG0	i	0	0.0	
+# ::edge	know-01	ARG1	planet	0	0.1	
+# ::edge	man	mod	lazy	0.1.0.0	0.1.0.0.0	
+(k / know-01 
+      :ARG0 (i2 / i) 
+      :ARG1 (p / planet 
+            :ARG1-of (i / inhabit-01 
+                  :ARG0 (m / man 
+                        :mod (l / lazy)))))
+
+# ::snt He neglected three little bushes ... "
+# ::tok He neglected three little bushes ... "
+# ::alignments 4-5|0.0.0 3-4|0.0.0.0 2-3|0.0.0.1 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.056
+# ::node	0	neglect-01	1-2
+# ::node	0.0	he	0-1
+# ::node	0.0.0	bush	4-5
+# ::node	0.0.0.0	little	3-4
+# ::node	0.0.0.1	3	2-3
+# ::root	0	neglect-01
+# ::edge	bush	mod	little	0.0.0	0.0.0.0	
+# ::edge	bush	poss	he	0.0.0	0.0	
+# ::edge	bush	quant	3	0.0.0	0.0.0.1	
+# ::edge	neglect-01	ARG0	he	0	0.0	
+(n / neglect-01 
+      :ARG0 (h / he 
+            :poss-of (b / bush 
+                  :mod (l / little) 
+                  :quant 3)))
+
+# ::snt So , as the little prince described it to me , I have made a drawing of that planet .
+# ::tok So , as the little prince described it to me , I have made a drawing of that planet .
+# ::alignments 18-19|0 11-12|0.0 7-8|0.1.1 5-6|0.1 4-5|0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.088
+# ::node	0	planet	18-19
+# ::node	0.0	i	11-12
+# ::node	0.1	prince	5-6
+# ::node	0.1.0	little	4-5
+# ::node	0.1.1	it	7-8
+# ::root	0	planet
+# ::edge	planet	poss	i	0	0.0	
+# ::edge	planet	poss	prince	0	0.1	
+# ::edge	prince	mod	little	0.1	0.1.0	
+# ::edge	prince	op1	it	0.1	0.1.1	
+(p / planet 
+      :poss (i / i) 
+      :poss (p2 / prince 
+            :mod (l / little) 
+            :op1 (i2 / it)))
+
+# ::snt I do not much like to take the tone of a moralist .
+# ::tok I do not much like to take the tone of a moralist .
+# ::alignments 3-4|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.101
+# ::node	0	much	3-4
+# ::node	0.0	i	0-1
+# ::root	0	much
+# ::edge	much	domain	i	0	0.0	
+(m / much 
+      :domain (i / i))
+
+# ::snt But the danger of the baobabs is so little understood , and such considerable risks would be run by anyone who might get lost on an asteroid , that for once I am breaking through my reserve .
+# ::tok But the danger of the baobabs is so little understood , and such considerable risks would be run by anyone who might get lost on an asteroid , that for once I am breaking through my reserve .
+# ::alignments 34-35|0.1.0.0.0.1 31-32|0.1.0.0 30-31|0.0 23-24|0.1.0.0.0 22-23|0.1.0.0.0.2 19-20|0.1.0.0.0.0 17-18|0.1.1 12-13|0.1.1.1 11-12|0.1 9-10|0.1.0 8-9|0.1.0.2 7-8|0.1.0.2.0 5-6|0.1.1.0 2-3|0.1.0.1 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.726
+# ::node	0	contrast-01	0-1
+# ::node	0.0	once	30-31
+# ::node	0.1	and	11-12
+# ::node	0.1.0	understand-01	9-10
+# ::node	0.1.0.0	i	31-32
+# ::node	0.1.0.0.0	lose-02	23-24
+# ::node	0.1.0.0.0.0	anyone	19-20
+# ::node	0.1.0.0.0.1	through	34-35
+# ::node	0.1.0.0.0.2	get-01	22-23
+# ::node	0.1.0.1	danger	2-3
+# ::node	0.1.0.2	little	8-9
+# ::node	0.1.0.2.0	so	7-8
+# ::node	0.1.1	run-02	17-18
+# ::node	0.1.1.0	baobab	5-6
+# ::node	0.1.1.1	such	12-13
+# ::root	0	contrast-01
+# ::edge	and	op1	understand-01	0.1	0.1.0	
+# ::edge	and	op2	run-02	0.1	0.1.1	
+# ::edge	contrast-01	ARG0	once	0	0.0	
+# ::edge	contrast-01	ARG2	and	0	0.1	
+# ::edge	get-01	ARG1	lose-02	0.1.0.0.0.2	0.1.0.0.0	
+# ::edge	little	degree	so	0.1.0.2	0.1.0.2.0	
+# ::edge	lose-02	ARG0	anyone	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	lose-02	ARG1	through	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	lose-02	ARG2	i	0.1.0.0.0	0.1.0.0	
+# ::edge	run-02	ARG0	baobab	0.1.1	0.1.1.0	
+# ::edge	run-02	ARG1	such	0.1.1	0.1.1.1	
+# ::edge	understand-01	ARG0	i	0.1.0	0.1.0.0	
+# ::edge	understand-01	ARG1	danger	0.1.0	0.1.0.1	
+# ::edge	understand-01	time	little	0.1.0	0.1.0.2	
+(c / contrast-01 
+      :ARG0 (o / once) 
+      :ARG2 (a2 / and 
+            :op1 (u / understand-01 
+                  :ARG0 (i / i 
+                        :ARG2-of (l / lose-02 
+                              :ARG0 (a / anyone) 
+                              :ARG1 (t / through) 
+                              :ARG1-of (g / get-01))) 
+                  :ARG1 (d / danger) 
+                  :time (l2 / little 
+                        :degree (s2 / so))) 
+            :op2 (r / run-02 
+                  :ARG0 (b / baobab) 
+                  :ARG1 (s / such))))
+
+# ::snt " Children , "
+# ::tok " Children , "
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.729
+# ::node	0	amr-empty	0-1
+# ::root	0	amr-empty
+(a / amr-empty)
+
+# ::snt I say plainly , " watch out for the baobabs ! "
+# ::tok I say plainly , " watch out for the baobabs ! "
+# ::alignments 9-10|0.0.0.0 5-6|0.0.0 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:16.750
+# ::node	0	say-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.0.0	watch-01	5-6
+# ::node	0.0.0.0	baobab	9-10
+# ::root	0	say-01
+# ::edge	say-01	ARG2	i	0	0.0	
+# ::edge	watch-01	ARG0	i	0.0.0	0.0	
+# ::edge	watch-01	ARG1	baobab	0.0.0	0.0.0.0	
+(s / say-01 
+      :ARG2 (i / i 
+            :ARG0-of (w / watch-01 
+                  :ARG1 (b / baobab))))
+
+# ::snt My friends , like myself , have been skirting this danger for a long time , without ever knowing it ; and so it is for them that I have worked so hard over this drawing .
+# ::tok My friends , like myself , have been skirting this danger for a long time , without ever knowing it ; and so it is for them that I have worked so hard over this drawing .
+# ::alignments 34-35|0.0.0.4.0 31-32|0.0.0.4.2 28-29|0.0.0.1 23-24|0.0.0.0 22-23|0.0.0.0.0 21-22|0.1 20-21|0 19-20|0.0 17-18|0.0.1 14-15|0.0.0.4.1 13-14|0.0.0.4 10-11|0.0.0.3 9-10|0.0.0.3.0 1-2|0.0.0.2+0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.216
+# ::node	0	and	20-21
+# ::node	0.0	it	19-20
+# ::node	0.0.0	have-rel-role-91	1-2
+# ::node	0.0.0.0	it	23-24
+# ::node	0.0.0.0.0	so	22-23
+# ::node	0.0.0.1	i	28-29
+# ::node	0.0.0.2	friend	1-2
+# ::node	0.0.0.3	danger	10-11
+# ::node	0.0.0.3.0	this	9-10
+# ::node	0.0.0.4	long-03	13-14
+# ::node	0.0.0.4.0	this	34-35
+# ::node	0.0.0.4.1	time	14-15
+# ::node	0.0.0.4.2	so	31-32
+# ::node	0.0.1	ever	17-18
+# ::node	0.1	and	21-22
+# ::root	0	and
+# ::edge	and	op1	it	0	0.0	
+# ::edge	and	op2	and	0	0.1	
+# ::edge	danger	mod	this	0.0.0.3	0.0.0.3.0	
+# ::edge	ever	op1	it	0.0.1	0.0	
+# ::edge	have-rel-role-91	ARG0	it	0.0.0	0.0.0.0	
+# ::edge	have-rel-role-91	ARG1	i	0.0.0	0.0.0.1	
+# ::edge	have-rel-role-91	ARG2	friend	0.0.0	0.0.0.2	
+# ::edge	have-rel-role-91	concession	danger	0.0.0	0.0.0.3	
+# ::edge	have-rel-role-91	mod	it	0.0.0	0.0	
+# ::edge	it	mod	so	0.0.0.0	0.0.0.0.0	
+# ::edge	long-03	ARG0	this	0.0.0.4	0.0.0.4.0	
+# ::edge	long-03	ARG1	time	0.0.0.4	0.0.0.4.1	
+# ::edge	long-03	condition	have-rel-role-91	0.0.0.4	0.0.0	
+# ::edge	long-03	mod	so	0.0.0.4	0.0.0.4.2	
+(a2 / and 
+      :op1 (i3 / it 
+            :mod-of (h / have-rel-role-91 
+                  :ARG0 (i2 / it 
+                        :mod (s2 / so)) 
+                  :ARG1 (i / i) 
+                  :ARG2 (f / friend) 
+                  :concession (d / danger 
+                        :mod (t3 / this)) 
+                  :condition-of (l / long-03 
+                        :ARG0 (t / this) 
+                        :ARG1 (t2 / time) 
+                        :mod (s / so))) 
+            :op-of (e / ever)) 
+      :op2 (a / and))
+
+# ::snt The lesson which I pass on by this means is worth all the trouble it has cost me .
+# ::tok The lesson which I pass on by this means is worth all the trouble it has cost me .
+# ::alignments 15-16|0 14-15|0.0 13-14|0.1 11-12|0.1.0 10-11|0.1.0.0 8-9|0.1.0.0.0 7-8|0.1.0.0.0.1 3-4|0.1.0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.290
+# ::node	0	have-03	15-16
+# ::node	0.0	it	14-15
+# ::node	0.1	trouble-01	13-14
+# ::node	0.1.0	all	11-12
+# ::node	0.1.0.0	worth-02	10-11
+# ::node	0.1.0.0.0	mean-01	8-9
+# ::node	0.1.0.0.0.0	i	3-4
+# ::node	0.1.0.0.0.1	this	7-8
+# ::root	0	have-03
+# ::edge	have-03	ARG0	it	0	0.0	
+# ::edge	have-03	ARG1	trouble-01	0	0.1	
+# ::edge	mean-01	ARG0	i	0.1.0.0.0	0.1.0.0.0.0	
+# ::edge	mean-01	ARG1	this	0.1.0.0.0	0.1.0.0.0.1	
+# ::edge	mean-01	ARG2	worth-02	0.1.0.0.0	0.1.0.0	
+# ::edge	trouble-01	ARG1	all	0.1	0.1.0	
+# ::edge	worth-02	ARG1	all	0.1.0.0	0.1.0	
+(h / have-03 
+      :ARG0 (i / it) 
+      :ARG1 (t / trouble-01 
+            :ARG1 (a / all 
+                  :ARG1-of (w / worth-02 
+                        :ARG2-of (m / mean-01 
+                              :ARG0 (i2 / i) 
+                              :ARG1 (t2 / this))))))
+
+# ::snt Perhaps you will ask me , " Why are there no other drawing in this book as magnificent and impressive as this drawing of the baobabs ? "
+# ::tok Perhaps you will ask me , " Why are there no other drawing in this book as magnificent and impressive as this drawing of the baobabs ? "
+# ::alignments 25-26|0.0.2 21-22|0.0.4 18-19|0 17-18|0.0.3.0 15-16|0.0.3 14-15|0.0.3.1 11-12|0.0.1.0.0 10-11|0.0.1.0 9-10|0.0.1 3-4|0.0 1-2|0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.437
+# ::node	0	and	18-19
+# ::node	0.0	ask-02	3-4
+# ::node	0.0.0	you	1-2
+# ::node	0.0.1	there	9-10
+# ::node	0.0.1.0	-	10-11
+# ::node	0.0.1.0.0	other	11-12
+# ::node	0.0.2	baobab	25-26
+# ::node	0.0.3	book	15-16
+# ::node	0.0.3.0	magnificent	17-18
+# ::node	0.0.3.1	this	14-15
+# ::node	0.0.4	this	21-22
+# ::root	0	and
+# ::edge	-	mod	there	0.0.1.0	0.0.1	
+# ::edge	and	op1	ask-02	0	0.0	
+# ::edge	ask-02	ARG0	you	0.0	0.0.0	
+# ::edge	ask-02	ARG1	there	0.0	0.0.1	
+# ::edge	ask-02	ARG2	baobab	0.0	0.0.2	
+# ::edge	ask-02	accompanier	book	0.0	0.0.3	
+# ::edge	ask-02	mod	this	0.0	0.0.4	
+# ::edge	book	domain	magnificent	0.0.3	0.0.3.0	
+# ::edge	book	mod	this	0.0.3	0.0.3.1	
+# ::edge	other	mod	-	0.0.1.0.0	0.0.1.0	
+(a / and 
+      :op1 (a2 / ask-02 
+            :ARG0 (y / you) 
+            :ARG1 (t3 / there 
+                  :mod-of (- / - 
+                        :mod-of (o / other))) 
+            :ARG2 (b / baobab) 
+            :accompanier (b2 / book 
+                  :domain (m / magnificent) 
+                  :mod (t2 / this)) 
+            :mod (t / this)))
+
+# ::snt The reply is simple .
+# ::tok The reply is simple .
+# ::alignments 3-4|0 1-2|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.442
+# ::node	0	simple-02	3-4
+# ::node	0.0	reply-01	1-2
+# ::root	0	simple-02
+# ::edge	simple-02	ARG1	reply-01	0	0.0	
+(s / simple-02 
+      :ARG1 (r / reply-01))
+
+# ::snt I have tried .
+# ::tok I have tried .
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.445
+# ::node	0	i	0-1
+# ::root	0	i
+(i / i)
+
+# ::snt But with the others I have not been successful .
+# ::tok But with the others I have not been successful .
+# ::alignments 8-9|0.1 4-5|0.1.0 3-4|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.460
+# ::node	0	contrast-01	0-1
+# ::node	0.0	other	3-4
+# ::node	0.1	succeed-01	8-9
+# ::node	0.1.0	i	4-5
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG1	other	0	0.0	
+# ::edge	contrast-01	ARG2	succeed-01	0	0.1	
+# ::edge	succeed-01	ARG1	i	0.1	0.1.0	
+(c / contrast-01 
+      :ARG1 (o / other) 
+      :ARG2 (s / succeed-01 
+            :ARG1 (i / i)))
+
+# ::snt When I made the drawing of the baobabs I was carried beyond myself by the inspiring force of urgent necessity .
+# ::tok When I made the drawing of the baobabs I was carried beyond myself by the inspiring force of urgent necessity .
+# ::alignments 11-12|0 8-9|0.0 7-8|0.0.0 1-2|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.495
+# ::node	0	beyond	11-12
+# ::node	0.0	i	8-9
+# ::node	0.0.0	baobab	7-8
+# ::node	0.0.0.0	i	1-2
+# ::root	0	beyond
+(b / beyond 
+      :op-of (i / i 
+            :poss-of (b2 / baobab 
+                  :poss (i2 / i))))
+
+# ::snt Chapter 6 .
+# ::tok Chapter 6 .
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.498
+# ::node	0	chapter	0-1
+# ::root	0	chapter
+(c / chapter)
+
+# ::snt Oh , little prince !
+# ::tok Oh , little prince !
+# ::alignments 3-4|0.0.0 2-3|0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.505
+# ::node	0	oh	0-1
+# ::node	0.0	little	2-3
+# ::node	0.0.0	prince	3-4
+# ::root	0	oh
+(o / oh 
+      :op-of (l / little 
+            :mod-of (p / prince)))
+
+# ::snt Bit by bit I came to understand the secrets of your sad little life ...
+# ::tok Bit by bit I came to understand the secrets of your sad little life ...
+# ::alignments 13-14|0.1 12-13|0.1.1 11-12|0.1.0 6-7|0 4-5|0.0.0 3-4|0.0 2-3|0.0.0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.550
+# ::node	0	understand-01	6-7
+# ::node	0.0	i	3-4
+# ::node	0.0.0	come-01	4-5
+# ::node	0.0.0.0	bit	2-3
+# ::node	0.1	life	13-14
+# ::node	0.1.0	sad-02	11-12
+# ::node	0.1.1	little	12-13
+# ::root	0	understand-01
+# ::edge	come-01	ARG1	bit	0.0.0	0.0.0.0	
+# ::edge	come-01	ARG2	i	0.0.0	0.0	
+# ::edge	life	mod	little	0.1	0.1.1	
+# ::edge	sad-02	ARG1	life	0.1.0	0.1	
+# ::edge	understand-01	ARG0	i	0	0.0	
+# ::edge	understand-01	ARG1	life	0	0.1	
+(u / understand-01 
+      :ARG0 (i / i 
+            :ARG2-of (c / come-01 
+                  :ARG1 (b / bit))) 
+      :ARG1 (l / life 
+            :ARG1-of (s / sad-02) 
+            :mod (l2 / little)))
+
+# ::snt For a long time you had found your only entertainment in the quiet pleasure of looking at the sunset .
+# ::tok For a long time you had found your only entertainment in the quiet pleasure of looking at the sunset .
+# ::alignments 18-19|0.0 15-16|0 13-14|0.1 12-13|0.1.0 8-9|0.1.1.1 6-7|0.1.1 4-5|0.1.1.0 3-4|0.1.1.2 2-3|0.1.1.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.601
+# ::node	0	look-01	15-16
+# ::node	0.0	sunset	18-19
+# ::node	0.1	pleasure	13-14
+# ::node	0.1.0	quiet-04	12-13
+# ::node	0.1.1	find-01	6-7
+# ::node	0.1.1.0	you	4-5
+# ::node	0.1.1.1	only	8-9
+# ::node	0.1.1.2	time	3-4
+# ::node	0.1.1.2.0	long-03	2-3
+# ::root	0	look-01
+# ::edge	find-01	ARG0	you	0.1.1	0.1.1.0	
+# ::edge	find-01	ARG1	only	0.1.1	0.1.1.1	
+# ::edge	find-01	location	pleasure	0.1.1	0.1	
+# ::edge	find-01	time	time	0.1.1	0.1.1.2	
+# ::edge	long-03	ARG1	time	0.1.1.2.0	0.1.1.2	
+# ::edge	look-01	ARG1	sunset	0	0.0	
+# ::edge	pleasure	purpose	look-01	0.1	0	
+# ::edge	quiet-04	ARG1	pleasure	0.1.0	0.1	
+(l / look-01 
+      :ARG1 (s / sunset) 
+      :purpose-of (p / pleasure 
+            :ARG1-of (q / quiet-04) 
+            :location-of (f / find-01 
+                  :ARG0 (y / you) 
+                  :ARG1 (o / only) 
+                  :time (t / time 
+                        :ARG1-of (l2 / long-03)))))
+
+# ::snt I learned that new detail on the morning of the fourth day , when you said to me : " I am very fond of sunsets .
+# ::tok I learned that new detail on the morning of the fourth day , when you said to me : " I am very fond of sunsets .
+# ::alignments 25-26|0.1 22-23|0.3.2.0 20-21|0.2 15-16|0 14-15|0.0 11-12|0.3.1 7-8|0.3.3 3-4|0.3.2 1-2|0.3 0-1|0.3.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.884
+# ::node	0	say-01	15-16
+# ::node	0.0	you	14-15
+# ::node	0.1	sunset	25-26
+# ::node	0.2	i	20-21
+# ::node	0.3	learn-01	1-2
+# ::node	0.3.0	i	0-1
+# ::node	0.3.1	day	11-12
+# ::node	0.3.2	new-01	3-4
+# ::node	0.3.2.0	very	22-23
+# ::node	0.3.3	morning	7-8
+# ::root	0	say-01
+# ::edge	learn-01	ARG0	i	0.3	0.3.0	
+# ::edge	learn-01	ARG1	day	0.3	0.3.1	
+# ::edge	learn-01	ARG2	morning	0.3	0.3.3	
+# ::edge	learn-01	condition	say-01	0.3	0	
+# ::edge	new-01	ARG0	very	0.3.2	0.3.2.0	
+# ::edge	new-01	ARG1	learn-01	0.3.2	0.3	
+# ::edge	say-01	ARG0	you	0	0.0	
+# ::edge	say-01	ARG1	sunset	0	0.1	
+# ::edge	say-01	ARG2	i	0	0.2	
+(s2 / say-01 
+      :ARG0 (y / you) 
+      :ARG1 (s / sunset) 
+      :ARG2 (i / i) 
+      :condition-of (l / learn-01 
+            :ARG0 (i2 / i) 
+            :ARG1 (d / day) 
+            :ARG1-of (n / new-01 
+                  :ARG0 (v / very)) 
+            :ARG2 (m / morning)))
+
+# ::snt Come , let us go look at a sunset now . "
+# ::tok Come , let us go look at a sunset now . "
+# ::alignments 9-10|0.0 8-9|0.1.0 5-6|0.1 4-5|0 2-3|0.2 0-1|0.3 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.947
+# ::node	0	go-02	4-5
+# ::node	0.0	now	9-10
+# ::node	0.1	look-01	5-6
+# ::node	0.1.0	sunset	8-9
+# ::node	0.2	let-01	2-3
+# ::node	0.3	come-01	0-1
+# ::root	0	go-02
+# ::edge	come-01	ARG1	go-02	0.3	0	
+# ::edge	go-02	ARG0	now	0	0.0	
+# ::edge	go-02	ARG1	look-01	0	0.1	
+# ::edge	let-01	ARG1	go-02	0.2	0	
+# ::edge	look-01	ARG1	sunset	0.1	0.1.0	
+(g / go-02 
+      :ARG0 (n / now) 
+      :ARG1 (l / look-01 
+            :ARG1 (s / sunset)) 
+      :ARG1-of (l2 / let-01) 
+      :ARG1-of (c / come-01))
+
+# ::snt " But we must wait , "
+# ::tok " But we must wait , "
+# ::alignments 4-5|0.0 2-3|0.0.0 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.956
+# ::node	0	contrast-01	1-2
+# ::node	0.0	wait-01	4-5
+# ::node	0.0.0	we	2-3
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG1	wait-01	0	0.0	
+# ::edge	wait-01	ARG0	we	0.0	0.0.0	
+(c / contrast-01 
+      :ARG1 (w / wait-01 
+            :ARG0 (w2 / we)))
+
+# ::snt I said .
+# ::tok I said .
+# ::alignments 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.960
+# ::node	0	say-01	1-2
+# ::node	0.0	i	0-1
+# ::root	0	say-01
+# ::edge	say-01	ARG0	i	0	0.0	
+(s / say-01 
+      :ARG0 (i / i))
+
+# ::snt " Wait ?
+# ::tok " Wait ?
+# ::alignments 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.962
+# ::node	0	wait-01	1-2
+# ::root	0	wait-01
+(w / wait-01)
+
+# ::snt For what ? "
+# ::tok For what ? "
+# ::alignments 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.969
+# ::node	0	amr-empty	0-1
+# ::root	0	amr-empty
+(a / amr-empty)
+
+# ::snt " For the sunset .
+# ::tok " For the sunset .
+# ::alignments 3-4|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:17.978
+# ::node	0	sunset	3-4
+# ::root	0	sunset
+(s / sunset)
+
+# ::snt We must wait until it is time . "
+# ::tok We must wait until it is time . "
+# ::alignments 6-7|0.1.0 4-5|0.1 3-4|0.2 2-3|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.005
+# ::node	0	wait-01	2-3
+# ::node	0.0	we	0-1
+# ::node	0.1	it	4-5
+# ::node	0.1.0	time	6-7
+# ::node	0.2	until	3-4
+# ::root	0	wait-01
+# ::edge	time	domain	it	0.1.0	0.1	
+# ::edge	wait-01	ARG0	we	0	0.0	
+# ::edge	wait-01	ARG1	it	0	0.1	
+# ::edge	wait-01	time	until	0	0.2	
+(w / wait-01 
+      :ARG0 (w2 / we) 
+      :ARG1 (i / it 
+            :domain-of (t / time)) 
+      :time (u / until))
+
+# ::snt At first you seemed to be very much surprised .
+# ::tok At first you seemed to be very much surprised .
+# ::alignments 8-9|0.0.0 7-8|0.0.0.0 6-7|0.0.0.0.0 3-4|0 2-3|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.020
+# ::node	0	seem-01	3-4
+# ::node	0.0	you	2-3
+# ::node	0.0.0	surprise-01	8-9
+# ::node	0.0.0.0	much	7-8
+# ::node	0.0.0.0.0	very	6-7
+# ::root	0	seem-01
+# ::edge	much	degree	very	0.0.0.0	0.0.0.0.0	
+# ::edge	seem-01	ARG0	you	0	0.0	
+# ::edge	surprise-01	ARG1	you	0.0.0	0.0	
+# ::edge	surprise-01	degree	much	0.0.0	0.0.0.0	
+(s2 / seem-01 
+      :ARG0 (y / you 
+            :ARG1-of (s / surprise-01 
+                  :degree (m / much 
+                        :degree (v / very)))))
+
+# ::snt And then you laughed to yourself .
+# ::tok And then you laughed to yourself .
+# ::alignments 3-4|0.0 2-3|0.0.0 1-2|0.0.1 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.030
+# ::node	0	and	0-1
+# ::node	0.0	laugh-01	3-4
+# ::node	0.0.0	you	2-3
+# ::node	0.0.1	then	1-2
+# ::root	0	and
+# ::edge	and	op1	laugh-01	0	0.0	
+# ::edge	laugh-01	ARG0	you	0.0	0.0.0	
+# ::edge	laugh-01	time	then	0.0	0.0.1	
+(a / and 
+      :op1 (l / laugh-01 
+            :ARG0 (y / you) 
+            :time (t / then)))
+
+# ::snt You said to me : " I am always thinking that I am at home ! "
+# ::tok You said to me : " I am always thinking that I am at home ! "
+# ::alignments 14-15|0.1.1 11-12|0.1.2 9-10|0.1 8-9|0.1.3 6-7|0.1.0 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.223
+# ::node	0	say-01	1-2
+# ::node	0.0	you	0-1
+# ::node	0.1	think-01	9-10
+# ::node	0.1.0	i	6-7
+# ::node	0.1.1	home	14-15
+# ::node	0.1.2	i	11-12
+# ::node	0.1.3	always	8-9
+# ::root	0	say-01
+# ::edge	say-01	ARG0	you	0	0.0	
+# ::edge	say-01	ARG1	think-01	0	0.1	
+# ::edge	think-01	ARG0	i	0.1	0.1.0	
+# ::edge	think-01	ARG1	home	0.1	0.1.1	
+# ::edge	think-01	ARG2	i	0.1	0.1.2	
+# ::edge	think-01	time	always	0.1	0.1.3	
+(s / say-01 
+      :ARG0 (y / you) 
+      :ARG1 (t / think-01 
+            :ARG0 (i2 / i) 
+            :ARG1 (h / home) 
+            :ARG2 (i / i) 
+            :time (a / always)))
+
+# ::snt Just so .
+# ::tok Just so .
+# ::alignments 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.227
+# ::node	0	so	1-2
+# ::node	0.0	just	0-1
+# ::root	0	so
+(s / so 
+      :mod-of (j / just))
+
+# ::snt Everybody knows that when it is noon in the United States the sun is setting over France .
+# ::tok Everybody knows that when it is noon in the United States the sun is setting over France .
+# ::alignments 12-13|0.0 4-5|0.1 1-2|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.252
+# ::node	0	know-01	1-2
+# ::node	0.0	sun	12-13
+# ::node	0.1	it	4-5
+# ::root	0	know-01
+# ::edge	know-01	ARG0	sun	0	0.0	
+# ::edge	know-01	ARG1	it	0	0.1	
+(k / know-01 
+      :ARG0 (s / sun) 
+      :ARG1 (i / it))
+
+# ::snt If you could fly to France in one minute , you could go straight into the sunset , right from noon .
+# ::tok If you could fly to France in one minute , you could go straight into the sunset , right from noon .
+# ::alignments 16-17|0.0.1 12-13|0.0 11-12|0 10-11|0.0.0 8-9|0.0.2.1.0+0.0.2.1 3-4|0.0.2 2-3|0.0.2.2 1-2|0.0.2.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.507
+# ::node	0	possible-01	11-12
+# ::node	0.0	go-02	12-13
+# ::node	0.0.0	you	10-11
+# ::node	0.0.1	sunset	16-17
+# ::node	0.0.2	fly-01	3-4
+# ::node	0.0.2.0	you	1-2
+# ::node	0.0.2.1	temporal-quantity	8-9
+# ::node	0.0.2.1.0	minute	8-9
+# ::node	0.0.2.2	possible-01	2-3
+# ::root	0	possible-01
+# ::edge	fly-01	ARG0	you	0.0.2	0.0.2.0	
+# ::edge	fly-01	ARG1	temporal-quantity	0.0.2	0.0.2.1	
+# ::edge	go-02	ARG0	you	0.0	0.0.0	
+# ::edge	go-02	ARG1	sunset	0.0	0.0.1	
+# ::edge	go-02	time	fly-01	0.0	0.0.2	
+# ::edge	possible-01	ARG1	fly-01	0.0.2.2	0.0.2	
+# ::edge	possible-01	ARG1	go-02	0	0.0	
+# ::edge	temporal-quantity	unit	minute	0.0.2.1	0.0.2.1.0	
+(p / possible-01 
+      :ARG1 (g / go-02 
+            :ARG0 (y / you) 
+            :ARG1 (s / sunset) 
+            :time (f / fly-01 
+                  :ARG0 (y2 / you) 
+                  :ARG1 (t / temporal-quantity 
+                        :unit (m / minute)) 
+                  :ARG1-of (p2 / possible-01))))
+
+# ::snt Unfortunately , France is too far away for that .
+# ::tok Unfortunately , France is too far away for that .
+# ::alignments 6-7|0.0.0 5-6|0.0 4-5|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.521
+# ::node	0	too	4-5
+# ::node	0.0	far	5-6
+# ::node	0.0.0	away	6-7
+# ::root	0	too
+(t / too 
+      :degree-of (f / far 
+            :extent-of (a / away)))
+
+# ::snt But on your tiny planet , my little prince , all you need do is move your chair a few steps .
+# ::tok But on your tiny planet , my little prince , all you need do is move your chair a few steps .
+# ::alignments 20-21|0.1.2.0 17-18|0.1.1 15-16|0.1 12-13|0.1.0.0 11-12|0.1.0 10-11|0.1.0.0.0 8-9|0.1.2 7-8|0.1.2.1 4-5|0.0 3-4|0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.735
+# ::node	0	contrast-01	0-1
+# ::node	0.0	planet	4-5
+# ::node	0.0.0	tiny	3-4
+# ::node	0.1	move-01	15-16
+# ::node	0.1.0	you	11-12
+# ::node	0.1.0.0	need-01	12-13
+# ::node	0.1.0.0.0	all	10-11
+# ::node	0.1.1	chair	17-18
+# ::node	0.1.2	prince	8-9
+# ::node	0.1.2.0	step-01	20-21
+# ::node	0.1.2.1	little	7-8
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG1	planet	0	0.0	
+# ::edge	contrast-01	ARG2	move-01	0	0.1	
+# ::edge	move-01	ARG0	you	0.1	0.1.0	
+# ::edge	move-01	ARG1	chair	0.1	0.1.1	
+# ::edge	move-01	ARG2	prince	0.1	0.1.2	
+# ::edge	need-01	ARG1	all	0.1.0.0	0.1.0.0.0	
+# ::edge	need-01	ARG2	you	0.1.0.0	0.1.0	
+# ::edge	planet	mod	tiny	0.0	0.0.0	
+# ::edge	prince	mod	little	0.1.2	0.1.2.1	
+# ::edge	step-01	ARG0	prince	0.1.2.0	0.1.2	
+(c2 / contrast-01 
+      :ARG1 (p2 / planet 
+            :mod (t / tiny)) 
+      :ARG2 (m / move-01 
+            :ARG0 (y / you 
+                  :ARG2-of (n / need-01 
+                        :ARG1 (a / all))) 
+            :ARG1 (c / chair) 
+            :ARG2 (p / prince 
+                  :ARG0-of (s / step-01) 
+                  :mod (l / little))))
+
+# ::snt You can see the day end and the twilight falling whenever you like ...
+# ::tok You can see the day end and the twilight falling whenever you like ...
+# ::alignments 11-12|0.0 6-7|0.1.1.1 5-6|0.1.1 4-5|0.1.1.0 2-3|0.1 1-2|0 0-1|0.1.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.773
+# ::node	0	possible-01	1-2
+# ::node	0.0	you	11-12
+# ::node	0.1	see-01	2-3
+# ::node	0.1.0	you	0-1
+# ::node	0.1.1	end-01	5-6
+# ::node	0.1.1.0	day	4-5
+# ::node	0.1.1.1	and	6-7
+# ::root	0	possible-01
+# ::edge	and	op1	end-01	0.1.1.1	0.1.1	
+# ::edge	end-01	ARG1	day	0.1.1	0.1.1.0	
+# ::edge	possible-01	ARG0	you	0	0.0	
+# ::edge	possible-01	ARG1	see-01	0	0.1	
+# ::edge	see-01	ARG0	you	0.1	0.1.0	
+# ::edge	see-01	ARG1	end-01	0.1	0.1.1	
+(p / possible-01 
+      :ARG0 (y / you) 
+      :ARG1 (s / see-01 
+            :ARG0 (y2 / you) 
+            :ARG1 (e / end-01 
+                  :ARG1 (d / day) 
+                  :op-of (a / and))))
+
+# ::snt " One day , " you said to me , " I saw the sunset forty - four times ! "
+# ::tok " One day , " you said to me , " I saw the sunset forty - four times ! "
+# ::alignments 17-18|0.1.1 14-15|0.2 12-13|0.1 11-12|0.1.0 6-7|0 5-6|0.0 2-3|0.3 1-2|0.3.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.886
+# ::node	0	say-01	6-7
+# ::node	0.0	you	5-6
+# ::node	0.1	see-01	12-13
+# ::node	0.1.0	i	11-12
+# ::node	0.1.1	4	17-18
+# ::node	0.2	sunset	14-15
+# ::node	0.3	day	2-3
+# ::node	0.3.0	one	1-2
+# ::root	0	say-01
+# ::edge	day	mod	one	0.3	0.3.0	
+# ::edge	say-01	ARG0	you	0	0.0	
+# ::edge	say-01	ARG1	see-01	0	0.1	
+# ::edge	say-01	ARG2	sunset	0	0.2	
+# ::edge	say-01	time	day	0	0.3	
+# ::edge	see-01	ARG0	i	0.1	0.1.0	
+# ::edge	see-01	ARG1	4	0.1	0.1.1	
+(s3 / say-01 
+      :ARG0 (y / you) 
+      :ARG1 (s2 / see-01 
+            :ARG0 (i / i) 
+            :ARG1 4) 
+      :ARG2 (s / sunset) 
+      :time (d / day 
+            :mod (o / one)))
+
+# ::snt And a little later you added : " You know -- one loves the sunset , when one is so sad ... "
+# ::tok And a little later you added : " You know -- one loves the sunset , when one is so sad ... "
+# ::alignments 20-21|0.0.2.0.0 19-20|0.0.2.0.0.0 14-15|0.0.2.0 12-13|0.0.2 8-9|0.0.1 5-6|0.0 4-5|0.0.0 3-4|0.0.4 2-3|0.0.3 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.975
+# ::node	0	and	0-1
+# ::node	0.0	add-01	5-6
+# ::node	0.0.0	you	4-5
+# ::node	0.0.1	you	8-9
+# ::node	0.0.2	love-01	12-13
+# ::node	0.0.2.0	sunset	14-15
+# ::node	0.0.2.0.0	sad-02	20-21
+# ::node	0.0.2.0.0.0	so	19-20
+# ::node	0.0.3	little	2-3
+# ::node	0.0.4	late	3-4
+# ::root	0	and
+# ::edge	add-01	ARG0	you	0.0	0.0.0	
+# ::edge	add-01	ARG1	you	0.0	0.0.1	
+# ::edge	add-01	degree	little	0.0	0.0.3	
+# ::edge	add-01	time	late	0.0	0.0.4	
+# ::edge	and	op1	add-01	0	0.0	
+# ::edge	love-01	ARG1	sunset	0.0.2	0.0.2.0	
+# ::edge	love-01	ARG2	add-01	0.0.2	0.0	
+# ::edge	sad-02	ARG1	sunset	0.0.2.0.0	0.0.2.0	
+# ::edge	sad-02	degree	so	0.0.2.0.0	0.0.2.0.0.0	
+(a2 / and 
+      :op1 (a / add-01 
+            :ARG0 (y2 / you) 
+            :ARG1 (y / you) 
+            :ARG2-of (l / love-01 
+                  :ARG1 (s3 / sunset 
+                        :ARG1-of (s / sad-02 
+                              :degree (s2 / so)))) 
+            :degree (l3 / little) 
+            :time (l2 / late)))
+
+# ::snt " Were you so sad , then ? "
+# ::tok " Were you so sad , then ? "
+# ::alignments 6-7|0.2 4-5|0 3-4|0.0 2-3|0.1 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:18.989
+# ::node	0	sad-02	4-5
+# ::node	0.0	so	3-4
+# ::node	0.1	you	2-3
+# ::node	0.2	then	6-7
+# ::root	0	sad-02
+# ::edge	sad-02	ARG1	so	0	0.0	
+# ::edge	sad-02	time	then	0	0.2	
+# ::edge	you	location	sad-02	0.1	0	
+(s / sad-02 
+      :ARG1 (s2 / so) 
+      :location-of (y / you) 
+      :time (t / then))
+
+# ::snt I asked , " on the day of the forty - four sunsets ? "
+# ::tok I asked , " on the day of the forty - four sunsets ? "
+# ::alignments 12-13|0.1.0 11-12|0.1 6-7|0.2 1-2|0 0-1|0.0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:19.014
+# ::node	0	ask-01	1-2
+# ::node	0.0	i	0-1
+# ::node	0.1	4	11-12
+# ::node	0.1.0	sunset	12-13
+# ::node	0.2	day	6-7
+# ::root	0	ask-01
+# ::edge	ask-01	ARG0	i	0	0.0	
+# ::edge	ask-01	ARG1	4	0	0.1	
+# ::edge	ask-01	ARG2	day	0	0.2	
+# ::edge	sunset	quant	4	0.1.0	0.1	
+(a / ask-01 
+      :ARG0 (i / i) 
+      :ARG1 (4 / 4 
+            :quant-of (s / sunset)) 
+      :ARG2 (d / day))
+
+# ::snt But the little prince made no reply .
+# ::tok But the little prince made no reply .
+# ::alignments 6-7|0.0 5-6|0.0.1 3-4|0.0.0 2-3|0.0.0.0 0-1|0 ::annotator JAMR dev v0.3 ::date 2017-01-11T20:20:19.041
+# ::node	0	contrast-01	0-1
+# ::node	0.0	reply-01	6-7
+# ::node	0.0.0	prince	3-4
+# ::node	0.0.0.0	little	2-3
+# ::node	0.0.1	-	5-6
+# ::root	0	contrast-01
+# ::edge	contrast-01	ARG2	reply-01	0	0.0	
+# ::edge	prince	mod	little	0.0.0	0.0.0.0	
+# ::edge	reply-01	ARG0	prince	0.0	0.0.0	
+# ::edge	reply-01	polarity	-	0.0	0.0.1	
+(c / contrast-01 
+      :ARG2 (r / reply-01 
+            :ARG0 (p / prince 
+                  :mod (l / little)) 
+            :polarity (- / -)))
+
