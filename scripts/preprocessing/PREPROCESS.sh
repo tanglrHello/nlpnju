@@ -11,8 +11,8 @@ set -x
 
 # Preprocess the data
 ./cmd.snt
-#./cmd.snt.tok
-#./cmd.tok
+./cmd.snt.tok
+./cmd.tok
 
 # Run the aligner
 ./cmd.aligned
