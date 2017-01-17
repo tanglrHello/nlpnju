@@ -16,6 +16,8 @@ tar -xzf scala-2.11.2.tgz
 
 wget -c http://nlp.stanford.edu/software/stanford-parser-full-2016-10-31.zip
 tar -xzf stanford-parser-full-2016-10-31.zip
-cd stanford-parser-full-2016-10-31/model
+cd stanford-parser-full-2016-10-31
+mkdir model
+cd model
 wget -c http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar
 jar -xvf stanford-chinese-corenlp-2016-10-31-models.jar
