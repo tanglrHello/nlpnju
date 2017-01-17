@@ -13,6 +13,11 @@ Run the following commands in your terminal:
 	$git clone https://github.com/tanglrHello/nlpnju
 	$cd nlpnju
 	$./setup
+
+Now you need to download the model files for pyltp (ltp-data-v3.3.1.zip) manually from this [url](https://pan.baidu.com/share/link?shareid=1988562907&uk=2738088569#list/path=%2Fltp-models%2F3.3.1). Then unzip the .zip file, and move it into $JAMR_HOME/tools/.
+
+Continue executing the following commands:
+	
 	$. script/config_my_chinese_little_princess.sh
 	(prepare a chn_test.txt file in the root path for JAMR-Chinese)
 	$./script/PARSE.sh < chn_test.txt > chn_test.out 2> chn_test.err
@@ -68,7 +73,7 @@ First checkout the github repository (or download the latest release):
 
     git clone https://github.com/tanglrHello/nlpnju
 
-JAMR-chinese depends on [Scala](http://www.scala-lang.org),  [WordNet](http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz), [pyltp](https://github.com/HIT-SCIR/pyltp/) and [stanford parser](http://nlp.stanford.edu/software/lex-parser.shtml). To download these dependencies, cd to the `jamr` repository and run (requires wget to be installed):
+JAMR-chinese depends on cdec, [Scala](http://www.scala-lang.org),  [WordNet](http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz), [pyltp](https://github.com/HIT-SCIR/pyltp/) and [stanford parser](http://nlp.stanford.edu/software/lex-parser.shtml). To download these dependencies, cd to the `jamr` repository and run (requires wget to be installed):
 
     ./setup
 
