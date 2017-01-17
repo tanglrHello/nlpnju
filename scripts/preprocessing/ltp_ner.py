@@ -7,11 +7,16 @@ import argparse
 def chn_ner_process():
     parser = argparse.ArgumentParser()
     parser.add_argument('-file', type=str, dest='amr_file_name', required=True)
+    parser.add_argument('-jamr_home', type=str, dest="jamr_home", required=True)
     args = parser.parse_args()
+
+    jamr_home = args.jamr_home
+    if jamr_home[-1] == "/":
+        jamr_home = jamr_home[:-1]
 
     segged_sentences = get_words_from_deps_file(args.amr_file_name)
     ner_filename = args.amr_file_name + '.snt.IllinoisNER'
-    ner(segged_sentences, ner_filename)
+    ner(segged_sentences, ner_filename, jamr_home)
 
 
 def get_words_from_deps_file(amr_file_path):
@@ -42,18 +47,16 @@ def get_words_from_deps_file(amr_file_path):
     return sentences
 
 
-def ner(segged_sentences, ner_filename):
+def ner(segged_sentences, ner_filename, jamr_home):
     postagger = pyltp.Postagger()
-    postagger.load("../../target/ltp_data/pos.model")
+    postagger.load(jamr_home + "/tools/ltp_data/pos.model")
     ner_recognizer = pyltp.NamedEntityRecognizer()
-    ner_recognizer.load('../../target/ltp_data/ner.model')
+    ner_recognizer.load(jamr_home + '/tools/ltp_data/ner.model')
 
     ner_file = open(ner_filename, 'w')
 
     for sentence_words in segged_sentences:
-        #print " ".join(sentence_words),"%"
         postags = postagger.postag(sentence_words)
-        #print list(postags),"&"
         ne_tags = ner_recognizer.recognize(sentence_words, postags)
 
         for word, ne_tag in zip(sentence_words, ne_tags):
@@ -83,7 +86,6 @@ def ner(segged_sentences, ner_filename):
     ner_recognizer.release()
     return
 
-#words =["那 就 请 你们 帮 个 忙 ， 不 要 让 我 这么 忧伤 ： 赶快 写信 告诉 我 ， 他 又 回来 了 …".split(' ')]
-#print words,"#"
-#ner(words, 'ner.err')
+
 chn_ner_process()
+

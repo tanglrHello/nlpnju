@@ -1,7 +1,7 @@
 #!/bin/bash
 set -ueo pipefail
 
-STANFORD_HOME="${JAMR_HOME}/target/stanford-parser-full-2016-10-31/"
+STANFORD_HOME="${JAMR_HOME}/tools/stanford-parser-full-2016-10-31/"
 
 for AMR in "${TRAIN_FILE}" "${DEV_FILE}" "${TEST_FILE}"
 do

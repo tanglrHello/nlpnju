@@ -8,6 +8,7 @@ cd tools
 
 wget -c http://wordnetcode.princeton.edu/3.0/WordNet-3.0.tar.gz
 wget -c http://downloads.typesafe.com/scala/2.11.2/scala-2.11.2.tgz
+wget -c http://demo.clab.cs.cmu.edu/cdec/cdec-2014-06-15.tar.gz
 tar -xzf WordNet-3.0.tar.gz
 tar -xzf scala-2.11.2.tgz
 cd ..

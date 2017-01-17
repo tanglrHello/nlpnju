@@ -6,12 +6,17 @@ def ner():
     print "ner..."
     parser = argparse.ArgumentParser()
     parser.add_argument('-infile', type=str, dest="infile", required=True)
+    parser.add_argument('-jamr_home', type=str, dest="jamr_home", required=True)
     args = parser.parse_args()
 
+    jamr_home = args.jamr_home
+    if jamr_home[-1] == "/":
+        jamr_home = jamr_home[:-1]
+
     postagger = pyltp.Postagger()
-    postagger.load("../target/ltp_data/pos.model")
+    postagger.load(jamr_home + "/tools/ltp_data/pos.model")
     ner_recognizer = pyltp.NamedEntityRecognizer()
-    ner_recognizer.load('../target/ltp_data/ner.model')
+    ner_recognizer.load(jamr_home + '/tools/ltp_data/ner.model')
 
     infile_path = args.infile
     segfile_path = infile_path + ".tok"

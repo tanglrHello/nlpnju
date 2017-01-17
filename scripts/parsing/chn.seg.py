@@ -6,10 +6,15 @@ def seg():
     print "seg..."
     parser = argparse.ArgumentParser()
     parser.add_argument('-infile', type=str, dest="infile", required=True)
+    parser.add_argument('-jamr_home', type=str, dest="jamr_home", required=True)
     args = parser.parse_args()
 
+    jamr_home = args.jamr_home
+    if jamr_home[-1] == "/":
+        jamr_home = jamr_home[:-1]
+
     segmentor = pyltp.Segmentor()
-    segmentor.load("../../target/ltp_data/cws.model")
+    segmentor.load(jamr_home + "/tools/ltp_data/cws.model")
 
     infile_path = args.infile
     infile = open(infile_path)

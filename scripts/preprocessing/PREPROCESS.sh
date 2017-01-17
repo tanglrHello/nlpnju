@@ -11,8 +11,8 @@ set -x
 
 # Preprocess the data
 ./cmd.snt
-./cmd.snt.tok
-./cmd.tok
+#./cmd.snt.tok
+#./cmd.tok
 
 # Run the aligner
 ./cmd.aligned
@@ -22,11 +22,9 @@ set -x
 ./cmd.aligned.concepts_no_opN
 
 # Stanford Dependency Parser
-#./cmd.snt.tok.deps
 ./chn.cmd.snt.tok.deps
 
 # Tag with IllinoisNer
-#./cmd.snt.IllinoisNER
 ./chn.cmd.snt.IllinoisNER
 
 

@@ -70,8 +70,8 @@ def transform():
     penn_file.close()
     dep_file.close()
     out_file.close()
-    #os.remove(penn_file_path)
-    #os.remove(dep_file_path)
+    os.remove(penn_file_path)
+    os.remove(dep_file_path)
 
 
 def extract_info_from_dep_line(line):
@@ -133,6 +133,4 @@ def construct_conll(edges, word_pos):
     return conll_lines
 
 
-# print extract_info_from_dep_line(u"rcomp(了解-3, 到-4)\n")
-# print extract_info_from_penn_line(u"          (VRD (VV 了解) (VV 到))\n")
 transform()
