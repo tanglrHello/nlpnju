@@ -21,3 +21,4 @@ mkdir model
 cd model
 wget -c http://nlp.stanford.edu/software/stanford-chinese-corenlp-2016-10-31-models.jar
 jar -xvf stanford-chinese-corenlp-2016-10-31-models.jar
+cp edu/stanford/nlp/models/lexparser/xinhuaFactored.ser.gz ../
