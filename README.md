@@ -14,7 +14,7 @@ Run the following commands in your terminal:
 	$cd nlpnju
 	$./setup
 
-Now you need to download the model files for pyltp (ltp-data-v3.3.1.zip) manually from this [url](https://pan.baidu.com/share/link?shareid=1988562907&uk=2738088569#list/path=%2Fltp-models%2F3.3.1). Then unzip the .zip file, and move it into $JAMR_HOME/tools/.
+Now you need to download the model files for pyltp (ltp-data-v3.3.1.zip) manually from this [url](https://pan.baidu.com/share/link?shareid=1988562907&uk=2738088569#list/path=%2Fltp-models%2F3.3.1). Then unzip the .zip file, and move the unzipped folder ltp_data into $JAMR_HOME/tools/.
 
 Continue executing the following commands:
 	
@@ -22,6 +22,11 @@ Continue executing the following commands:
 	(prepare a chn_test.txt file in the root path for JAMR-Chinese)
 	$./script/PARSE.sh < chn_test.txt > chn_test.out 2> chn_test.err
 	(Then you can see the amr parsing result in chn_test.out)
+
+If you want to retrain the model for AMR, you can execute this command:
+	
+	$. script/config_my_chinese_little_princess.sh
+	$./script/TRAIN.sh
 
 More detailed information can be found below.
 
@@ -79,7 +84,7 @@ JAMR-chinese depends on cdec, [Scala](http://www.scala-lang.org),  [WordNet](htt
 
 This bash will install python package pyltp for you, so you may need to use sudo to execute it.
 
-Besides, you need to download models for ltp (ltp-data-v3.3.1.zip) from this [url](https://pan.baidu.com/share/link?shareid=1988562907&uk=2738088569#list/path=%2Fltp-models%2F3.3.1). Move the model into target/, unzip it, and rename the resulting fold to 'ltp_data'. There should  several .model files in target/ltp_data/.
+Besides, you need to download models for ltp (ltp-data-v3.3.1.zip) from this [url](https://pan.baidu.com/share/link?shareid=1988562907&uk=2738088569#list/path=%2Fltp-models%2F3.3.1). Move ltp-data-v3.3.1.zip into target/, unzip it to get a folder named 'ltp_data'. There should  several .model files in target/ltp_data/.
 
 
 You will need to source the config script before running any of the scripts below (config_my_chinese_little_princess.sh is prepared for Chinese parsing/training):
