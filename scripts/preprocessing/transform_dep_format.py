@@ -76,9 +76,14 @@ def transform():
 
 def extract_info_from_dep_line(line):
     rel = line.split('(')[0].strip()
-    nodes = line.split('(')[1].split(')')[0].strip().split(',')
-    node1 = nodes[0].strip()
-    node2 = nodes[1].strip()
+    nodes_str = line.split('(')[1].split(')')[0].strip()
+    nodes_str = nodes_str.replace(",-", "，-")
+    nodes = nodes_str.split(',')
+
+    assert len(nodes) == 2
+
+    node1 = nodes[0].strip().replace("，-", ",-",)
+    node2 = nodes[1].strip().replace("，-", ",-",)
     return rel, node1, node2
 
 
@@ -108,10 +113,10 @@ def construct_conll(edges, word_pos):
     index = 1
     for edge in edges:
         rel = edge[0]
-        parent = edge[1].split('-')[0]
-        parent_index = edge[1].split('-')[1]
-        child = edge[2].split('-')[0]
-        child_index = edge[2].split('-')[1]
+        parent = "-".join(edge[1].split('-')[:-1])
+        parent_index = edge[1].split('-')[-1]
+        child = " ".join(edge[2].split('-')[:-1])
+        child_index = edge[2].split('-')[-1]
 
 
         fields = []
