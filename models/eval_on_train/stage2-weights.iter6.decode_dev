@@ -1,0 +1,1229 @@
+(x0 / I)
+
+(x27 / 描写-01 
+      :ARG1-of (x29 / 原始-01 
+            :mod-of (x28 / 森林 
+                  :mod-of (x42 / name 
+                        :ARG3 (x23 / 书-01 
+                              :location-of (x17 / 看到-01 
+                                    :ARG3-of (x21 / 精彩-01 
+                                          :mod-of (x20 / 插画)))) 
+                        :op "真实的故事"))) 
+      :prep-on-behalf-of (x38 / temporal-quantity 
+            :domain-of (x44 / 我) 
+            :unit (x41 / 岁)))
+
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.util.NoSuchElementException
+# 	at scala.collection.concurrent.TrieMap.apply(TrieMap.scala:836)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.edu$cmu$lti$nlp$amr$GraphDecoder$Alg2$$addEdge$1(Alg2.scala:108)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:136)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:131)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.immutable.List.foreach(List.scala:318)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:131)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:130)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.decode(Alg2.scala:130)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.LagrangianRelaxation.decode(LagrangianRelaxation.scala:45)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:155)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:142)
+# 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+# 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:142)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:26)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.trainingObserver(TrainObj.scala:121)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:35)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:20)
+# 	at edu.cmu.lti.nlp.amr.Train.Optimizer.learnParameters(Optimizer.scala:42)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.train(TrainObj.scala:165)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.train(TrainObj.scala:129)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:138)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+(x9 / 摹本 
+      :mod (x15 / 画 
+            :ARG4 (x16 / 那 
+                  :part-of (x14 / 页头))))
+
+(x21 / 咀嚼-01 
+      :manner (x17 / 猎获物 
+            :topic-of (x15 / 蟒蛇 
+                  :mod (x16 / 这些) 
+                  :topic-of (x11 / 写道-01 
+                        :manner (x13 / 书-01)))) 
+      :manner-of (x14 / 吞下-01 
+            :manner (x19 / 囫囵)))
+
+(x26 / and 
+      :op (x34 / 它们 
+            :domain-of (x43 / 长长 
+                  :manner (x29 / 就) 
+                  :manner-of (x38 / 睡眠-01 
+                        :manner (x44 / 月 
+                              :unit-of (x40 / temporal-quantity)) 
+                        :manner-of (x33 / 消化-01 
+                              :mod-of (x36 / 食物 
+                                    :mod (x37 / 这些)))))) 
+      :topic (x30 / 动弹-01 
+            :manner (x31 / 再-01 
+                  :manner-of (x27 / 能-01 
+                        :manner (x32 / 尔后 
+                              :manner (x35 / 就))))))
+
+(x12 / 丛林 
+      :location-of (x11 / 奇遇 
+            :instrument-of (x8 / 想-01 
+                  :ARG0 (x13 / 多-03 
+                        :degree (x14 / 很)) 
+                  :time (x15 / 当时 
+                        :ARG3 (x10 / 我)))))
+
+(x17 / 彩色 
+      :mod-of (x16 / 铅笔 
+            :instrument-of (x11 / 画-01 
+                  :location (x13 / 图画) 
+                  :snt1 (x12 / 我))))
+
+(x4 / 作品 
+      :poss (x7 / 我))
+
+(x35 / 杰作 
+      :mod (x36 / 这) 
+      :snt11 (x33 / 拿-01 
+            :degree (x28 / 这样 
+                  :poss (x30 / 它) 
+                  :poss (x34 / 我)) 
+            :manner-of (x38 / 看-02 
+                  :example (x40 / 问-01 
+                        :degree-of (x42 / 害怕-01)) 
+                  :manner (x39 / 大人))))
+
+(x1 / 回答-01 
+      :manner (x3 / 他们) 
+      :year (x6 / 害怕-01) 
+      :year (x5 / 我))
+
+(x11 / 可怕-01 
+      :degree (x12 / 帽子))
+
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.util.NoSuchElementException
+# 	at scala.collection.concurrent.TrieMap.apply(TrieMap.scala:836)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.edu$cmu$lti$nlp$amr$GraphDecoder$Alg2$$addEdge$1(Alg2.scala:108)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:136)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:131)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.immutable.List.foreach(List.scala:318)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:131)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:130)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.decode(Alg2.scala:130)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.LagrangianRelaxation.decode(LagrangianRelaxation.scala:45)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:155)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:142)
+# 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+# 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:142)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:26)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.trainingObserver(TrainObj.scala:121)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:35)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:20)
+# 	at edu.cmu.lti.nlp.amr.Train.Optimizer.learnParameters(Optimizer.scala:42)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.train(TrainObj.scala:165)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.train(TrainObj.scala:129)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:138)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+(x9 / 巨蟒 
+      :ARG0-of (x7 / 消化-01 
+            :snt9-of (x11 / 大象)))
+
+(x35 / 肚子 
+      :location-of (x34 / 情况 
+            :manner-of (x31 / 画-01 
+                  :manner (x32 / 又) 
+                  :snt1 (x33 / 我 
+                        :ARG6-of (x26 / 能够-01 
+                              :beneficiary (x28 / 理解) 
+                              :manner (x30 / 大人们))) 
+                  :time (x41 / 能够-01 
+                        :timezone (x42 / 看懂-01)))) 
+      :mod (x37 / 巨蟒))
+
+(x0 / 需要-01 
+      :manner (x5 / 总是) 
+      :mode (x2 / 大人 
+            :mod (x4 / 这些)) 
+      :timezone (x3 / 解释-01))
+
+(x72 / 历史 
+      :mod (x71 / 地理 
+            :topic-of (x67 / 放-01 
+                  :manner (x69 / 兴趣 
+                        :mod (x66 / 一边 
+                              :snt11-of (x51 / 放-01 
+                                    :manner (x53 / 图画 
+                                          :mod (x60 / 蟒蛇 
+                                                :mod (x63 / 闭上-01 
+                                                      :manner (x59 / 开-02 
+                                                            :prep-following-of (x61 / 肚皮) 
+                                                            :snt1-of (x56 / 画-01 
+                                                                  :time (x47 / 劝-01 
+                                                                        :manner (x2 / 这样-01 
+                                                                              :mode-of (x4 / 作品 
+                                                                                    :poss (x6 / 我)))))))))))))) 
+      :mod-of (x73 / 算术 
+            :mod-of (x74 / 语法)))
+
+(x42 / 岁 
+      :unit-of (x40 / temporal-quantity 
+            :mod-of (x31 / 我 
+                  :beneficiary-of (x29 / 放弃-01 
+                        :ARG4 (x37 / 当-02 
+                              :ARG1-of (x36 / 画家 
+                                    :ARG6 (x34 / 这 
+                                          :mod-of (x33 / 美好 
+                                                :mod-of (x32 / 职业))))) 
+                        :manner (x30 / 就) 
+                        :manner (x27 / 这样 
+                              :manner (x28 / 就))))))
+
+(x6 / 作品 
+      :domain (x2 / 我) 
+      :mode (x4 / 成功-01 
+            :manner-of (x0 / 泄-01 
+                  :manner-of (x3 / 气-02))))
+
+(x40 / 得-02 
+      :ARG5-of (x46 / 不断 
+            :manner (x45 / 老是) 
+            :manner-of (x37 / 靠-01 
+                  :ARG0 (x36 / 什么) 
+                  :ARG4 (x34 / 大人们 
+                        :mod (x35 / 这些)))) 
+      :manner (x41 / 还) 
+      :prep-through (x42 / 作-01 
+            :timezone (x43 / 解释-01)))
+
+(x25 / 另外 
+      :age (x23 / 职业 
+            :duration-of (x21 / 选择-01 
+                  :beneficiary (x22 / 我) 
+                  :manner (x20 / 只好)) 
+            :time-of (x26 / 学会-01 
+                  :manner-of (x28 / 开-02 
+                        :beneficiary (x30 / 飞机)))))
+
+(x10 / 大-04 
+      :ARG4 (x9 / 我 
+            :location-of (x8 / 地理学 
+                  :part (x12 / 的确 
+                        :ARG1-of (x2 / 飞到-01 
+                              :manner (x6 / 都) 
+                              :manner (x5 / 差不多) 
+                              :manner (x4 / 世界))))) 
+      :degree (x11 / 很))
+
+(x8 / 中国 
+      :ARG4-of (x5 / 分辨-01 
+            :op-of (x0 / 能-01 
+                  :manner (x3 / 就-01) 
+                  :manner (x4 / 一眼)) 
+            :value (x10 / 我)))
+
+(x5 / 有用-01 
+      :ARG0 (x7 / 这 
+            :ARG4-of (x2 / 迷失-01 
+                  :manner (x4 / 夜里) 
+                  :mod (x3 / 航向))) 
+      :degree (x6 / 很))
+
+(x25 / 许多 
+      :ARG1-of (x19 / 严肃-01 
+            :mod-of (x18 / 人 
+                  :ARG3-of (x13 / 接触-01) 
+                  :domain-of (x22 / 生活 
+                        :poss (x17 / 我)))))
+
+(x4 / 大人们 
+      :mod-of (x3 / 中间 
+            :instrument-of (x0 / 生活-01 
+                  :ARG0 (x6 / 长-04 
+                        :degree (x7 / 很) 
+                        :mod-of (x5 / 时间)) 
+                  :prep-through (x2 / 我))))
+
+(x0 / 观察-01 
+      :beneficiary (x4 / 他们) 
+      :manner (x3 / 仔细-01) 
+      :op (x2 / 我))
+
+(x19 / 看法 
+      :mod (x17 / 改变-01) 
+      :mod-of (x18 / 我 
+            :domain-of (x24 / 这)) 
+      :poss (x21 / 他们))
+
+(x2 / 拿出-01 
+      :manner (x6 / 就-01) 
+      :manner (x27 / 清楚 
+            :destination (x17 / 大人) 
+            :manner (x28 / 稍微 
+                  :degree-of (x29 / 看来 
+                        :manner (x26 / 头脑 
+                              :manner (x15 / 遇到-01 
+                                    :manner (x4 / 我)))))) 
+      :manner-of (x11 / 一直 
+            :manner-of (x10 / 保存-01 
+                  :manner-of (x5 / 作品 
+                        :manner-of (x12 / 测试-01) 
+                        :mod (x8 / 那)))))
+
+(x13 / 能力 
+      :ARG6-of (x7 / 有-01 
+            :ARG0 (x14 / 理解-01) 
+            :ARG1 (x10 / 真的-01 
+                  :ARG3 (x12 / 他 
+                        :ARG4-of (x3 / 知道-01 
+                              :prep-along-with-of (x0 / 想-02 
+                                    :value (x2 / 我)))) 
+                  :ARG4 (x11 / 是否-01))))
+
+(x3 / 回答-01 
+      :manner (x2 / 得到-01 
+            :degree (x8 / 帽子 
+                  :mod (x9 / 这))))
+
+(x14 / 原始-01 
+      :ARG4-of (x0 / 谈-01 
+            :beneficiary (x12 / 巨蟒) 
+            :beneficiary (x4 / 我) 
+            :prep-from (x16 / 他)) 
+      :mod-of (x13 / 森林 
+            :domain-of (x10 / 事 
+                  :unit (x15 / 星星))))
+
+(x10 / 迁就-01 
+      :ARG0 (x12 / 水平 
+            :poss (x13 / 他)) 
+      :beneficiary (x9 / 我) 
+      :manner (x7 / 只得-01))
+
+(x6 / 政治 
+      :age (x7 / 领带 
+            :ARG4-of (x2 / 这些 
+                  :domain-of (x5 / 高尔夫球 
+                        :age-of (x4 / 桥牌 
+                              :ARG0-of (x0 / 谈-01 
+                                    :ARG6 (x10 / 他们)))))))
+
+(x15 / 通情达理-01 
+      :manner (x13 / 这样-01 
+            :manner (x7 / 能-02 
+                  :manner (x3 / 高兴-01 
+                        :degree (x5 / 十分) 
+                        :manner (x6 / 就-01 
+                              :manner (x4 / 大人们))) 
+                  :manner-of (x8 / 认识-01)) 
+            :manner (x17 / 我)) 
+      :manner-of (x12 / 人))
+
+(x0 / II)
+
+(x13 / 这样-01 
+      :manner-of (x10 / 生活-01 
+            :degree (x18 / 人 
+                  :ARG3-of (x22 / 真正-01 
+                        :ARG4 (x20 / 能-01)) 
+                  :mod-of (x48 / temporal-quantity 
+                        :quant-of (x46 / 前 
+                              :location-of (x41 / 发生-01 
+                                    :ARG4-of (x43 / 那 
+                                          :mod-of (x42 / 故障)) 
+                                    :location (x44 / 沙漠 
+                                          :mod (x45 / 撒哈拉)))) 
+                        :unit (x50 / 年))) 
+            :manner (x12 / 孤独-01 
+                  :ARG0 (x11 / 我) 
+                  :manner (x15 / 就-01))))
+
+(x6 / 损坏-01 
+      :mod-of (x12 / 发动机 
+            :poss (x13 / 我)) 
+      :time (x8 / 东西))
+
+(x12 / 试图-01 
+      :degree (x18 / 独自 
+            :manner-of (x17 / 完成-01 
+                  :time-of (x22 / 困难-01 
+                        :time-of (x21 / 维修-01 
+                              :degree (x20 / 工作-01))))) 
+      :degree-of (x8 / 带-01 
+            :degree (x11 / 旅客) 
+            :time (x3 / 带-01 
+                  :degree (x7 / 机械师) 
+                  :polite (x6 / 我))) 
+      :manner (x24 / 就-01))
+
+(x32 / 够-01 
+      :ARG4 (x35 / 带-02 
+            :manner (x38 / 随身) 
+            :snt11 (x34 / 水)) 
+      :manner (x33 / 只) 
+      :prep-along-with (x42 / 饮用-01 
+            :ARG0 (x45 / temporal-quantity 
+                  :unit (x47 / 星期))) 
+      :prep-on-behalf-of (x27 / 问题 
+            :mod (x31 / 死) 
+            :mod-of (x30 / 生) 
+            :time (x23 / 来说-01 
+                  :ARG2 (x26 / 我) 
+                  :ARG3-of (x25 / 这))))
+
+(x15 / 人间 
+      :ARG4 (x7 / 远离-01 
+            :mod (x6 / 这 
+                  :age-of (x14 / 烟火 
+                        :ARG4-of (x5 / 大-04 
+                              :mod-of (x4 / 沙漠))) 
+                  :prep-amid (x0 / 睡-01 
+                        :manner (x3 / 就-01) 
+                        :time (x9 / 晚上 
+                              :ARG3 (x2 / 我))))))
+
+(x16 / 多-03 
+      :ARG4 (x14 / 孤独-01 
+            :age (x20 / 伏-01 
+                  :accompanier-of (x21 / 木排) 
+                  :location (x22 / 大海) 
+                  :prep-through (x17 / 我))))
+
+(x34 / 拂晓 
+      :location (x27 / 叫醒-01 
+            :ARG2 (x24 / 我) 
+            :ARG3 (x29 / 小 
+                  :mod-of (x28 / 声音 
+                        :mod (x31 / 奇怪))) 
+            :time-of (x21 / 想见-01 
+                  :ARG0 (x2 / 可以-01 
+                        :ARG0 (x25 / 当时 
+                              :ARG0-of (x23 / 吃惊-01 
+                                    :location (x26 / 多么))) 
+                        :ARG6 (x22 / 你们)))))
+
+(x7 / 画 
+      :domain (x10 / 我) 
+      :source (x8 / 羊) 
+      :topic-of (x5 / 请-01 
+            :ARG3 (x6 / 你) 
+            :time (x2 / 声音 
+                  :manner-of (x0 / 说道-01) 
+                  :mod (x3 / 小小-01 
+                        :mod (x4 / 这)))))
+
+(x2 / 啊)
+
+(x2 / 画-01 
+      :location (x3 / 羊) 
+      :location (x5 / 我))
+
+(x16 / 轰击-01 
+      :manner (x18 / 惊雷 
+            :mod (x14 / 受到-01 
+                  :domain (x13 / 我))) 
+      :manner (x22 / 一下子 
+            :manner-of (x20 / 站立-01 
+                  :manner (x23 / 就))))
+
+(x6 / 揉-01 
+      :manner (x10 / 使劲-01) 
+      :op (x8 / 我) 
+      :snt3 (x9 / 眼睛))
+
+(x0 / 看-02 
+      :manner (x2 / 仔细-01))
+
+(x22 / 严肃 
+      :manner-of (x14 / 望-01 
+            :domain (x2 / 我 
+                  :ARG6-of (x0 / 看见-01 
+                        :age (x17 / 奇怪 
+                              :degree (x18 / 十分)))) 
+            :manner (x20 / 凝眸-01)))
+
+(x9 / 画像 
+      :domain (x18 / 这) 
+      :mod (x12 / 好 
+            :ARG3-of (x14 / 画-01 
+                  :location (x16 / 他) 
+                  :manner (x17 / 后来 
+                        :ARG2 (x15 / 我))) 
+            :degree (x13 / 最)))
+
+(x14 / 本人 
+      :poss-of (x12 / 模样 
+            :age (x13 / 他) 
+            :mod-of (x9 / 逊色 
+                  :ARG4 (x15 / 多) 
+                  :manner (x16 / 当然 
+                        :ARG0 (x10 / 画 
+                              :poss (x11 / 我))))))
+
+(x0 / 过错 
+      :domain (x4 / 这) 
+      :poss (x2 / 我))
+
+(x46 / 画家 
+      :mod-of (x45 / 生涯 
+            :instrument-of (x42 / 失去-01 
+                  :domain (x43 / 我 
+                        :ARG0 (x48 / 大人们 
+                              :location-of (x53 / temporal-quantity 
+                                    :unit (x55 / 岁)))) 
+                  :mod (x44 / 勇气 
+                        :time-of (x31 / 开-02 
+                              :ARG6 (x32 / 肚皮 
+                                    :ARG4-of (x34 / 闭-01 
+                                          :snt11 (x30 / 蟒蛇 
+                                                :mod (x35 / 肚皮) 
+                                                :mode (x22 / 再-01 
+                                                      :manner-of (x20 / 学-01 
+                                                            :direction-of (x25 / 后来-01) 
+                                                            :mod (x24 / 画)))))) 
+                              :manner (x27 / 画-01))))))
+
+(x21 / 出现-01 
+      :ARG4 (x23 / 这) 
+      :ARG6 (x16 / 看-02 
+            :ARG3 (x28 / 惊奇 
+                  :ARG4-of (x18 / 我)) 
+            :manner (x27 / 眼睛)) 
+      :manner (x22 / 突然))
+
+(x10 / 人烟 
+      :ARG1-of (x9 / 远离-01) 
+      :mod (x7 / 地方 
+            :time (x11 / 当时 
+                  :ARG0-of (x3 / 忘记-01 
+                        :ARG4 (x6 / 我) 
+                        :compared-to-of (x0 / 要-03) 
+                        :season (x4 / 你们)))))
+
+(x19 / 惧怕-01 
+      :manner (x18 / 饥渴-01 
+            :manner (x17 / 疲乏 
+                  :manner (x16 / 半点 
+                        :degree (x2 / 印象 
+                              :poss (x5 / 我))))) 
+      :manner-of (x14 / 神情))
+
+(x7 / 迷失-01 
+      :frequency (x5 / 孩子 
+            :location (x8 / 沙漠 
+                  :mod (x9 / 大-01))) 
+      :manner (x3 / 丝毫) 
+      :prep-from (x4 / 他))
+
+(x37 / 惊讶-01 
+      :degree (x26 / 他 
+            :time-of (x28 / 这儿)) 
+      :manner-of (x31 / 能-01 
+            :manner (x36 / 又)) 
+      :time (x25 / 我))
+
+(x27 / 重要 
+      :mod-of (x25 / 事 
+            :mod-of (x31 / 重复 
+                  :mod (x32 / 我) 
+                  :time-of (x33 / 请-01 
+                        :scale (x36 / 画-01 
+                              :snt4 (x39 / 羊))))) 
+      :op-of (x23 / 有-01 
+            :manner (x30 / 不慌不忙 
+                  :prep-on-behalf (x24 / 他))))
+
+(x0 / 敢-02 
+      :manner-of (x4 / 听从-01 
+            :ARG0 (x7 / 支配-01) 
+            :time (x10 / 镇住-01 
+                  :time (x11 / 东西 
+                        :ARG4-of (x3 / 你) 
+                        :mod (x12 / 神秘-01 
+                              :ARG5 (x16 / 种))))))
+
+(x38 / 死亡-01 
+      :prep-on (x37 / 危险-01 
+            :ARG0-of (x36 / 面临-01 
+                  :mode-of (x33 / 沙漠 
+                        :mod (x35 / 旷无人烟 
+                              :mod (x34 / 这)))) 
+            :mod-of (x31 / 这样 
+                  :poss-of (x30 / 举动 
+                        :ARG3 (x26 / 感到-01 
+                              :ARG1 (x28 / 荒诞 
+                                    :degree (x29 / 十分)) 
+                              :ARG3-of (x10 / 掏出-01 
+                                    :manner (x11 / 还是) 
+                                    :snt1 (x17 / 钢笔 
+                                          :age (x14 / 纸))) 
+                              :decade (x27 / 我))))))
+
+(x13 / 语法 
+      :mod (x12 / 算术 
+            :mod (x11 / 历史 
+                  :mod (x10 / 地理 
+                        :manner (x7 / 只 
+                              :manner-of (x3 / 记起 
+                                    :domain (x5 / 我) 
+                                    :manner (x4 / 又)))))) 
+      :mod (x16 / 高兴 
+            :degree (x18 / 有点 
+                  :manner (x19 / 就)) 
+            :manner-of (x14 / 说-01 
+                  :example (x21 / 会-02))))
+
+(x7 / 关系 
+      :mod (x0 / 回答-01 
+            :manner (x2 / 他) 
+            :subevent (x4 / 我)))
+
+(x2 / 画-01 
+      :beneficiary (x5 / 我) 
+      :degree (x3 / 羊))
+
+(x2 / 画-01 
+      :duration (x6 / 从来) 
+      :mod (x5 / 羊) 
+      :season (x3 / 我))
+
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.util.NoSuchElementException
+# 	at scala.collection.concurrent.TrieMap.apply(TrieMap.scala:836)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.edu$cmu$lti$nlp$amr$GraphDecoder$Alg2$$addEdge$1(Alg2.scala:108)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:136)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:131)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.immutable.List.foreach(List.scala:318)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:131)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:130)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.decode(Alg2.scala:130)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.LagrangianRelaxation.decode(LagrangianRelaxation.scala:45)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:155)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:142)
+# 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+# 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:142)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:26)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.trainingObserver(TrainObj.scala:121)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:35)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:20)
+# 	at edu.cmu.lti.nlp.amr.Train.Optimizer.learnParameters(Optimizer.scala:42)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.train(TrainObj.scala:165)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.train(TrainObj.scala:129)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:138)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+(x3 / 肚皮 
+      :mod-of (x0 / 巨蟒))
+
+(x31 / 目瞪口呆-01 
+      :degree (x32 / 简直) 
+      :degree (x24 / 话 
+            :location-of (x22 / 听-01 
+                  :beneficiary (x23 / 我) 
+                  :location (x29 / 不 
+                        :mod (x28 / 不))) 
+            :poss (x25 / 他)))
+
+(x18 / 肚子 
+      :manner-of (x17 / 有-03 
+            :compared-to (x20 / 象)) 
+      :mod (x16 / 蟒蛇 
+            :mod (x13 / 要-01 
+                  :poss (x15 / 我))))
+
+(x32 / 大象 
+      :ARG4-of (x23 / 危险-01 
+            :degree (x24 / 太) 
+            :op (x25 / 东西 
+                  :mod (x26 / 这 
+                        :ARG1-of (x28 / 巨蟒)))) 
+      :mode-of (x29 / 占-02 
+            :beneficiary (x33 / 地方) 
+            :degree (x30 / 太) 
+            :manner (x31 / 又)))
+
+(x11 / 住-01 
+      :snt11 (x10 / 地方 
+            :location-of (x7 / 小-01 
+                  :degree (x9 / 非常-01)) 
+            :poss (x12 / 我)))
+
+(x6 / 需要-01 
+      :snt3 (x9 / 羊) 
+      :value (x8 / 我))
+
+(x4 / 画-01 
+      :beneficiary (x7 / 我) 
+      :degree (x5 / 羊))
+
+(x0 / 画-01 
+      :ARG4 (x4 / 他) 
+      :manner (x3 / 就) 
+      :prep-through (x2 / 我))
+
+(x4 / 专心-01 
+      :location (x3 / 他) 
+      :manner-of (x2 / 看-02 
+            :time-of (x5 / 说-01 
+                  :manner (x6 / 又) 
+                  :subevent (x8 / 要-04))))
+
+(x8 / 病-01 
+      :ARG4 (x10 / 羊 
+            :mod (x11 / 这)) 
+      :manner (x14 / 已经 
+            :manner-of (x12 / 重-02 
+                  :degree (x13 / 很))))
+
+(x2 / 画-01 
+      :manner (x3 / 重新-01 
+            :degree-of (x6 / 我)))
+
+(x0 / 画-01 
+      :manner (x2 / 又) 
+      :month (x3 / 我))
+
+(x2 / 可爱-01 
+      :manner-of (x0 / 笑-01 
+            :manner (x3 / 天真-01 
+                  :ARG1 (x4 / 朋友 
+                        :mod (x5 / 这) 
+                        :poss (x6 / 我)))))
+
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.util.NoSuchElementException
+# 	at scala.collection.concurrent.TrieMap.apply(TrieMap.scala:836)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.edu$cmu$lti$nlp$amr$GraphDecoder$Alg2$$addEdge$1(Alg2.scala:108)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:136)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:131)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.immutable.List.foreach(List.scala:318)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:131)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:130)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.decode(Alg2.scala:130)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.LagrangianRelaxation.decode(LagrangianRelaxation.scala:45)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:155)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:142)
+# 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+# 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:142)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:26)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.trainingObserver(TrainObj.scala:121)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:35)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:20)
+# 	at edu.cmu.lti.nlp.amr.Train.Optimizer.learnParameters(Optimizer.scala:42)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.train(TrainObj.scala:165)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.train(TrainObj.scala:129)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:138)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+(a / amr-empty)
+
+(x2 / 有-01 
+      :ARG5 (x4 / 犄角) 
+      :manner (x3 / 还))
+
+(x3 / 画-01 
+      :manner (x6 / 重新-01) 
+      :manner (x5 / 又) 
+      :op (x4 / 我))
+
+(x8 / 一样-01 
+      :ARG0 (x10 / 前 
+            :ARG1-of (x6 / 同-01 
+                  :ARG1-of (x2 / 画 
+                        :mod (x3 / 这)))) 
+      :ARG1 (x4 / 又 
+            :manner-of (x0 / 拒绝-01)))
+
+(x3 / 太 
+      :degree-of (x2 / 老-01) 
+      :domain (x6 / 这))
+
+(x7 / 活-01 
+      :mod-of (x10 / 长 
+            :snt11 (x4 / 羊)) 
+      :snt11-of (x9 / 能-01 
+            :manner (x2 / 想要-02 
+                  :manner (x3 / 我))))
+
+(x4 / 急于-01 
+      :ARG3 (x7 / 检修-01 
+            :beneficiary (x11 / 发动机) 
+            :domain (x3 / 我 
+                  :beneficiary-of (x0 / 耐烦-01))) 
+      :prep-along-with (x6 / 要-03))
+
+(x2 / 画-01 
+      :manner (x4 / 就) 
+      :manner (x3 / 草草) 
+      :snt1 (x5 / 画 
+            :mod (x6 / 这)))
+
+(x4 / 匆匆-01 
+      :manner-of (x2 / 说道-01 
+            :prep-without (x3 / 他)))
+
+(x9 / 箱子 
+      :domain (x12 / 这))
+
+(x8 / 里面 
+      :manner (x9 / 就) 
+      :quant (x7 / 羊 
+            :accompanier-of (x10 / 要-01 
+                  :quant (x11 / 你))))
+
+(x6 / 喜笑颜开 
+      :manner-of (x12 / 说-01 
+            :manner (x18 / 正 
+                  :mod (x17 / 这))) 
+      :mod (x7 / 评判员 
+            :manner (x3 / 惊奇-01 
+                  :degree (x4 / 十分 
+                        :manner (x5 / 我)) 
+                  :manner-of (x2 / 看到-01) 
+                  :time (x11 / 这时)) 
+            :mod (x8 / 小-01) 
+            :mod (x9 / 这)))
+
+(x4 / 需要-01 
+      :accompanier-of (x2 / 说-01 
+            :manner (x3 / 你) 
+            :snt11 (x6 / 这)) 
+      :manner (x5 / 羊) 
+      :manner-of (x8 / 很多 
+            :location (x7 / 草)))
+
+(a / amr-empty)
+
+(x8 / 住-01 
+      :example (x9 / 我) 
+      :prep-through (x7 / 地方 
+            :location-of (x6 / 一切 
+                  :location-of (x5 / 都 
+                        :manner-of (x4 / 非常-01 
+                              :degree-of (x3 / 小-01))))))
+
+(x5 / 够-01 
+      :compared-to-of (x4 / 地方 
+            :mod (x3 / 小-01)) 
+      :manner (x6 / 也) 
+      :manner-of (x7 / 喂养-01 
+            :condition (x8 / 它)))
+
+(x0 / 说-01 
+      :value (x2 / 我))
+
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.util.NoSuchElementException
+# 	at scala.collection.concurrent.TrieMap.apply(TrieMap.scala:836)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.edu$cmu$lti$nlp$amr$GraphDecoder$Alg2$$addEdge$1(Alg2.scala:108)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:136)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:131)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.immutable.List.foreach(List.scala:318)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:131)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:130)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.decode(Alg2.scala:130)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.LagrangianRelaxation.decode(LagrangianRelaxation.scala:45)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:155)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:142)
+# 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+# 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:142)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:26)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.trainingObserver(TrainObj.scala:121)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:35)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:20)
+# 	at edu.cmu.lti.nlp.amr.Train.Optimizer.learnParameters(Optimizer.scala:42)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.train(TrainObj.scala:165)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.train(TrainObj.scala:129)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:138)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+# THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
+# java.util.NoSuchElementException
+# 	at scala.collection.concurrent.TrieMap.apply(TrieMap.scala:836)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.edu$cmu$lti$nlp$amr$GraphDecoder$Alg2$$addEdge$1(Alg2.scala:108)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:136)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2$$anonfun$apply$5.apply(Alg2.scala:131)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.immutable.List.foreach(List.scala:318)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:131)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2$$anonfun$decode$2.apply(Alg2.scala:130)
+# 	at scala.collection.TraversableLike$WithFilter$$anonfun$foreach$1.apply(TraversableLike.scala:772)
+# 	at scala.collection.IndexedSeqOptimized$class.foreach(IndexedSeqOptimized.scala:33)
+# 	at scala.collection.mutable.ArrayOps$ofRef.foreach(ArrayOps.scala:108)
+# 	at scala.collection.TraversableLike$WithFilter.foreach(TraversableLike.scala:771)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.Alg2.decode(Alg2.scala:130)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.LagrangianRelaxation.decode(LagrangianRelaxation.scala:45)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:155)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj$$anonfun$evalDev$3.apply(TrainObj.scala:142)
+# 	at scala.collection.Iterator$class.foreach(Iterator.scala:727)
+# 	at scala.collection.AbstractIterator.foreach(Iterator.scala:1157)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:142)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.evalDev(TrainObj.scala:26)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.trainingObserver(TrainObj.scala:121)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj$$anonfun$10.apply(TrainObj.scala:173)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:35)
+# 	at edu.cmu.lti.nlp.amr.FastFeatureVector.Adagrad.learnParameters(Adagrad.scala:20)
+# 	at edu.cmu.lti.nlp.amr.Train.Optimizer.learnParameters(Optimizer.scala:42)
+# 	at edu.cmu.lti.nlp.amr.Train.TrainObj.train(TrainObj.scala:165)
+# 	at edu.cmu.lti.nlp.amr.GraphDecoder.TrainObj.train(TrainObj.scala:129)
+# 	at edu.cmu.lti.nlp.amr.AMRParser$.main(AMRParser.scala:138)
+# 	at edu.cmu.lti.nlp.amr.AMRParser.main(AMRParser.scala)
+(a / amr-empty)
+
+(x2 / 睡着-01 
+      :manner (x3 / 它))
+
+(x4 / 认识-01 
+      :ARG6 (x6 / 王子 
+            :mod (x7 / 小-01)) 
+      :manner (x2 / 这样-01 
+            :manner (x3 / 就 
+                  :location (x5 / 我))))
+
+(x0 / III)
+
+(x26 / 哪里 
+      :instrument-of (x24 / 来-01 
+            :age (x25 / 他 
+                  :mod-of (x21 / 时间 
+                        :ARG4-of (x19 / 费-01 
+                              :poss (x18 / 我)) 
+                        :mod (x22 / 长 
+                              :ARG2-of (x23 / 好))))))
+
+(x10 / 听见-01 
+      :destination-of (x14 / 压根 
+            :mod (x2 / 提出-01 
+                  :beneficiary (x7 / 我) 
+                  :prep-on-behalf (x3 / 王子 
+                        :mod (x4 / 小-01)) 
+                  :snt3 (x5 / 问题 
+                        :mod (x6 / 很多))) 
+            :mod-of (x13 / 问题 
+                  :snt11-of (x15 / 提出-01))))
+
+(x22 / 吐露-01 
+      :ARG4 (x25 / 一些 
+            :quant-of (x20 / 话 
+                  :ARG3 (x15 / 搞清-01 
+                        :decade (x17 / 我) 
+                        :degree (x26 / 逐渐) 
+                        :snt11 (x18 / 来历)) 
+                  :domain-of (x24 / 无意 
+                        :prep-from (x19 / 他)))))
+
+(x47 / 复杂-01 
+      :ARG5-of (x42 / 来说-01) 
+      :degree (x48 / 太) 
+      :manner-of (x26 / 问-01 
+            :mod-of (x28 / 玩艺 
+                  :mod (x30 / 这))) 
+      :mod-of (x43 / 图画 
+            :mod (x45 / 种 
+                  :mod (x44 / 这) 
+                  :mod (x35 / 飞机 
+                        :snt1-of (x33 / 瞅见-01 
+                              :ARG5 (x32 / 我) 
+                              :manner (x24 / 例如-01) 
+                              :subevent (x27 / 他))))))
+
+(x2 / 玩艺儿 
+      :mod (x3 / 这))
+
+(x2 / 飞-01 
+      :compared-to-of (x0 / 能-01 
+            :ARG6 (x3 / 它)))
+
+(x0 / 飞机 
+      :domain (x2 / 这))
+
+(x2 / 飞机 
+      :quant (x3 / 我))
+
+(x6 / 飞-01 
+      :compared-to-of (x5 / 能-01 
+            :ARG5 (x0 / 告诉-01 
+                  :manner (x3 / 骄傲 
+                        :age-of (x2 / 我)) 
+                  :manner (x4 / 很) 
+                  :time (x8 / 当时))))
+
+(x13 / 惊奇 
+      :mod (x12 / 怎么) 
+      :poss (x11 / 他))
+
+(x9 / 掉-01 
+      :direction (x8 / 下来-01) 
+      :domain (x10 / 你))
+
+(x2 / 是-03)
+
+(x0 / 答道 
+      :manner (x3 / 谦逊) 
+      :mod (x2 / 我))
+
+(x2 / 啊)
+
+(x2 / 滑稽-01 
+      :degree (x3 / 真) 
+      :domain (x4 / 这))
+
+(x27 / 阵 
+      :mod-of (x25 / 清脆 
+            :mod-of (x24 / 笑声 
+                  :prep-on-behalf-of (x21 / 发出-01 
+                        :degree-of (x16 / 高兴-01 
+                              :manner (x20 / 很) 
+                              :op (x19 / 我)) 
+                        :time (x28 / 此时 
+                              :ARG2 (x23 / 小 
+                                    :mod-of (x22 / 王子)))))))
+
+(x7 / 不幸 
+      :manner-of (x4 / 对待-01 
+            :subevent-of (x0 / 要求-02 
+                  :ARG0 (x5 / 严肃-01 
+                        :ARG1 (x3 / 别人)) 
+                  :value (x2 / 我))))
+
+(x2 / 说道-01 
+      :manner (x3 / 又) 
+      :op (x5 / 来-01 
+            :manner (x6 / 也 
+                  :poss (x7 / 你))) 
+      :prep-on-behalf (x4 / 他))
+
+(x12 / 星球 
+      :poss (x11 / 你))
+
+(x29 / 问道-01 
+      :manner (x30 / 突然) 
+      :manner (x31 / 就) 
+      :manner (x20 / 线索 
+            :domain (x19 / 隐约 
+                  :domain-of (x24 / 秘密 
+                        :domain (x25 / 来-01 
+                              :manner (x27 / 哪里 
+                                    :domain (x28 / 即刻) 
+                                    :domain (x26 / 他))) 
+                        :poss (x18 / 我)) 
+                  :manner-of (x17 / 发现-01)) 
+            :mod (x21 / 一点)) 
+      :manner (x37 / 另 
+            :mod-of (x35 / 星球 
+                  :manner-of (x33 / 来-01))))
+
+(x2 / 回答-01 
+      :ARG0 (x5 / 问题 
+            :poss (x6 / 我)) 
+      :prep-with (x4 / 他))
+
+(x41 / 远 
+      :degree (x42 / 很) 
+      :mod-of (x40 / 地方 
+            :prep-following-of (x38 / 来-01)) 
+      :topic-of (x35 / 可能-01 
+            :manner (x16 / 玩艺儿 
+                  :location-of (x14 / 乘坐-01 
+                        :manner-of (x11 / 说道-01 
+                              :manner (x32 / 微微 
+                                    :mod (x28 / 飞机 
+                                          :poss (x29 / 我) 
+                                          :topic-of (x26 / 看-02 
+                                                :prep-following (x27 / 他)))))) 
+                  :mod (x17 / 这))))
+
+(x0 / 陷入-01 
+      :manner (x3 / 就) 
+      :snt3 (x5 / 沉思) 
+      :subevent (x2 / 他))
+
+(x11 / 宝贝 
+      :ARG3-of (x9 / 看-02 
+            :extent-of (x2 / 掏出-01 
+                  :ARG3-of (x6 / 画-01 
+                        :location (x7 / 我)) 
+                  :location (x8 / 口袋))) 
+      :poss (x3 / 他))
+
+(x14 / 好奇-01 
+      :degree (x15 / 多么 
+            :part-of (x16 / 心里 
+                  :accompanier-of (x18 / 话语 
+                        :part-of (x21 / 若明若暗 
+                              :location (x22 / 星球 
+                                    :mod (x23 / 别的 
+                                          :domain (x2 / 想见-01 
+                                                :prep-along-with-of (x0 / 可以-01) 
+                                                :prep-following (x3 / 你们) 
+                                                :snt11 (x20 / 这)))))) 
+                  :poss (x17 / 我))))
+
+(x11 / 其中 
+      :manner-of (x6 / 知道-01 
+            :prep-along-with-of (x3 / 想-02 
+                  :manner (x4 / 竭力) 
+                  :op (x5 / 我)) 
+            :snt3 (x8 / 奥秘)))
+
+(x4 / 来-01 
+      :conj-as-if (x5 / 你) 
+      :subset (x9 / 我))
+
+(x15 / 家 
+      :poss (x17 / 你))
+
+(x8 / 哪里 
+      :location-of (x3 / 带到-01 
+            :accompanier-of (x2 / 要-03 
+                  :quant (x4 / 你))))
+
+(x11 / 箱子 
+      :location-of (x13 / 给-01 
+            :prep-following-of (x10 / 有-01 
+                  :manner (x22 / 好在 
+                        :location-of (x5 / 回答-01 
+                              :manner (x2 / 沉思-01 
+                                    :location (x3 / 他) 
+                                    :mod-of (x4 / 一会)) 
+                              :subevent (x7 / 我))))) 
+      :time (x29 / 夜晚 
+            :time-of (x24 / 当-05 
+                  :topic (x26 / 房子)) 
+            :time-of (x23 / 可以-01)))
+
+(x3 / 那 
+      :mod-of (x2 / 当然))
+
+(x2 / 听话-01 
+      :ARG0 (x33 / 我) 
+      :compared-to (x3 / 你) 
+      :time (x32 / 画-01 
+            :ARG0 (x34 / 绳子) 
+            :ARG3 (x37 / 可以-01 
+                  :ARG4-of (x40 / 它) 
+                  :manner (x41 / 白天))))
+
+(x20 / 建议 
+      :manner-of (x2 / 看来-02 
+            :degree (x19 / 有点) 
+            :time-of (x15 / 反感-01 
+                  :beneficiary (x17 / 王子 
+                        :mod (x18 / 小-01)) 
+                  :mode (x14 / 它))) 
+      :poss (x21 / 我))
+
+(x7 / 奇怪 
+      :degree (x8 / 多么) 
+      :mod-of (x6 / 主意))
+
+(x10 / 栓住 
+      :location-of (x13 / 它) 
+      :poss (x12 / 你))
+
+(x16 / 丢-02 
+      :manner-of (x14 / 跑-01 
+            :manner (x13 / 会-02) 
+            :manner (x9 / 跑-01 
+                  :manner (x12 / 到处 
+                        :manner (x11 / 就) 
+                        :poss (x10 / 它)))))
+
+(x18 / 笑-01 
+      :manner (x19 / 朋友 
+            :mod (x20 / 这) 
+            :poss (x21 / 我)) 
+      :poss (x28 / 它 
+            :domain (x26 / 你)))
+
+(x4 / 地方 
+      :mod (x5 / 什么))
+
+(x2 / 跑-01 
+      :manner (x5 / 前) 
+      :manner (x4 / 一直 
+            :poss (x3 / 它)))
+
+(x4 / 郑重其事 
+      :manner-of (x0 / 说-01) 
+      :mod (x2 / 王子 
+            :mod (x3 / 小-01)) 
+      :mod (x7 / 这) 
+      :time (x8 / 这时))
+
+(x6 / 那里 
+      :part (x3 / 很 
+            :degree-of (x2 / 小-01 
+                  :mod-of (x5 / 很 
+                        :degree-of (x4 / 小-01)))) 
+      :poss (x7 / 我))
+
+(x13 / 走出-02 
+      :op-of (x10 / 会-02) 
+      :op-of (x7 / 走-04 
+            :prep-for-of (x16 / 前) 
+            :prep-on-behalf-of (x12 / 也) 
+            :snt1-of (x8 / 一直 
+                  :domain (x2 / 补充-01 
+                        :manner (x4 / 又) 
+                        :snt1-of (x5 / 伤感 
+                              :prep-on-behalf (x3 / 他))))) 
+      :quant (x15 / 多 
+            :quant-of (x14 / 远)))
+

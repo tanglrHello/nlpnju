@@ -1,0 +1,839 @@
+Sentence: I
+Incorrect span:  => amr-empty
+Missing span: I => I
+
+Sentence: 当 我 还 只 有 六 岁 的 时候 ， 在 一 本 描写 原始 森林 的 名 叫 《 真实 的 故事 》 的 书 中 ， 看到 了 一 副 精彩 的 插画 ，
+Incorrect span: 书 => 书
+Extra span: 故事 => 故事
+Extra span: 本 => 本
+Extra span: 只 => 只
+Extra span: 还 => 还
+Missing span: 真实 的 故事 => (name :op "真实的故事")
+Missing span: 岁 => (temporal-quantity :unit 岁)
+Missing span: 插画 => 插画
+Missing span: 书 => 书-01
+Missing span: 描写 => 描写-01
+Missing span: 森林 => 森林
+Missing span: 原始 => 原始-01
+Missing span: 精彩 => 精彩-01
+
+Sentence: 画 的 是 一 条 蟒蛇 正在 吞食 一 只 大 野兽 。
+Extra span: 只 => 只
+Incorrect span: 画 => 画-01
+Missing span: 吞食 => 吞食-01
+Missing span: 正在 => 正在
+Missing span: 画 => (thing :arg1-of 画-01)
+Missing span: 蟒蛇 => 蟒蛇
+
+Sentence: 页头 上 就 是 那 副 画 的 摹本 。
+Incorrect span: 画 => 画-01
+Extra span: 就 => 就
+Missing span: 摹本 => 摹本
+Missing span: 画 => 画
+Missing span: 页头 => 页头
+
+Sentence: 这 本 书 中 写道 ： “ 这些 蟒蛇 把 它们 的 猎获物 不加 咀嚼 地 囫囵 吞下
+Extra span: 它们 => 它们
+Incorrect span: 书 => 书
+Extra span: 本 => 本
+Extra span: 这 => 这
+Missing span: 写道 => 写道-01
+Missing span: 吞下 => 吞下-01
+Missing span: 咀嚼 => 咀嚼-01
+Missing span: 囫囵 => 囫囵
+Missing span: 猎获物 => 猎获物
+Missing span: 蟒蛇 => 蟒蛇
+Missing span: 书 => 书-01
+
+Sentence: 尔后 就 不 能 再 动弹 了 ； 它们 就 在 长长 的 六 个 月 的 睡眠 中 消化 这些 食物 。 ”
+Missing span: ; => and
+Missing span: 消化 => 消化-01
+Missing span: 睡眠 => 睡眠-01
+Missing span: 长长 => 长长
+Missing span: 食物 => 食物
+Missing span: 尔后 => 尔后
+Missing span: 动弹 => 动弹-01
+Missing span: 再 => 再-01
+
+Sentence: 当时 ， 我 对 丛林 中 的 奇遇 想 得 很 多 ，
+Missing span: 想 => 想-01
+Missing span: 多 => 多-03
+Missing span: 奇遇 => 奇遇
+Missing span: 丛林 => 丛林
+
+Sentence: 于是 ， 我 也 用 彩色 铅笔 画 出 了 我 的 第一 副 图画 。
+Extra span: 我 => 我
+Extra span: 也 => 也
+Missing span: 彩色 => 彩色
+Missing span: 图画 => 图画
+
+Sentence: 我 的 第一 号 作品 。
+Missing span: 作品 => 作品
+
+Sentence: 它 是 这样 的 ： 我 把 我 的 这 副 杰作 拿 给 大人 看 ， 我 问 他们 我 的 画 是 不 是 叫 他们 害怕 。
+Extra span: 他们 => 他们
+Extra span: 画 => 画-01
+Extra span: 我 => 我
+Extra span: 他们 => 他们
+Extra span: 我 => 我
+Extra span: 我 => 我
+Missing span: 拿 => 拿-01
+Missing span: 杰作 => 杰作
+
+Sentence: 他们 回答 我 说 ： ” 害怕 ？
+Extra span: 说 => 说-01
+
+Sentence: “ 一 顶 帽子 有 什么 可怕 的 ？ ”
+Extra span: 什么 => 什么
+Extra span: 顶 => 顶-02
+
+Sentence: 我 画 的 不 是 帽子 ，
+Incorrect span: 画 => 画-01
+Missing span: 画 => (thing :arg1-of 画-01)
+
+Sentence: 是 一 条 巨蟒 在 消化 着 一 头 大象 。
+Missing span: 消化 => 消化-01
+Missing span: 大象 => 大象
+
+Sentence: 既然 大人们 不 能够 理解 。 于是 我 又 把 巨蟒 肚子 里 的 情况 画 了 出来 ， 以便 让 大人们 能够 看懂 。
+Extra span: 大人们 => 大人们
+Extra span: 让 => 让-02
+Incorrect span: 理解 => 理解-01
+Missing span: 理解 => 理解
+Missing span: 看懂 => 看懂-01
+Missing span: 肚子 => 肚子
+
+Sentence: 这些 大人 总是 需要 解释 。
+Missing span: 需要 => 需要-01
+
+Sentence: 我 的 第二 号 作品 是 这样 的 ： 大人们 劝 我 把 这些 画 着 开 着 肚皮 的 ， 或 闭上 肚皮 的 蟒蛇 的 图画 放 在 一边 ， 还是 把 兴趣 放 在 地理 、 历史 、 算术 、 语法 上 。
+Extra span: 还是 => 还是
+Extra span: 肚皮 => 肚皮
+Extra span: 这些 => 这些
+Extra span: 我 => 我
+Extra span: 大人们 => 大人们
+Incorrect span: 这样 => 这样
+Missing span: 这样 => 这样-01
+Missing span: 劝 => 劝-01
+Missing span: 放 => 放-01
+Missing span: 一边 => 一边
+Missing span: 图画 => 图画
+Missing span: 开 => 开-02
+Missing span: 蟒蛇 => 蟒蛇
+Missing span: 闭上 => 闭上-01
+Missing span: 放 => 放-01
+Missing span: 历史 => 历史
+Missing span: 算术 => 算术
+Missing span: 语法 => 语法
+Missing span: 兴趣 => 兴趣
+Missing span: 作品 => 作品
+
+Sentence: 就 这样 ， 在 六 岁 的 那 年 ， 我 就 放弃 了 当 画家 这 一 美好 的 职业 。
+Incorrect span: 美好 => 美好-01
+Extra span: 年 => (temporal-quantity :unit 年)
+Extra span: 那 => 那
+Missing span: 岁 => (temporal-quantity :unit 岁)
+Missing span: 画家 => 画家
+Missing span: 当 => 当-02
+Missing span: 美好 => 美好
+
+Sentence: 我 的 第一 号 、 第二 号 作品 的 不 成功 ， 使 我 泄 了 气 。
+Incorrect span: 气 => 气-01
+Extra span: 我 => 我
+Extra span: 使 => 使-01
+Missing span: 泄 => 泄-01
+Missing span: 作品 => 作品
+Missing span: 气 => 气-02
+
+Sentence: 这些 大人们 ， 靠 他们 自己 什么 也 弄 不 懂 ， 还 得 老是 不断 地 给 他们 作 解释 。
+Extra span: 他们 => 他们
+Extra span: 懂 => 懂-01
+Extra span: 也 => 也
+Extra span: 自己 => 自己
+Extra span: 他们 => 他们
+Incorrect span: 靠 => 靠-03
+Missing span: 靠 => 靠-01
+Missing span: 得 => 得-02
+Missing span: 作 => 作-01
+Missing span: 不断 => 不断
+
+Sentence: 后来 ， 我 只好 选择 了 另外 一 个 职业 ， 我 学会 了 开 飞机 。
+Extra span: 我 => 我
+Extra span: 后来 => 后来-01
+Missing span: 学会 => 学会-01
+Missing span: 开 => 开-02
+
+Sentence: 世界 各 地 差不多 都 飞到 过 。 的确 ， 地理学 帮 了 我 很 大 的 忙 。
+Extra span: 忙 => 忙-01
+Incorrect span: 大 => 大-01
+Missing span: 差不多 => 差不多
+Missing span: 大 => 大-04
+
+Sentence: 我 一眼 就 能 分辨 出 中国 和 亚里桑那 。
+Incorrect span: 就 => 就
+Missing span: 分辨 => 分辨-01
+Missing span: 就 => 就-01
+
+Sentence: 要是 夜里 迷失 了 航向 ， 这 是 很 有用 的 。
+Missing span: 迷失 => 迷失-01
+Missing span: 航向 => 航向
+
+Sentence: 这样 ， 在 我 的 生活 中 ， 我 跟 许多 严肃 的 人 有 过 很多 的 接触 。
+Extra span: 很多 => 很多
+Extra span: 我 => 我
+Incorrect span: 生活 => 生活-01
+Extra span: 这样 => 这样
+Missing span: 接触 => 接触-01
+Missing span: 生活 => 生活
+
+Sentence: 我 在 大人们 中间 生活 过 很 长 时间 。
+Missing span: 长 => 长-04
+Missing span: 中间 => 中间
+
+Sentence: 我 仔细 地 观察 过 他们 ，
+Missing span: 观察 => 观察-01
+
+Sentence: 但 这 并没有 使 我 对 他们 的 看法 有 多 大 的 改变 。
+Extra span: 大 => 大-01
+Extra span: 使 => 使-01
+
+Sentence: 当 我 遇到 一 个 头脑 看来 稍微 清楚 的 大人 时 ， 我 就 拿出 一直 保存 着 的 我 那 第一 号 作品 来 测试 测试 他 。
+Extra span: 他 => 他
+Extra span: 我 => 我
+Incorrect span: 就 => 就
+Extra span: 我 => 我
+Incorrect span: 清楚 => 清楚-01
+Incorrect span: 看来 => 看来-01
+Missing span: 遇到 => 遇到-01
+Missing span: 头脑 => 头脑
+Missing span: 清楚 => 清楚
+Missing span: 看来 => 看来
+Missing span: 测试 => 测试-01
+Missing span: 就 => 就-01
+Missing span: 作品 => 作品
+Missing span: 保存 => 保存-01
+
+Sentence: 我 想 知道 他 是否 真的 有 理解 能力 。
+Missing span: 想 => 想-02
+Missing span: 有 => 有-01
+Missing span: 能力 => 能力
+
+Sentence: 可是 ， 得到 的 回答 总 是 ： “ 这 是 顶 帽子 。 ”
+Extra span: 顶 => 顶-02
+
+Sentence: 我 就 不 和 他 谈 巨蟒 呀 ， 原始 森林 呀 ， 或者 星星 之类 的 事 。
+Extra span: 就 => 就
+Missing span: 谈 => 谈-01
+Missing span: 森林 => 森林
+Missing span: 原始 => 原始-01
+
+Sentence: 我 只得 迁就 他 的 水平 ，
+Missing span: 只得 => 只得-01
+Missing span: 迁就 => 迁就-01
+Missing span: 水平 => 水平
+
+Sentence: 和 他们 谈 些 桥牌 呀 ， 高尔夫球 呀 ， 政治 呀 ， 领带 呀 这些 。
+Extra span: 些 => 些
+Missing span: 谈 => 谈-01
+Missing span: 桥牌 => 桥牌
+Missing span: 高尔夫球 => 高尔夫球
+Missing span: 政治 => 政治
+Missing span: 领带 => 领带
+
+Sentence: 于是 大人们 就 十分 高兴 能 认识 我 这样 一 个 通情达理 的 人 。
+Incorrect span: 这样 => 这样
+Incorrect span: 能 => 能-01
+Incorrect span: 就 => 就
+Missing span: 能 => 能-02
+Missing span: 通情达理 => 通情达理-01
+Missing span: 这样 => 这样-01
+Missing span: 就 => 就-01
+
+Sentence: II 。
+Incorrect span:  => amr-empty
+Missing span: II => II
+
+Sentence: 我 就 这样 孤独 地 生活 着 ， 没有 一 个 能 真正 谈 得 来 的 人 ， 一直 到 六 年 前 在 撒哈拉 沙漠 上 发生 了 那 次 故障 。
+Incorrect span: 故障 => 故障-01
+Extra span: 到 => 到-01
+Extra span: 一直 => 一直
+Incorrect span: 这样 => 这样
+Incorrect span: 就 => 就
+Missing span: 就 => 就-01
+Missing span: 这样 => 这样-01
+Missing span: 故障 => 故障
+
+Sentence: 我 的 发动机 里 有 个 东西 损坏 了 。
+Missing span: 损坏 => 损坏-01
+
+Sentence: 当时 由于 我 既 没有 带 机械师 也 没有 带 旅客 ， 我 就 试图 独自 完成 这个 困难 的 维修 工作 。
+Incorrect span: 工作 => 工作
+Extra span: 这个 => 这个
+Incorrect span: 就 => 就
+Extra span: 我 => 我
+Extra span: 也 => 也
+Extra span: 当时 => 当时
+Missing span: 带 => 带-01
+Missing span: 机械师 => 机械师
+Missing span: 带 => 带-01
+Missing span: 试图 => 试图-01
+Missing span: 就 => 就-01
+Missing span: 工作 => 工作-01
+Missing span: 维修 => 维修-01
+
+Sentence: 这 对 我 来说 是 个 生 与 死 的 问题 。 我 随身 带 的 水 只 够 饮用 一 星期 。
+Extra span: 我 => 我
+Incorrect span: 死 => 死-01
+Incorrect span: 生 => 生-02
+Missing span: 够 => 够-01
+Missing span: 饮用 => 饮用-01
+Missing span: 带 => 带-02
+Missing span: 随身 => 随身
+Missing span: 生 => 生
+Missing span: 死 => 死
+
+Sentence: 第一 天 晚上 我 就 睡 在 这 远离 人间 烟火 的 大 沙漠 上 。
+Incorrect span: 大 => 大-01
+Incorrect span: 就 => 就
+Missing span: 睡 => 睡-01
+Missing span: 远离 => 远离-01
+Missing span: 烟火 => 烟火
+Missing span: 人间 => 人间
+Missing span: 大 => 大-04
+Missing span: 就 => 就-01
+
+Sentence: 我 比 大海 中 伏 在 小 木排 上 的 遇难者 还 要 孤独 得 多 。
+Extra span: 还 => 还
+Extra span: 小 => 小-01
+Missing span: 大海 => 大海
+Missing span: 木排 => 木排
+Missing span: 多 => 多-03
+
+Sentence: 而 在 第二 天 拂晓 ， 当 一 个 奇怪 的 小 声音 叫醒 我 的 时候 ， 你们 可以 想见 我 当时 是 多么 吃惊 。
+Extra span: 我 => 我
+Incorrect span: 小 => 小-01
+Incorrect span: 奇怪 => 奇怪-01
+Missing span: 可以 => 可以-01
+Missing span: 想见 => 想见-01
+Missing span: 吃惊 => 吃惊-01
+Missing span: 叫醒 => 叫醒-01
+Missing span: 拂晓 => 拂晓
+Missing span: 奇怪 => 奇怪
+Missing span: 小 => 小
+
+Sentence: 这 小小 的 声音 说道 ： “ 请 你 给 我 画 一 只 羊 ， 好 吗 ？ ”
+Extra span: 只 => 只
+Incorrect span: 画 => 画-01
+Missing span: 画 => 画
+Missing span: 小小 => 小小-01
+
+Sentence: “ 啊 ？
+
+Sentence: “ 给 我 画 一 只 羊 … ”
+Extra span: 只 => 只
+
+Sentence: 我 象 是 受到 惊雷 轰击 一般 ， 一下子 就 站立 起来 。
+Missing span: 轰击 => 轰击-01
+Missing span: 惊雷 => 惊雷
+
+Sentence: 我 使劲 地 揉 了 揉 眼睛 ，
+Missing span: 揉 => 揉-01
+Missing span: 使劲 => 使劲-01
+
+Sentence: 仔细 地 看 了 看 。
+Extra span: 看 => 看-02
+
+Sentence: 我 看见 一 个 十分 奇怪 的 小家伙 严肃 地 朝 我 凝眸 望 着 。
+Extra span: 我 => 我
+Incorrect span: 严肃 => 严肃-01
+Incorrect span: 奇怪 => 奇怪-01
+Missing span: 严肃 => 严肃
+Missing span: 凝眸 => 凝眸-01
+Missing span: 奇怪 => 奇怪
+
+Sentence: 这 是 后来 我 给 他 画 出来 的 最 好 的 一 副 画像 。
+Incorrect span: 后来 => 后来-01
+Missing span: 画像 => 画像
+Missing span: 后来 => 后来
+Missing span: 好 => 好
+
+Sentence: 可是 ， 我 的 画 当然 要 比 他 本人 的 模样 逊色 得 多 。
+Incorrect span: 画 => 画-01
+Missing span: 逊色 => 逊色
+Missing span: 多 => 多
+Missing span: 画 => 画
+Missing span: 模样 => 模样
+Missing span: 本人 => 本人
+
+Sentence: 这 不 是 我 的 过错 。
+
+Sentence: 六 岁 时 ， 大人们 使 我 对 我 的 画家 生涯 失去 了 勇气 ， 除了 画 过 开 着 肚皮 和 闭 着 肚皮 的 蟒蛇 ， 后来 再 没有 学 过 画 。
+Incorrect span: 画 => 画-01
+Extra span: 除了 => 除了
+Extra span: 我 => 我
+Extra span: 使 => 使-01
+Missing span: 学 => 学-01
+Missing span: 蟒蛇 => 蟒蛇
+Missing span: 开 => 开-02
+Missing span: 画 => 画
+Missing span: 再 => 再-01
+Missing span: 失去 => 失去-01
+Missing span: 岁 => (temporal-quantity :unit 岁)
+Missing span: 生涯 => 生涯
+Missing span: 画家 => 画家
+
+Sentence: 我 惊奇 地 睁大 着 眼睛 看 着 这 突然 出现 的 小家伙 。
+Incorrect span: 惊奇 => 惊奇-01
+Missing span: 惊奇 => 惊奇
+
+Sentence: 你们 不 要 忘记 ， 我 当时 处 在 远离 人烟 千 里 之外 的 地方 。
+Missing span: 要 => 要-03
+Missing span: 远离 => 远离-01
+Missing span: 人烟 => 人烟
+
+Sentence: 而 这个 小家伙 给 我 的 印象 是 ， 他 既 不 象 迷 了 路 的 样子 ， 也 没有 半点 疲乏 、 饥渴 、 惧怕 的 神情 。
+Extra span: 也 => 也
+Extra span: 样子 => 样子
+Extra span: 路 => 路
+Extra span: 他 => 他
+Extra span: 这个 => 这个
+Missing span: 惧怕 => 惧怕-01
+Missing span: 疲乏 => 疲乏
+Missing span: 半点 => 半点
+
+Sentence: 他 丝毫 不 象 是 一 个 迷失 在 旷无 人烟 的 大 沙漠 中 的 孩子 。
+Missing span: 迷失 => 迷失-01
+
+Sentence: 当 我 在 惊讶 之中 终于 又 能 说出 话 来 的 时候 ， 对 他 说道 ： “ 唉 ， 你 在 这儿 干 什么 ？ ”
+Extra span: 什么 => 什么
+Extra span: 干 => 干-01
+Extra span: 你 => 你
+Extra span: 唉 => 唉
+Extra span: 说道 => 说道-01
+Extra span: 话 => 话
+Extra span: 终于 => 终于
+
+Sentence: 可是 他 却 不慌不忙 地 好象 有 一 件 重要 的 事 一般 ， 对 我 重复 地 说道 ： “ 请 … 给 我 画 一 只 羊 … ”
+Extra span: 只 => 只
+Extra span: 我 => 我
+Extra span: 说道 => 说道-01
+Incorrect span: 重复 => 重复-01
+Incorrect span: 重要 => 重要-01
+Missing span: 有 => 有-01
+Missing span: 重要 => 重要
+Missing span: 重复 => 重复
+
+Sentence: 当 一 种 神秘 的 东西 把 你 镇住 的 时候 ， 你 是 不 敢 不 听从 它 的 支配 的 ，
+Extra span: 它 => 它
+Extra span: 你 => 你
+Missing span: 镇住 => 镇住-01
+Missing span: 种 => 种
+Missing span: 听从 => 听从-01
+
+Sentence: 在 这 旷无人烟 的 沙漠 上 ， 面临 死亡 的 危险 的 情况 下 ， 尽管 这样 的 举动 使 我 感到 十分 荒诞 ， 我 还是 掏出 了 一 张 纸 和 一 支 钢笔 。
+Extra span: 张 => 张-01
+Extra span: 我 => 我
+Extra span: 使 => 使-01
+Extra span: 情况 => 情况
+Missing span: 掏出 => 掏出-01
+Missing span: 面临 => 面临-01
+Missing span: 纸 => 纸
+Missing span: 钢笔 => 钢笔
+Missing span: 举动 => 举动
+Missing span: 荒诞 => 荒诞
+
+Sentence: 这时 我 却 又 记起 ， 我 只 学 过 地理 、 历史 、 算术 和 语法 ， 就 有点 不 大 高兴 地 对 小家伙 说 我 不 会 画画 。
+Extra span: 我 => 我
+Incorrect span: 高兴 => 高兴-01
+Extra span: 大 => 大-01
+Extra span: 我 => 我
+Extra span: 这时 => 这时
+Missing span: 记起 => 记起
+Missing span: 历史 => 历史
+Missing span: 算术 => 算术
+Missing span: 语法 => 语法
+Missing span: 高兴 => 高兴
+
+Sentence: 他 回答 我 说 ： “ 没有 关系 ，
+Extra span: 说 => 说-01
+Missing span: 关系 => 关系
+
+Sentence: 给 我 画 一 只 羊 吧 ！ ”
+Extra span: 只 => 只
+
+Sentence: 因为 我 从来 没有 画 过 羊 。
+
+Sentence: 我 就 给 他 重 画 我 所 仅仅 会 画 的 两 副 画 中
+Extra span: 画 => 画-01
+Incorrect span: 画 => 画-01
+Extra span: 仅仅 => 仅仅
+Extra span: 我 => 我
+Incorrect span: 重 => 重-02
+Missing span: 画 => (thing :arg1-of 画-01)
+Missing span: 重 => 重
+
+Sentence: 的 那 副 闭着 肚皮 的 巨蟒 。
+Extra span: 那 => 那
+
+Sentence: “ 不 ， 不 ！ ” 我 听 了 他 的 话 ， 简直 目瞪口呆 。
+Missing span: 不 => 不
+Missing span: 不 => 不
+Missing span: 目瞪口呆 => 目瞪口呆-01
+
+Sentence: 我 不 要 蟒蛇 ， 它 肚子 里 还 有 一 头 象 。 ”
+Extra span: 还 => 还
+Extra span: 它 => 它
+Missing span: 要 => 要-01
+Missing span: 蟒蛇 => 蟒蛇
+Missing span: 有 => 有-03
+Missing span: 象 => 象
+Missing span: 肚子 => 肚子
+
+Sentence: 巨蟒 这 东西 太 危险 ， 大象 又 太 占 地方 。
+Missing span: 大象 => 大象
+
+Sentence: 我 住 的 地方 非常 小 。
+
+Sentence: 我 需要 一 只 羊 。
+Extra span: 只 => 只
+Missing span: 需要 => 需要-01
+
+Sentence: 给 我 画 一 只 羊 吧 。 ”
+Extra span: 只 => 只
+
+Sentence: 我 就 给 他 画 了 。
+
+Sentence: 他 专心 地 看 着 ， 随后 又 说 ： “ 我 不 要 ，
+Extra span: 我 => 我
+Missing span: 专心 => 专心-01
+Missing span: 要 => 要-04
+
+Sentence: 这 只 羊 已经 病 得 很 重 了 。
+Extra span: 只 => 只
+Missing span: 病 => 病-01
+
+Sentence: 给 我 重新 画 一 只 。 ”
+Extra span: 只 => 只
+
+Sentence: 我 又 画 了 起来 。
+
+Sentence: 我 的 这 位 朋友 天真 可爱 地 笑 了 。
+Missing span: 可爱 => 可爱-01
+
+Sentence: “ 你 看 ， 你 画 的 不 是 小羊 ” 他 说 。
+Incorrect span: 说 => 说-01
+Incorrect span: 画 => 画-01
+Extra span: 你 => 你
+Missing span: 说 => 说-02
+Missing span: 画 => (thing :arg1-of 画-01)
+
+Sentence: 是 头 公羊 ，
+Extra span:  => amr-empty
+
+Sentence: 还 有 犄角 呢 。 ”
+Missing span: 有 => 有-01
+
+Sentence: 于是 我 又 重新 画 了 一 张 。
+Extra span: 张 => 张-01
+
+Sentence: 这 副 画 同 前 几 副 一样 又 被 拒绝 了 。
+Extra span: 几 => 几
+Incorrect span: 画 => 画-01
+Missing span: 拒绝 => 拒绝-01
+Missing span: 一样 => 一样-01
+Missing span: 画 => 画
+
+Sentence: “ 这 一 只 太 老 了 。
+Extra span: 只 => 只
+
+Sentence: 我 想要 一 只 能 活 得 长 的 羊 。 ”
+Extra span: 只 => 只
+Incorrect span: 想要 => 想要-01
+Missing span: 想要 => 想要-02
+Missing span: 活 => 活-01
+Missing span: 长 => 长
+
+Sentence: 我 不 耐烦 了 。 因为 我 急于 要 检修 发动机 ，
+Extra span: 我 => 我
+Missing span: 耐烦 => 耐烦-01
+Missing span: 急于 => 急于-01
+Missing span: 要 => 要-03
+Missing span: 检修 => 检修-01
+
+Sentence: 于是 就 草草 画 了 这 张 画 ，
+Incorrect span: 画 => 画-01
+Extra span: 张 => 张-01
+Missing span: 画 => 画
+Missing span: 草草 => 草草
+
+Sentence: 并且 匆匆 地 对 他 说道 ： “
+
+Sentence: 这 是 一 只 箱子 ，
+Extra span: 只 => 只
+
+Sentence: 你 要 的 羊 就 在 里面 。 ”
+Missing span: 要 => 要-01
+
+Sentence: 这时 我 十分 惊奇 地 看到 我 的 这 位 小 评判员 喜笑颜开 。 他 说 ： “ 这 正 是 我 想 要 的 ，
+Extra span: 我 => 我
+Extra span: 他 => 他
+Extra span: 我 => 我
+Missing span: 喜笑颜开 => 喜笑颜开
+Missing span: 评判员 => 评判员
+
+Sentence: 你 说 这 只 羊 需要 很多 草 吗 ？ ”
+Extra span: 只 => 只
+Missing span: 需要 => 需要-01
+
+Sentence: “ 为什么 ？ ”
+Extra span:  => amr-empty
+
+Sentence: “ 因为 我 住 的 地方 一切 都 非常 小 … ”
+
+Sentence: 地方 小 也 够 喂养 它 的 。 ”
+Missing span: 够 => 够-01
+Missing span: 喂养 => 喂养-01
+
+Sentence: 我 说
+
+Sentence: “ 我 给 你 画 的 是 一 只 很 小 的 小羊 ，
+Extra span: 只 => 只
+Incorrect span: 画 => 画-01
+Missing span: 画 => (thing :arg1-of 画-01)
+
+Sentence: 他 把 脑袋 靠近 这 张 画 。 “ 并 不 象 你 说 的 那么 小 … 瞧 ！
+Incorrect span: 瞧 => 瞧-01
+Incorrect span: 说 => 说-01
+Extra span: 并 => 并
+Incorrect span: 画 => 画-01
+Extra span: 张 => 张-01
+Incorrect span: 靠近 => 靠近-02
+Missing span: 靠近 => 靠近-01
+Missing span: 画 => 画
+Missing span: 瞧 => 瞧
+Missing span: 说 => (thing :arg1-of 说-01)
+Missing span: 那么 => 那么
+
+Sentence: 它 睡着 了 … ”
+
+Sentence: 就 这样 ， 我 认识 了 小 王子 。
+Incorrect span: 这样 => 这样
+Missing span: 这样 => 这样-01
+
+Sentence: III 。
+Incorrect span:  => amr-empty
+Missing span: III => III
+
+Sentence: 我 费 了 好 长 时间 才 弄 清楚 他 是 从 哪里 来 的 。
+Extra span: 清楚 => 清楚-01
+Extra span: 才 => 才
+Missing span: 长 => 长
+Missing span: 好 => 好
+Missing span: 来 => 来-01
+Missing span: 哪里 => 哪里
+
+Sentence: 小 王子 向 我 提出 了 很多 问题 ， 可是 ， 对 我 提出 的 问题 ， 他 好象 压根 没有 听见 似的 。
+Extra span: 他 => 他
+Extra span: 我 => 我
+Missing span: 压根 => 压根
+
+Sentence: 他 无意 中 吐露 的 一些 话 逐渐 使 我 搞清 了 他 的 来历 。
+Extra span: 他 => 他
+Extra span: 使 => 使-01
+Missing span: 搞清 => 搞清-01
+Missing span: 逐渐 => 逐渐
+Missing span: 吐露 => 吐露-01
+Missing span: 无意 => 无意
+Missing span: 来历 => 来历
+
+Sentence: 例如 ， 当 他 第一 次 瞅见 我 的 飞机 时 （ 我 就 不 画出 我 的 飞机 了 ， 因为 这 种 图画 对 我 来说 太 复杂 ） ， 他 问 我 道 ： “ 这 是 个 啥 玩艺 ？ ”
+Extra span: 我 => 我
+Extra span: 他 => 他
+Extra span: 我 => 我
+Extra span: 飞机 => 飞机
+Extra span: 我 => 我
+Extra span: 就 => 就
+Extra span: 我 => 我
+Missing span: 图画 => 图画
+Missing span: 种 => 种
+
+Sentence: “ 这 不 是 ‘ 玩艺儿 ’ 。
+
+Sentence: 它 能 飞 。
+Missing span: 飞 => 飞-01
+
+Sentence: 这 是 飞机 。
+
+Sentence: 是 我 的 飞机 。 ”
+
+Sentence: 我 当时 很 骄傲 地 告诉 他 我 能 飞 。
+Extra span: 我 => 我
+Extra span: 他 => 他
+Incorrect span: 骄傲 => 骄傲-01
+Missing span: 飞 => 飞-01
+Missing span: 骄傲 => 骄傲
+
+Sentence: 于是 他 惊奇 地 说道 ： “ 怎么 ？
+Extra span: 说道 => 说道-01
+Incorrect span: 惊奇 => 惊奇-01
+Missing span: 惊奇 => 惊奇
+
+Sentence: 你 是 从 天 上 掉 下来 的 ？ ”
+Missing span: 下来 => 下来-01
+
+Sentence: “ 是 的 ” 。
+Extra span:  => amr-empty
+Missing span: 是 => 是-03
+
+Sentence: 我 谦逊 地 答道 。
+Missing span: 答道 => 答道
+
+Sentence: “ 啊 ？
+
+Sentence: 这 真 滑稽 。 ”
+Missing span: 滑稽 => 滑稽-01
+
+Sentence: 此时 小 王子 发出 一 阵 清脆 的 笑声 。 这 使 我 很 不 高兴 。
+Extra span: 使 => 使-01
+Extra span: 这 => 这
+Incorrect span: 发出 => 发出-02
+Incorrect span: 小 => 小-01
+Missing span: 发出 => 发出-01
+Missing span: 清脆 => 清脆
+Missing span: 小 => 小
+
+Sentence: 我 要求 别人 严肃 地 对待 我 的 不幸 。
+Incorrect span: 不幸 => 不幸-01
+Extra span: 我 => 我
+Missing span: 对待 => 对待-01
+Missing span: 不幸 => 不幸
+
+Sentence: 然后 ， 他 又 说道 ： “ 那么 ， 你 也 是 从 天 上 来 的 了 ！
+Missing span: 来 => 来-01
+
+Sentence: 你 是 哪个 星球 上 的 ？ ”
+
+Sentence: 即刻 ， 对于 他 是 从 哪里 来 的 这个 秘密 我 隐约 发现 到 了 一点 线索 ； 于是 ， 我 就 突然 问道 ： “ 你 是 从 另 一 个 星球 上 来 的 吗 ？ ”
+Extra span: 你 => 你
+Extra span: 我 => 我
+Extra span: 到 => 到-01
+Incorrect span: 秘密 => 秘密-01
+Extra span: 这个 => 这个
+Missing span: 即刻 => 即刻
+Missing span: 线索 => 线索
+Missing span: 秘密 => 秘密
+Missing span: 来 => 来-01
+Missing span: 哪里 => 哪里
+Missing span: 隐约 => 隐约
+Missing span: 来 => 来-01
+
+Sentence: 可是 他 不 回答 我 的 问题 。
+
+Sentence: 他 一面 看 着 我 的 飞机 ， 一面 微微 地 点点 头 ， 接着 说道 ： “ 可 不 是 么 ， 乘坐 这 玩艺儿 ， 你 不 可能 是 从 很 远 的 地方 来 的 … ”
+Incorrect span: 远 => 远-01
+Extra span: 你 => 你
+Missing span: 乘坐 => 乘坐-01
+Missing span: 来 => 来-01
+Missing span: 远 => 远
+Missing span: 微微 => 微微
+
+Sentence: 说到 这里 ， 他 就 长 时间 地 陷入 沉思 之中 。
+Extra span: 时间 => 时间
+Extra span: 这里 => 这里
+Missing span: 陷入 => 陷入-01
+Missing span: 沉思 => 沉思
+
+Sentence: 然后 ， 从 口袋 里 掏出 了 我 画 的 小羊 ， 看 着 他 的 宝贝 入 了 神 。
+Missing span: 掏出 => 掏出-01
+
+Sentence: 你们 可以 想见 这 种 关于 “ 别的 星球 ” 的 若明若暗 的 话语 使 我 心里 多么 好奇 。
+Extra span: 使 => 使-01
+Missing span: 可以 => 可以-01
+Missing span: 想见 => 想见-01
+Missing span: 好奇 => 好奇-01
+Missing span: 若明若暗 => 若明若暗
+
+Sentence: 因此 我 竭力 地 想 知道 其中 更 多 的 奥秘 。
+Extra span: 更 => 更
+Missing span: 想 => 想-02
+Missing span: 其中 => 其中
+Missing span: 竭力 => 竭力
+
+Sentence: “ 你 是 从 哪里 来 的 ， 我 的 小家伙 ？
+Missing span: 来 => 来-01
+
+Sentence: 你 的 家 在 什么 地方 ？
+Extra span: 地方 => 地方
+Extra span: 什么 => 什么
+
+Sentence: 你 要 把 你 的 小羊 带到 哪里 去 ？ ”
+Extra span: 你 => 你
+Missing span: 要 => 要-03
+Missing span: 哪里 => 哪里
+
+Sentence: 他 沉思 了 一会 ， 然后 回答 我 说 ： “ 好在 有 你 给 我 的 那 只 箱子 ， 夜晚 可以 给 小羊 当 房子 用 。 ”
+Extra span: 只 => 只
+Extra span: 那 => 那
+Extra span: 我 => 我
+Extra span: 你 => 你
+Extra span: 说 => 说-01
+Missing span: 沉思 => 沉思-01
+Missing span: 有 => 有-01
+Missing span: 好在 => 好在
+Missing span: 给 => 给-01
+Missing span: 可以 => 可以-01
+Missing span: 当 => 当-05
+
+Sentence: “ 那 当然 。
+
+Sentence: 如果 你 听话 的话 ， 我 再 给 你 画 一 根 绳子 ， 白天 可以 栓住 它 。
+Extra span: 你 => 你
+Missing span: 听话 => 听话-01
+Missing span: 可以 => 可以-01
+
+Sentence: 我 的 建议 看来 有点 使 小 王子 反感 。 “ 栓住 它 ，
+Extra span: 使 => 使-01
+Incorrect span: 看来 => 看来-01
+Incorrect span: 建议 => 建议-01
+Missing span: 看来 => 看来-02
+Missing span: 反感 => 反感-01
+Missing span: 建议 => 建议
+
+Sentence: 多么 奇怪 的 主意 。 ”
+Incorrect span: 奇怪 => 奇怪-01
+Missing span: 主意 => 主意
+Missing span: 奇怪 => 奇怪
+
+Sentence: “ 如果 你 不 栓住 它 ，
+Missing span: 栓住 => 栓住
+
+Sentence: 它 就 到处 跑 ， 那么 它 会 跑 丢 的 。 ”
+Extra span: 它 => 它
+Missing span: 丢 => 丢-02
+
+Sentence: 我 的 这 位 朋友 又 笑 出 了 声 ： “ 你 想 要 它 跑到 哪里 去 呀 ？ ”
+Extra span: 又 => 又
+
+Sentence: “ 不管 什么 地方 。
+
+Sentence: 它 一直 往 前 跑 … ”
+
+Sentence: 这时 ， 小 王子 郑重其事 地 说 ： “ 这 没有 什么 关系 ，
+Extra span: 什么 => 什么
+Missing span: 郑重其事 => 郑重其事
+
+Sentence: 我 那里 很 小 很 小 。 ”
+
+Sentence: 接着 ， 他 略 带 伤感 地 又 补充 了 一 句 ： “ 一直 朝 前 走 ， 也 不 会 走出 多 远 … ”
+Incorrect span: 远 => 远-01
+Missing span: 补充 => 补充-01
+Missing span: 走 => 走-04
+Missing span: 走出 => 走出-02
+Missing span: 远 => 远
+Missing span: 多 => 多
+Missing span: 伤感 => 伤感
+
+--- Performance on Dev ---
+Precision: 0.7196601941747572
+Recall: 0.6538037486218302
+F1: 0.6851530906990179
