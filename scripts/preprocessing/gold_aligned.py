@@ -323,18 +323,17 @@ def generate_align_info_main():
     args = parser.parse_args()
 
     amr_file_path = args.gold_align_amr_file
+
+    corpus_name = amr_file_path.split(".")[0].split("_")[0]
+    aligned_file_path = corpus_name + "_align.txt"
+
     amr_file = open(amr_file_path)
-    aligned_file_path = amr_file_path + ".aligned"
     aligned_file = open(aligned_file_path, "w")
 
     for amr_annotation in extract_amr_annotation_from_file(amr_file):
         amr_tree = AmrTree(amr_annotation)
-        #print amr_annotation.amr_tree_lines
-
         amr_tree.parse()
         amr_tree.save_align_info(aligned_file)
-        break
-
 
     amr_file.close()
     aligned_file.close()
