@@ -1,17 +1,17 @@
 (x0 / I)
 
 (x27 / 描写-01 
-      :location (x41 / 岁 
-            :unit-of (x38 / temporal-quantity 
-                  :poss (x44 / 我))) 
-      :prep-with (x29 / 原始-01 
-            :mod-of (x28 / 森林 
+      :manner (x38 / temporal-quantity 
+            :duration-of (x44 / 我) 
+            :unit (x41 / 岁)) 
+      :manner-of (x29 / 原始-01 
+            :duration (x28 / 森林 
                   :mod-of (x42 / name 
-                        :manner-of (x23 / 书-01 
-                              :manner-of (x17 / 看到-01 
-                                    :timezone (x21 / 精彩-01 
-                                          :timezone (x20 / 插画)))) 
-                        :op "真实的故事"))))
+                        :op "真实的故事" 
+                        :time-of (x23 / 书-01 
+                              :subevent-of (x17 / 看到-01 
+                                    :snt1 (x21 / 精彩-01 
+                                          :duration (x20 / 插画))))))))
 
 # THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
 # java.util.NoSuchElementException
@@ -49,70 +49,70 @@
 (a / amr-empty)
 
 (x9 / 摹本 
-      :mod (x16 / 那) 
-      :poss (x15 / 画 
-            :mod (x14 / 页头)))
+      :mod (x15 / 画 
+            :poss (x14 / 页头)) 
+      :mod (x16 / 那))
 
 (x21 / 咀嚼-01 
-      :day-of (x17 / 猎获物 
-            :beneficiary-of (x15 / 蟒蛇 
-                  :beneficiary-of (x11 / 写道-01 
-                        :day-of (x13 / 书-01)) 
-                  :mod (x16 / 这些))) 
-      :prep-with (x19 / 囫囵 
-            :degree-of (x14 / 吞下-01)))
+      :location (x19 / 囫囵 
+            :degree-of (x14 / 吞下-01)) 
+      :manner (x17 / 猎获物 
+            :domain-of (x15 / 蟒蛇 
+                  :location-of (x11 / 写道-01 
+                        :manner (x13 / 书-01)) 
+                  :mod (x16 / 这些))))
 
 (x26 / and 
-      :mod (x30 / 动弹-01 
-            :age-of (x27 / 能-01 
-                  :manner (x35 / 就) 
-                  :time (x32 / 尔后)) 
-            :manner (x31 / 再-01)) 
-      :prep-on (x34 / 它们 
-            :mod-of (x43 / 长长 
-                  :location-of (x38 / 睡眠-01 
-                        :calendar (x40 / temporal-quantity 
+      :prep-without (x34 / 它们 
+            :domain-of (x43 / 长长 
+                  :domain-of (x38 / 睡眠-01 
+                        :manner (x40 / temporal-quantity 
                               :unit (x44 / 月)) 
-                        :prep-with-of (x33 / 消化-01 
-                              :prep-on (x36 / 食物 
+                        :manner-of (x33 / 消化-01 
+                              :snt8-of (x36 / 食物 
                                     :mod (x37 / 这些)))) 
-                  :manner (x29 / 就))))
+                  :manner (x29 / 就))) 
+      :snt8 (x30 / 动弹-01 
+            :manner (x31 / 再-01 
+                  :ARG3-of (x27 / 能-01 
+                        :domain (x32 / 尔后) 
+                        :manner (x35 / 就)))))
 
 (x8 / 想-01 
-      :ARG1 (x13 / 多-03 
-            :degree (x14 / 很)) 
-      :time (x11 / 奇遇) 
-      :time (x12 / 丛林 
-            :domain (x10 / 我) 
-            :time (x15 / 当时)))
+      :ARG0-of (x11 / 奇遇 
+            :snt4-of (x12 / 丛林 
+                  :poss (x10 / 我) 
+                  :snt4-of (x15 / 当时))) 
+      :ARG6 (x13 / 多-03 
+            :degree (x14 / 很)))
 
 (x17 / 彩色 
-      :poss (x12 / 我) 
-      :value (x16 / 铅笔 
-            :location-of (x11 / 画-01) 
-            :poss-of (x13 / 图画)))
+      :conj-as-if (x12 / 我) 
+      :mod (x16 / 铅笔 
+            :location-of (x13 / 图画) 
+            :manner-of (x11 / 画-01)))
 
 (x4 / 作品 
       :poss (x7 / 我))
 
 (x40 / 问-01 
-      :name (x42 / 害怕-01) 
-      :prep-with-of (x38 / 看-02 
-            :ARG1 (x39 / 大人) 
-            :name (x33 / 拿-01 
-                  :polite-of (x35 / 杰作 
-                        :mod (x36 / 这) 
-                        :poss (x28 / 这样 
-                              :conj-as-if (x34 / 我) 
-                              :poss (x30 / 它))))))
+      :manner (x38 / 看-02 
+            :instrument (x39 / 大人) 
+            :manner (x33 / 拿-01 
+                  :manner (x35 / 杰作 
+                        :mod (x36 / 这)) 
+                  :manner (x28 / 这样 
+                        :name (x34 / 我) 
+                        :poss (x30 / 它)))) 
+      :polite (x42 / 害怕-01))
 
 (x1 / 回答-01 
-      :ARG2 (x3 / 他们) 
-      :prep-without (x5 / 我) 
-      :weekday (x6 / 害怕-01))
+      :ARG6 (x6 / 害怕-01) 
+      :instrument (x3 / 他们) 
+      :instrument (x5 / 我))
 
 (x11 / 可怕-01 
-      :unit (x12 / 帽子))
+      :degree (x12 / 帽子))
 
 # THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
 # java.util.NoSuchElementException
@@ -150,466 +150,466 @@
 (a / amr-empty)
 
 (x9 / 巨蟒 
-      :ARG4-of (x7 / 消化-01 
-            :manner (x11 / 大象)))
+      :ARG0-of (x7 / 消化-01 
+            :time (x11 / 大象)))
 
 (x42 / 看懂-01 
-      :location-of (x41 / 能够-01 
-            :polarity (x31 / 画-01 
-                  :ARG4 (x34 / 情况 
-                        :mod (x35 / 肚子 
-                              :mod (x37 / 巨蟒 
-                                    :location-of (x26 / 能够-01 
-                                          :location (x28 / 理解) 
-                                          :medium (x33 / 我) 
-                                          :poss (x30 / 大人们)) 
-                                    :manner (x32 / 又)))))))
+      :ARG6-of (x41 / 能够-01 
+            :time (x34 / 情况 
+                  :mod (x35 / 肚子 
+                        :mod (x37 / 巨蟒 
+                              :location-of (x26 / 能够-01 
+                                    :ARG6 (x28 / 理解 
+                                          :medium (x33 / 我)) 
+                                    :time (x30 / 大人们)) 
+                              :manner (x32 / 又))) 
+                  :op-of (x31 / 画-01))))
 
 (x0 / 需要-01 
-      :compared-to (x2 / 大人 
+      :degree (x2 / 大人 
             :mod (x4 / 这些)) 
-      :li (x3 / 解释-01) 
-      :manner (x5 / 总是))
+      :manner (x5 / 总是) 
+      :medium (x3 / 解释-01))
 
 (x72 / 历史 
-      :mod (x71 / 地理 
-            :prep-with-of (x67 / 放-01 
-                  :degree (x69 / 兴趣 
-                        :mod (x66 / 一边 
-                              :prep-with-of (x51 / 放-01 
-                                    :degree (x53 / 图画 
-                                          :mod (x60 / 蟒蛇 
-                                                :frequency-of (x63 / 闭上-01 
-                                                      :direction-of (x59 / 开-02 
-                                                            :direction (x56 / 画-01 
-                                                                  :prep-on-behalf-of (x47 / 劝-01 
-                                                                        :prep-on-behalf-of (x2 / 这样-01 
-                                                                              :time (x4 / 作品 
-                                                                                    :poss (x6 / 我))))) 
-                                                            :direction (x61 / 肚皮)))))))))) 
-      :mod-of (x73 / 算术 
-            :mod-of (x74 / 语法)))
+      :poss (x71 / 地理 
+            :prep-out-of (x67 / 放-01 
+                  :instrument (x69 / 兴趣) 
+                  :op (x66 / 一边 
+                        :prep-out-of (x51 / 放-01 
+                              :instrument (x53 / 图画 
+                                    :poss (x60 / 蟒蛇 
+                                          :compared-to-of (x63 / 闭上-01 
+                                                :op-of (x59 / 开-02 
+                                                      :manner (x56 / 画-01) 
+                                                      :manner (x47 / 劝-01 
+                                                            :instrument (x2 / 这样-01 
+                                                                  :mode-of (x4 / 作品 
+                                                                        :poss (x6 / 我)))) 
+                                                      :prep-out (x61 / 肚皮))))))))) 
+      :poss-of (x73 / 算术 
+            :poss-of (x74 / 语法)))
 
 (x29 / 放弃-01 
-      :concession (x37 / 当-02 
-            :direction (x36 / 画家 
-                  :location-of (x33 / 美好 
-                        :concession (x32 / 职业)) 
-                  :snt9 (x34 / 这))) 
-      :location (x42 / 岁 
-            :unit-of (x40 / temporal-quantity 
-                  :location (x27 / 这样 
-                        :manner (x28 / 就)))) 
       :manner (x30 / 就) 
-      :poss (x31 / 我))
+      :manner (x40 / temporal-quantity 
+            :unit (x42 / 岁 
+                  :manner (x27 / 这样 
+                        :manner (x28 / 就)))) 
+      :manner (x31 / 我) 
+      :manner-of (x37 / 当-02 
+            :manner-of (x36 / 画家 
+                  :quarter (x34 / 这) 
+                  :time-of (x33 / 美好 
+                        :manner-of (x32 / 职业)))))
 
 (x6 / 作品 
-      :poss (x2 / 我) 
-      :snt9 (x4 / 成功-01 
-            :time-of (x0 / 泄-01 
-                  :prep-with (x3 / 气-02))))
+      :compared-to (x4 / 成功-01 
+            :manner-of (x0 / 泄-01 
+                  :mode (x3 / 气-02))) 
+      :domain (x2 / 我))
 
 (x42 / 作-01 
-      :time (x46 / 不断 
-            :direction-of (x40 / 得-02 
-                  :direction (x45 / 老是) 
-                  :time (x41 / 还) 
-                  :time (x37 / 靠-01 
-                        :direction (x36 / 什么) 
-                        :time (x34 / 大人们 
-                              :mod (x35 / 这些))))) 
-      :time-of (x43 / 解释-01))
+      :time-of (x43 / 解释-01 
+            :time (x46 / 不断 
+                  :mod (x45 / 老是 
+                        :source-of (x40 / 得-02 
+                              :manner (x41 / 还) 
+                              :time (x37 / 靠-01 
+                                    :prep-through (x36 / 什么) 
+                                    :time (x34 / 大人们 
+                                          :mod (x35 / 这些))))))))
 
 (x21 / 选择-01 
-      :ARG4 (x25 / 另外 
-            :mod-of (x23 / 职业 
-                  :time-of (x26 / 学会-01 
+      :manner (x20 / 只好) 
+      :manner (x22 / 我) 
+      :ord (x25 / 另外 
+            :location-of (x23 / 职业 
+                  :prep-for (x26 / 学会-01 
                         :manner-of (x28 / 开-02 
-                              :ARG4 (x30 / 飞机))))) 
-      :beneficiary (x22 / 我) 
-      :manner (x20 / 只好))
+                              :ARG3 (x30 / 飞机))))))
 
 (x5 / 差不多 
       :location (x4 / 世界) 
-      :location-of (x2 / 飞到-01 
+      :manner-of (x2 / 飞到-01 
             :manner (x6 / 都) 
-            :prep-on (x12 / 的确 
-                  :location-of (x8 / 地理学 
-                        :location-of (x10 / 大-04 
+            :snt8-of (x12 / 的确 
+                  :manner-of (x8 / 地理学 
+                        :domain-of (x10 / 大-04 
                               :degree (x11 / 很) 
-                              :prep-with (x9 / 我))))))
+                              :snt8 (x9 / 我))))))
 
 (x8 / 中国 
-      :ARG5-of (x5 / 分辨-01 
-            :ord-of (x0 / 能-01 
-                  :ARG5 (x4 / 一眼) 
-                  :ARG5-of (x3 / 就-01)) 
-            :prep-on-behalf (x10 / 我)))
+      :ARG4-of (x5 / 分辨-01 
+            :manner (x3 / 就-01 
+                  :manner-of (x0 / 能-01 
+                        :ARG4 (x4 / 一眼))) 
+            :snt7 (x10 / 我)))
 
 (x3 / 航向 
-      :location-of (x5 / 有用-01 
+      :manner-of (x5 / 有用-01 
             :degree (x6 / 很) 
             :domain (x7 / 这)) 
-      :prep-on-of (x2 / 迷失-01 
+      :snt8 (x2 / 迷失-01 
             :time (x4 / 夜里)))
 
-(x13 / 接触-01 
-      :prep-toward (x18 / 人 
-            :mod (x19 / 严肃-01 
-                  :value-of (x25 / 许多 
-                        :domain (x22 / 生活 
-                              :poss (x17 / 我))))))
+(x25 / 许多 
+      :ARG3 (x19 / 严肃-01 
+            :mod-of (x18 / 人 
+                  :prep-against-of (x13 / 接触-01))) 
+      :mod-of (x22 / 生活 
+            :poss (x17 / 我)))
 
-(x4 / 大人们 
-      :mod-of (x3 / 中间 
-            :instrument-of (x0 / 生活-01 
-                  :prep-on-behalf (x2 / 我) 
-                  :weekday (x5 / 时间 
-                        :mod (x6 / 长-04 
-                              :degree (x7 / 很))))))
+(x6 / 长-04 
+      :degree (x7 / 很) 
+      :mod-of (x5 / 时间 
+            :prep-without-of (x0 / 生活-01 
+                  :location (x3 / 中间 
+                        :mod (x4 / 大人们)) 
+                  :snt7 (x2 / 我))))
 
-(x0 / 观察-01 
-      :prep-with (x4 / 他们) 
-      :prep-with-of (x3 / 仔细-01 
-            :li (x2 / 我)))
+(x3 / 仔细-01 
+      :instrument (x2 / 我) 
+      :mode (x0 / 观察-01 
+            :prep-out (x4 / 他们)))
 
 (x19 / 看法 
-      :location-of (x17 / 改变-01) 
-      :poss (x21 / 他们 
-            :ARG4 (x18 / 我 
-                  :ARG1 (x24 / 这))))
+      :part-of (x21 / 他们) 
+      :poss-of (x24 / 这 
+            :ARG4-of (x18 / 我)) 
+      :time-of (x17 / 改变-01))
 
 (x2 / 拿出-01 
-      :location (x17 / 大人 
-            :mod (x27 / 清楚 
-                  :mod (x28 / 稍微 
-                        :mod (x29 / 看来 
-                              :mod (x26 / 头脑 
-                                    :timezone-of (x15 / 遇到-01 
-                                          :li (x4 / 我))))))) 
-      :manner (x6 / 就-01) 
-      :prep-with (x11 / 一直 
+      :duration (x11 / 一直 
             :manner-of (x10 / 保存-01 
-                  :timezone (x8 / 那 
-                        :mod-of (x5 / 作品 
-                              :manner-of (x12 / 测试-01))))))
+                  :time-of (x12 / 测试-01 
+                        :time (x5 / 作品 
+                              :mod (x8 / 那))))) 
+      :manner (x6 / 就-01) 
+      :time (x17 / 大人 
+            :mod (x27 / 清楚 
+                  :manner (x28 / 稍微 
+                        :duration-of (x29 / 看来 
+                              :mod (x26 / 头脑 
+                                    :subevent (x15 / 遇到-01 
+                                          :subevent (x4 / 我))))))))
 
-(x14 / 理解-01 
-      :ARG3-of (x7 / 有-01 
-            :ARG5 (x13 / 能力) 
-            :ARG6 (x10 / 真的-01 
-                  :ARG1 (x12 / 他) 
-                  :ARG3 (x11 / 是否-01 
-                        :ARG4-of (x3 / 知道-01 
-                              :ARG5-of (x0 / 想-02 
-                                    :prep-on-behalf (x2 / 我)))))))
+(x11 / 是否-01 
+      :ARG3-of (x10 / 真的-01 
+            :ARG3-of (x7 / 有-01 
+                  :ARG3-of (x14 / 理解-01) 
+                  :ARG4 (x13 / 能力)) 
+            :ARG4 (x12 / 他) 
+            :ARG6-of (x3 / 知道-01 
+                  :ARG6-of (x0 / 想-02 
+                        :li (x2 / 我)))))
 
 (x2 / 得到-01 
-      :time (x8 / 帽子 
-            :beneficiary (x9 / 这)) 
-      :weekday-of (x3 / 回答-01))
+      :location (x8 / 帽子 
+            :ord-of (x9 / 这)) 
+      :manner-of (x3 / 回答-01))
 
 (x14 / 原始-01 
-      :prep-on-behalf (x13 / 森林 
-            :prep-on-behalf (x15 / 星星 
-                  :location-of (x10 / 事))) 
-      :time (x12 / 巨蟒 
-            :prep-on-behalf-of (x0 / 谈-01 
-                  :li (x16 / 他) 
-                  :li (x4 / 我))))
+      :compared-to-of (x12 / 巨蟒 
+            :prep-toward-of (x0 / 谈-01 
+                  :instrument (x16 / 他) 
+                  :poss (x4 / 我))) 
+      :location (x15 / 星星 
+            :location-of (x10 / 事)) 
+      :prep-toward (x13 / 森林))
 
 (x12 / 水平 
-      :frequency-of (x10 / 迁就-01 
-            :degree (x7 / 只得-01 
-                  :li (x9 / 我)) 
-            :prep-on-behalf (x13 / 他)))
+      :compared-to-of (x10 / 迁就-01 
+            :prep-toward (x13 / 他) 
+            :prep-toward-of (x7 / 只得-01 
+                  :instrument (x9 / 我))))
 
 (x6 / 政治 
-      :mod (x5 / 高尔夫球 
-            :mod (x4 / 桥牌 
-                  :mod (x0 / 谈-01 
-                        :location (x10 / 他们)))) 
-      :mod-of (x7 / 领带 
+      :domain (x5 / 高尔夫球 
+            :domain (x4 / 桥牌 
+                  :poss (x0 / 谈-01 
+                        :manner (x10 / 他们)))) 
+      :domain-of (x7 / 领带 
             :poss-of (x2 / 这些)))
 
 (x8 / 认识-01 
+      :conj-as-if (x13 / 这样-01 
+            :manner-of (x15 / 通情达理-01 
+                  :snt8 (x12 / 人))) 
       :manner (x7 / 能-02 
-            :ARG4 (x13 / 这样-01 
-                  :weekday-of (x15 / 通情达理-01 
-                        :scale (x12 / 人))) 
-            :ARG4-of (x3 / 高兴-01 
-                  :degree (x5 / 十分 
-                        :degree-of (x6 / 就-01 
-                              :degree (x4 / 大人们))))) 
-      :prep-with (x17 / 我))
+            :manner (x3 / 高兴-01 
+                  :degree (x5 / 十分)) 
+            :manner (x6 / 就-01 
+                  :manner (x4 / 大人们))) 
+      :medium (x17 / 我))
 
 (x0 / II)
 
-(x13 / 这样-01 
-      :degree (x15 / 就-01 
-            :li (x11 / 我)) 
-      :degree-of (x12 / 孤独-01 
-            :prep-with (x10 / 生活-01 
-                  :purpose (x20 / 能-01 
-                        :prep-with (x22 / 真正-01 
-                              :mod-of (x18 / 人 
-                                    :location (x46 / 前 
-                                          :quant (x48 / temporal-quantity 
-                                                :unit (x50 / 年)) 
-                                          :time-of (x41 / 发生-01 
-                                                :mod (x43 / 那 
-                                                      :mod-of (x42 / 故障)) 
-                                                :time (x45 / 撒哈拉 
-                                                      :location (x44 / 沙漠))))))))))
+(x42 / 故障 
+      :location-of (x41 / 发生-01 
+            :location (x45 / 撒哈拉 
+                  :mod-of (x44 / 沙漠) 
+                  :quant-of (x46 / 前 
+                        :poss (x18 / 人 
+                              :mod (x22 / 真正-01 
+                                    :prep-toward-of (x10 / 生活-01 
+                                          :instrument (x12 / 孤独-01 
+                                                :instrument (x13 / 这样-01 
+                                                      :prep-toward-of (x15 / 就-01 
+                                                            :instrument (x11 / 我))))) 
+                                    :prep-toward-of (x20 / 能-01))) 
+                        :quant (x48 / temporal-quantity 
+                              :unit (x50 / 年))))) 
+      :mod (x43 / 那))
 
 (x6 / 损坏-01 
-      :ARG4 (x8 / 东西) 
-      :location (x12 / 发动机 
+      :ARG5 (x8 / 东西) 
+      :time (x12 / 发动机 
             :poss (x13 / 我)))
 
 (x12 / 试图-01 
-      :manner (x24 / 就-01) 
-      :manner-of (x17 / 完成-01 
-            :manner (x18 / 独自) 
-            :manner-of (x22 / 困难-01 
-                  :manner-of (x21 / 维修-01 
-                        :ARG6 (x20 / 工作-01)))) 
-      :time (x8 / 带-01 
-            :ARG6 (x11 / 旅客) 
-            :time (x7 / 机械师 
-                  :ARG6-of (x3 / 带-01 
-                        :name (x6 / 我)))))
+      :ARG4 (x17 / 完成-01 
+            :ARG4 (x22 / 困难-01 
+                  :ARG4 (x21 / 维修-01 
+                        :ARG6 (x20 / 工作-01))) 
+            :manner (x18 / 独自)) 
+      :ARG4-of (x8 / 带-01 
+            :ARG0 (x11 / 旅客) 
+            :ARG4-of (x3 / 带-01 
+                  :ARG0 (x7 / 机械师) 
+                  :ARG6 (x6 / 我))) 
+      :ARG6-of (x24 / 就-01))
 
 (x27 / 问题 
-      :ARG3-of (x31 / 死 
-            :ARG5 (x30 / 生)) 
-      :domain (x25 / 这) 
-      :manner-of (x32 / 够-01 
-            :ARG1 (x42 / 饮用-01 
-                  :ARG2 (x45 / temporal-quantity 
-                        :unit (x47 / 星期))) 
-            :ARG4-of (x35 / 带-02 
-                  :ARG0 (x34 / 水) 
-                  :manner (x38 / 随身)) 
+      :ARG0 (x31 / 死 
+            :ARG5-of (x30 / 生)) 
+      :ARG4-of (x32 / 够-01 
+            :ARG6 (x42 / 饮用-01 
+                  :ARG0 (x45 / temporal-quantity 
+                        :unit (x47 / 星期)) 
+                  :ARG4 (x34 / 水 
+                        :mod (x35 / 带-02 
+                              :manner (x38 / 随身)))) 
             :manner (x33 / 只)) 
       :time (x23 / 来说-01 
-            :ARG2 (x26 / 我)))
+            :ARG6 (x26 / 我) 
+            :ARG6-of (x25 / 这)))
 
 (x15 / 人间 
-      :ARG4 (x7 / 远离-01 
-            :ARG2 (x6 / 这) 
-            :ARG4-of (x0 / 睡-01 
-                  :manner (x3 / 就-01) 
-                  :op (x2 / 我 
-                        :ARG2 (x9 / 晚上)))) 
+      :ARG3 (x7 / 远离-01 
+            :ARG5 (x6 / 这)) 
       :mod-of (x14 / 烟火 
-            :ARG5-of (x5 / 大-04 
-                  :mod-of (x4 / 沙漠))))
+            :ARG4-of (x5 / 大-04 
+                  :mod-of (x4 / 沙漠)) 
+            :time-of (x0 / 睡-01 
+                  :manner (x3 / 就-01) 
+                  :snt7 (x2 / 我 
+                        :ARG3 (x9 / 晚上)))))
 
-(x22 / 大海 
-      :location-of (x20 / 伏-01 
-            :ARG4 (x21 / 木排) 
-            :manner (x16 / 多-03 
-                  :ARG4 (x14 / 孤独-01)) 
-            :prep-on-behalf (x17 / 我)))
+(x14 / 孤独-01 
+      :ARG5-of (x16 / 多-03 
+            :manner-of (x20 / 伏-01 
+                  :ARG0 (x21 / 木排) 
+                  :location (x22 / 大海) 
+                  :snt7 (x17 / 我))))
 
 (x23 / 吃惊-01 
-      :degree (x26 / 多么) 
-      :time (x25 / 当时 
-            :ARG4-of (x21 / 想见-01 
-                  :ARG4-of (x2 / 可以-01 
-                        :degree (x22 / 你们)) 
-                  :subset (x27 / 叫醒-01 
-                        :degree (x28 / 声音 
-                              :beneficiary (x31 / 奇怪 
-                                    :domain (x34 / 拂晓)) 
-                              :mod (x29 / 小)) 
-                        :prep-with (x24 / 我)))))
+      :manner (x26 / 多么) 
+      :manner (x25 / 当时 
+            :ord-of (x21 / 想见-01 
+                  :ARG3-of (x2 / 可以-01 
+                        :instrument (x22 / 你们)) 
+                  :manner (x27 / 叫醒-01 
+                        :ARG3 (x24 / 我) 
+                        :manner (x28 / 声音 
+                              :manner (x29 / 小) 
+                              :manner (x31 / 奇怪 
+                                    :manner (x34 / 拂晓)))))))
 
-(x0 / 说道-01 
-      :degree (x2 / 声音 
-            :mod (x3 / 小小-01 
-                  :mod (x4 / 这))) 
-      :snt9 (x5 / 请-01 
-            :prep-following (x7 / 画 
-                  :beneficiary (x10 / 我) 
-                  :snt9 (x8 / 羊)) 
-            :snt9 (x6 / 你)))
+(x7 / 画 
+      :location (x8 / 羊) 
+      :location-of (x5 / 请-01 
+            :prep-toward (x6 / 你) 
+            :time (x2 / 声音 
+                  :manner-of (x0 / 说道-01) 
+                  :mod (x3 / 小小-01 
+                        :mod (x4 / 这)))) 
+      :mod (x10 / 我))
 
 (x2 / 啊)
 
 (x2 / 画-01 
-      :beneficiary (x5 / 我) 
-      :poss (x3 / 羊))
+      :location (x3 / 羊) 
+      :source (x5 / 我))
 
 (x16 / 轰击-01 
-      :degree (x18 / 惊雷 
-            :prep-on-behalf-of (x14 / 受到-01 
-                  :name (x13 / 我))) 
-      :frequency (x22 / 一下子 
-            :time-of (x20 / 站立-01 
-                  :manner (x23 / 就))))
+      :instrument (x18 / 惊雷 
+            :prep-toward-of (x14 / 受到-01 
+                  :instrument (x13 / 我))) 
+      :prep-toward (x20 / 站立-01 
+            :manner (x22 / 一下子) 
+            :manner (x23 / 就)))
 
 (x10 / 使劲-01 
-      :li (x8 / 我) 
-      :prep-with (x6 / 揉-01 
-            :frequency (x9 / 眼睛)))
+      :instrument (x8 / 我) 
+      :mode (x6 / 揉-01 
+            :compared-to (x9 / 眼睛)))
 
 (x0 / 看-02 
-      :ARG2-of (x2 / 仔细-01))
+      :ARG2 (x2 / 仔细-01))
 
 (x22 / 严肃 
       :ARG4 (x14 / 望-01 
             :manner (x20 / 凝眸-01) 
-            :manner (x2 / 我 
-                  :prep-on-behalf-of (x0 / 看见-01 
-                        :ARG1 (x17 / 奇怪 
-                              :degree (x18 / 十分))))))
+            :purpose-of (x0 / 看见-01 
+                  :ARG4 (x17 / 奇怪 
+                        :degree (x18 / 十分)) 
+                  :li (x2 / 我))))
 
 (x9 / 画像 
-      :domain (x18 / 这) 
-      :location-of (x14 / 画-01 
-            :ARG2 (x16 / 他) 
-            :ARG3 (x12 / 好 
-                  :ARG4 (x13 / 最)) 
-            :manner (x17 / 后来) 
-            :op (x15 / 我)))
+      :ARG4-of (x12 / 好 
+            :ARG3 (x13 / 最) 
+            :ARG4-of (x14 / 画-01 
+                  :ARG6 (x16 / 他) 
+                  :manner (x17 / 后来) 
+                  :snt7 (x15 / 我))) 
+      :domain (x18 / 这))
 
 (x14 / 本人 
-      :beneficiary (x13 / 他) 
-      :beneficiary (x16 / 当然 
-            :quant (x10 / 画 
-                  :beneficiary (x11 / 我))) 
-      :mod-of (x12 / 模样 
-            :quant-of (x9 / 逊色 
-                  :mod-of (x15 / 多))))
+      :manner (x16 / 当然 
+            :manner-of (x10 / 画 
+                  :poss (x11 / 我))) 
+      :ord (x12 / 模样 
+            :ord (x9 / 逊色 
+                  :ord (x15 / 多))) 
+      :prep-against (x13 / 他))
 
 (x0 / 过错 
       :domain (x4 / 这) 
       :poss (x2 / 我))
 
 (x30 / 蟒蛇 
-      :ARG5-of (x34 / 闭-01 
-            :calendar (x35 / 肚皮) 
-            :direction-of (x31 / 开-02 
-                  :direction (x32 / 肚皮) 
-                  :time (x27 / 画-01 
-                        :time (x44 / 勇气 
-                              :calendar-of (x42 / 失去-01 
-                                    :time (x45 / 生涯 
-                                          :ARG2-of (x46 / 画家)) 
-                                    :time (x48 / 大人们 
+      :snt4 (x25 / 后来-01 
+            :ARG2 (x22 / 再-01) 
+            :ARG6 (x20 / 学-01 
+                  :degree (x24 / 画))) 
+      :snt4-of (x34 / 闭-01 
+            :ARG6-of (x31 / 开-02 
+                  :direction (x27 / 画-01 
+                        :prep-by (x44 / 勇气 
+                              :instrument-of (x42 / 失去-01 
+                                    :ARG2-of (x45 / 生涯 
+                                          :op-of (x46 / 画家)) 
+                                    :snt4-of (x48 / 大人们 
                                           :poss (x43 / 我) 
-                                          :poss-of (x53 / temporal-quantity 
-                                                :unit (x55 / 岁)))))))) 
-      :time-of (x25 / 后来-01 
-            :ARG0 (x22 / 再-01) 
-            :time-of (x20 / 学-01 
-                  :calendar (x24 / 画))))
+                                          :snt4-of (x55 / 岁 
+                                                :unit-of (x53 / temporal-quantity)))))) 
+                  :direction (x32 / 肚皮)) 
+            :degree (x35 / 肚皮)))
 
-(x21 / 出现-01 
-      :ARG6-of (x16 / 看-02 
-            :ARG2 (x28 / 惊奇 
-                  :ARG2 (x18 / 我)) 
-            :ARG4 (x27 / 眼睛)) 
-      :age (x23 / 这) 
-      :manner (x22 / 突然))
+(x22 / 突然 
+      :manner-of (x21 / 出现-01 
+            :ARG4 (x16 / 看-02 
+                  :ARG1 (x27 / 眼睛) 
+                  :ARG4 (x28 / 惊奇 
+                        :ARG0-of (x18 / 我))) 
+            :snt4 (x23 / 这)))
 
 (x10 / 人烟 
-      :poss-of (x7 / 地方) 
-      :prep-without-of (x9 / 远离-01 
-            :time (x11 / 当时 
-                  :purpose-of (x3 / 忘记-01 
-                        :conj-as-if (x6 / 我) 
-                        :name (x4 / 你们) 
-                        :prep-without-of (x0 / 要-03)))))
+      :mod (x9 / 远离-01 
+            :ARG3-of (x3 / 忘记-01 
+                  :ARG3-of (x0 / 要-03) 
+                  :domain (x4 / 你们) 
+                  :location (x11 / 当时) 
+                  :polite (x6 / 我))) 
+      :mod-of (x7 / 地方))
 
 (x19 / 惧怕-01 
-      :ARG4-of (x18 / 饥渴-01 
-            :time (x17 / 疲乏 
-                  :beneficiary (x16 / 半点) 
-                  :domain (x2 / 印象 
-                        :domain (x5 / 我)))) 
-      :beneficiary-of (x14 / 神情))
+      :manner (x18 / 饥渴-01 
+            :conj-as-if-of (x17 / 疲乏 
+                  :manner (x16 / 半点 
+                        :mod-of (x2 / 印象 
+                              :poss (x5 / 我))))) 
+      :manner-of (x14 / 神情))
 
-(x7 / 迷失-01 
-      :manner (x3 / 丝毫 
-            :ARG2 (x4 / 他)) 
-      :weekday (x5 / 孩子 
-            :location (x8 / 沙漠 
-                  :mod (x9 / 大-01))))
+(x9 / 大-01 
+      :mod-of (x8 / 沙漠 
+            :location-of (x5 / 孩子 
+                  :prep-without-of (x7 / 迷失-01 
+                        :manner (x3 / 丝毫) 
+                        :medium (x4 / 他)))))
 
 (x37 / 惊讶-01 
-      :timezone (x31 / 能-01 
+      :season (x25 / 我) 
+      :subevent-of (x31 / 能-01 
             :manner (x36 / 又) 
-            :timezone (x26 / 他 
-                  :poss-of (x28 / 这儿))) 
-      :timezone (x25 / 我))
+            :prep-toward (x26 / 他 
+                  :domain-of (x28 / 这儿))))
 
 (x27 / 重要 
-      :location-of (x25 / 事 
+      :ord (x25 / 事 
             :location-of (x31 / 重复 
-                  :beneficiary (x32 / 我) 
-                  :time-of (x33 / 请-01 
-                        :beneficiary-of (x36 / 画-01 
-                              :prep-out (x39 / 羊))))) 
-      :prep-out-of (x23 / 有-01 
-            :beneficiary (x30 / 不慌不忙 
-                  :beneficiary (x24 / 他))))
+                  :location-of (x33 / 请-01 
+                        :ord (x36 / 画-01 
+                              :ord (x39 / 羊))) 
+                  :prep-with (x32 / 我))) 
+      :prep-for-of (x23 / 有-01 
+            :manner (x30 / 不慌不忙 
+                  :ord (x24 / 他))))
 
 (x12 / 神秘-01 
-      :manner (x16 / 种) 
-      :timezone (x11 / 东西 
-            :manner-of (x10 / 镇住-01 
-                  :condition (x3 / 你) 
-                  :timezone (x4 / 听从-01 
-                        :prep-with (x7 / 支配-01) 
-                        :prep-with-of (x0 / 敢-02)))))
+      :duration (x11 / 东西 
+            :time-of (x10 / 镇住-01 
+                  :manner-of (x0 / 敢-02 
+                        :prep-toward (x4 / 听从-01 
+                              :subevent-of (x7 / 支配-01))) 
+                  :subevent (x3 / 你))) 
+      :time (x16 / 种))
 
-(x26 / 感到-01 
-      :degree (x29 / 十分 
-            :mod-of (x28 / 荒诞 
-                  :time-of (x10 / 掏出-01 
-                        :manner (x11 / 还是) 
-                        :time-of (x14 / 纸 
-                              :time-of (x17 / 钢笔))))) 
-      :time (x30 / 举动 
-            :mod (x31 / 这样)) 
-      :time (x27 / 我) 
-      :time (x37 / 危险-01 
-            :time (x38 / 死亡-01 
-                  :direction-of (x36 / 面临-01 
-                        :time (x33 / 沙漠 
-                              :mod (x35 / 旷无人烟 
-                                    :mod (x34 / 这)))))))
+(x35 / 旷无人烟 
+      :mod (x34 / 这) 
+      :time-of (x36 / 面临-01 
+            :location (x33 / 沙漠) 
+            :manner-of (x38 / 死亡-01 
+                  :mode (x37 / 危险-01 
+                        :time-of (x30 / 举动 
+                              :manner (x31 / 这样) 
+                              :time-of (x26 / 感到-01 
+                                    :accompanier (x27 / 我) 
+                                    :calendar (x29 / 十分 
+                                          :degree-of (x28 / 荒诞 
+                                                :time-of (x10 / 掏出-01 
+                                                      :manner (x11 / 还是) 
+                                                      :time-of (x14 / 纸 
+                                                            :time-of (x17 / 钢笔)))))))))))
 
-(x14 / 说-01 
-      :frequency-of (x21 / 会-02) 
-      :time (x16 / 高兴 
-            :quant (x18 / 有点 
-                  :manner (x19 / 就) 
-                  :quant (x13 / 语法 
-                        :quant (x12 / 算术 
-                              :quant (x11 / 历史 
-                                    :topic (x10 / 地理 
-                                          :manner (x7 / 只 
-                                                :quant (x3 / 记起 
-                                                      :manner (x4 / 又) 
-                                                      :quant (x5 / 我))))))))))
+(x10 / 地理 
+      :manner (x7 / 只 
+            :prep-out-of (x3 / 记起 
+                  :manner (x4 / 又) 
+                  :prep-through (x5 / 我))) 
+      :prep-out (x11 / 历史 
+            :prep-out (x12 / 算术 
+                  :prep-out (x13 / 语法 
+                        :prep-out (x18 / 有点 
+                              :degree-of (x16 / 高兴 
+                                    :manner-of (x14 / 说-01 
+                                          :prep-out (x21 / 会-02))) 
+                              :manner (x19 / 就))))))
 
 (x7 / 关系 
-      :purpose-of (x0 / 回答-01 
-            :ARG5 (x4 / 我) 
-            :mod (x2 / 他)))
+      :domain-of (x0 / 回答-01 
+            :instrument (x2 / 他) 
+            :instrument (x4 / 我)))
 
 (x2 / 画-01 
-      :beneficiary (x3 / 羊) 
-      :location (x5 / 我))
+      :ARG3 (x5 / 我) 
+      :dayperiod (x3 / 羊))
 
 (x2 / 画-01 
+      :degree (x5 / 羊) 
       :duration (x6 / 从来) 
-      :li (x5 / 羊) 
-      :op (x3 / 我))
+      :snt7 (x3 / 我))
 
 # THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
 # java.util.NoSuchElementException
@@ -647,82 +647,82 @@
 (a / amr-empty)
 
 (x3 / 肚皮 
-      :poss-of (x0 / 巨蟒))
+      :mod-of (x0 / 巨蟒))
 
 (x31 / 目瞪口呆-01 
       :degree (x32 / 简直) 
-      :unit (x24 / 话 
-            :poss (x25 / 他) 
-            :poss (x22 / 听-01 
-                  :snt2 (x23 / 我) 
-                  :unit (x29 / 不 
-                        :mod (x28 / 不)))))
+      :prep-through (x24 / 话 
+            :age-of (x22 / 听-01 
+                  :source (x23 / 我) 
+                  :time (x29 / 不 
+                        :op (x28 / 不))) 
+            :poss (x25 / 他)))
 
-(x18 / 肚子 
-      :prep-on-behalf-of (x13 / 要-01 
-            :poss (x15 / 我) 
-            :prep-on-behalf (x16 / 蟒蛇)) 
-      :time-of (x17 / 有-03 
-            :compared-to (x20 / 象)))
+(x13 / 要-01 
+      :poss (x15 / 我) 
+      :prep-toward (x16 / 蟒蛇 
+            :compared-to (x18 / 肚子 
+                  :manner-of (x17 / 有-03 
+                        :compared-to (x20 / 象)))))
 
-(x28 / 巨蟒 
-      :concession (x25 / 东西 
-            :concession (x23 / 危险-01 
-                  :degree (x24 / 太) 
-                  :prep-along-with (x32 / 大象 
-                        :medium (x29 / 占-02 
-                              :degree (x30 / 太) 
-                              :prep-amid (x33 / 地方)) 
-                        :prep-without (x31 / 又))) 
-            :mod (x26 / 这)))
+(x29 / 占-02 
+      :degree (x30 / 太) 
+      :instrument (x33 / 地方) 
+      :manner (x31 / 又) 
+      :op (x23 / 危险-01 
+            :degree (x24 / 太) 
+            :op (x25 / 东西 
+                  :mod (x26 / 这) 
+                  :mod (x28 / 巨蟒)) 
+            :op-of (x32 / 大象)))
 
 (x11 / 住-01 
-      :ARG3 (x10 / 地方 
+      :li (x12 / 我) 
+      :mod-of (x10 / 地方 
             :location-of (x7 / 小-01 
-                  :degree (x9 / 非常-01))) 
-      :prep-on-behalf (x12 / 我))
+                  :ARG3 (x9 / 非常-01))))
 
 (x6 / 需要-01 
-      :prep-on-behalf (x8 / 我) 
-      :weekday (x9 / 羊))
+      :li (x8 / 我) 
+      :medium (x9 / 羊))
 
 (x4 / 画-01 
-      :beneficiary (x5 / 羊) 
-      :location (x7 / 我))
+      :ARG3 (x7 / 我) 
+      :dayperiod (x5 / 羊))
 
 (x0 / 画-01 
-      :ARG2 (x4 / 他) 
-      :prep-on-behalf (x2 / 我) 
+      :ARG6 (x4 / 他) 
+      :snt7 (x2 / 我) 
       :time (x3 / 就))
 
-(x5 / 说-01 
-      :manner (x6 / 又) 
-      :purpose (x8 / 要-04) 
-      :time (x2 / 看-02 
-            :direction (x4 / 专心-01 
-                  :ARG5 (x3 / 他))))
+(x4 / 专心-01 
+      :instrument (x3 / 他) 
+      :manner-of (x5 / 说-01 
+            :manner (x6 / 又) 
+            :prep-toward (x8 / 要-04)) 
+      :manner-of (x2 / 看-02))
 
 (x8 / 病-01 
-      :ARG4-of (x12 / 重-02 
-            :degree (x13 / 很)) 
-      :ARG5 (x10 / 羊 
+      :ARG4 (x10 / 羊 
             :mod (x11 / 这)) 
+      :ARG6-of (x12 / 重-02 
+            :degree (x13 / 很)) 
       :manner (x14 / 已经))
 
 (x2 / 画-01 
-      :location (x3 / 重新-01 
-            :beneficiary-of (x6 / 我)))
+      :manner (x3 / 重新-01 
+            :ARG3 (x6 / 我)))
 
 (x0 / 画-01 
       :manner (x2 / 又) 
-      :op (x3 / 我))
+      :snt7 (x3 / 我))
 
 (x2 / 可爱-01 
-      :ARG6-of (x0 / 笑-01 
-            :ARG1 (x3 / 天真-01 
-                  :ARG4-of (x4 / 朋友 
-                        :mod (x5 / 这) 
-                        :poss (x6 / 我)))))
+      :ARG5 (x0 / 笑-01) 
+      :ARG5-of (x3 / 天真-01 
+            :ARG0 (x4 / 朋友 
+                  :mod (x5 / 这) 
+                  :poss (x6 / 我))))
 
 # THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
 # java.util.NoSuchElementException
@@ -762,99 +762,99 @@
 (a / amr-empty)
 
 (x2 / 有-01 
-      :ARG4 (x4 / 犄角) 
-      :manner (x3 / 还))
+      :manner (x3 / 还) 
+      :prep-to (x4 / 犄角))
 
 (x3 / 画-01 
       :manner (x5 / 又) 
       :manner (x6 / 重新-01) 
-      :op (x4 / 我))
+      :snt7 (x4 / 我))
 
 (x10 / 前 
-      :ARG2-of (x8 / 一样-01 
-            :ARG4 (x4 / 又 
-                  :manner-of (x0 / 拒绝-01))) 
-      :ARG3-of (x6 / 同-01 
-            :ARG1 (x2 / 画 
-                  :mod (x3 / 这))))
+      :ARG3 (x6 / 同-01 
+            :ARG3-of (x2 / 画 
+                  :ARG0 (x3 / 这))) 
+      :ARG4-of (x8 / 一样-01 
+            :ARG3-of (x4 / 又 
+                  :manner-of (x0 / 拒绝-01))))
 
-(x2 / 老-01 
-      :degree (x3 / 太) 
-      :domain (x6 / 这))
+(x3 / 太 
+      :degree-of (x2 / 老-01 
+            :domain (x6 / 这)))
 
-(x2 / 想要-02 
-      :li (x3 / 我) 
-      :purpose (x9 / 能-01 
-            :quant-of (x7 / 活-01 
-                  :prep-with (x10 / 长 
-                        :prep-on-behalf (x4 / 羊)))))
+(x9 / 能-01 
+      :prep-toward (x7 / 活-01 
+            :manner-of (x10 / 长 
+                  :poss (x4 / 羊))) 
+      :prep-toward-of (x2 / 想要-02 
+            :instrument (x3 / 我)))
 
 (x4 / 急于-01 
-      :frequency-of (x6 / 要-03 
-            :prep-with (x7 / 检修-01 
-                  :location (x11 / 发动机))) 
-      :purpose-of (x0 / 耐烦-01 
+      :manner-of (x6 / 要-03 
+            :prep-into (x7 / 检修-01 
+                  :prep-toward (x11 / 发动机))) 
+      :prep-toward-of (x0 / 耐烦-01 
             :poss (x3 / 我)))
 
 (x5 / 画 
-      :ARG4-of (x2 / 画-01 
-            :location (x3 / 草草 
+      :dayperiod-of (x2 / 画-01 
+            :manner (x3 / 草草 
                   :manner (x4 / 就))) 
       :mod (x6 / 这))
 
-(x2 / 说道-01 
-      :snt1 (x3 / 他) 
-      :time (x4 / 匆匆-01))
+(x4 / 匆匆-01 
+      :manner-of (x2 / 说道-01 
+            :path (x3 / 他)))
 
 (x9 / 箱子 
-      :mod (x12 / 这))
+      :domain (x12 / 这))
 
 (x10 / 要-01 
-      :ARG1 (x11 / 你) 
-      :conj-as-if (x7 / 羊) 
-      :location (x8 / 里面) 
-      :manner (x9 / 就))
+      :calendar (x11 / 你) 
+      :prep-amid (x7 / 羊 
+            :topic-of (x8 / 里面 
+                  :manner (x9 / 就))))
 
-(x12 / 说-01 
-      :frequency (x18 / 正 
-            :mod (x17 / 这)) 
-      :time (x6 / 喜笑颜开 
-            :quant (x7 / 评判员 
-                  :mod (x8 / 小-01) 
-                  :mod (x9 / 这) 
-                  :op-of (x2 / 看到-01 
-                        :manner (x3 / 惊奇-01 
-                              :degree (x4 / 十分 
-                                    :quant (x5 / 我)) 
-                              :time (x11 / 这时))))))
+(x6 / 喜笑颜开 
+      :manner-of (x12 / 说-01 
+            :snt4 (x18 / 正 
+                  :mod (x17 / 这))) 
+      :prep-out-of (x7 / 评判员 
+            :example-of (x2 / 看到-01 
+                  :manner (x3 / 惊奇-01 
+                        :degree (x4 / 十分) 
+                        :time (x11 / 这时 
+                              :medium (x5 / 我))) 
+                  :prep-out (x9 / 这)) 
+            :mod (x8 / 小-01)))
 
-(x2 / 说-01 
-      :ARG1 (x3 / 你) 
-      :value (x6 / 这) 
-      :weekday (x4 / 需要-01 
-            :ARG1 (x5 / 羊) 
-            :location (x8 / 很多 
-                  :location (x7 / 草))))
+(x4 / 需要-01 
+      :manner (x5 / 羊 
+            :prep-amid-of (x2 / 说-01 
+                  :duration (x6 / 这) 
+                  :quant (x3 / 你))) 
+      :prep-amid (x8 / 很多 
+            :prep-amid (x7 / 草)))
 
 (a / amr-empty)
 
 (x8 / 住-01 
-      :poss (x7 / 地方 
-            :poss (x6 / 一切 
-                  :domain-of (x4 / 非常-01 
-                        :degree-of (x3 / 小-01)) 
-                  :domain-of (x5 / 都))) 
-      :snt2 (x9 / 我))
+      :degree (x4 / 非常-01 
+            :degree-of (x3 / 小-01) 
+            :manner (x5 / 都)) 
+      :op (x9 / 我) 
+      :ord (x7 / 地方 
+            :source-of (x6 / 一切)))
 
 (x5 / 够-01 
-      :ARG4 (x7 / 喂养-01 
-            :prep-on (x8 / 它)) 
       :location (x4 / 地方 
-            :prep-with-of (x3 / 小-01)) 
-      :manner (x6 / 也))
+            :li-of (x3 / 小-01)) 
+      :manner (x6 / 也) 
+      :manner-of (x7 / 喂养-01 
+            :ARG3 (x8 / 它)))
 
 (x0 / 说-01 
-      :li (x2 / 我))
+      :value (x2 / 我))
 
 # THERE WAS AN EXCEPTION IN THE PARSER.  Returning an empty graph.
 # java.util.NoSuchElementException
@@ -927,11 +927,11 @@
 (a / amr-empty)
 
 (x2 / 睡着-01 
-      :polite-of (x3 / 它))
+      :instrument (x3 / 它))
 
 (x4 / 认识-01 
-      :location (x5 / 我) 
-      :prep-with (x6 / 王子 
+      :ARG3 (x5 / 我) 
+      :age (x6 / 王子 
             :mod (x7 / 小-01)) 
       :time (x2 / 这样-01 
             :manner (x3 / 就)))
@@ -939,84 +939,84 @@
 (x0 / III)
 
 (x24 / 来-01 
-      :ARG1 (x25 / 他 
-            :mod-of (x22 / 长 
-                  :ARG1-of (x23 / 好) 
+      :ARG4 (x25 / 他 
+            :mod (x22 / 长 
+                  :ARG3-of (x23 / 好) 
                   :mod-of (x21 / 时间 
-                        :ARG1-of (x19 / 费-01 
-                              :ARG2 (x18 / 我))))) 
-      :instrument (x26 / 哪里))
+                        :ARG4-of (x19 / 费-01 
+                              :ARG5 (x18 / 我))))) 
+      :location (x26 / 哪里))
 
 (x10 / 听见-01 
-      :time (x14 / 压根) 
-      :time (x13 / 问题 
-            :concession-of (x15 / 提出-01 
-                  :location (x5 / 问题 
-                        :mod (x6 / 很多 
-                              :concession-of (x2 / 提出-01 
+      :time (x14 / 压根 
+            :domain-of (x13 / 问题 
+                  :duration-of (x15 / 提出-01 
+                        :manner (x6 / 很多 
+                              :duration-of (x2 / 提出-01 
                                     :instrument (x7 / 我) 
-                                    :name (x3 / 王子 
-                                          :mod (x4 / 小-01))))))))
+                                    :unit (x3 / 王子 
+                                          :mod (x4 / 小-01))) 
+                              :mod-of (x5 / 问题))))))
 
 (x22 / 吐露-01 
-      :ARG5 (x25 / 一些 
-            :mod-of (x20 / 话 
-                  :ARG1 (x15 / 搞清-01 
-                        :ARG2 (x26 / 逐渐) 
-                        :ARG4 (x17 / 我) 
-                        :weekday (x18 / 来历)) 
-                  :ARG4-of (x24 / 无意 
-                        :beneficiary (x19 / 他)))))
+      :ARG4 (x25 / 一些 
+            :ARG3-of (x20 / 话 
+                  :ARG0-of (x24 / 无意 
+                        :unit (x19 / 他)) 
+                  :ARG4 (x15 / 搞清-01 
+                        :ARG5 (x17 / 我) 
+                        :ARG6 (x26 / 逐渐) 
+                        :prep-without (x18 / 来历)))))
 
 (x26 / 问-01 
       :manner (x47 / 复杂-01 
-            :ARG4-of (x42 / 来说-01 
-                  :beneficiary (x43 / 图画 
+            :ARG3-of (x42 / 来说-01 
+                  :mod (x43 / 图画 
                         :mod (x45 / 种 
-                              :mod (x44 / 这 
-                                    :domain-of (x35 / 飞机 
-                                          :ARG4-of (x33 / 瞅见-01 
-                                                :beneficiary (x27 / 他) 
-                                                :beneficiary (x24 / 例如-01) 
-                                                :prep-with (x32 / 我))))))) 
+                              :mod (x44 / 这) 
+                              :mod-of (x35 / 飞机 
+                                    :prep-out-of (x33 / 瞅见-01 
+                                          :ARG3 (x32 / 我) 
+                                          :op (x24 / 例如-01) 
+                                          :prep-in-addition-to (x27 / 他)))))) 
             :degree (x48 / 太)) 
-      :snt3 (x28 / 玩艺 
+      :ord (x28 / 玩艺 
             :mod (x30 / 这)))
 
 (x2 / 玩艺儿 
-      :mod (x3 / 这))
+      :domain (x3 / 这))
 
 (x2 / 飞-01 
-      :ARG0-of (x0 / 能-01 
-            :ARG2 (x3 / 它)))
+      :manner (x3 / 它 
+            :ARG6-of (x0 / 能-01)))
 
 (x0 / 飞机 
-      :ARG5 (x2 / 这))
+      :ARG0 (x2 / 这))
 
 (x2 / 飞机 
       :mod (x3 / 我))
 
-(x5 / 能-01 
-      :ARG3-of (x0 / 告诉-01 
-            :ARG1-of (x6 / 飞-01) 
+(x6 / 飞-01 
+      :ARG4 (x0 / 告诉-01 
+            :ARG6 (x5 / 能-01) 
             :manner (x3 / 骄傲 
-                  :degree (x4 / 很 
-                        :ARG1 (x8 / 当时 
-                              :ARG2-of (x2 / 我))))))
+                  :degree (x4 / 很)) 
+            :snt7 (x2 / 我 
+                  :ARG3 (x8 / 当时))))
 
 (x13 / 惊奇 
-      :polite (x11 / 他) 
-      :snt3 (x12 / 怎么))
+      :conj-as-if (x11 / 他) 
+      :mod-of (x12 / 怎么))
 
 (x9 / 掉-01 
       :direction (x8 / 下来-01) 
-      :name (x10 / 你))
+      :quant (x10 / 你))
 
 (x2 / 是-03)
 
 (x0 / 答道 
       :manner (x3 / 谦逊) 
-      :op (x2 / 我))
+      :prep-for (x2 / 我))
 
 (x2 / 啊)
 
@@ -1025,187 +1025,187 @@
       :mod (x4 / 这))
 
 (x27 / 阵 
-      :mod-of (x25 / 清脆 
-            :poss-of (x24 / 笑声 
-                  :weekday-of (x21 / 发出-01 
-                        :ARG2 (x28 / 此时 
-                              :ARG1 (x23 / 小 
-                                    :mod-of (x22 / 王子))) 
-                        :prep-at-of (x16 / 高兴-01 
-                              :ARG2 (x19 / 我) 
-                              :degree (x20 / 很))))))
+      :ARG4 (x24 / 笑声 
+            :destination-of (x21 / 发出-01 
+                  :ARG1 (x22 / 王子 
+                        :mod (x23 / 小)) 
+                  :ARG4 (x28 / 此时) 
+                  :manner-of (x16 / 高兴-01 
+                        :ARG3 (x19 / 我) 
+                        :manner (x20 / 很))) 
+            :mod (x25 / 清脆)))
 
-(x4 / 对待-01 
-      :ARG3-of (x0 / 要求-02 
-            :ARG6 (x5 / 严肃-01 
-                  :ARG2 (x3 / 别人)) 
-            :prep-on-behalf (x2 / 我)) 
-      :manner (x7 / 不幸))
+(x7 / 不幸 
+      :time-of (x4 / 对待-01 
+            :ARG6 (x0 / 要求-02 
+                  :ARG5 (x5 / 严肃-01 
+                        :ARG3-of (x3 / 别人)) 
+                  :li (x2 / 我))))
 
 (x2 / 说道-01 
-      :concession (x4 / 他) 
       :manner (x3 / 又) 
-      :scale (x7 / 你 
-            :time-of (x5 / 来-01 
-                  :manner (x6 / 也))))
+      :manner (x4 / 他) 
+      :manner (x5 / 来-01 
+            :manner (x6 / 也)) 
+      :prep-out (x7 / 你))
 
 (x12 / 星球 
-      :poss (x11 / 你))
+      :quant (x11 / 你))
 
-(x29 / 问道-01 
-      :domain (x20 / 线索 
-            :degree (x21 / 一点) 
-            :prep-on-of (x17 / 发现-01 
-                  :time (x19 / 隐约 
-                        :mod (x24 / 秘密 
-                              :prep-on (x18 / 我) 
-                              :prep-on-of (x25 / 来-01 
-                                    :manner (x27 / 哪里 
-                                          :domain (x26 / 他)) 
-                                    :time (x28 / 即刻)))))) 
-      :manner (x30 / 突然) 
-      :manner (x31 / 就) 
-      :prep-on (x37 / 另 
-            :mod-of (x35 / 星球 
-                  :location-of (x33 / 来-01))))
+(x20 / 线索 
+      :degree (x21 / 一点) 
+      :domain (x19 / 隐约 
+            :degree-of (x17 / 发现-01) 
+            :poss-of (x24 / 秘密 
+                  :mod (x25 / 来-01 
+                        :domain (x28 / 即刻) 
+                        :manner (x27 / 哪里 
+                              :domain (x26 / 他))) 
+                  :poss (x18 / 我))) 
+      :manner-of (x29 / 问道-01 
+            :manner (x30 / 突然) 
+            :manner (x31 / 就) 
+            :op (x37 / 另 
+                  :mod-of (x35 / 星球 
+                        :location-of (x33 / 来-01)))))
 
 (x2 / 回答-01 
-      :age (x4 / 他) 
-      :weekday (x5 / 问题 
+      :medium (x4 / 他) 
+      :medium (x5 / 问题 
             :poss (x6 / 我)))
 
-(x11 / 说道-01 
-      :time (x32 / 微微 
-            :mod (x28 / 飞机 
-                  :purpose-of (x26 / 看-02 
-                        :conj-as-if (x29 / 我) 
-                        :poss (x27 / 他)))) 
-      :weekday (x14 / 乘坐-01 
-            :mod-of (x16 / 玩艺儿 
-                  :mod (x17 / 这) 
-                  :time-of (x35 / 可能-01 
-                        :purpose (x41 / 远 
-                              :degree (x42 / 很) 
-                              :mod-of (x40 / 地方 
-                                    :time-of (x38 / 来-01)))))))
+(x16 / 玩艺儿 
+      :instrument-of (x14 / 乘坐-01 
+            :domain (x17 / 这) 
+            :prep-toward-of (x11 / 说道-01 
+                  :manner (x32 / 微微 
+                        :domain-of (x28 / 飞机 
+                              :domain-of (x26 / 看-02 
+                                    :instrument (x27 / 他) 
+                                    :polite (x29 / 我)))))) 
+      :time-of (x35 / 可能-01 
+            :degree (x42 / 很 
+                  :degree-of (x41 / 远 
+                        :mod-of (x40 / 地方 
+                              :instrument-of (x38 / 来-01))))))
 
 (x5 / 沉思 
-      :direction-of (x0 / 陷入-01 
+      :polite-of (x0 / 陷入-01 
             :manner (x3 / 就) 
-            :snt11 (x2 / 他)))
+            :prep-against (x2 / 他)))
 
 (x2 / 掏出-01 
-      :beneficiary-of (x6 / 画-01 
-            :beneficiary (x7 / 我) 
+      :degree-of (x6 / 画-01 
             :manner-of (x9 / 看-02 
-                  :prep-with (x3 / 他) 
-                  :snt3 (x11 / 宝贝))) 
+                  :dayperiod (x11 / 宝贝) 
+                  :ord (x3 / 他)) 
+            :op (x7 / 我)) 
       :manner (x8 / 口袋))
 
 (x14 / 好奇-01 
-      :ARG6 (x15 / 多么 
-            :poss-of (x16 / 心里 
+      :instrument (x15 / 多么 
+            :ARG3-of (x16 / 心里 
                   :poss (x18 / 话语 
                         :poss (x21 / 若明若暗 
-                              :poss (x23 / 别的 
-                                    :location (x22 / 星球) 
-                                    :poss (x2 / 想见-01 
-                                          :polite-of (x0 / 可以-01 
-                                                :ARG2 (x3 / 你们)) 
-                                          :snt9 (x20 / 这))))) 
+                              :poss-of (x22 / 星球 
+                                    :mod (x23 / 别的 
+                                          :domain-of (x2 / 想见-01 
+                                                :ARG3-of (x0 / 可以-01 
+                                                      :instrument (x3 / 你们)) 
+                                                :domain (x20 / 这)))))) 
                   :poss (x17 / 我))))
 
 (x11 / 其中 
-      :ARG4-of (x6 / 知道-01 
-            :ARG3 (x5 / 我) 
-            :ARG5-of (x3 / 想-02 
-                  :manner (x4 / 竭力)) 
-            :weekday (x8 / 奥秘)))
+      :ARG5-of (x6 / 知道-01 
+            :ARG6-of (x3 / 想-02 
+                  :manner (x4 / 竭力) 
+                  :snt7 (x5 / 我)) 
+            :destination (x8 / 奥秘)))
 
 (x4 / 来-01 
-      :poss (x5 / 你) 
-      :prep-with (x9 / 我))
+      :age (x9 / 我) 
+      :domain (x5 / 你))
 
 (x15 / 家 
-      :location-of (x17 / 你))
+      :quant (x17 / 你))
 
 (x8 / 哪里 
-      :location-of (x3 / 带到-01 
-            :weekday-of (x2 / 要-03 
-                  :prep-without (x4 / 你))))
+      :prep-amid-of (x3 / 带到-01 
+            :purpose (x2 / 要-03 
+                  :calendar (x4 / 你))))
 
 (x11 / 箱子 
-      :mod-of (x29 / 夜晚 
-            :time-of (x24 / 当-05 
-                  :mod-of (x26 / 房子)) 
-            :time-of (x23 / 可以-01)) 
-      :purpose-of (x13 / 给-01 
-            :purpose-of (x10 / 有-01 
-                  :mod (x22 / 好在 
-                        :purpose-of (x5 / 回答-01 
-                              :ARG5 (x7 / 我) 
-                              :mod (x2 / 沉思-01 
-                                    :ARG5 (x3 / 他) 
-                                    :mod-of (x4 / 一会)))))))
+      :domain-of (x13 / 给-01 
+            :time (x22 / 好在 
+                  :domain-of (x5 / 回答-01 
+                        :instrument (x7 / 我) 
+                        :time (x4 / 一会 
+                              :duration-of (x2 / 沉思-01 
+                                    :instrument (x3 / 他)))) 
+                  :manner-of (x10 / 有-01))) 
+      :poss-of (x29 / 夜晚 
+            :instrument-of (x23 / 可以-01 
+                  :polite (x24 / 当-05 
+                        :mod-of (x26 / 房子)))))
 
 (x3 / 那 
       :mod-of (x2 / 当然))
 
 (x2 / 听话-01 
-      :compared-to (x33 / 我) 
-      :snt9 (x3 / 你) 
-      :time-of (x32 / 画-01 
-            :prep-with (x34 / 绳子 
-                  :time-of (x37 / 可以-01 
-                        :manner (x41 / 白天) 
-                        :prep-in-addition-to (x40 / 它)))))
+      :example (x32 / 画-01 
+            :medium (x34 / 绳子 
+                  :destination (x41 / 白天 
+                        :unit-of (x37 / 可以-01 
+                              :destination (x40 / 它))))) 
+      :medium (x3 / 你) 
+      :medium (x33 / 我))
 
 (x20 / 建议 
-      :degree-of (x2 / 看来-02 
+      :instrument-of (x2 / 看来-02 
             :degree (x19 / 有点) 
-            :purpose (x15 / 反感-01 
-                  :frequency (x17 / 王子 
+            :prep-toward (x15 / 反感-01 
+                  :instrument (x17 / 王子 
                         :mod (x18 / 小-01)) 
-                  :prep-on-behalf (x14 / 它))) 
+                  :prep-toward (x14 / 它))) 
       :poss (x21 / 我))
 
 (x7 / 奇怪 
-      :degree (x8 / 多么) 
-      :mod-of (x6 / 主意))
+      :conj-as-if (x6 / 主意) 
+      :degree (x8 / 多么))
 
 (x10 / 栓住 
-      :poss (x13 / 它) 
+      :op (x13 / 它) 
       :poss (x12 / 你))
 
 (x16 / 丢-02 
-      :polite-of (x14 / 跑-01 
-            :polite-of (x13 / 会-02) 
-            :weekday-of (x9 / 跑-01 
-                  :degree (x12 / 到处 
+      :manner (x14 / 跑-01 
+            :manner (x9 / 跑-01 
+                  :instrument (x12 / 到处 
                         :poss (x10 / 它)) 
-                  :manner (x11 / 就))))
+                  :manner (x11 / 就)) 
+            :prep-toward-of (x13 / 会-02)))
 
 (x18 / 笑-01 
-      :extent (x26 / 你) 
-      :location (x28 / 它) 
-      :time (x19 / 朋友 
-            :mod (x20 / 这) 
-            :poss (x21 / 我)))
+      :location (x28 / 它 
+            :poss (x26 / 你)) 
+      :manner (x19 / 朋友 
+            :mod (x20 / 这)) 
+      :poss (x21 / 我))
 
 (x4 / 地方 
       :mod (x5 / 什么))
 
 (x2 / 跑-01 
-      :degree (x5 / 前) 
+      :manner (x5 / 前) 
       :manner (x4 / 一直 
             :poss (x3 / 它)))
 
-(x0 / 说-01 
-      :frequency (x7 / 这) 
-      :time (x4 / 郑重其事 
-            :quant (x2 / 王子 
-                  :mod (x3 / 小-01)) 
-            :time (x8 / 这时)))
+(x4 / 郑重其事 
+      :manner-of (x0 / 说-01 
+            :prep-out (x7 / 这)) 
+      :prep-through (x2 / 王子 
+            :mod (x3 / 小-01)) 
+      :time (x8 / 这时))
 
 (x6 / 那里 
       :degree (x3 / 很 
@@ -1215,15 +1215,15 @@
       :poss (x7 / 我))
 
 (x13 / 走出-02 
-      :ARG4-of (x10 / 会-02 
-            :manner (x12 / 也)) 
-      :beneficiary-of (x15 / 多) 
-      :duration (x14 / 远) 
-      :duration-of (x7 / 走-04 
-            :time (x16 / 前) 
-            :time (x8 / 一直 
-                  :duration-of (x2 / 补充-01 
-                        :manner (x4 / 又) 
-                        :time (x5 / 伤感 
-                              :beneficiary (x3 / 他))))))
+      :ARG3 (x15 / 多 
+            :duration (x14 / 远)) 
+      :ARG3-of (x7 / 走-04 
+            :ARG3-of (x2 / 补充-01 
+                  :manner (x4 / 又) 
+                  :prep-for-of (x5 / 伤感 
+                        :prep-through (x3 / 他))) 
+            :ARG3-of (x16 / 前) 
+            :ord (x12 / 也) 
+            :prep-for-of (x8 / 一直)) 
+      :medium-of (x10 / 会-02))
 

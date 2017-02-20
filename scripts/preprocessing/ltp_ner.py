@@ -4,6 +4,7 @@ import pyltp
 import argparse
 
 
+
 def chn_ner_process():
     parser = argparse.ArgumentParser()
     parser.add_argument('-file', type=str, dest='amr_file_name', required=True)
