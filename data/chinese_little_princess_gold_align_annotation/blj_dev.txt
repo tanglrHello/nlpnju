@@ -1,0 +1,2132 @@
+# ::id test_amr.1 ::2016-06-05 23:42:47
+# ::snt ﻿﻿I
+(x1 / I)
+
+
+# ::id test_amr.2 ::2016-07-07 20:16:12
+# ::snt 当 我 还 只 有 六 岁 的 时候 ， 在 一 本 描写 原始 森林 的 名 叫 《 真实 的 故事 》 的 书 中 ， 看到 了 一 副 精彩 的 插画 ，
+(x29 / 看到-01
+      :arg0()  (x2 / 我)
+      :aspect()  (x30 / 了)
+      :arg1()  (x35 / 插画
+            :quant()  (x31 / 1)
+            :cunit()  (x32 / 幅)
+            :mod(x34)  (x33 / 精彩))
+      :location(x11_x27)  (x26 / 书
+            :name(x18_x19)  (x23 / 故事
+                  :mod(x22)  (x21 / 真实))
+            :topic()  (x14 / 描写-01
+                  :arg1()  (x16 / 森林
+                        :mod()  (x15 / 原始)))
+            :quant()  (x12 / 1)
+            :cunit()  (x13 / 本))
+      :time(x1_x8_x9)  (x80 / age
+            :arg1()  (x2 / 我)
+            :arg2()  (x81 / temporal-quantity
+                  :quant()  (x6 / 6)
+                  :unit()  (x7 / 岁))
+            :mod()  (x4_x5 / 只有)
+            :mod()  (x3 / 还)))
+
+
+# ::id test_amr.3 ::2016-06-05 23:42:47
+# ::snt 画 的 是 一 条 蟒蛇 正在 吞食 一 只 大 野兽 。
+(x8 / 吞食-01
+      :arg0()  (x6 / 蟒蛇
+            :quant()  (x4 / 1)
+            :cunit()  (x5 / 条))
+      :arg1()  (x12 / 野兽
+            :mod()  (x11 / 大
+                  :unit()  (x10 / 只))
+            :quant()  (x9 / 1))
+      :time()  (x7 / 正在)
+      :domain(x3)  (x24 / thing
+            :arg1-of(x2)  (x1 / 画-01)))
+
+
+# ::id test_amr.4 ::2016-07-07 20:17:07
+# ::snt 页头 上 就 是 那 副 画 的 摹本 。
+(x9 / 摹本
+      :mod(x8)  (x7 / 画
+            :mod()  (x5 / 那)
+            :cunit()  (x6 / 副))
+      :domain(x4)  (x16 / thing
+            :location(x2)  (x1 / 页头))
+      :mod()  (x3 / 就))
+
+
+# ::id test_amr.5 ::2016-06-05 23:42:47
+# ::snt 这 本 书 中 写道 ： “ 这些 蟒蛇 把 它们 的 猎获物 不加 咀嚼 地 囫囵 吞下
+(x5 / 写道-01
+      :arg2(x4)  (x3 / 书
+            :mod()  (x1 / 这)
+            :cunit()  (x2 / 本))
+      :arg1()  (x20_x21 / 吞下-01
+            :arg0()  (x9 / 蟒蛇
+                  :mod()  (x8 / 这些))
+            :arg1(x10)  (x14 / 物
+                  :arg1-of()  (x13 / 猎获)
+                  :poss(x12)  (x11 / x9))
+            :manner(x18)  (x17 / 咀嚼-01
+                  :polarity()  (x15_x16 / -)
+                  :arg0()  (x9 / 蟒蛇))
+            :manner()  (x19 / 囫囵)))
+
+
+# ::id test_amr.6 ::2016-07-09 17:31:36
+# ::snt 尔后 就 不 能 再 动弹 了 ； 它们 就 在 长长 的 六 个 月 的 睡眠 中 消化 这些 食物 。 ”
+(x23 / say
+      :arg1()  (x25 / and
+            :op1()  (x26 / temporal
+                  :arg2(x1)  (x4 / 能-01
+                        :polarity()  (x3 / -)
+                        :arg0()  (x6 / 动弹-01
+                              :arg0()  (x9 / 它们)
+                              :aspect()  (x7 / 了))
+                        :mod()  (x5 / 再-01)
+                        :mod()  (x2 / 就)))
+            :op2()  (x20 / 消化-01
+                  :arg0()  (x9 / 它们)
+                  :arg1()  (x22 / 食物
+                        :mod()  (x21 / 这些))
+                  :duration(x11_x19)  (x18 / 睡眠
+                        :arg1()  (x20 / 消化-01
+                              :arg0()  (x9 / 它们))
+                        :duration(x17)  (x59 / temporal-quantity
+                              :quant()  (x14 / 6)
+                              :unit()  (x16 / 月)
+                              :mod(x13)  (x12 / 长-02))))))
+
+
+# ::id test_amr.7 ::2016-07-09 17:33:31
+# ::snt 当时 ， 我 对 丛林 中 的 奇遇 想 得 很 多 ，
+(x9 / 想-01
+      :arg0()  (x3 / 我)
+      :arg1(x4)  (x8 / 奇遇
+            :location(x6_x7)  (x5 / 丛林))
+      :degree(x10)  (x12 / 多
+            :degree()  (x11 / 很))
+      :time()  (x1 / 当时))
+
+
+# ::id test_amr.8 ::2016-07-11 14:22:02
+# ::snt 于是 ， 我 也 用 彩色 铅笔 画 出 了 我 的 第一 副 图画 。
+(x16 / causation
+      :arg2(x1)  (x8_x9 / 画出-01
+            :arg0()  (x3 / 我)
+            :arg1()  (x15 / 图画
+                  :poss(x12)  (x11 / x3)
+                  :ord()  (x35 / ordinal-entity
+                        :value()  (x13 / 1))
+                  :cunit()  (x14 / 幅))
+            :aspect()  (x10 / 了)
+            :instrument(x5)  (x7 / 铅笔
+                  :mod()  (x6 / 彩色))
+            :mod()  (x4 / 也)))
+
+
+# ::id test_amr.9 ::2016-06-05 23:42:47
+# ::snt 我 的 第一 号 作品 。
+(x5 / 作品
+      :poss(x2)  (x1 / 我)
+      :ord()  (x10 / ordinal-entity
+            :value()  (x3 / 1)
+            :cunit()  (x4 / 号)))
+
+
+# ::id test_amr.10 ::2016-07-11 14:23:59
+# ::snt 它 是 这样 的 ： 我 把 我 的 这 副 杰作 拿 给 大人 看 ， 我 问 他们 我 的 画 是 不 是 叫 他们 害怕 。
+(x3 / 这样-01
+      :arg0()  (x1 / 它)
+      :mode()  (x2_x4 / judgement)
+      :arg0-of()  (x36 / and
+            :op1()  (x13_x14 / 拿给-01
+                  :arg0()  (x6 / 我)
+                  :arg1(x7)  (x12 / 杰作
+                        :poss(x9)  (x8 / 我)
+                        :mod()  (x10 / 这)
+                        :cunit()  (x11 / 幅))
+                  :arg2()  (x15 / 大人)
+                  :purpose()  (x16 / 看-02
+                        :arg0()  (x15 / 大人)
+                        :arg1()  (x12 / 杰作)))
+            :op2()  (x19 / 问-01
+                  :arg0()  (x18 / x6)
+                  :arg2()  (x20 / x15)
+                  :arg1()  (x29 / 害怕-01
+                        :arg0()  (x23 / 画
+                              :poss(x22)  (x21 / 我))
+                        :arg1(x27)  (x28 / x15)
+                        :mode()  (x24_x25_x26 / interrogative)))))
+
+
+# ::id test_amr.11 ::2016-06-05 23:42:47
+# ::snt 他们 回答 我 说 ： ” 害怕 ？
+(x2_x4 / 回答-01
+      :arg0()  (x1 / 他们)
+      :arg3()  (x3 / 我)
+      :arg2()  (x7 / 害怕-01)
+      :mode()  (x8 / interrogative))
+
+
+# ::id test_amr.12 ::2016-07-11 14:25:00
+# ::snt “ 一 顶 帽子 有 什么 可怕 的 ？ ”
+(x11 / say
+      :arg1()  (x7 / 可怕-01
+            :arg0()  (x4 / 帽子
+                  :quant()  (x2 / 1)
+                  :cunit()  (x3 / 顶))
+            :mode()  (x9 / interrogative)
+            :smood()  (x8 / 的)
+            :cause()  (x5_x6 / amr-unknown)))
+
+
+# ::id test_amr.13 ::2016-06-05 23:42:47
+# ::snt 我 画 的 不 是 帽子 ，
+(x6 / 帽子
+      :domain(x5)  (x10 / thing
+            :arg1-of(x3)  (x2 / 画-01
+                  :arg0()  (x1 / 我)))
+      :polarity()  (x4 / -))
+
+
+# ::id test_amr.14 ::2016-06-05 23:42:47
+# ::snt 是 一 条 巨蟒 在 消化 着 一 头 大象 。
+(x6 / 消化-01
+      :arg0()  (x4 / 巨蟒
+            :quant()  (x2 / 1)
+            :cunit()  (x3 / 条))
+      :aspect()  (x7 / 着)
+      :time()  (x5 / 在-01)
+      :arg1()  (x10 / 大象
+            :quant()  (x8 / 1)
+            :cunit()  (x9 / 头))
+      :domain(x1)  (x22 / thing))
+
+
+# ::id test_amr.15 ::2016-07-09 17:43:15
+# ::snt 既然 大人们 不 能够 理解 。 于是 我 又 把 巨蟒 肚子 里 的 情况 画 了 出来 ， 以便 让 大人们 能够 看懂 。
+(x29 / causation
+      :arg1(x1)  (x4 / 能够-01
+            :arg0()  (x2 / 大人们)
+            :polarity()  (x3 / -)
+            :arg1()  (x5 / 理解-01))
+      :arg2(x7)  (x16_x18 / 画-01
+            :arg0()  (x8 / 我)
+            :mod()  (x9 / 又)
+            :aspect()  (x17 / 了)
+            :arg1(x10)  (x15 / 情况
+                  :location(x13_x14)  (x12 / 肚子
+                        :part-of()  (x11 / 巨蟒)))
+            :purpose(x20)  (x21 / 让-02
+                  :arg1()  (x22 / 大人们)
+                  :arg2()  (x23 / 能够-01
+                        :arg1()  (x24 / 看懂-01
+                              :arg0()  (x22 / 大人们))))))
+
+
+# ::id test_amr.16 ::2016-07-09 17:44:18
+# ::snt 这些 大人 总是 需要 解释 。
+(x4 / 需要-01
+      :arg0()  (x2 / 大人
+            :mod()  (x1 / 这些))
+      :mod()  (x3 / 总是)
+      :arg1()  (x5 / 解释-01))
+
+
+# ::id test_amr.17 ::2016-07-09 17:54:18
+# ::snt 我 的 第二 号 作品 是 这样 的 ： 大人们 劝 我 把 这些 画 着 开 着 肚皮 的 ， 或 闭上 肚皮 的 蟒蛇 的 图画 放 在 一边 ， 还是 把 兴趣 放 在 地理 、 历史 、 算术 、 语法 上 。
+(x7 / 这样
+      :arg0()  (x5 / 作品
+            :poss(x2)  (x1 / 我)
+            :ord()  (x54 / ordinal-entity
+                  :value()  (x3 / 2)
+                  :cunit()  (x4 / 号-01)))
+      :mode()  (x6_x8 / judgement)
+      :arg0-of()  (x59 / mean
+            :arg1()  (x11 / 劝-01
+                  :arg0()  (x10 / 大人们)
+                  :arg1()  (x12 / x1)
+                  :arg2()  (x91 / and
+                        :op1()  (x29 / 放-01
+                              :arg0()  (x12 / x1)
+                              :arg1()  (x28 / 图画
+                                    :mod(x27)  (x15 / 画-01
+                                          :aspect()  (x16 / 着)
+                                          :arg1()  (x26 / 蟒蛇
+                                                :arg0-of()  (x22 / or
+                                                      :op1(x20)  (x17 / 开
+                                                            :arg1()  (x19 / 肚皮)
+                                                            :aspect()  (x18 / 着))
+                                                      :op2(x25)  (x23 / 闭上-01
+                                                            :arg1()  (x24 / 肚皮))))))
+                              :arg2()  (x31 / 一边))
+                        :op2()  (x36 / 放-01
+                              :arg1(x34)  (x35 / 兴趣)
+                              :mod()  (x33 / 还是)
+                              :arg2(x37_x45)  (x109 / and
+                                    :op1()  (x38 / 地理)
+                                    :op2()  (x40 / 历史)
+                                    :op3()  (x42 / 算术)
+                                    :op3()  (x44 / 语法)))))))
+
+
+# ::id test_amr.18 ::2016-07-09 17:58:18
+# ::snt 就 这样 ， 在 六 岁 的 那 年 ， 我 就 放弃 了 当 画家 这 一 美好 的 职业 。
+(x13 / 放弃-01
+      :arg0()  (x11 / 我)
+      :mod()  (x12 / 就)
+      :aspect()  (x14 / 了)
+      :arg1()  (x21 / 职业
+            :mod(x20)  (x19 / 美好)
+            :arg0-of()  (x48 / mean
+                  :arg1()  (x15 / 当-02
+                        :arg1()  (x16 / 画家)))
+            :mod()  (x17 / 这)
+            :quant()  (x18 / 1))
+      :time()  (x53 / age
+            :arg0()  (x11 / 我)
+            :arg1()  (x54 / temporal-quantity
+                  :quant()  (x5 / 6)
+                  :unit()  (x6 / 岁)))
+      :manner()  (x2 / 这样
+            :mod()  (x1 / 就)))
+
+
+# ::id test_amr.19 ::2016-07-11 14:45:42
+# ::snt 我 的 第一 号 、 第二 号 作品 的 不 成功 ， 使 我 泄 了 气 。
+(x15_x17 / 泄气-01
+      :aspect()  (x16 / 了)
+      :cause(x13)  (x11 / 成功-01
+            :polarity()  (x10 / -)
+            :arg0-of(x9)  (x26 / and
+                  :op1()  (x8 / 作品
+                        :ord()  (x29 / and
+                              :op1()  (x30 / ordinal-entity
+                                    :value()  (x3 / 1)
+                                    :cunit()  (x4 / 号))
+                              :op2()  (x33 / ordinal-entity
+                                    :value()  (x6 / 2)
+                                    :cunit()  (x7 / 号)))
+                        :poss(x2)  (x1 / 我))))
+      :arg0()  (x14 / x1))
+
+
+# ::id test_amr.20 ::2016-07-11 14:27:37
+# ::snt 这些 大人们 ， 靠 他们 自己 什么 也 弄 不 懂 ， 还 得 老是 不断 地 给 他们 作 解释 。
+(x25 / causation
+      :arg1()  (x9_x11 / 弄懂
+            :polarity()  (x10 / -)
+            :manner()  (x4 / 靠-01
+                  :arg1()  (x6 / 自己
+                        :mod()  (x5 / 他们)
+                        :arg0-of()  (x50 / mean
+                              :arg1()  (x2 / 大人们
+                                    :mod()  (x1 / 这些)))))
+            :arg1()  (x53 / thing
+                  :mod()  (x7 / 什么))
+            :mod()  (x8 / 也))
+      :arg2()  (x14 / 得-02
+            :arg1()  (x20 / 作-01
+                  :arg1()  (x21 / 解释
+                        :manner(x17)  (x16 / 不断))
+                  :arg1()  (x60 / beneficiary(x18)))
+            :frequency()  (x15 / 老是)
+            :mod()  (x13 / 还)))
+
+
+# ::id test_amr.21 ::2016-07-10 20:46:59
+# ::snt 后来 ， 我 只好 选择 了 另外 一 个 职业 ， 我 学会 了 开 飞机 。
+(x17 / temporal
+      :arg2(x1)  (x19 / expansion
+            :arg1()  (x5 / 选择-01
+                  :arg0()  (x3 / 我)
+                  :aspect()  (x6 / 了)
+                  :arg1()  (x10 / 职业
+                        :quant()  (x8 / 1)
+                        :cunit()  (x9 / 个)
+                        :mod()  (x7 / 另外))
+                  :mod()  (x4 / 只好))
+            :arg2()  (x13 / 学会-01
+                  :arg0()  (x12 / x3)
+                  :aspect()  (x14 / 了)
+                  :arg1()  (x15 / 开
+                        :arg1()  (x16 / 飞机)
+                        :arg0()  (x12 / x3)))))
+
+
+# ::id test_amr.22 ::2016-07-09 19:33:33
+# ::snt 世界 各 地 差不多 都 飞到 过 。 的确 ， 地理学 帮 了 我 很 大 的 忙 。
+(x20 / muli-sentence
+      :snt1()  (x6 / 飞到-01
+            :arg1()  (x3 / 地
+                  :mod()  (x2 / 各
+                        :location()  (x1 / 世界)))
+            :mod()  (x5 / 都
+                  :mod()  (x4 / 差不多))
+            :aspect()  (x7 / 过)
+            :arg0()  (x14 / 我))
+      :snt2()  (x12_x18 / 帮忙-01
+            :arg0()  (x11 / 地理学)
+            :aspect()  (x13 / 了)
+            :arg1()  (x14 / 我)
+            :degree(x17)  (x16 / 大
+                  :degree()  (x15 / 很))
+            :mod()  (x9 / 的确)))
+
+
+# ::id test_amr.23 ::2016-07-09 19:35:27
+# ::snt 我 一眼 就 能 分辨 出 中国 和 亚里桑那 。
+(x4 / 能-01
+      :arg0()  (x5 / 分辨-01
+            :manner()  (x2_x3 / 一眼)
+            :mod()  (x3 / 就)
+            :arg1(x6)  (x8 / and
+                  :op1()  (x7 / 中国)
+                  :op2()  (x29 / 亚利桑那))
+            :arg0()  (x1 / 我)))
+
+
+# ::id test_amr.24 ::2016-07-09 19:37:22
+# ::snt 要是 夜里 迷失 了 航向 ， 这 是 很 有用 的 。
+(x23 / condition
+      :arg1(x1)  (x3 / 迷失-01
+            :aspect()  (x4 / 了-01)
+            :arg1()  (x5 / 航向)
+            :time()  (x2 / 夜里))
+      :arg2()  (x10 / 有用-01
+            :degree()  (x9 / 很)
+            :arg0()  (x7 / 这)
+            :mode()  (x8_x11 / judgement)))
+
+
+# ::id test_amr.25 ::2016-07-11 14:28:58
+# ::snt 这样 ， 在 我 的 生活 中 ， 我 跟 许多 严肃 的 人 有 过 很多 的 接触 。
+(x15 / 有-01
+      :arg1()  (x19 / 接触-01
+            :frequency(x18)  (x17 / 很多)
+            :arg0()  (x29 / and
+                  :op1()  (x9 / x4)
+                  :op2(x10)  (x14 / 人
+                        :quant()  (x11 / 许多)
+                        :mod(x13)  (x12 / 严肃-01))))
+      :aspect()  (x16 / 过)
+      :time(x3_x7)  (x6 / 生活-01
+            :poss(x5)  (x4 / 我))
+      :manner()  (x1 / 这样)
+      :arg0()  (x9 / x4))
+
+
+# ::id test_amr.26 ::2016-07-09 19:38:57
+# ::snt 我 在 大人们 中间 生活 过 很 长 时间 。
+(x5 / 生活-01
+      :arg0()  (x1 / 我)
+      :duration()  (x8 / 长
+            :degree()  (x7 / 很))
+      :location(x2_x4)  (x3 / 大人们)
+      :aspect()  (x6 / 过))
+
+
+# ::id test_amr.27 ::2016-06-05 23:42:47
+# ::snt 我 仔细 地 观察 过 他们 ，
+(x4 / 观察-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x6 / 他们)
+      :aspect()  (x5 / 过-01)
+      :manner(x3)  (x2 / 仔细))
+
+
+# ::id test_amr.28 ::2016-07-09 19:46:03
+# ::snt 但 这 并没有 使 我 对 他们 的 看法 有 多 大 的 改变 。
+(x17 / contrast
+      :arg2(x1)  (x14 / 改变-01
+            :arg1()  (x9 / 看法
+                  :beneficiary(x6)  (x7 / 他们)
+                  :poss()  (x5 / 我))
+            :arg0()  (x5 / 我)
+            :degree()  (x12 / 大
+                  :degree()  (x11 / 多))
+            :cause(x4)  (x2 / 这)
+            :polarity()  (x3 / -)))
+
+
+# ::id test_amr.29 ::2016-07-11 14:30:06
+# ::snt 当 我 遇到 一 个 头脑 看来 稍微 清楚 的 大人 时 ， 我 就 拿出 一直 保存 着 的 我 那 第一 号 作品 来 测试 测试 他 。
+(x16 / 拿出-01
+      :arg0()  (x14 / x2)
+      :arg1()  (x25 / 作品
+            :ord()  (x35 / ordinal-entity
+                  :value()  (x23 / 1)
+                  :cunit()  (x24 / 号))
+            :poss()  (x21 / 我)
+            :mod()  (x22 / 那)
+            :arg1-of(x20)  (x18 / 保存-01
+                  :aspect()  (x19 / 着)
+                  :time()  (x17 / 一直)
+                  :arg0()  (x14 / x2)))
+      :mod()  (x15 / 就)
+      :purpose(x26)  (x27_x28 / 测试-01
+            :arg1()  (x29 / x11))
+      :time(x1_x12)  (x3 / 遇到-01
+            :arg0()  (x2 / 我)
+            :arg1()  (x11 / 大人
+                  :mod(x10)  (x9 / 清楚-01
+                        :arg0()  (x6 / 头脑)
+                        :degree()  (x8 / 稍微)
+                        :arg1-of()  (x7 / 看来-01))
+                  :quant()  (x4 / 1)
+                  :cunit()  (x5 / 个))))
+
+
+# ::id test_amr.30 ::2016-06-05 23:42:47
+# ::snt 我 想 知道 他 是否 真的 有 理解 能力 。
+(x2 / 想-02
+      :arg0()  (x1 / 我)
+      :arg1()  (x3 / 知道-01
+            :arg1()  (x5 / 是否
+                  :arg1()  (x7 / 有-01
+                        :arg0()  (x4 / 他)
+                        :arg1()  (x9 / 能力
+                              :mod()  (x8 / 理解))
+                        :degree()  (x6 / 真的)))))
+
+
+# ::id test_amr.31 ::2016-07-10 19:57:08
+# ::snt 可是 ， 得到 的 回答 总 是 ： “ 这 是 顶 帽子 。 ”
+(x15 / contrast
+      :arg2(x1)  (x5 / 回答
+            :arg1-of(x4)  (x3 / 得到-01)
+            :arg0-of()  (x23 / mean
+                  :arg1()  (x13 / 帽子
+                        :cunit()  (x12 / 顶)
+                        :domain(x11)  (x10 / 这)))
+            :time()  (x6 / 总是)))
+
+
+# ::id test_amr.32 ::2016-07-10 20:47:43
+# ::snt 我 就 不 和 他 谈 巨蟒 呀 ， 原始 森林 呀 ， 或者 星星 之类 的 事 。
+(x6 / 谈-01
+      :arg0()  (x22 / and
+            :op1()  (x1 / 我)
+            :op2(x4)  (x5 / 他))
+      :arg1()  (x18 / 事
+            :example(x16_x17)  (x14 / or
+                  :op1()  (x7 / 巨蟒
+                        :mode()  (x8 / expressive))
+                  :op2()  (x11 / 森林
+                        :mod()  (x10 / 原始)
+                        :mode()  (x12 / expressive))
+                  :op3()  (x15 / 星星)))
+      :polarity()  (x3 / -)
+      :mod()  (x2 / 就))
+
+
+# ::id test_amr.33 ::2016-06-05 23:42:47
+# ::snt 我 只得 迁就 他 的 水平 ，
+(x2 / 只得-01
+      :arg1()  (x3 / 迁就-01
+            :arg0()  (x1 / 我)
+            :arg1()  (x6 / 水平
+                  :poss(x5)  (x4 / 他))))
+
+
+# ::id test_amr.34 ::2016-06-05 23:42:47
+# ::snt 和 他们 谈 些 桥牌 呀 ， 高尔夫球 呀 ， 政治 呀 ， 领带 呀 这些 。
+(x3 / 谈-01
+      :arg0()  (x22 / and
+            :op2(x1)  (x2 / 他们))
+      :arg1()  (x25 / thing
+            :mod()  (x16 / 这些)
+            :example()  (x26 / and
+                  :op1()  (x5 / 桥牌
+                        :mode()  (x6 / expressive))
+                  :op2()  (x8 / 高尔夫球
+                        :mode()  (x9 / expressive))
+                  :op3()  (x11 / 政治
+                        :mode()  (x12 / expressive))
+                  :op4()  (x14 / 领带
+                        :mode()  (x15 / expressive)))
+            :quant()  (x4 / 些)))
+
+
+# ::id test_amr.35 ::2016-07-10 20:00:46
+# ::snt 于是 大人们 就 十分 高兴 能 认识 我 这样 一 个 通情达理 的 人 。
+(x16 / causation
+      :arg2(x1)  (x5 / 高兴-01
+            :arg0()  (x2 / 大人们)
+            :mod()  (x3 / 就-01)
+            :degree()  (x4 / 十分)
+            :arg1()  (x6 / 能-01
+                  :arg0()  (x7 / 认识-01
+                        :arg1()  (x8 / 我
+                              :arg0-of()  (x42 / mean
+                                    :arg1()  (x14 / 人
+                                          :mod(x13)  (x12 / 通情达理)
+                                          :quant()  (x10 / 1)
+                                          :cunit()  (x11 / 个)
+                                          :mod()  (x9 / 这样))))))))
+
+
+# ::id test_amr.36 ::2016-06-05 23:42:47
+# ::snt II 。
+(x1 / II)
+
+
+# ::id test_amr.37 ::2016-07-10 20:48:16
+# ::snt 我 就 这样 孤独 地 生活 着 ， 没有 一 个 能 真正 谈 得 来 的 人 ， 一直 到 六 年 前 在 撒哈拉 沙漠 上 发生 了 那 次 故障 。
+(x34 / and
+      :op1()  (x6 / 生活-01
+            :arg0()  (x1 / 我)
+            :aspect()  (x7 / 着)
+            :manner(x5)  (x4 / 孤独)
+            :manner()  (x3 / 这样
+                  :mod()  (x2 / 就)))
+      :op2()  (x9_2 / 有-03
+            :polarity()  (x9_1 / -)
+            :arg1()  (x18 / 人
+                  :mod()  (x15_x16 / possible
+                        :arg0()  (x14 / 谈-01
+                              :arg0-of()  (x12 / 能))
+                        :mod()  (x13 / 真正))))
+      :duration()  (x21 / 到-01
+            :mod()  (x20 / 一直)
+            :arg1()  (x29 / 发生-01
+                  :arg0()  (x33 / 故障
+                        :mod()  (x31 / 那)
+                        :cunit()  (x32 / 次))
+                  :aspect()  (x30 / 了)
+                  :time()  (x24 / 前
+                        :op1()  (x81 / now)
+                        :op2()  (x82 / temporal-quantity
+                              :quant()  (x22 / 6)
+                              :unit()  (x23 / 年)))
+                  :location(x25_x28)  (x27 / 沙漠
+                        :mod()  (x26 / 撒哈拉)))))
+
+
+# ::id test_amr.38 ::2016-06-05 23:42:47
+# ::snt 我 的 发动机 里 有 个 东西 损坏 了 。
+(x8 / 损坏-01
+      :aspect()  (x9 / 了)
+      :arg1(x5)  (x7 / 东西
+            :cunit()  (x6 / 个)
+            :location(x4)  (x3 / 发动机
+                  :poss(x2)  (x1 / 我))))
+
+
+# ::id test_amr.39 ::2016-06-05 23:42:47
+# ::snt 当时 由于 我 既 没有 带 机械师 也 没有 带 旅客 ， 我 就 试图 独自 完成 这个 困难 的 维修 工作 。
+(x24 / causation
+      :arg1(x2)  (x26 / and
+            :op1(x4)  (x6 / 带-02
+                  :arg1()  (x7 / 机械师)
+                  :polarity()  (x5 / -))
+            :op2(x8)  (x10 / 带-02
+                  :arg1()  (x11 / 旅客)
+                  :polarity()  (x9 / -))
+            :arg0()  (x3 / 我))
+      :arg2(x14)  (x15 / 试图-01
+            :arg0()  (x13 / x3)
+            :arg1()  (x17 / 完成-01
+                  :manner()  (x16 / 独自)
+                  :arg1()  (x22 / 工作
+                        :mod()  (x18 / 这个)
+                        :mod(x20)  (x19 / 困难)
+                        :mod()  (x21 / 维修))
+                  :arg0()  (x13 / x3)))
+      :time()  (x1 / 当时))
+
+
+# ::id test_amr.40 ::2016-07-10 20:48:45
+# ::snt 这 对 我 来说 是 个 生 与 死 的 问题 。 我 随身 带 的 水 只 够 饮用 一 星期 。
+(x24 / causation
+      :arg2()  (x4 / 来说-01
+            :arg0()  (x1 / 这)
+            :arg1(x2)  (x3 / 我)
+            :arg2()  (x11 / 问题
+                  :mod(x10)  (x8 / and
+                        :op1()  (x7 / 生)
+                        :op2()  (x9 / 死))
+                  :cunit()  (x6 / 个)
+                  :domain(x5)  (x1 / 这)))
+      :arg1()  (x19 / 够-01
+            :arg1()  (x20 / 饮用-01
+                  :duration()  (x37 / temporal-quantity
+                        :quant()  (x21 / 1)
+                        :unit()  (x22 / 星期)))
+            :arg0()  (x17 / 水
+                  :arg1-of(x16)  (x15 / 带-02
+                        :manner()  (x14 / 随身)
+                        :arg0()  (x13 / x3)))
+            :mod()  (x45 / 只)))
+
+
+# ::id test_amr.41 ::2016-07-11 14:33:59
+# ::snt 第一 天 晚上 我 就 睡 在 这 远离 人间 烟火 的 大 沙漠 上 。
+(x6 / 睡-01
+      :arg0()  (x4 / 我)
+      :location(x7_x15)  (x14 / 沙漠
+            :arg0-of(x12)  (x9 / 远离-01
+                  :arg1()  (x11 / 烟火
+                        :mod()  (x10 / 人间)))
+            :mod()  (x13 / 大)
+            :mod()  (x8 / 这))
+      :time()  (x3 / 晚上
+            :time()  (x2 / 天
+                  :ord()  (x28 / ordinal-entity
+                        :value()  (x1 / 1))))
+      :mod()  (x5 / 就))
+
+
+# ::id test_amr.42 ::2016-07-10 20:49:36
+# ::snt 我 比 大海 中 伏 在 小 木排 上 的 遇难者 还 要 孤独 得 多 。
+(x14 / 孤独-01
+      :degree(x15)  (x16 / 多)
+      :compared-to(x2)  (x12 / 者
+            :arg0-of()  (x11 / 遇难)
+            :arg0-of()  (x5 / 伏-01
+                  :arg1(x6_x9_x10)  (x8 / 木排
+                        :mod()  (x7 / 小)))
+            :location(x4)  (x3 / 大海))
+      :arg0()  (x1 / 我)
+      :mod()  (x12_x13 / 还要))
+
+
+# ::id test_amr.43 ::2016-07-10 20:12:20
+# ::snt 而 在 第二 天 拂晓 ， 当 一 个 奇怪 的 小 声音 叫醒 我 的 时候 ， 你们 可以 想见 我 当时 是 多么 吃惊 。
+(x27 / contrast
+      :arg2(x1)  (x20 / 可以-01
+            :arg0()  (x21 / 想见-01
+                  :arg1(x24)  (x26 / 吃惊-01
+                        :arg0()  (x22 / x15)
+                        :degree()  (x25 / 多么)
+                        :time()  (x23 / 当时)
+                        :time(x7_x16_x17)  (x14 / 叫醒-01
+                              :arg0()  (x13 / 声音
+                                    :mod(x11)  (x10 / 奇怪)
+                                    :mod()  (x12 / 小)
+                                    :quant()  (x8 / 1)
+                                    :cunit()  (x9 / 个)))
+                        :time(x2)  (x5 / 拂晓
+                              :time()  (x4 / 天
+                                    :ord()  (x45 / ordinal-entity
+                                          :value()  (x3 / 2))))))))
+
+
+# ::id test_amr.44 ::2016-07-10 20:15:55
+# ::snt 这 小小 的 声音 说道 ： “ 请 你 给 我 画 一 只 羊 ， 好 吗 ？ ”
+(x5 / 说道-01
+      :arg0()  (x4 / 声音
+            :mod(x3)  (x2 / 小)
+            :mod()  (x1 / 这))
+      :arg1()  (x46 / and
+            :op1()  (x8 / 请-02
+                  :arg2()  (x12 / 画-01
+                        :arg0()  (x9 / 你)
+                        :arg1()  (x15 / 羊
+                              :quant()  (x13 / 1)
+                              :cunit()  (x14 / 只))
+                        :beneficiary(x10)  (x11 / 我)))
+            :op2()  (x17 / 好
+                  :mode()  (x18_x19 / interrogative))))
+
+
+# ::id test_amr.45 ::2016-06-05 23:42:47
+# ::snt “ 啊 ？
+(x4 / say
+      :arg1()  (x2 / 啊
+            :mode()  (x3 / interrogative)))
+
+
+# ::id test_amr.46 ::2016-06-05 23:42:47
+# ::snt “ 给 我 画 一 只 羊 … ”
+(x12 / say
+      :arg1()  (x4 / 画-01
+            :arg1()  (x7 / 羊
+                  :quant()  (x5 / 1)
+                  :cunit()  (x6 / 只))
+            :beneficiary(x2)  (x3 / 我)))
+
+
+# ::id test_amr.47 ::2016-07-10 20:19:09
+# ::snt 我 象 是 受到 惊雷 轰击 一般 ， 一下子 就 站立 起来 。
+(x11_x12 / 站立-01
+      :arg0()  (x1 / 我)
+      :manner()  (x9 / 一下子)
+      :manner()  (x2_x7 / 像-01
+            :arg1(x3)  (x4 / 受到-01
+                  :arg1()  (x6 / 轰击-01
+                        :arg0()  (x5 / 惊雷))))
+      :mod()  (x10 / 就))
+
+
+# ::id test_amr.48 ::2016-06-05 23:42:47
+# ::snt 我 使劲 地 揉 了 揉 眼睛 ，
+(x4_x5_x6 / 揉-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x7 / 眼睛)
+      :manner(x3)  (x2 / 使劲-01
+            :arg0()  (x1 / 我)))
+
+
+# ::id test_amr.49 ::2016-06-05 23:42:47
+# ::snt 仔细 地 看 了 看 。
+(x3_x4_x5 / 看-02
+      :manner(x2)  (x1 / 仔细))
+
+
+# ::id test_amr.50 ::2016-07-10 20:23:08
+# ::snt 我 看见 一 个 十分 奇怪 的 小家伙 严肃 地 朝 我 凝眸 望 着 。
+(x2 / 看见-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x14 / 望-01
+            :aspect()  (x15 / 着)
+            :arg0()  (x8 / 小家伙
+                  :mod(x7)  (x6 / 奇怪
+                        :degree()  (x5 / 十分))
+                  :quant()  (x3 / 1)
+                  :cunit()  (x4 / 个))
+            :manner(x10)  (x9 / 严肃)
+            :direction(x11)  (x12 / x1)
+            :manner()  (x13 / 凝眸)))
+
+
+# ::id test_amr.51 ::2016-06-05 23:42:47
+# ::snt 这 是 后来 我 给 他 画 出来 的 最 好 的 一 副 画像 。
+(x15 / 画像
+      :domain(x2)  (x1 / 这)
+      :mod(x12)  (x11 / 好
+            :degree()  (x10 / 最))
+      :quant()  (x13 / 1)
+      :cunit()  (x14 / 副)
+      :arg1-of(x9)  (x7_x8 / 画-01
+            :arg0()  (x4 / 我)
+            :beneficiary(x5)  (x6 / 他)
+            :time()  (x3 / 后来)))
+
+
+# ::id test_amr.52 ::2016-07-10 20:50:10
+# ::snt 可是 ， 我 的 画 当然 要 比 他 本人 的 模样 逊色 得 多 。
+(x17 / contrast
+      :arg2(x1)  (x7 / 要-03
+            :arg0()  (x13 / 逊色
+                  :degree(x14)  (x15 / 多)
+                  :compared-to(x8)  (x12 / 模样
+                        :poss(x11)  (x10 / 本人
+                              :arg0-of()  (x23 / mean
+                                    :arg1()  (x9 / 他))))
+                  :arg0()  (x5 / 画
+                        :poss(x4)  (x3 / 我)))
+            :mod()  (x6 / 当然)))
+
+
+# ::id test_amr.53 ::2016-06-05 23:42:47
+# ::snt 这 不 是 我 的 过错 。
+(x6 / 过错
+      :poss(x5)  (x4 / 我)
+      :domain(x3)  (x1 / 这)
+      :polarity()  (x2 / -))
+
+
+# ::id test_amr.54 ::2016-07-10 20:33:03
+# ::snt 六 岁 时 ， 大人们 使 我 对 我 的 画家 生涯 失去 了 勇气 ， 除了 画 过 开 着 肚皮 和 闭 着 肚皮 的 蟒蛇 ， 后来 再 没有 学 过 画 。
+(x38 / causation
+      :arg1()  (x13 / 失去-01
+            :arg0()  (x7 / 我)
+            :arg1()  (x15 / 勇气)
+            :aspect()  (x14 / 了)
+            :topic(x8)  (x12 / 生涯
+                  :mod()  (x11 / 画家)
+                  :poss(x10)  (x9 / x7))
+            :cause(x6)  (x5 / 大人们)
+            :time(x3)  (x78 / age
+                  :arg0()  (x7 / 我)
+                  :arg1()  (x79 / temporal-quantity
+                        :quant()  (x1 / 6)
+                        :unit()  (x2 / 岁))))
+      :arg2()  (x33 / 学-01
+            :aspect()  (x34 / 过)
+            :arg1()  (x35 / 画)
+            :polarity()  (x32 / -)
+            :mod()  (x31 / 再)
+            :time()  (x30 / 后来)
+            :arg2-of()  (x17 / except
+                  :arg1()  (x18 / 画-01
+                        :aspect()  (x19 / 过)
+                        :arg1()  (x28 / 蟒蛇
+                              :arg0-of(x27)  (x23 / and
+                                    :op1()  (x20 / 开
+                                          :aspect()  (x21 / 着)
+                                          :arg1()  (x22 / 肚皮))
+                                    :op2()  (x24 / 闭-01
+                                          :aspect()  (x25 / 着)
+                                          :arg1()  (x26 / 肚皮))))))))
+
+
+# ::id test_amr.55 ::2016-07-10 20:36:23
+# ::snt 我 惊奇 地 睁大 着 眼睛 看 着 这 突然 出现 的 小家伙 。
+(x7 / 看-02
+      :arg0()  (x1 / 我)
+      :manner(x3)  (x2 / 惊奇)
+      :manner()  (x4 / 睁大
+            :aspect()  (x5 / 着)
+            :arg1()  (x6 / 眼睛))
+      :aspect()  (x8 / 着)
+      :arg1()  (x13 / 小家伙
+            :arg1-of(x12)  (x11 / 出现-01
+                  :manner()  (x10 / 突然))
+            :mod()  (x9 / 这)))
+
+
+# ::id test_amr.56 ::2016-07-13 20:31:54
+# ::snt 你们 不 要 忘记 ， 我 当时 处 在 远离 人烟 千 里 之外 的 地方 。
+(x3 / 要-03
+      :polarity()  (x2 / -)
+      :arg0()  (x4 / 忘记-01
+            :arg0()  (x1 / 你们)
+            :arg1()  (x8 / 处-01
+                  :arg0()  (x6 / 我)
+                  :time()  (x7 / 当时)
+                  :arg1(x9)  (x16 / 地方
+                        :arg0-of(x15)  (x10 / 远离-01
+                              :arg1()  (x11 / 人烟)
+                              :location()  (x43 / relative-position
+                                    :quant()  (x44 / distance-quantity
+                                          :quant()  (x12 / 1000)
+                                          :unit()  (x13 / 里))))))))
+
+
+# ::id test_amr.57 ::2016-07-10 20:43:01
+# ::snt 而 这个 小家伙 给 我 的 印象 是 ， 他 既 不 象 迷 了 路 的 样子 ， 也 没有 半点 疲乏 、 饥渴 、 惧怕 的 神情 。
+(x32 / contrast
+      :arg2(x1)  (x7 / 印象
+            :arg0()  (x3 / 小家伙
+                  :mod()  (x2 / 这个))
+            :arg1(x4_x6)  (x5 / 我)
+            :arg2(x8)  (x38 / and
+                  :op1(x11)  (x13 / 像-01
+                        :arg0()  (x10 / x3)
+                        :polarity()  (x12 / -)
+                        :arg1()  (x18 / 样子
+                              :arg0-of(x17)  (x45 / mean
+                                    :arg1()  (x14_x16 / 迷路-01
+                                          :aspect()  (x15 / 了)
+                                          :arg0()  (x10 / x3)))))
+                  :op2()  (x21_2 / 有-01
+                        :polarity()  (x21_1 / -)
+                        :arg1()  (x29 / 神情
+                              :quant()  (x22 / 半点)
+                              :arg0-of(x28)  (x60 / mean
+                                    :arg1()  (x61 / and
+                                          :op1()  (x23 / 疲乏)
+                                          :op2()  (x25 / 饥渴)
+                                          :op3()  (x27 / 惧怕))))
+                        :polarity()  (x21_1 / -)
+                        :mod()  (x20 / 也)))))
+
+
+# ::id test_amr.58 ::2016-07-11 14:39:36
+# ::snt 他 丝毫 不 象 是 一 个 迷失 在 旷无 人烟 的 大 沙漠 中 的 孩子 。
+(x4 / 像-01
+      :arg0()  (x1 / 他)
+      :arg1(x5)  (x17 / 孩子
+            :arg0-of(x16)  (x8 / 迷失-02
+                  :location(x9_x15)  (x14 / 沙漠
+                        :mod()  (x13 / 大-01)
+                        :mod()  (x10_x11 / 旷无人烟)))
+            :quant()  (x6 / 1)
+            :cunit()  (x7 / 个))
+      :polarity()  (x3 / -)
+      :degree()  (x2 / 丝毫))
+
+
+# ::id test_amr.59 ::2016-07-11 14:41:44
+# ::snt 当 我 在 惊讶 之中 终于 又 能 说出 话 来 的 时候 ， 对 他 说道 ： “ 唉 ， 你 在 这儿 干 什么 ？ ”
+(x29 / contrast
+      :arg2()  (x17 / 说道-01
+            :arg0()  (x2 / 我)
+            :arg2(x15)  (x16 / 他)
+            :arg1()  (x34 / and
+                  :op1()  (x20 / 唉)
+                  :op2()  (x25 / 干-01
+                        :arg0()  (x22 / x16)
+                        :location(x23)  (x24 / 这儿)
+                        :arg1()  (x26 / amr-unknown)
+                        :mode()  (x27 / interrogative)))
+            :time(x1_x12_x13)  (x8 / 能-01
+                  :arg0()  (x9 / 说出-01
+                        :arg1(x11)  (x10 / 话)
+                        :condition(x3_x5)  (x4 / 惊讶-01
+                              :arg0()  (x2 / 我)))
+                  :mod()  (x7 / 又)
+                  :mod()  (x6 / 终于))))
+
+
+# ::id test_amr.60 ::2016-06-06 09:28:29
+# ::snt 可是 他 却 不慌不忙 地 好象 有 一 件 重要 的 事 一般 ， 对 我 重复 地 说道 ： “ 请 … 给 我 画 一 只 羊 … ”
+(x50 / contrast
+      :arg2(x1)  (x19 / 说道-01
+            :arg0()  (x2 / 他)
+            :manner(x18)  (x17 / 重复-01)
+            :arg2(x15)  (x16 / 我)
+            :arg1()  (x26 / 画-01
+                  :arg0()  (x16 / 我)
+                  :arg1()  (x29 / 羊
+                        :quant()  (x27 / 1)
+                        :cunit()  (x28 / 只))
+                  :beneficiary(x24)  (x25 / x2)
+                  :polite()  (x22 / 请))
+            :manner()  (x6_x13 / 像-01
+                  :arg1()  (x7 / 有-01
+                        :arg0()  (x2 / 他)
+                        :arg1()  (x12 / 事
+                              :mod(x11)  (x10 / 重要)
+                              :quant()  (x8 / 1)
+                              :cunit()  (x9 / 件)))
+                  :manner(x5)  (x4 / 不慌不忙
+                        :arg0()  (x2 / 他)))))
+
+
+# ::id test_amr.61 ::2016-06-06 09:30:41
+# ::snt 当 一 种 神秘 的 东西 把 你 镇住 的 时候 ， 你 是 不 敢 不 听从 它 的 支配 的 ，
+(x16 / 敢-02
+      :arg1()  (x18 / 听从-01
+            :polarity()  (x17 / -)
+            :arg1()  (x21 / 支配-01
+                  :arg0(x20)  (x19 / 它))
+            :mode()  (x14_x22 / judgement)
+            :arg0()  (x13 / x7))
+      :polarity()  (x15 / -)
+      :time(x1_x10_x11)  (x9 / 镇住-01
+            :arg0()  (x6 / 东西
+                  :mod(x5)  (x4 / 神秘)
+                  :quant()  (x2 / 1)
+                  :unit()  (x3 / 种))
+            :arg1(x7)  (x8 / 你)))
+
+
+# ::id test_amr.62 ::2016-06-06 09:34:01
+# ::snt 在 这 旷无人烟 的 沙漠 上 ， 面临 死亡 的 危险 的 情况 下 ， 尽管 这样 的 举动 使 我 感到 十分 荒诞 ， 我 还是 掏出 了 一 张 纸 和 一 支 钢笔 。
+(x38 / contrast
+      :arg1(x16)  (x22 / 感到-01
+            :arg0()  (x21 / 我)
+            :arg1()  (x24 / 荒诞
+                  :degree()  (x23 / 十分))
+            :cause(x20)  (x19 / 举动
+                  :mod(x18)  (x17 / 这样)))
+      :arg2(x27)  (x28 / 掏出-01
+            :arg0()  (x26 / x21)
+            :arg1()  (x33 / and
+                  :op1()  (x32 / 纸
+                        :quant()  (x30 / 1)
+                        :cunit()  (x31 / 张))
+                  :op2()  (x36 / 钢笔
+                        :quant()  (x34 / 1)
+                        :cunit()  (x35 / 支))))
+      :condition(x14)  (x13 / 情况
+            :arg0-of(x12)  (x57 / mean
+                  :arg1()  (x8 / 面临-01
+                        :arg1()  (x11 / 危险
+                              :mod(x10)  (x9 / 死亡-01)))))
+      :location(x1_x6)  (x5 / 沙漠
+            :mod(x4)  (x3 / 旷无人烟)
+            :mod()  (x2 / 这)))
+
+
+# ::id test_amr.63 ::2016-06-07 09:55:47
+# ::snt 这时 我 却 又 记起 ， 我 只 学 过 地理 、 历史 、 算术 和 语法 ， 就 有点 不 大 高兴 地 对 小家伙 说 我 不 会 画画 。
+(x33 / causation
+      :arg1()  (x35 / contrast
+            :arg2(x3)  (x5 / 记起
+                  :arg0()  (x2 / 我)
+                  :time()  (x1 / 这时)
+                  :arg1()  (x9 / 学-01
+                        :aspect()  (x8 / 只)
+                        :arg1()  (x16 / and
+                              :op1()  (x11 / 地理)
+                              :op2()  (x13 / 历史)
+                              :op3()  (x15 / 算术)
+                              :op4()  (x17 / 语法))
+                        :arg0()  (x7 / x2))
+                  :mod()  (x4 / 又)))
+      :arg2(x19)  (x27 / 说-01
+            :arg0()  (x2 / 我)
+            :arg1()  (x30 / 会-01
+                  :polarity()  (x29 / -)
+                  :arg1()  (x31 / 画画-01
+                        :arg0()  (x28 / x2))
+                  :arg0()  (x28 / x2))
+            :arg3(x25)  (x26 / 小家伙)
+            :manner(x24)  (x23 / 高兴
+                  :degree()  (x22 / 大)
+                  :polarity()  (x21 / -)
+                  :degree()  (x20 / 有点))))
+
+
+# ::id test_amr.64 ::2016-06-06 09:39:06
+# ::snt 他 回答 我 说 ： “ 没有 关系 ，
+(x2_x4 / 回答-01
+      :arg0()  (x1 / 他)
+      :arg2()  (x7_2 / 有-03
+            :polarity()  (x7_1 / -)
+            :arg1()  (x8 / 关系))
+      :arg3()  (x3 / 我))
+
+
+# ::id test_amr.65 ::2016-06-06 09:40:02
+# ::snt 给 我 画 一 只 羊 吧 ！ ”
+(x10 / say
+      :arg1()  (x3 / 画-01
+            :arg1()  (x6 / 羊
+                  :quant()  (x4 / 1)
+                  :cunit()  (x5 / 只))
+            :beneficiary(x1)  (x2 / 我)
+            :mode()  (x7_x8 / expressive)))
+
+
+# ::id test_amr.66 ::2016-06-06 09:40:47
+# ::snt 因为 我 从来 没有 画 过 羊 。
+(x9 / causation
+      :arg1(x1)  (x5 / 画-01
+            :polarity()  (x4 / -)
+            :aspect()  (x6 / 过-01)
+            :arg1()  (x7 / 羊)
+            :time()  (x3 / 从来)
+            :arg0()  (x2 / 我)))
+
+
+# ::id test_amr.67 ::2016-06-07 09:55:22
+# ::snt 我 就 给 他 重 画 我 所 仅仅 会 画 的 两 副 画 中
+(x6 / 画-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x20 / thing
+            :arg1-of()  (x21 / include-91
+                  :arg2(x16)  (x15 / 画
+                        :quant()  (x13 / 2)
+                        :cunit()  (x14 / 副)
+                        :arg1-of(x8_x12)  (x11 / 画-01
+                              :arg1-of()  (x10 / 会-01
+                                    :arg0()  (x7 / x1)
+                                    :mod()  (x9 / 仅仅))
+                              :arg0()  (x7 / x1)))))
+      :beneficiary(x3)  (x4 / 他)
+      :manner()  (x5 / 重)
+      :mod()  (x2 / 就))
+
+
+# ::id test_amr.68 ::2016-06-06 09:56:33
+# ::snt 的 那 副 闭着 肚皮 的 巨蟒 。
+(x7 / 巨蟒
+      :mod()  (x2 / 那)
+      :arg0-of(x6)  (x4_1 / 闭-01
+            :aspect()  (x4_2 / 着)
+            :arg1()  (x5 / 肚皮))
+      :cunit()  (x3 / 副))
+
+
+# ::id test_amr.69 ::2016-06-06 09:58:07
+# ::snt “ 不 ， 不 ！ ” 我 听 了 他 的 话 ， 简直 目瞪口呆 。
+(x17 / and
+      :op1()  (x19 / say
+            :arg1()  (x20 / and
+                  :op1()  (x2 / 不)
+                  :op2()  (x4 / 不)
+                  :mode()  (x5 / expressive)))
+      :op2()  (x15 / 目瞪口呆-01
+            :manner()  (x14 / 简直)
+            :arg0()  (x7 / 我)
+            :cause()  (x8 / 听-01
+                  :aspect()  (x9 / 了)
+                  :arg1()  (x12 / 话
+                        :poss(x11)  (x10 / 他)))))
+
+
+# ::id test_amr.70 ::2016-07-10 20:52:05
+# ::snt 我 不 要 蟒蛇 ， 它 肚子 里 还 有 一 头 象 。 ”
+(x16 / say
+      :arg1()  (x18 / and
+            :op1()  (x3 / 要-01
+                  :arg0()  (x1 / 我)
+                  :polarity()  (x2 / -)
+                  :arg1()  (x4 / 蟒蛇))
+            :op2()  (x10 / 有-03
+                  :arg0(x8)  (x7 / 肚子
+                        :part-of()  (x6 / x4))
+                  :arg1()  (x13 / 象
+                        :quant()  (x11 / 1)
+                        :cunit()  (x12 / 头))
+                  :mod()  (x9 / 还))))
+
+
+# ::id test_amr.71 ::2016-07-10 20:53:07
+# ::snt 巨蟒 这 东西 太 危险 ， 大象 又 太 占 地方 。
+(x13 / and
+      :op1()  (x5 / 危险-01
+            :arg0()  (x3 / 东西
+                  :mod()  (x2 / 这)
+                  :arg0-of()  (x18 / mean
+                        :arg1()  (x1 / 巨蟒)))
+            :degree()  (x4 / 太))
+      :op2(x8)  (x10 / 占-02
+            :arg0()  (x7 / 大象)
+            :arg1()  (x11 / 地方)
+            :degree()  (x9 / 太)
+            :mod()  (x8 / 又)))
+
+
+# ::id test_amr.72 ::2016-06-06 10:02:02
+# ::snt 我 住 的 地方 非常 小 。
+(x6 / 小-01
+      :degree()  (x5 / 非常-01)
+      :arg0()  (x4 / 地方
+            :arg1-of(x3)  (x2 / 住-01
+                  :arg0()  (x1 / 我))))
+
+
+# ::id test_amr.73 ::2016-06-06 10:02:32
+# ::snt 我 需要 一 只 羊 。
+(x2 / 需要-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x5 / 羊
+            :quant()  (x3 / 1)
+            :cunit()  (x4 / 只)))
+
+
+# ::id test_amr.74 ::2016-06-06 10:03:40
+# ::snt 给 我 画 一 只 羊 吧 。 ”
+(x10 / say
+      :arg1()  (x3 / 画-01
+            :arg1()  (x6 / 羊
+                  :quant()  (x4 / 1)
+                  :cunit()  (x5 / 只))
+            :beneficiary(x1)  (x2 / 我)
+            :mode()  (x7 / expressive)))
+
+
+# ::id test_amr.75 ::2016-07-10 20:53:44
+# ::snt 我 就 给 他 画 了 。
+(x5 / 画-01
+      :arg0()  (x1 / 我)
+      :beneficiary(x3)  (x4 / 他)
+      :aspect()  (x6 / 了)
+      :mod()  (x2 / 就))
+
+
+# ::id test_amr.76 ::2016-06-06 10:07:44
+# ::snt 他 专心 地 看 着 ， 随后 又 说 ： “ 我 不 要 ，
+(x16 / temporal
+      :arg1()  (x4 / 看-02
+            :arg0()  (x1 / 他)
+            :aspect()  (x5 / 着-01)
+            :manner(x3)  (x2 / 专心-01
+                  :arg0()  (x1 / 他)))
+      :arg2(x7_x8)  (x9 / 说
+            :arg0()  (x1 / 他)
+            :arg1()  (x14 / 要-04
+                  :polarity()  (x13 / -)
+                  :arg0()  (x12 / x1))))
+
+
+# ::id test_amr.77 ::2016-06-06 10:08:32
+# ::snt 这 只 羊 已经 病 得 很 重 了 。
+(x5 / 病-01
+      :degree(x6)  (x8 / 重
+            :degree()  (x7 / 很))
+      :aspect()  (x9 / 了)
+      :arg0()  (x3 / 羊
+            :mod()  (x1 / 这)
+            :cunit()  (x2 / 只))
+      :time()  (x4 / 已经))
+
+
+# ::id test_amr.78 ::2016-06-06 10:09:20
+# ::snt 给 我 重新 画 一 只 。 ”
+(x9 / say
+      :arg1()  (x4 / 画-01
+            :manner()  (x3 / 重新)
+            :beneficiary(x1)  (x2 / 我)
+            :arg1()  (x14 / thing
+                  :quant()  (x5 / 1)
+                  :cunit()  (x6 / 只))))
+
+
+# ::id test_amr.79 ::2016-06-07 09:53:47
+# ::snt 我 又 画 了 起来 。
+(x3_x4_x5 / 画-01
+      :arg0()  (x1 / 我)
+      :mod()  (x2 / 又))
+
+
+# ::id test_amr.80 ::2016-06-06 10:11:03
+# ::snt 我 的 这 位 朋友 天真 可爱 地 笑 了 。
+(x9 / 笑-01
+      :arg0()  (x5 / 朋友
+            :poss(x2)  (x1 / 我)
+            :mod()  (x3 / 这)
+            :cunit()  (x4 / 位))
+      :manner(x8)  (x18 / and
+            :op1()  (x6 / 天真)
+            :op2()  (x7 / 可爱))
+      :aspect()  (x10 / 了))
+
+
+# ::id test_amr.81 ::2016-06-06 10:12:29
+# ::snt “ 你 看 ， 你 画 的 不 是 小羊 ” 他 说 。
+(x13 / 说-01
+      :arg0()  (x12 / 他)
+      :arg1()  (x3 / 看-02
+            :arg0()  (x2 / 你)
+            :arg1()  (x10 / 小羊
+                  :domain(x9)  (x21 / thing
+                        :arg1-of(x7)  (x6 / 画-01
+                              :arg0()  (x5 / x2)))
+                  :polarity()  (x8 / -))))
+
+
+# ::id test_amr.82 ::2016-06-06 10:12:53
+# ::snt 是 头 公羊 ，
+(x3 / 公羊
+      :domain(x1)  (x7 / thing)
+      :cunit()  (x2 / 头))
+
+
+# ::id test_amr.83 ::2016-07-10 20:54:13
+# ::snt 还 有 犄角 呢 。 ”
+(x7 / say
+      :arg1()  (x2 / 有-01
+            :arg0()  (x10 / thing)
+            :arg1()  (x3 / 犄角)
+            :mode()  (x4 / expressive)
+            :mod()  (x1 / 还)))
+
+
+# ::id test_amr.84 ::2016-06-07 09:53:20
+# ::snt 于是 我 又 重新 画 了 一 张 。
+(x10 / causation
+      :arg2(x1)  (x5 / 画-01
+            :arg0()  (x2 / 我)
+            :arg1()  (x14 / thing
+                  :quant()  (x7 / 1)
+                  :cunit()  (x8 / 张))
+            :manner()  (x4 / 重新)
+            :mod()  (x3 / 又)))
+
+
+# ::id test_amr.85 ::2016-06-07 09:53:03
+# ::snt 这 副 画 同 前 几 副 一样 又 被 拒绝 了 。
+(x11 / 拒绝-01
+      :arg1()  (x3 / 画
+            :mod()  (x1 / 这)
+            :cunit()  (x2 / 副))
+      :aspect()  (x12 / 了)
+      :arg0(x10)  (x21 / person)
+      :manner()  (x4_x8 / 一样-02
+            :arg1()  (x23 / thing
+                  :mod()  (x5 / 前)
+                  :quant()  (x6 / 几)
+                  :cunit()  (x7 / 副)))
+      :mod()  (x9 / 又))
+
+
+# ::id test_amr.86 ::2016-06-06 10:18:33
+# ::snt “ 这 一 只 太 老 了 。
+(x9 / say
+      :arg1()  (x6 / 老-01
+            :arg0()  (x12 / thing
+                  :quant()  (x3 / 1)
+                  :cunit()  (x4 / 只)
+                  :mod()  (x2 / 这))
+            :degree()  (x5 / 太)
+            :smood()  (x7 / 了)))
+
+
+# ::id test_amr.87 ::2016-06-06 10:20:35
+# ::snt 我 想要 一 只 能 活 得 长 的 羊 。 ”
+(x13 / say
+      :arg1()  (x2 / 想要-02
+            :arg0()  (x1 / 我)
+            :arg1()  (x10 / 羊
+                  :arg0-of(x9)  (x6 / 活-02
+                        :manner(x7)  (x8 / 长)
+                        :arg0-of()  (x5 / 能-01))
+                  :quant()  (x3 / 1)
+                  :cunit()  (x4 / 只))))
+
+
+# ::id test_amr.88 ::2016-06-06 10:22:01
+# ::snt 我 不 耐烦 了 。 因为 我 急于 要 检修 发动机 ，
+(x13 / causation
+      :arg2()  (x3 / 耐烦
+            :arg0()  (x1 / 我)
+            :polarity()  (x2 / -)
+            :aspect()  (x4 / 了-01))
+      :arg1(x1)  (x8 / 急于
+            :arg0()  (x7 / 我)
+            :arg1()  (x9 / 要-05
+                  :arg0()  (x1 / 我)
+                  :arg1()  (x10 / 检修-01
+                        :arg0()  (x1 / 我)
+                        :arg1()  (x11 / 发动机)))))
+
+
+# ::id test_amr.89 ::2016-06-06 10:22:57
+# ::snt 于是 就 草草 画 了 这 张 画 ，
+(x10 / causation
+      :arg2(x1_x2)  (x4 / 画-01
+            :arg1()  (x8 / 画
+                  :mod()  (x6 / 这)
+                  :cunit()  (x7 / 张))
+            :aspect()  (x5 / 了)
+            :manner()  (x3 / 草草)))
+
+
+# ::id test_amr.90 ::2016-06-06 10:23:44
+# ::snt 并且 匆匆 地 对 他 说道 ： “
+(x13 / and
+      :op2(x1)  (x6 / 说道-01
+            :arg2(x4)  (x5 / 他)
+            :manner(x3)  (x2 / 匆匆)))
+
+
+# ::id test_amr.91 ::2016-06-06 10:24:17
+# ::snt 这 是 一 只 箱子 ，
+(x5 / 箱子
+      :domain(x2)  (x1 / 这)
+      :quant()  (x3 / 1)
+      :cunit()  (x4 / 只))
+
+
+# ::id test_amr.92 ::2016-07-10 20:55:31
+# ::snt 你 要 的 羊 就 在 里面 。 ”
+(x10 / say
+      :arg1()  (x4 / 羊
+            :arg1-of(x3)  (x2 / 要-01
+                  :arg0()  (x1 / 你))
+            :location(x6)  (x7 / 里面
+                  :mod()  (x5 / 就))))
+
+
+# ::id test_amr.93 ::2016-06-07 09:52:19
+# ::snt 这时 我 十分 惊奇 地 看到 我 的 这 位 小 评判员 喜笑颜开 。 他 说 ： “ 这 正 是 我 想 要 的 ，
+(x27 / multi-sentence
+      :snt1()  (x6 / 看到-01
+            :arg0()  (x2 / 我)
+            :arg1()  (x13 / 喜笑颜开
+                  :arg0()  (x12 / 评判员
+                        :mod()  (x11 / 小)
+                        :mod()  (x9 / 这)
+                        :cunit()  (x10 / 位)
+                        :poss(x8)  (x7 / 我)))
+            :manner(x5)  (x4 / 惊奇
+                  :degree()  (x3 / 十分))
+            :time()  (x1 / 这时))
+      :snt2()  (x16 / 说-01
+            :arg0()  (x15 / x12)
+            :arg1()  (x42 / thing
+                  :arg1-of(x25)  (x24 / 要-05
+                        :arg0()  (x22 / x12)
+                        :arg1-of()  (x23 / 想-02
+                              :arg0()  (x22 / x12)))
+                  :domain(x21)  (x19 / 这)
+                  :mod()  (x20 / 正))))
+
+
+# ::id test_amr.94 ::2016-06-06 10:30:03
+# ::snt 你 说 这 只 羊 需要 很多 草 吗 ？ ”
+(x12 / say
+      :arg1()  (x2 / 说-01
+            :arg0()  (x1 / 你)
+            :arg1()  (x6 / 需要-01
+                  :arg0()  (x5 / 羊
+                        :mod()  (x3 / 这)
+                        :cunit()  (x4 / 只))
+                  :arg1()  (x8 / 草
+                        :quant()  (x7 / 很多))
+                  :mode()  (x9_x10 / interrogative))))
+
+
+# ::id test_amr.95 ::2016-06-06 10:31:18
+# ::snt “ 为什么 ？ ”
+(x5 / say
+      :arg1()  (x9 / cause
+            :arg0()  (x2 / amr-unknown)
+            :mode()  (x3 / interrogative)))
+
+
+# ::id test_amr.96 ::2016-07-10 20:55:50
+# ::snt “ 因为 我 住 的 地方 一切 都 非常 小 … ”
+(x13 / say
+      :arg1()  (x15 / causation
+            :arg1(x2)  (x10 / 小-01
+                  :degree()  (x9 / 非常)
+                  :arg0()  (x7 / 一切
+                        :location()  (x6 / 地方
+                              :arg1-of(x5)  (x4 / 住-01
+                                    :arg0()  (x3 / 我))))
+                  :mod()  (x8 / 都))))
+
+
+# ::id test_amr.97 ::2016-06-06 10:34:14
+# ::snt 地方 小 也 够 喂养 它 的 。 ”
+(x10 / say
+      :arg1()  (x16 / concession
+            :arg1()  (x2 / 小-01
+                  :arg0()  (x1 / 地方))
+            :arg2(x3)  (x4 / 够-01
+                  :arg1()  (x5 / 喂养-01
+                        :arg1()  (x6 / 它)))
+            :smood()  (x7 / 的)))
+
+
+# ::id test_amr.98 ::2016-06-06 10:34:25
+# ::snt 我 说
+(x2 / 说
+      :arg0()  (x1 / 我))
+
+
+# ::id test_amr.99 ::2016-06-06 10:35:57
+# ::snt “ 我 给 你 画 的 是 一 只 很 小 的 小羊 ，
+(x15 / say
+      :arg1()  (x13 / 小羊
+            :domain(x7)  (x18 / thing
+                  :arg1-of(x6)  (x5 / 画-01
+                        :arg0()  (x2 / 我)
+                        :beneficiary(x3)  (x4 / 你-01)))
+            :quant()  (x8 / 1)
+            :cunit()  (x9 / 只)
+            :mod(x12)  (x11 / 小
+                  :degree()  (x10 / 很))))
+
+
+# ::id test_amr.100 ::2016-07-10 20:56:14
+# ::snt 他 把 脑袋 靠近 这 张 画 。 “ 并 不 象 你 说 的 那么 小 … 瞧 ！
+(x21 / multi-sentence
+      :snt1()  (x4 / 靠近-01
+            :arg0(x2)  (x3 / 脑袋
+                  :part-of()  (x1 / 他))
+            :arg1()  (x7 / 画
+                  :mod()  (x5 / 这)
+                  :cunit()  (x6 / 张)))
+      :snt2()  (x29 / say
+            :arg1()  (x30 / and
+                  :op1()  (x17 / 小
+                        :degree()  (x16 / 那么)
+                        :manner()  (x12 / 像-01
+                              :arg1()  (x34 / thing
+                                    :arg1-of(x15)  (x14 / 说-01
+                                          :arg0()  (x13 / 你)))
+                              :polarity()  (x11 / -
+                                    :mod()  (x10 / 并-01))))
+                  :op2()  (x19 / 瞧
+                        :mode()  (x20 / expressive)))))
+
+
+# ::id test_amr.101 ::2016-06-06 10:39:16
+# ::snt 它 睡着 了 … ”
+(x6 / say
+      :arg1()  (x2 / 睡着-01
+            :arg0()  (x1 / 它)
+            :aspect()  (x3 / 了)))
+
+
+# ::id test_amr.102 ::2016-06-06 11:09:06
+# ::snt 就 这样 ， 我 认识 了 小 王子 。
+(x5 / 认识-01
+      :arg0()  (x4 / 我)
+      :aspect()  (x6 / 了)
+      :arg1()  (x8 / 王子
+            :mod()  (x7 / 小)))
+
+
+# ::id test_amr.103 ::2016-06-06 10:40:28
+# ::snt III 。
+(x1 / III)
+
+
+# ::id test_amr.104 ::2016-06-06 10:43:17
+# ::snt 我 费 了 好 长 时间 才 弄 清楚 他 是 从 哪里 来 的 。
+(x8_x9 / 弄清楚-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x10 / 他
+            :source(x12_x14)  (x13 / 哪里)
+            :mode()  (x11_x15 / judgement))
+      :manner()  (x2 / 费-01
+            :arg0()  (x1 / 我)
+            :aspect()  (x3 / 了)
+            :arg1()  (x6 / 时间
+                  :mod()  (x5 / 长-01
+                        :degree()  (x4 / 好)))))
+
+
+# ::id test_amr.105 ::2016-06-06 11:08:28
+# ::snt 小 王子 向 我 提出 了 很多 问题 ， 可是 ， 对 我 提出 的 问题 ， 他 好象 压根 没有 听见 似的 。
+(x25 / contrast
+      :arg1()  (x5 / 提出-01
+            :arg1()  (x8 / 问题
+                  :quant()  (x7 / 很多))
+            :arg2(x3)  (x4 / 我)
+            :aspect()  (x6 / 了)
+            :arg0()  (x2 / 王子))
+      :arg2(x10)  (x19_x23 / 像-01
+            :arg0()  (x18 / x28)
+            :arg1()  (x22 / 听见-01
+                  :arg0()  (x18 / x28)
+                  :polarity()  (x21 / -)
+                  :arg1(x12)  (x16 / 问题
+                        :arg1-of(x15)  (x14 / 提出-01
+                              :arg0()  (x13 / 我)))
+                  :manner()  (x20 / 压根))))
+
+
+# ::id test_amr.106 ::2016-06-06 10:49:13
+# ::snt 他 无意 中 吐露 的 一些 话 逐渐 使 我 搞清 了 他 的 来历 。
+(x11 / 搞清-01
+      :arg0()  (x10 / 我)
+      :arg1()  (x15 / 来历
+            :poss(x14)  (x13 / x1))
+      :aspect()  (x12 / 了)
+      :cause(x9)  (x7 / 话
+            :arg1-of(x5)  (x4 / 吐露-01
+                  :arg0()  (x1 / 他)
+                  :manner(x3)  (x2 / 无意-01
+                        :arg0()  (x1 / 他)))
+            :quant()  (x6 / 一些))
+      :manner()  (x8 / 逐渐))
+
+
+# ::id test_amr.107 ::2016-06-06 10:56:43
+# ::snt 例如 ， 当 他 第一 次 瞅见 我 的 飞机 时 （ 我 就 不 画出 我 的 飞机 了 ， 因为 这 种 图画 对 我 来说 太 复杂 ） ， 他 问 我 道 ： “ 这 是 个 啥 玩艺 ？ ”
+(x1 / 例如
+      :arg0()  (x34_x36 / 问道-01
+            :arg2()  (x35 / x8)
+            :arg1()  (x43 / 玩艺
+                  :mod()  (x42 / amr-unknown)
+                  :domain(x40)  (x39 / 这)
+                  :cunit()  (x41 / 个)
+                  :mode()  (x44 / interrogative))
+            :time(x3_x11)  (x7 / 瞅见-01
+                  :arg0()  (x4 / 他)
+                  :ord()  (x59 / ordinal-entity
+                        :value()  (x5 / 1)
+                        :cunit()  (x6 / 次))
+                  :arg1()  (x10 / 飞机
+                        :poss(x9)  (x8 / 我)
+                        :arg0-of()  (x64 / mean
+                              :arg1()  (x65 / causation
+                                    :arg2(x14)  (x16 / 画出-01
+                                          :arg0()  (x13 / x8)
+                                          :polarity()  (x15 / -)
+                                          :arg1()  (x19 / 飞机
+                                                :poss(x18)  (x17 / x8))
+                                          :smood()  (x20 / 了))
+                                    :arg1(x22)  (x28 / 来说
+                                          :arg0()  (x25 / 图画
+                                                :mod()  (x23 / 这)
+                                                :unit()  (x24 / 种))
+                                          :arg1(x26)  (x27 / x8)
+                                          :arg2()  (x30 / 复杂-01
+                                                :degree()  (x29 / 太)
+                                                :arg0()  (x25 / 图画)))))))
+            :arg0()  (x33 / x4)))
+
+
+# ::id test_amr.108 ::2016-06-06 10:57:53
+# ::snt “ 这 不 是 ‘ 玩艺儿 ’ 。
+(x9 / say
+      :arg1()  (x6 / 玩艺儿
+            :domain(x4)  (x2 / 这)
+            :polarity()  (x3 / -)))
+
+
+# ::id test_amr.109 ::2016-06-06 10:58:14
+# ::snt 它 能 飞 。
+(x2 / 能-01
+      :arg0()  (x3 / 飞
+            :arg0()  (x1 / 它)))
+
+
+# ::id test_amr.110 ::2016-06-06 10:58:33
+# ::snt 这 是 飞机 。
+(x3 / 飞机
+      :domain(x2)  (x1 / 这))
+
+
+# ::id test_amr.111 ::2016-06-06 10:59:02
+# ::snt 是 我 的 飞机 。 ”
+(x7 / say
+      :arg1()  (x4 / 飞机
+            :poss(x3)  (x2 / 我)
+            :domain(x1)  (x11 / thing)))
+
+
+# ::id test_amr.112 ::2016-06-06 11:00:34
+# ::snt 我 当时 很 骄傲 地 告诉 他 我 能 飞 。
+(x6 / 告诉-01
+      :arg0()  (x1 / 我)
+      :arg1()  (x9 / 能-01
+            :arg0()  (x10 / 飞-01
+                  :arg0()  (x8 / x1)))
+      :manner(x5)  (x4 / 骄傲-01
+            :degree()  (x3 / 很)
+            :arg0()  (x1 / 我))
+      :time()  (x2 / 当时))
+
+
+# ::id test_amr.113 ::2016-06-06 11:01:47
+# ::snt 于是 他 惊奇 地 说道 ： “ 怎么 ？
+(x10 / causation
+      :arg2(x1)  (x5 / 说道-01
+            :arg0()  (x2 / 他)
+            :manner(x4)  (x3 / 惊奇-01
+                  :arg0()  (x2 / 他))
+            :arg1()  (x8 / 怎么
+                  :mode()  (x9 / interrogative))))
+
+
+# ::id test_amr.114 ::2016-06-06 11:03:58
+# ::snt 你 是 从 天 上 掉 下来 的 ？ ”
+(x11 / say
+      :arg1()  (x6 / 掉-01
+            :direction()  (x7 / 下来)
+            :source(x3)  (x4_x5 / 天上)
+            :arg1()  (x1 / 你)
+            :mode()  (x2_x8 / judgement)
+            :mode()  (x9 / interrogative)))
+
+
+# ::id test_amr.115 ::2016-06-06 11:04:10
+# ::snt “ 是 的 ” 。
+(x2_x3 / 是的)
+
+
+# ::id test_amr.116 ::2016-06-06 11:04:33
+# ::snt 我 谦逊 地 答道 。
+(x4 / 答道
+      :arg0()  (x1 / 我)
+      :manner(x3)  (x2 / 谦逊))
+
+
+# ::id test_amr.117 ::2016-06-06 11:04:52
+# ::snt “ 啊 ？
+(x4 / say
+      :arg1()  (x2 / 啊
+            :mode()  (x3 / interrogative)))
+
+
+# ::id test_amr.118 ::2016-06-06 11:05:18
+# ::snt 这 真 滑稽 。 ”
+(x10 / say
+      :arg1()  (x3 / 滑稽-01
+            :arg0()  (x1 / 这)
+            :degree()  (x2 / 真)))
+
+
+# ::id test_amr.119 ::2016-06-06 11:20:52
+# ::snt 此时 小 王子 发出 一 阵 清脆 的 笑声 。 这 使 我 很 不 高兴 。
+(x18 / multi-sentence
+      :snt1()  (x4 / 发出-02
+            :arg0()  (x3 / 王子
+                  :mod()  (x2 / 小))
+            :arg1()  (x9 / 笑声
+                  :mod(x8)  (x7 / 清脆)
+                  :quant()  (x5 / 1)
+                  :cunit()  (x6 / 阵))
+            :time()  (x1 / 此时))
+      :snt2()  (x16 / 高兴-01
+            :arg0()  (x13 / 我)
+            :polarity()  (x15 / -)
+            :cause(x12)  (x11 / 这)
+            :degree()  (x14 / 很)))
+
+
+# ::id test_amr.120 ::2016-06-06 11:21:56
+# ::snt 我 要求 别人 严肃 地 对待 我 的 不幸 。
+(x2 / 要求-02
+      :arg0()  (x1 / 我)
+      :arg1()  (x3 / 别人)
+      :arg2()  (x6 / 对待-01
+            :arg0()  (x3 / 别人)
+            :manner(x5)  (x4 / 严肃)
+            :arg1()  (x9 / 不幸
+                  :poss(x8)  (x7 / x1))))
+
+
+# ::id test_amr.121 ::2016-06-07 09:50:31
+# ::snt 然后 ， 他 又 说道 ： “ 那么 ， 你 也 是 从 天 上 来 的 了 ！
+(x20 / temporal
+      :arg2(x1)  (x5 / 说道-01
+            :arg0()  (x3 / 他)
+            :arg1()  (x25 / causation
+                  :mode()  (x19 / expressive)
+                  :arg2(x8)  (x16 / 来-01
+                        :arg0()  (x10 / 你)
+                        :arg2(x13)  (x14_x15 / 天上)
+                        :mode()  (x12_x17 / judgement)
+                        :smood()  (x18 / 了)
+                        :mod()  (x11 / 也)))
+            :mod()  (x4 / 又)))
+
+
+# ::id test_amr.122 ::2016-06-06 11:34:20
+# ::snt 你 是 哪个 星球 上 的 ？ ”
+(x9 / say
+      :arg1()  (x1 / 你
+            :location(x5)  (x4 / 星球
+                  :mod()  (x3 / amr-unknown))
+            :mode()  (x2_x6 / judgement)
+            :mode()  (x7 / interrogative)))
+
+
+# ::id test_amr.123 ::2016-06-06 14:24:27
+# ::snt 即刻 ， 对于 他 是 从 哪里 来 的 这个 秘密 我 隐约 发现 到 了 一点 线索 ； 于是 ， 我 就 突然 问道 ： “ 你 是 从 另 一 个 星球 上 来 的 吗 ？ ”
+(x58 / causation
+      :arg1()  (x14 / 发现-01
+            :arg0()  (x12 / 我)
+            :arg1(x15)  (x18 / 线索
+                  :quant()  (x17 / 一点)
+                  :poss(x3)  (x11 / 秘密
+                        :mod()  (x10 / 这个)
+                        :arg0-of()  (x50 / mean
+                              :arg1()  (x8 / 来-01
+                                    :arg0()  (x4 / 他)
+                                    :arg2(x6)  (x7 / amr-unknown)
+                                    :mode()  (x5_x9 / judgement)))))
+            :aspect()  (x16 / 了)
+            :degree()  (x13 / 隐约)
+            :time()  (x1 / 即刻))
+      :arg2(x20_x23)  (x25 / 问道
+            :arg0()  (x22 / x12)
+            :manner()  (x24 / 突然)
+            :arg1()  (x36 / 来-01
+                  :arg0()  (x28 / x4)
+                  :arg2(x30_x35)  (x34 / 星球
+                        :mod()  (x31 / 另)
+                        :quant()  (x32 / 1)
+                        :cunit()  (x33 / 个))
+                  :mode()  (x29_x37 / judgement)
+                  :mode()  (x38_x39 / interrogative))))
+
+
+# ::id test_amr.124 ::2016-06-06 14:25:08
+# ::snt 可是 他 不 回答 我 的 问题 。
+(x9 / contrast
+      :arg2(x1)  (x4 / 回答-01
+            :arg0()  (x2 / 他)
+            :polarity()  (x3 / -)
+            :arg1()  (x7 / 问题
+                  :poss(x6)  (x5 / 我))))
+
+
+# ::id test_amr.125 ::2016-06-06 14:58:04
+# ::snt 他 一面 看 着 我 的 飞机 ， 一面 微微 地 点点 头 ， 接着 说道 ： “ 可 不 是 么 ， 乘坐 这 玩艺儿 ， 你 不 可能 是 从 很 远 的 地方 来 的 … ”
+(x41 / temporal
+      :arg1()  (x43 / and
+            :op1(x2)  (x3 / 看-02
+                  :aspect()  (x4 / 着)
+                  :arg0()  (x1 / 他)
+                  :arg1()  (x7 / 飞机
+                        :poss(x6)  (x5 / 我)))
+            :op2(x9)  (x12_x13 / 点头-01
+                  :arg0()  (x1 / 他)
+                  :degree(x11)  (x10 / 微微)))
+      :arg2(x15)  (x16 / 说道-01
+            :arg0()  (x1 / 他)
+            :arg1()  (x52 / and
+                  :op1()  (x19_x20_x21 / 可不是
+                        :mode()  (x22 / expressive))
+                  :op2()  (x30 / 可能-01
+                        :polarity()  (x29 / -)
+                        :arg0()  (x37 / 来-01
+                              :arg0()  (x28 / 你)
+                              :arg2(x32)  (x36 / 地方
+                                    :mod(x35)  (x34 / 远
+                                          :degree()  (x33 / 很)))
+                              :mode()  (x31_x38 / judgement)
+                              :manner()  (x24 / 乘坐-01
+                                    :arg0()  (x28 / 你)
+                                    :arg1()  (x26 / x7
+                                          :mod()  (x25 / 这))))))))
+
+
+# ::id test_amr.126 ::2016-06-07 09:49:28
+# ::snt 说到 这里 ， 他 就 长 时间 地 陷入 沉思 之中 。
+(x13 / and
+      :op1()  (x1 / 说到-01
+            :arg1()  (x2 / 这里)
+            :arg0()  (x4 / 他))
+      :op2()  (x9 / 陷入-01
+            :arg0()  (x4 / 他)
+            :arg1(x11)  (x10 / 沉思)
+            :duration(x8)  (x7 / 时间
+                  :mod()  (x6 / 长-01))
+            :mod()  (x5 / 就)))
+
+
+# ::id test_amr.127 ::2016-06-06 15:03:24
+# ::snt 然后 ， 从 口袋 里 掏出 了 我 画 的 小羊 ， 看 着 他 的 宝贝 入 了 神 。
+(x22 / temporal
+      :arg2(x1)  (x6 / 掏出-01
+            :arg1()  (x11 / 小羊
+                  :arg1-of(x10)  (x9 / 画-01
+                        :arg0()  (x8 / 我)))
+            :aspect()  (x7 / 了)
+            :source(x3_x5)  (x4 / 口袋)
+            :arg0()  (x15 / 他))
+      :arg3()  (x18_x20 / 入神
+            :cause()  (x13 / 看-02
+                  :aspect()  (x14 / 着)
+                  :arg1()  (x17 / 宝贝
+                        :poss(x16)  (x15 / 他)))
+            :aspect()  (x19 / 了)))
+
+
+# ::id test_amr.128 ::2016-06-06 15:06:16
+# ::snt 你们 可以 想见 这 种 关于 “ 别的 星球 ” 的 若明若暗 的 话语 使 我 心里 多么 好奇 。
+(x2 / 可以-01
+      :arg0()  (x3 / 想见-01
+            :arg0()  (x1 / 你们)
+            :arg1()  (x19 / 好奇-01
+                  :arg0()  (x17 / 心里
+                        :part-of()  (x16 / 我))
+                  :arg1(x15)  (x14 / 话语
+                        :mod(x13)  (x12 / 若明若暗)
+                        :topic(x6_x11)  (x9 / 星球
+                              :mod()  (x8 / 别的))
+                        :mod()  (x4 / 这)
+                        :unit()  (x5 / 种))
+                  :degree()  (x18 / 多么))))
+
+
+# ::id test_amr.129 ::2016-06-06 15:08:12
+# ::snt 因此 我 竭力 地 想 知道 其中 更 多 的 奥秘 。
+(x13 / causation
+      :arg2(x1)  (x5 / 想-02
+            :arg0()  (x2 / 我)
+            :degree(x4)  (x3 / 竭力)
+            :arg1()  (x6 / 知道-01
+                  :arg1()  (x11 / 奥秘
+                        :quant(x10)  (x9 / 多
+                              :degree()  (x8 / 更))
+                        :arg1-of()  (x7 / include-91))
+                  :arg0()  (x2 / 我))))
+
+
+# ::id test_amr.130 ::2016-06-06 15:10:38
+# ::snt “ 你 是 从 哪里 来 的 ， 我 的 小家伙 ？
+(x13 / say
+      :arg2()  (x11 / 小家伙
+            :poss(x10)  (x9 / 我))
+      :arg1()  (x6 / 来-01
+            :arg0()  (x2 / x11)
+            :arg2(x4)  (x5 / amr-unknown)
+            :mode()  (x3_x7 / judgement))
+      :mode()  (x12 / interrogative))
+
+
+# ::id test_amr.131 ::2016-06-06 15:11:14
+# ::snt 你 的 家 在 什么 地方 ？
+(x3 / 家
+      :poss(x2)  (x1 / 你)
+      :location(x4)  (x6 / 地方
+            :mod()  (x5 / amr-unknown))
+      :mode()  (x7 / interrogative))
+
+
+# ::id test_amr.132 ::2016-06-06 15:13:03
+# ::snt 你 要 把 你 的 小羊 带到 哪里 去 ？ ”
+(x16 / say
+      :arg1()  (x2 / 要-01
+            :arg0()  (x7 / 带到-01
+                  :arg0()  (x1 / 你)
+                  :arg1(x3)  (x6 / 小羊
+                        :poss(x5)  (x4 / x1))
+                  :arg2(x9)  (x8 / amr-unknown))
+            :mode()  (x10 / interrogative)))
+
+
+# ::id test_amr.133 ::2016-06-06 15:18:13
+# ::snt 他 沉思 了 一会 ， 然后 回答 我 说 ： “ 好在 有 你 给 我 的 那 只 箱子 ， 夜晚 可以 给 小羊 当 房子 用 。 ”
+(x31 / temporal
+      :arg1()  (x2 / 沉思-01
+            :arg0()  (x1 / 他)
+            :duration()  (x4 / 一会)
+            :aspect()  (x3 / 了))
+      :arg2(x6)  (x7_x9 / 回答-01
+            :arg0()  (x1 / 他)
+            :arg3()  (x8 / 我)
+            :arg2()  (x39 / causation
+                  :arg1()  (x12 / 好在
+                        :arg0()  (x13 / 有-01
+                              :arg1()  (x20 / 箱子
+                                    :arg1-of(x17)  (x15 / 给-01
+                                          :arg0()  (x14 / 你)
+                                          :arg2()  (x16 / x1))
+                                    :mod()  (x18 / 那)
+                                    :cunit()  (x19 / 只))))
+                  :arg2()  (x23 / 可以-01
+                        :arg0()  (x26_x28 / 当-01
+                              :arg1()  (x20 / 箱子)
+                              :arg2()  (x27 / 房子)
+                              :beneficiary(x24)  (x25 / 小羊)
+                              :time()  (x22 / 夜晚))))))
+
+
+# ::id test_amr.134 ::2016-06-06 15:18:33
+# ::snt “ 那 当然 。
+(x5 / say
+      :arg1()  (x3 / 当然
+            :mod()  (x2 / 那)))
+
+
+# ::id test_amr.135 ::2016-06-07 09:48:38
+# ::snt 如果 你 听话 的话 ， 我 再 给 你 画 一 根 绳子 ， 白天 可以 栓住 它 。
+(x20 / condition
+      :arg1(x1_x4)  (x3 / 听话-01
+            :arg0()  (x2 / 你))
+      :arg2()  (x10 / 画-01
+            :arg0()  (x6 / 我)
+            :arg1()  (x13 / 绳子
+                  :quant()  (x11 / 1)
+                  :cunit()  (x12 / 根))
+            :beneficiary(x8)  (x9 / x2)
+            :purpose()  (x16 / 可以-02
+                  :arg0()  (x17 / 栓住
+                        :arg1()  (x18 / 它)
+                        :arg0()  (x2 / 你)
+                        :time()  (x15 / 白天)))
+            :mod()  (x7 / 再)))
+
+
+# ::id test_amr.136 ::2016-06-07 09:48:21
+# ::snt 我 的 建议 看来 有点 使 小 王子 反感 。 “ 栓住 它 ，
+(x15 / multi-sentence
+      :snt1()  (x4 / 看来-02
+            :arg0()  (x9 / 反感
+                  :arg0()  (x8 / 王子
+                        :mod()  (x7 / 小))
+                  :arg1(x6)  (x3 / 建议
+                        :poss(x2)  (x1 / 我))
+                  :degree()  (x5 / 有点)))
+      :snt2()  (x12 / 栓住
+            :arg1()  (x13 / 它)))
+
+
+# ::id test_amr.137 ::2016-06-06 15:23:59
+# ::snt 多么 奇怪 的 主意 。 ”
+(x7 / say
+      :arg1()  (x4 / 主意
+            :mod(x3)  (x2 / 奇怪
+                  :degree()  (x1 / 多么))))
+
+
+# ::id test_amr.138 ::2016-06-06 15:24:35
+# ::snt “ 如果 你 不 栓住 它 ，
+(x8 / say
+      :arg1()  (x10 / condition
+            :arg1(x2)  (x5 / 栓住
+                  :polarity()  (x4 / -)
+                  :arg1()  (x6 / 它)
+                  :arg0()  (x3 / 你))))
+
+
+# ::id test_amr.139 ::2016-07-10 20:56:53
+# ::snt 它 就 到处 跑 ， 那么 它 会 跑 丢 的 。 ”
+(x14 / say
+      :arg1()  (x22 / causation
+            :arg1()  (x4 / 跑-01
+                  :arg0()  (x1 / 它)
+                  :manner()  (x3 / 到处)
+                  :mod()  (x2 / 就))
+            :arg2(x6)  (x8 / 会-02
+                  :arg0()  (x9 / 跑
+                        :cause-of()  (x10 / 丢-02
+                              :arg1()  (x7 / x1))
+                        :arg0()  (x7 / x1))
+                  :smood()  (x11 / 的))))
+
+
+# ::id test_amr.140 ::2016-06-07 09:47:53
+# ::snt 我 的 这 位 朋友 又 笑 出 了 声 ： “ 你 想 要 它 跑到 哪里 去 呀 ？ ”
+(x32 / and
+      :op1()  (x7 / 笑-01
+            :arg0()  (x5 / 朋友
+                  :mod()  (x3 / 这)
+                  :cunit()  (x4 / 位)
+                  :poss(x2)  (x1 / 我))
+            :manner()  (x8_x10 / 出声-01
+                  :aspect()  (x9 / 了)
+                  :arg0()  (x5 / 朋友))
+            :mod()  (x6 / 又))
+      :op2()  (x34 / say
+            :arg1()  (x14_x15 / 想要-01
+                  :arg0()  (x13 / 你)
+                  :arg1()  (x17 / 跑到-01
+                        :arg1(x19)  (x18 / amr-unknown)
+                        :arg0()  (x16 / 它))
+                  :mode()  (x20_x21 / interrogative))))
+
+
+# ::id test_amr.141 ::2016-06-06 15:31:57
+# ::snt “ 不管 什么 地方 。
+(x6 / say
+      :arg1()  (x2 / 不管-01
+            :arg1()  (x4 / 地方
+                  :mod()  (x3 / 什么))))
+
+
+# ::id test_amr.142 ::2016-06-06 15:33:03
+# ::snt 它 一直 往 前 跑 … ”
+(x8 / say
+      :arg1()  (x5 / 跑-01
+            :arg0()  (x1 / 它)
+            :direction(x3)  (x4 / 前)
+            :manner()  (x2 / 一直)))
+
+
+# ::id test_amr.143 ::2016-06-06 15:34:29
+# ::snt 这时 ， 小 王子 郑重其事 地 说 ： “ 这 没有 什么 关系 ，
+(x7 / 说-01
+      :arg0()  (x4 / 王子
+            :mod()  (x3 / 小))
+      :arg1()  (x11_2 / 有-02
+            :arg1()  (x13 / 关系
+                  :mod()  (x12 / 什么))
+            :polarity()  (x11_1 / -)
+            :arg0()  (x10 / 这))
+      :manner(x6)  (x5 / 郑重其事)
+      :time()  (x1 / 这时))
+
+
+# ::id test_amr.144 ::2016-06-06 15:35:17
+# ::snt 我 那里 很 小 很 小 。 ”
+(x9 / say
+      :arg1()  (x4_x6 / 小-01
+            :arg0()  (x2 / 那里
+                  :poss()  (x1 / 我))
+            :degree()  (x3_x5 / 很)))
+
+
+# ::id test_amr.145 ::2016-06-07 09:47:14
+# ::snt 接着 ， 他 略 带 伤感 地 又 补充 了 一 句 ： “ 一直 朝 前 走 ， 也 不 会 走出 多 远 … ”
+(x28 / temporal
+      :arg2(x1)  (x9 / 补充-01
+            :arg0()  (x3 / 他)
+            :manner(x7)  (x5 / 带-01
+                  :arg0()  (x3 / 他)
+                  :arg1()  (x6 / 伤感)
+                  :degree()  (x4 / 略))
+            :arg1()  (x36 / thing
+                  :quant()  (x11 / 1)
+                  :cunit()  (x12 / 句)
+                  :arg0-of()  (x40 / mean
+                        :arg1()  (x41 / contrast
+                              :arg1()  (x18 / 走-01
+                                    :direction(x16)  (x17 / 前)
+                                    :manner()  (x15 / 一直))
+                              :arg2(x20)  (x22 / 会-02
+                                    :polarity()  (x21 / -)
+                                    :arg0()  (x23 / 走出-01
+                                          :arg1()  (x25 / 远
+                                                :degree()  (x24 / 多)))))))
+            :aspect()  (x10 / 了)
+            :mod()  (x8 / 又)))
