@@ -16,7 +16,7 @@ val conceptTable: Map[String, List[(String, String, Int)]] = Map()  // map from 
 for (Line(phrase, concept, countStr) <- stdin.getLines()) {
     val word = phrase.split(" ")(0)
     //println(word)
-    conceptTable(word) = (phrase, concept, countStr.toInt) :: conceptTable.getOrElse(phrase, List())
+    conceptTable(word) = (phrase, concept, countStr.toInt) :: conceptTable.getOrElse(word, List())
     phraseCounts(phrase) = 0
 }
 

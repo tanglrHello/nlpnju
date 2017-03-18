@@ -64,14 +64,11 @@ def transform():
             out_file.write(line + '\n')
         out_file.write('\n')
 
-
-
-
     penn_file.close()
     dep_file.close()
     out_file.close()
-    os.remove(penn_file_path)
-    os.remove(dep_file_path)
+    #os.remove(penn_file_path)
+    #os.remove(dep_file_path)
 
 
 def extract_info_from_dep_line(line):
@@ -80,7 +77,11 @@ def extract_info_from_dep_line(line):
     nodes_str = nodes_str.replace(",-", "，-")
     nodes = nodes_str.split(',')
 
-    assert len(nodes) == 2
+    try:
+        assert len(nodes) == 2
+    except:
+        print line
+        assert len(nodes) == 2
 
     node1 = nodes[0].strip().replace("，-", ",-",)
     node2 = nodes[1].strip().replace("，-", ",-",)
@@ -98,6 +99,7 @@ def extract_info_from_penn_line(line):
         elif char == ')':
             if last_bracket_type == 'left':
                 this_word_pos = line[last_bracket_index+1:cindex].strip()
+                print this_word_pos
                 word_and_pos = this_word_pos.split()
                 assert len(word_and_pos) == 2
                 word_pos.append(tuple(word_and_pos))

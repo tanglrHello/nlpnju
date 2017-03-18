@@ -2,6 +2,7 @@
 import argparse
 import os
 import time
+from collections import defaultdict
 
 '''
 1、concept对应多个不连续位置,如(x2_x8 / 帮忙-02), 取第一个下标x2作为对齐的位置
@@ -13,6 +14,46 @@ import time
 5、人工标注的对齐中,有边对齐信息,但是jamr不考虑这个对齐
 6、原标注文件中有这样的行:":time()  (x8 / name :op1 "12:00")", op1这个边和12点这个concept都没有对齐信息,本程序不能处理这样的情况,这句可以修改为':time()  (x8 / "12:00")'
 7、程序按照:来切分节点,如果concept中含有:,则该concept一定要用引号包围起来
+8、关于节点的回指(已处理):
+537:
+(x37 / causation
+      :arg1(x1)  (x3 / 想起-01
+            :arg0()  (x2 / 他   //******************
+)            :aspect()  (x4 / 了
+)            :arg1()  (x11 / 星球
+                  :mod()  (x10 / 小
+)                  :arg1-of(x9)  (x8 / 遗弃-01
+                        :arg0(x7)  (x45 / person
+))                  :poss()  (x5 / x2
+)                  :mod()  (x6 / 那
+))            :arg2()  (x48 / and
+                  :op1()  (x15 / 难过-01
+                        :arg0()  (x13 / 心里
+)                        :degree()  (x14 / 有点
+))                  :op2()  (x22 / 提出-01
+                        :arg0()  (x17 / x2     //****************** 在对齐的时候不能认为concept就是x2,要将其恢复成原始词汇
+)                        :arg1()  (x26 / 请求-01
+                              :cunit()  (x25 / 个
+)                              :arg1(x20)  (x21 / 国王
+)                              :arg2()  (x61 / and
+                                    :op1()  (x30 / 想-02
+                                          :arg0()  (x29 / x2
+)                                          :arg1()  (x31 / 看-02
+                                                :arg1()  (x32 / 日落
+)                                                :arg0()  (x29 / x2
+)))                                    :op2()  (x34 / 请求-01
+                                          :arg1()  (x35 / x21
+)))                              :quant()  (x24 / 1
+)                              :arg0()  (x17 / x2
+))                        :aspect()  (x23 / 了
+)                        :manner(x19)  (x18 / 大胆
+)                        :arg0()  (x17 / x2
+)))))
+已知这个回指不会出现环的情况
+
+9、jamr对于新增concept的处理,在align.log文件中会有对齐信息,但是人工标注不对齐新增的concept(暂不处理)
+例如jamr会有这个对齐信息: Span 3:  岁 => (temporal-quantity :unit 岁)
+10、对concept中有括号的情况,在parse时需要特殊处理
 
 原标注修改:
 1、边的括号
@@ -22,8 +63,7 @@ import time
       :time()  (x7 / name :op1 "4:00"))) ——》 :time()  (x7 / "4:00")))
 1133: :time()  (x3 / name :op1 "4:00")) ——》 :time()  (x3 / "4:00"))
 
-2、手误:
-976: :polarity()  (x5-1 / -))) ——》 :polarity()  (x5_1 / -)))
+
 '''
 
 
@@ -66,6 +106,8 @@ class AmrTreeNode:
                 # check for newly added concepts
                 if int(i[1:]) > toks_num:
                     return ""
+            elif i == "":
+                raise Exception("invalid concept id")
             else:
                 pass  # ignore index for characters inside a word, such as x12_1_3
 
@@ -87,6 +129,8 @@ class AmrTreeNode:
         for i in word_indexes[1:]:
             if i != last_index + 1:
                 break
+            else:
+                last_index = i
         else:
             is_continuous = True
         return is_continuous
@@ -119,8 +163,8 @@ class AmrTree:
         root_str = nodes_str[0]
         assert "(" == root_str[0]
         root_str = root_str[1:].strip()
-        concept_id = root_str.split("/")[0]
-        concept = root_str.split("/")[1]
+        concept_id = root_str.split("/")[0].strip()
+        concept = root_str.split("/")[1].strip()
 
         # tree has only one root node
         only_root_flag = False
@@ -135,30 +179,37 @@ class AmrTree:
         if only_root_flag:
             return
 
+        concept_dict = defaultdict(list, [])
+
         node_stack = [root]
         node_stack_record = [root]
         # process non-root nodes
         for node_annotation in nodes_str[1:]:
             # extract relation/raw_concept_id/concept
             assert "(" in node_annotation      # node_annotation: 'arg0()  (x39 / 大人)))'
-            second_left_bracket_index = node_annotation.rindex("(")
-            rel_info = node_annotation[:second_left_bracket_index]  #rel_info: 'arg0()'
-            rel_to_parent = rel_info.strip()[:rel_info.index("(")]    # rel_to_parent: 'arg0'
+            first_left_bracket_index = node_annotation.index("(")  # the left bracket for alignment of relation
+            second_left_bracket_index = node_annotation.index("(", first_left_bracket_index)
+
+            rel_to_parent = node_annotation[:second_left_bracket_index].strip()  #rel_info: 'arg0'
 
             node_info = node_annotation[second_left_bracket_index + 1:]  # node_info: 'x39 / 大人)))'
+
             assert node_info.count("/") == 1
             concept_info = node_info.split("/")     # node_info: ['x39 ', ' 大人)))']
             concept_id = concept_info[0].strip()  # concept_id: 'x39'
             concept_and_bracket = concept_info[1].strip()    #concept_and_bracket: '大人)))'
 
-            right_bracket_num = concept_and_bracket.count(")")   # right_bracket: ')))'
-            if concept_and_bracket.count(')') != 0:
-                concept = concept_and_bracket[:-(concept_and_bracket.count(")"))]   # concept: '大人'
+            # right_bracket: ')))', subtracted by the number of '(' contained in concept
+            right_bracket_num = concept_and_bracket.count(")") - concept_and_bracket.count("(")
+            if right_bracket_num != 0:
+                concept = concept_and_bracket[:-right_bracket_num]   # concept: '大人'
             else:
                 concept = concept_and_bracket.strip()
 
             # insert node into AmrTree
             new_node = AmrTreeNode(concept, concept_id, rel_to_parent, toks_num)
+            concept_dict[concept_id].append(new_node)
+
             parent_node = node_stack[-1]
             parent_node.add_child(new_node)
             node_stack.append(new_node)
@@ -172,23 +223,68 @@ class AmrTree:
             for i in range(right_bracket_num):
                 del node_stack[-1]
 
+        # co-reference recover, for nodes like x12 / x5
+        '''
+        for concept_id in concept_dict:
+            for node in concept_dict[concept_id]:
+                concept = node.concept
+                while self.is_concept_id_style(concept):   # while concept looks like x12
+                    # if there is a node x15 / x12, then referenced_node_concept_id is x12
+                    referenced_node_concept_id = concept
+                    referenced_node = concept_dict[referenced_node_concept_id][0]
+                    concept = referenced_node.concept
+                node.concept = concept
+        '''
+
+        for concept_id in concept_dict:
+            for node in concept_dict[concept_id]:
+                concept = node.concept
+                if self.is_concept_id_style(concept):
+                    aligned_pos = node.aligned_pos
+                    if aligned_pos == "":
+                        while self.is_concept_id_style(concept):  # while concept looks like x12
+                            # if there is a node x15 / x12, then referenced_node_concept_id is x12
+                            referenced_node_concept_id = concept
+                            referenced_node = concept_dict[referenced_node_concept_id][0]
+                            concept = referenced_node.concept
+                    else:
+                        first_index = int(aligned_pos.split("-")[0])
+                        last_index = int(aligned_pos.split("-")[1])
+                        toks = self.amr_annotation.snt_toks_str.split()[1:]
+                        concept = "".join(toks[first_index:last_index])
+                    node.concept = concept
         assert len(node_stack) == 0
 
+    @staticmethod
+    def is_concept_id_style(string):
+        if len(string) == 1:
+            return False
+
+        return string[0] == 'x' and string[1:].isdigit()
+
     # especially for concepts containing ':'
-    def split_annotation(self, plane_tree):
+    # can't deal with all situations, can be improved*********
+    @staticmethod
+    def split_annotation(plane_tree):
         node_strs = []
         current_node_str = ""
         concept_inside_single_quote = False
         concept_inside_double_quote = False
+        concept_inside_bookmark_quote = False
 
         for c in plane_tree:
-            if c == '"':
+            if c.decode('utf-8', errors='ignore') == u'《':
+                concept_inside_bookmark_quote = True
+            elif c == '》':
+                concept_inside_bookmark_quote = False
+
+            elif c == '"':
                 concept_inside_double_quote = not concept_inside_double_quote
             elif c == "'":
                 concept_inside_single_quote = not concept_inside_single_quote
 
             elif c == ":":
-                if not concept_inside_single_quote and not concept_inside_double_quote:
+                if not concept_inside_single_quote and not concept_inside_double_quote and not concept_inside_bookmark_quote:
                     node_strs.append(current_node_str)
                     current_node_str = ""
                 else:
@@ -200,6 +296,7 @@ class AmrTree:
 
         assert concept_inside_double_quote == False
         assert concept_inside_single_quote == False
+        assert concept_inside_bookmark_quote == False
 
         return node_strs
 
@@ -231,10 +328,14 @@ class AmrTree:
 
     def get_alignments(self):
         nodes = self.get_nodes()
+        span_list = []
 
         nodes_align = dict()
+
+        warning_list = []   # recording nodes without valid alignment infomation
         for node in nodes:
             if node.aligned_pos == '':
+                warning_list.append(node.concept)
                 continue
 
             if node.aligned_pos not in nodes_align:
@@ -243,8 +344,20 @@ class AmrTree:
 
 
         alignments = []
+        sentence_toks = self.amr_annotation.snt_toks_str.split()[1:]
         for span in nodes_align:
             span_nodes = nodes_align[span]
+
+            # get corresponding word series
+            start_index = int(span.split('-')[0])
+            end_index = int(span.split('-')[1])
+            span_words = sentence_toks[start_index:end_index]
+                # it's said that all occurences of the same concept id(that means the same span) correspond
+                # to exactly the same concept in annotation.
+                # so we take the first node of this span to get its corresponding concept
+            span_concept = span_nodes[0].concept
+            span_list.append((span_words, span_concept))
+
             # span_alignment looks like: 21-22|0.3.2.2+0.3.2.2.1
             span_alignment = span + "|"
             for node in span_nodes:
@@ -252,7 +365,7 @@ class AmrTree:
             span_alignment = span_alignment[:-1]
             alignments.append(span_alignment)
 
-        return alignments
+        return alignments, span_list, warning_list
 
     def check_cycle(self):
         node_positions = set()
@@ -266,55 +379,83 @@ class AmrTree:
                     node_positions.add(node_pos)
         return False
 
-    def save_align_info(self, aligned_file):
+    def save_align_info(self, aligned_file, aligned_log_file):
         assert self.root != None
 
         # write ::id line
         aligned_file.write("# " + self.amr_annotation.sid + "\n")
+        aligned_log_file.write("# " + self.amr_annotation.sid + "\n")
 
         # write ::snt and :: tok line
         aligned_file.write("# " + self.amr_annotation.snt_toks_str + "\n")
+        aligned_log_file.write("# " + self.amr_annotation.snt_toks_str + "\n")
         toks = self.amr_annotation.snt_toks_str.split()[1:]
         aligned_file.write("# ::tok " + " ".join(toks) + "\n")
+        aligned_log_file.write("# ::tok " + " ".join(toks) + "\n")
+
+        alignments, span_list, warning_list = self.get_alignments()
+
+        # write WARNING and Span infos into aligned_log_file
+        for concept in warning_list:
+            aligned_log_file.write("WARNING: Unaligned concept " + concept + "\n")
+
+        # write span infos (words and concept alignment) into aligned_log_file
+        for i, info in enumerate(span_list):
+            aligned_log_file.write("Span " + str(i+1) + ":  " + " ".join(info[0]) + " => " + info[1] + "\n")
 
         # write alignments
         aligned_file.write("# ::alignments ")
-        alignments = self.get_alignments()
-        print "+++++++"
-        print alignments
+        aligned_log_file.write("# ::alignments ")
         for align in alignments:
             aligned_file.write(align + " ")
+            aligned_log_file.write(align + " ")
 
         time_info = time.strftime('%Y-%m-%d-%H-%M-%S', time.localtime(time.time()))
         aligned_file.write("::annotator Aligner gold ::date " + time_info + '\n')
+        aligned_log_file.write("::annotator Aligner gold ::date " + time_info + '\n')
 
         # write nodes
         for node in self.get_nodes():
             aligned_file.write("# ::node")
+            aligned_log_file.write("# ::node")
             aligned_file.write("\t" + node.id)
+            aligned_log_file.write("\t" + node.id)
             aligned_file.write("\t" + node.concept)
+            aligned_log_file.write("\t" + node.concept)
             aligned_file.write("\t" + node.aligned_pos + "\n")
+            aligned_log_file.write("\t" + node.aligned_pos + "\n")
 
         # write root
         aligned_file.write("# ::root\t0\t")
+        aligned_log_file.write("# ::root\t0\t")
         aligned_file.write(self.root.concept)
+        aligned_log_file.write(self.root.concept)
         aligned_file.write("\n")
+        aligned_log_file.write("\n")
 
         # write edges
         for edge in self.get_edges():
             aligned_file.write("# ::edge")
+            aligned_log_file.write("# ::edge")
             aligned_file.write("\t" + edge.source_node.concept)
+            aligned_log_file.write("\t" + edge.source_node.concept)
             aligned_file.write("\t" + edge.rel)
+            aligned_log_file.write("\t" + edge.rel)
             aligned_file.write("\t" + edge.dest_node.concept)
+            aligned_log_file.write("\t" + edge.dest_node.concept)
             aligned_file.write("\t" + edge.source_node.id)
+            aligned_log_file.write("\t" + edge.source_node.id)
             aligned_file.write("\t" + edge.dest_node.id + "\n")
+            aligned_log_file.write("\t" + edge.dest_node.id + "\n")
 
         # write amr_tree in string format
         for line in self.amr_annotation.amr_tree_lines:
             aligned_file.write(line)
+            aligned_log_file.write(line)
 
         # write blank line between two sentences
         aligned_file.write("\n")
+        aligned_log_file.write("\n")
 
 
 def generate_align_info_main():
@@ -324,16 +465,16 @@ def generate_align_info_main():
 
     amr_file_path = args.gold_align_amr_file
 
-    corpus_name = amr_file_path.split(".")[0].split("_")[0]
-    aligned_file_path = corpus_name + "_align.txt"
-
+    # extract alignment info and generate alignment files
     amr_file = open(amr_file_path)
-    aligned_file = open(aligned_file_path, "w")
+    aligned_file = open(amr_file_path + ".aligned", "w")
+    aligned_log_file = open(amr_file_path + ".aligned.log", "w")
 
     for amr_annotation in extract_amr_annotation_from_file(amr_file):
         amr_tree = AmrTree(amr_annotation)
-        amr_tree.parse()
-        amr_tree.save_align_info(aligned_file)
+        if len(amr_tree.amr_annotation.amr_tree_lines) > 0:
+            amr_tree.parse()
+            amr_tree.save_align_info(aligned_file, aligned_log_file)
 
     amr_file.close()
     aligned_file.close()

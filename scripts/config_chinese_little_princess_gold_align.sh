@@ -14,12 +14,12 @@ export WNHOME="${JAMR_HOME}/tools/WordNet-3.0"
 export SCALA="${JAMR_HOME}/tools/scala-2.11.2/bin/scala"
 export SMATCH="${JAMR_HOME}/scripts/smatch_v1_0/smatch_modified.py"
 
-export USE_GOLD_ALIGN=0
+export USE_GOLD_ALIGN=1
 export TRAIN_FILE="${JAMR_HOME}/data/chinese_little_princess_gold_align_annotation/blj_train.txt"
 export DEV_FILE="${JAMR_HOME}/data/chinese_little_princess_gold_align_annotation/blj_dev.txt"
 export TEST_FILE="${JAMR_HOME}/data/chinese_little_princess_gold_align_annotation/blj_test.txt"
 
-export MODEL_DIR="${JAMR_HOME}/models/my_chinese_little_princess"  # ideally keep this the same as the config_SOMETHING.sh
+export MODEL_DIR="${JAMR_HOME}/models/my_chinese_little_princess_gold_align"  # ideally keep this the same as the config_SOMETHING.sh
 
 # The options specified below will override any options specified in the scripts
 # CONCEPT_ID_TRAINING_OPTIONS and RELATION_ID_TRAINING_OPTIONS will override PARSER_OPTIONS
