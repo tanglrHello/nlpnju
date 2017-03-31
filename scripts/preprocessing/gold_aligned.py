@@ -238,6 +238,10 @@ class AmrTree:
 
         for concept_id in concept_dict:
             for node in concept_dict[concept_id]:
+                if concept_id[1:].isdigit():
+                    if int(concept_id[1:]) >= len(self.amr_annotation.snt_toks_str.split()):
+                        continue
+
                 concept = node.concept
                 if self.is_concept_id_style(concept):
                     aligned_pos = node.aligned_pos
