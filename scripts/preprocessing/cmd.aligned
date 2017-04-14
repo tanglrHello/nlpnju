@@ -3,6 +3,7 @@ set -ueo pipefail
 
 for AMR in "${TRAIN_FILE}" "${DEV_FILE}" "${TEST_FILE}"
 do
+    echo $AMR
     ${JAMR_HOME}/run Aligner -v 1 < "${AMR}.tok" &> "${AMR}.aligned.log"
 
     tail "${AMR}.aligned.log"

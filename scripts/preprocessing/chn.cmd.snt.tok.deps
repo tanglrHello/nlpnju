@@ -4,6 +4,7 @@ set -ueo pipefail
 STANFORD_HOME="${JAMR_HOME}/tools/stanford-parser-full-2016-10-31/"
 
 for AMR in "${TRAIN_FILE}" "${DEV_FILE}" "${TEST_FILE}"
+#for AMR in "${TEST_FILE}"
 do
     java -server -mx2000m edu.stanford.nlp.parser.lexparser.LexicalizedParser -encoding utf-8 -sentences newline "${STANFORD_HOME}""xinhuaFactored.ser.gz" "${AMR}.snt" > "${AMR}.snt.penn"
     java -server -mx2000m edu.stanford.nlp.parser.lexparser.LexicalizedParser -encoding utf-8 -outputFormat typedDependencies -outputFormatOptions includePunctuationDependencies -sentences newline "${STANFORD_HOME}""xinhuaFactored.ser.gz" "${AMR}.snt" > "${AMR}.snt.dep" 
